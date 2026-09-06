@@ -1,15 +1,15 @@
 {
-  "updated_at_utc": "2026-09-06T20:45:14.369038+00:00",
+  "updated_at_utc": "2026-09-06T20:55:15.834216+00:00",
   "scope": "Pinned RSS-aligned corpus. Completed notes include explicitly labelled lead-assistant and two-subagent methods.",
   "counts": {
     "total": 693,
     "downloaded": 693,
-    "read": 173,
-    "structured_summaries": 173,
+    "read": 185,
+    "structured_summaries": 185,
     "lead_reviewed": 14,
-    "subagent_reviewed": 159,
+    "subagent_reviewed": 171,
     "partial_validation": 8,
-    "pending_read": 520,
+    "pending_read": 508,
     "needs_attention": 1,
     "candidate_cards": 22,
     "candidate_new": 10
@@ -17,24 +17,23 @@
   "workflow": {
     "status": "running",
     "phase": "grouped_episode_review",
-    "heartbeat_utc": "2026-09-06T20:45:14.214920+00:00",
+    "heartbeat_utc": "2026-09-06T20:55:15.672071+00:00",
     "workers": 4,
     "active_episodes": [
-      140,
-      143,
-      149,
-      154
+      151,
+      157,
+      161
     ],
     "scheduler": "chronological_groups",
     "group_size": 6,
     "parallel_groups": 4,
     "total_groups": 108,
-    "groups_completed": 18,
+    "groups_completed": 19,
     "active_groups": [
-      "G020",
       "G021",
       "G022",
-      "G023"
+      "G023",
+      "G024"
     ],
     "note": "Status at export time, not a live process guarantee. Subagent review is not external fact verification."
   },
@@ -14259,15 +14258,109 @@
       "date": "2021-05-15",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP140",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "in_progress"
+      "summary": "主持人以疫情引發的市場恐慌，區分情緒性追高停損與有紀律的交易。他主張先用對帳單確認實際持有週期：短線看錯不應改稱長期投資；長線則須檢查競爭、客戶及產業生存條件是否改變。旅宿可能面臨財務危機，半導體則以海外經驗作情境參照，但他也承認台灣散戶結構及可能停工，使海外走勢不能直接套用。部位不必全進全出，應保留可承受波動的配置。投資Q&A中，他自述持有動能部位，但提醒逆勢強股不保證避險；看好三五族等題材仍須分辨公司指引與實際受惠者，並建議先小額驗證方法。對0050長期定期定額，他強調配息再投入的總報酬，而非只盯價格能否回到買點。以上均為本集觀點，並非已核實的行情或交易。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。上架時間依提供的官方RSS為2021-05-15 16:32:14（台北）；錄音時間未知，週一及下週等均保留原稿相對語境。；未獨立驗證原音、行情、公告或交易；海外停工、散戶占比、融資數據及公司指引均待核。；借款Q&A只批評家人借款利率偏高，未完整評估償債能力，不可解讀為改借信貸的建議。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "停損與追高不必然是情緒失控；應以實際持有週期辨識策略，短線失敗不能靠改稱長期投資迴避紀律。",
+          "condition": "決定停損規則及檢查策略一致性時",
+          "limitation": "原稿對短期價格與長期基本面完全無關、無紀律必然出局的說法過強，未提供所稱論文。"
+        },
+        {
+          "id": "E2",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人預期，若下週航運與鋼鐵熱門股未大幅反彈，融資壓力可能伴隨velo.tw數字再創高；並批評借更多錢或增加當沖試圖翻本。",
+          "condition": "陽明、長榮、中鴻等未反彈，價格逼近其所稱融資成本線",
+          "limitation": "本集未完整定義該數據；成本線及維持率只是主持人估算與例示，不能當作個別帳戶斷頭價格。"
+        },
+        {
+          "id": "E3",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "長線停損看基本面與存活風險；旅宿可能因疫情出現財務危機。半導體即使停工，也要估復工時間、損失及價格跌幅，而非一律賣出。",
+          "condition": "原本即有長線理由與可接受估值，且持續檢查疫情及競爭變化",
+          "limitation": "海外未停工是主持人陳述，未經核實；他承認台灣市場結構不同。損失20%、股價跌50%只是情境，非估值結論。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "資金配置不是零或百分之百；可依承受度減碼，先用小額試驗策略，確認方法有效才擴大投入。",
+          "condition": "波動造成不適，或尚未建立可執行的方法",
+          "limitation": "能睡著只是主觀指標；本集未定義有效樣本、成本及失效標準，後段稱穩賺不能視為保證。"
+        },
+        {
+          "id": "E5",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "主持人自述有動能部位，願意加買會漲的股票；但以逆勢強股抵銷原持股虧損，可能變成兩邊都套牢。",
+          "condition": "短線或動能策略追蹤下跌市場中仍強勢的標的",
+          "limitation": "未披露目前動能持股、交易價與比例；列舉強股不等於買進，強勢也不等於可靠避險。"
+        },
+        {
+          "id": "E6",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人仍看多三五族、伺服器與低軌衛星，但穩懋當年保守指引不應忽略；材料成本下降可能加速導入，仍須辨別哪些公司真正受惠。",
+          "condition": "成本瓶頸緩解、應用導入且公司能承接商機",
+          "limitation": "法說、拆解與合作資訊均未外核；原稿材料分類及受惠鏈待核，不能從題材推出台廠訂單或獲利。"
+        },
+        {
+          "id": "E7",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "回應0050長期定期定額是否停損，主持人反對因朋友對台積電價格的擔心而轉做短線，並要求以配息再投入的總報酬理解市場成長。",
+          "condition": "長期持有、持續投入且股息再投入",
+          "limitation": "加權報酬指數不是0050實得報酬；不能保證回到特定價位，亦未量化集中度、費用與可承受期間。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 6,
+          "relationship": "extends",
+          "claim_id": "E1",
+          "reason": "用對帳單辨識實際週期，提供檢查是否事後改寫投資假說的操作方式。"
+        },
+        {
+          "card_id": 1,
+          "relationship": "supports",
+          "claim_id": "E2",
+          "reason": "槓桿追繳可能先於預期反彈到來，補借款翻本反而加深存活壓力。"
+        },
+        {
+          "card_id": 6,
+          "relationship": "extends",
+          "claim_id": "E3",
+          "reason": "以產業財務危機及復工情境區分真正新證據與單純價格恐慌。"
+        },
+        {
+          "card_id": 5,
+          "relationship": "extends",
+          "claim_id": "E4",
+          "reason": "把策略驗證置於加碼之前，風險預算不只用來分批買入。"
+        },
+        {
+          "card_id": 5,
+          "relationship": "limits",
+          "claim_id": "E5",
+          "reason": "增添強勢部位未必分散風險，可能同時保留舊虧損並新增追高曝險。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "supports",
+          "claim_id": "E6",
+          "reason": "材料成本與個別公司承接能力是題材走向股東收益的必要中介。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 141,
@@ -14492,60 +14585,424 @@
       "date": "2021-05-26",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP143",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "in_progress"
+      "summary": "主持人觀察台美資金回流科技股，但不認定原物料行情已結束；中長期投資仍應守住能力圈，而非追逐每個熱門族群。他自述伺服器表現較佳、蘋概尚未明顯表現，並提醒驅動IC長期看好不等於短期漲價題材仍有空間。疫情通殺可能提前反映後續利空，但跌深或海外設廠不保證反彈。內需企業可能因固定支出撐不到復甦；AMC則說明市場炒作如何經由籌資與轉股改變生存及利益分配。Q&A比較長抱的價值陷阱與停損錯失反彈，也提醒不能只因一兩年落後大盤就否定策略；對無收入聽眾，持續金流是重要限制。蘋果爭議涉及市場界定與平台自營優勢；挖礦需求持續也不代表硬體價格只漲不跌。以上均為本集觀點，非已核實結果。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。上架時間依提供的官方RSS為2021-05-26 16:00:39（台北）；錄音時間未知，相對日期未另行校準。；audio_unverified：僅覆核提供逐字稿，未核對原音；行情、公司公告、融資、交易與法律進度均未獨立驗證。；主持人自述買伺服器與蘋概，但未披露公司、持股分母、成本與交易日期；不能據此重建部位或績效。；資金輪動、特斯拉中國風險與蒙格績效比較未提供足夠數據，不能視為已證實因果或可比績效；未補入後來結果。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "重資本服務業即使預期疫情終將緩解，仍可能因收入歸零、租金貸款與人員成本持續而撐不到復甦。",
+          "condition": "健身房等停業或客流驟減，且有貸款、租金與留才需求",
+          "limitation": "器材成本及收入組成來自主持人過往詢價、朋友資訊；他曾考慮開健身房，不是自述已開業。"
+        },
+        {
+          "id": "E2",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "中長期投資應買能力圈內、知道業務內容的東西，不必追逐所有熱門族群；即使長期看好驅動IC，也須考慮明年缺貨緩解後漲價效應減弱、營收獲利可能轉弱。",
+          "condition": "以中長期持股為目的；驅動IC的風險判斷以缺貨緩解為條件",
+          "limitation": "主持人另區分以波動交易的當沖或期貨參與者；未提供公司別估值，不能將同段載板強勢概括為相同報價風險。"
+        },
+        {
+          "id": "E3",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "疫情恐慌造成大跌，可能提前反映超額下單與漲價退潮等後續利空；但海外設廠、未直接受疫情衝擊，不足以保證股價回升。",
+          "condition": "價格已有大幅修正，且基本面未遭致命破壞",
+          "limitation": "主持人明言不排除更大修正；美國基建供應鏈仍須確認支出規模與實際受惠項目。"
+        },
+        {
+          "id": "E4",
+          "kind": "third_party_report",
+          "actor": "host",
+          "statement": "主持人稱AMC股價上漲讓公司賣股籌資續命、可轉債持有人轉股獲利，也讓萬達減持時少賠一些；炒作影響不只限於交易盈虧。",
+          "condition": "公司能利用股價上升籌資，債權人具備轉股條件",
+          "limitation": "融資及交易未核實；公司、債權人受益不代表追價散戶受益，原稿亦指出有人被波動掃出場。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "回應無收入、逢跌很快滿倉的聽眾：長抱有價值陷阱，波段停損可能錯失反彈，不能只因一兩年落後大盤就否定策略；支持指數為主、部分主動選股，但核心限制是缺乏持續金流。",
+          "condition": "本金固定、沒有收入，且正考慮由波段轉長期配置",
+          "limitation": "未給加減碼比例或滿倉後處置規則；研究上須注意，指數部位不保證正報酬，金流也不保證策略獲利。"
+        },
+        {
+          "id": "E6",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人傾向Epic告蘋果難勝，認為市場界定是爭點；但競爭可能壓低抽成，自營服務利用平台抽成墊高對手成本，則是較明顯的風險。",
+          "condition": "區分平台與其他系統競爭，以及平台內自營服務與第三方競爭",
+          "limitation": "主持人自稱粗淺看法；訴訟、歐盟處置及費率條款未核實，不能當成法律結論。"
+        },
+        {
+          "id": "E7",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "挖礦趨勢未必很快停止，但需求增加不代表硬體價格只漲不跌；擴產可能帶來供過於求，店家可提供當下價格資訊而非保證轉折時間。他較支持主流大幣，建議以博弈心態看小幣，並承認大幣的價值定位仍有疑問。",
+          "condition": "新增供給逐步追上需求，或二手硬體釋出",
+          "limitation": "主持人承認不熟挖礦，未提供供需數據或價格回落時點；不應直接推成硬體股買賣訊號。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 1,
+          "relationship": "extends",
+          "claim_id": "E1",
+          "reason": "把存活問題延伸到復甦前的固定支出與留才成本，而非只看終局需求。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "supports",
+          "claim_id": "E2",
+          "reason": "長期看多與短期漲價效應已反映可同時成立，限制追高理由。"
+        },
+        {
+          "card_id": 4,
+          "relationship": "extends",
+          "claim_id": "E3",
+          "reason": "非預期衝擊可能先改變價格，使原先等待的利空不再具有相同預期差。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E4",
+          "reason": "拆開公司籌資、債權人轉股及股票買方的利益，而非以股價上漲概括共贏。"
+        },
+        {
+          "card_id": 10,
+          "relationship": "extends",
+          "claim_id": "E5",
+          "reason": "有無後續收入會改變加碼策略的可行性，不能只複製加碼節奏。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 144,
       "date": "2021-05-29",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP144",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "pending"
+      "summary": "主持人自述未參與本波航運股，將缺櫃與塞港視為疫情造成的短暫機會。朋友預期農曆年前後緩解，不代表股價屆時見頂；他也承認防疫股警示後仍續漲。主段落另談泛通膨、存貨漲價受益，以及擴產後的產能過剩；以撼訊、國巨提醒財報與營收可能落後股價，主張預設退場規則。Q&A涵蓋足額現金降低期貨槓桿、突破仍需基本面支持、依本金與時間能力選擇主被動配置，以及依家庭責任與重大賠償風險考慮保險，未給固定比例。ETF溢價套利獲利是聽眾自述，主持人則提醒新上市ETF可能有高溢價。幣圈部分區分區塊鏈用途與代幣價值，偏好比特幣、警惕小幣，未查核提問中的特定方案。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。官方RSS為2021-05-29 11:19:23（台北）；原稿含農曆年前、二月及台股摸萬五等敘述，錄音時間有疑義，不自行重定日期。；audio_unverified：未核對原音；行情、公告、交易、國巨歷史價格與營收時序、產業成長率及處置揭露規則均未外部驗證。；朋友預測、聽眾獲利及主持人交易回顧皆非經核實績效，不足以證明策略可複製或长期超額報酬。；各claim的研究限制是覆核者註記，不是主持人的原話或完整風險揭露。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "缺貨機會財可能刺激大量擴產；需求退潮後，產能過剩及去庫存可能加重下行。",
+          "condition": "缺貨刺激擴產，後續需求未同步增加",
+          "limitation": "跨產業類比未量化航運擴產時程或需求，不能據此斷定已見頂。"
+        },
+        {
+          "id": "E2",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人將原物料、鋼鐵及可能連動的散裝運價上漲視為泛通膨題材，認為可能是2021年的機會；中間財業者持有的存貨及後續報價也可能受益。",
+          "condition": "持有較低成本存貨，且後續售價能隨原物料上調",
+          "limitation": "屬主持人的條件式傳導觀點，未驗證個別企業轉嫁能力、實際利潤或報酬；2021年為原稿明示年份。"
+        },
+        {
+          "id": "E3",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "機會財股票不宜以漂亮財報或營收作為續抱的充分理由；主持人以國巨、撼訊說明股價可能先反轉，偏好回吐停利或跌破預設價出場，而非固定目標價。",
+          "condition": "持有已大幅上漲、依賴短期供需失衡的股票",
+          "limitation": "未給停利幅度；營收與自結EPS被稱較即時，又被警告不可當依據，保留表述張力。不是本波航運賣出紀錄。"
+        },
+        {
+          "id": "E4",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "主持人承認防疫股警示後仍續漲，因而改在航運出現大跌時公開提醒。他轉述朋友預期貨櫃緊繃於農曆年前後緩解，但明言不知道股價何時停止上漲。",
+          "condition": "再次遇到熱門機會財股票並出現明顯回跌",
+          "limitation": "自評相對高點未核實；朋友身分與來源獨立性不明，預測不是主持人確認的結果。錄音時間未知，不能由RSS日期推定其預測期間。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "台指期貨可用去槓桿方式追蹤指數；主持人以一萬五千點、每點兩百元示範，一口大台對應三百萬元現金，僅放三十萬元則是十倍槓桿，波動可能造成非自願出場。",
+          "condition": "以期貨持續取得台股指數曝險",
+          "limitation": "點位是原稿示例；未討論轉倉、基差、成本及現金管理，不能推論與0050績效完全相同。"
+        },
+        {
+          "id": "E6",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "回應聽眾買精材及出場問題時，主持人強調提及不等於推薦；突破須先研究基本面，退場可依不喜歡的基本面變化或動態停利。",
+          "condition": "持股接近歷史新高，評估追價或續抱",
+          "limitation": "主持人自述曾以四五十元均價買精材並錯過後續漲幅，未交代賣點；基本面支持不保證突破獲利，純技術交易必敗也未獲證明。"
+        },
+        {
+          "id": "E7",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人看好部分區塊鏈應用，但不因此認同各種代幣；將比特幣定位為共識與價值定錨，認為高波動限制主流支付用途，並警惕小幣炒作。",
+          "condition": "比特幣持續具有高波動與較強市場共識",
+          "limitation": "屬主觀定位，未提供估值或配置比例；未直接驗證Forsage，也未查核各小幣項目。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E1",
+          "reason": "補入缺貨利潤誘發擴產、需求退潮後侵蝕利益的回饋機制。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E2",
+          "reason": "補入存貨成本與售價調整如何影響漲價利益的傳導條件，不直接等同股東報酬。"
+        },
+        {
+          "card_id": 8,
+          "relationship": "supports",
+          "claim_id": "E3",
+          "reason": "歷史營收改善與股價下跌可並存，較即時資料仍不等於領先訊號。"
+        },
+        {
+          "card_id": 1,
+          "relationship": "extends",
+          "claim_id": "E5",
+          "reason": "以名目曝險和備資差距說明高槓桿下的非自願出場。"
+        },
+        {
+          "card_id": 6,
+          "relationship": "supports",
+          "claim_id": "E6",
+          "reason": "基本面出現不喜歡的變化可成為重新評估持有理由的依據。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 145,
       "date": "2021-06-02",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP145",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "pending"
+      "summary": "主持人補充龍巖的疫情受惠限制：死亡增加不等於禮儀服務收入增加；對中國三胎政策帶動嬰幼兒用品需求亦保守，認為放寬上限未解決生育意願。生技主段落區分交易制度、籌碼歸因與商業價值：他稱高端無放空管道，八大行庫買盤也不必然代表政府；即使疫苗試驗成功，仍須檢視國際競爭與持續營收。他提醒利多實現仍可能大跌，熟悉產業也須控制單一解盲事件曝險。投資Q&A則比較主題ETF費用、權重與越南ETF溢價，反對把開發中國家直接類比台灣成長史；不建議替家人主導投資。對良性通縮，他區分論述一致與投資獲利，並提出當下漲價反例。估值方面主張以同業區間作參考，寬鬆市場可考慮提高容忍價格但縮小部位，也可堅持等待，兩者各有成本。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。官方RSS上架時間為2021-06-02 16:39（台北）；錄音時間未知，原文今天、昨天不宜直接換算交易日期。；僅依逐字稿，未獨立驗證原音、行情、公告、交易資格或交易紀錄。；十九根跌停的敘述前稱基亞，後稱浩鼎，存在指涉矛盾，不能據此確定公司；借券異動也未證明內線。；良性通縮是主持人轉述的科技降成本論點；他同時提出裝潢漲價反例，未證明任一總體路徑。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "龍巖等殯葬業的收入包含生前契約與禮儀服務；主持人認為疫情下直接火化、無法辦追思會，限制死亡增加對營收的貢獻，但不據此預測股價下跌。",
+          "condition": "疫情死亡者的服務流程受限",
+          "limitation": "服務限制與收入結構未外部核實；主持人另舉經營權題材可能推升股價，但僅是假設。"
+        },
+        {
+          "id": "E2",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "中國三胎政策只提高生育上限，未解決自主選擇、生活品質與住房等因素，主持人預期對嬰幼兒用品的實際貢獻有限。",
+          "condition": "政策僅放寬上限，未實質改變生育意願與負擔",
+          "limitation": "主持人承認強硬措施可能改變結果；短線題材上漲不等於需求預測成立。"
+        },
+        {
+          "id": "E3",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人稱高端當時無信用交易、借券賣出或期貨等放空管道，將連跌歸為多方賣壓；並提醒八大行庫交易包含客戶下單，不足以認定政府護盤。",
+          "condition": "解讀本集所述高端連續跌停與八大行庫買超",
+          "limitation": "交易資格與買方身分未核實；制度限制不能單獨證明賣方動機，非政府買盤也是主持人推測。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "疫苗試驗成功不保證估值或報酬；須問國際競爭力、僅靠政府採購能否支撐股價，以及每年接種情境下能否持續被選用。",
+          "condition": "假設高端二、三期成功，或疫苗形成重複接種需求",
+          "limitation": "均為條件式討論，未提出採購量、利潤或估值數字；國外利多出盡案例不能預告高端走勢。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "不熟悉生技者宜避開；即使熟悉，也應分散單一解盲事件風險。盤前或消息公布前的異動可提示資訊劣勢，但不能一律斷言內線交易。",
+          "condition": "投資結果高度依賴試驗成敗的公司",
+          "limitation": "全押可能全損是極端風險示例，非估計損失率；分散不消除產業共同風險，價格異動亦非違法證據。"
+        },
+        {
+          "id": "E6",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "ETF須分開看底層市場與工具成本：主題型ETF應比較費用、權重和自行配置能力；越南市場上漲，仍可能因買入溢價消退而虧損。",
+          "condition": "選擇主題型ETF，或以高於淨值的價格買入",
+          "limitation": "本集未提供可重算的報酬、淨值或完整費率；部分主題ETF費用逾1%的說法不能直接套到提問的兩檔產品。"
+        },
+        {
+          "id": "E7",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "估值是同業區間與成長假設的參考，不保證成交機會；寬鬆環境可考慮提高倍數但縮小投入，或堅持價格並接受長期買不到的成本。",
+          "condition": "保守估值長期低於市價，仍希望參與市場",
+          "limitation": "15倍改20倍與三四成均為示例，非已執行交易；部位分母未明，寬鬆也不保證高估值合理。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E1",
+          "reason": "新增服務流程被限制的反例：事件量增加，付費服務項目反而減少。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E2",
+          "reason": "把政策允許量與消費者實際意願分開，避免直接推算需求。"
+        },
+        {
+          "card_id": 3,
+          "relationship": "supports",
+          "claim_id": "E4",
+          "reason": "將試驗成功、產品競爭力與股價支撐拆成不同驗證關卡。"
+        },
+        {
+          "card_id": 5,
+          "relationship": "extends",
+          "claim_id": "E5",
+          "reason": "二元事件可能造成跳躍式損失，部位控制不能只依日常波動。"
+        },
+        {
+          "card_id": 8,
+          "relationship": "limits",
+          "claim_id": "E5",
+          "reason": "提前異動僅提示資訊不對稱，不能直接推論違法或確知結果。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "extends",
+          "claim_id": "E6",
+          "reason": "即使市場方向正確，交易溢價與持有費用仍會侵蝕投資人報酬。"
+        },
+        {
+          "card_id": 5,
+          "relationship": "extends",
+          "claim_id": "E7",
+          "reason": "把價格妥協與投入縮減配對，同時揭露等待不成交的機會成本。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 146,
       "date": "2021-06-05",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP146",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "pending"
+      "summary": "主持人看好 Nvidia 多元應用、Facebook 既有資料優勢與 VR，並自述持續布局亞馬遜；也承認特斯拉拖累部位仍續抱。他反對以同一數據事後解釋相反行情，並要求區分蘋果舊供應鏈名單與當期拉貨，以營收及預設加減碼條件追蹤。AMC 炒作可能改善融資，卻不代表本業修復；論壇也未必是獨立散戶共識，參與須注意小部位與工具成本。Q&A 指出疫情低接仍須價格足夠便宜、移動停損與續抱均有代價，並比較 ETN 的信用及到期風險，以及主題 ETF 是否符合預期曝險。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。audio_unverified：官方 RSS 上架時間為 2021-06-05 17:01:41（臺北）；錄音時間未知，未核原音，亦未外部驗證行情、公告、產品或交易。；亞馬遜估值與布局、Nvidia 題材及 Facebook 假說均為當時主持人陳述，未提供完整估值模型或可驗證績效。；AMC 數字、日期、法人與資產歸屬待核；萬達出脫均價及其退出促成炒作是主持人猜測，不用後來資訊補完。；研究者提出的利潤歸因、成交風險與驗證缺口是覆核限制，不是主持人逐字原話。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人認為隱私收緊可能提高新廣告平台取得資料的門檻，使握有既有資料的 Facebook 相對受惠；另看好 VR 可能成為下一動能。",
+          "condition": "隱私收緊成為全球趨勢。",
+          "limitation": "這是主持人假說；未量化外部資料損失，股價上漲不能驗證競爭優勢或利潤。VR 人力比例為模糊轉述。"
+        },
+        {
+          "id": "E2",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "蘋果舊供應鏈名單不是新催化；應追蹤角色、占比與拉貨是否增加，並預設營收驗證時點及加減碼條件。",
+          "condition": "部分供應商預期六月拉貨，於七月觀察營收；亦提及伺服器供應鏈。",
+          "limitation": "舊資訊並非必然無效。「7 月的營收」所指月份待釐清；營收成長未必全由指定客戶貢獻，也不直接證明利潤改善。"
+        },
+        {
+          "id": "E3",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "以非農數據發布後新聞改口為例，主持人認為同一說法若能同時解釋漲跌，便缺乏參考價值；總經掌握大方向，研究回到個股。",
+          "condition": "針對隨行情結果切換理由的事後敘事。",
+          "limitation": "這是主持人的判讀準則，不等於所有總經數據皆無價值；新聞改口與行情未外部核對。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "主持人轉述 AMC 炒作讓公司融資、債權人出場，但不相信現金增加便能修復經營；他推測論壇機構參與增加、社群可帶動資金。參與炒作宜極小部位，放空及高波動選擇權成本可能使方向看對仍不賺錢；他自述 AMC 自年初事件留倉、部位極小。",
+          "condition": "高周轉、高波動炒作標的，尤其使用選擇權或借券放空。",
+          "limitation": "機構占比為推測，持倉分母與交易未核；融資不保證股東獲利。AMC 法人與內容資產歸屬待核，不採為併購證據；低波動時提前布局亦不保證炒作發生。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "只進不出是少出金、仍可換股，不是永不賣股。移動停損能鎖利但可能錯失後續上漲；長抱也可能遇到績優股衰退，沒有必勝策略。",
+          "condition": "須先分清短期價差與長期持有目的，三個月經驗不足以評價長期投資。",
+          "limitation": "停損價格為假設示例；南電早賣是主持人自述，Nvidia 上漲不能證明所有續抱都正確。原文未討論跳空成交風險。"
+        },
+        {
+          "id": "E6",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "比較 ETN 與 ETF 不能只信小資版標籤，須檢查發行人信用、到期清算、費用、追蹤指數與追蹤效果。",
+          "condition": "評估指數投資證券能否替代既有 ETF。",
+          "limitation": "主持人尚未研究提問產品；較低費用只是理論期待，對發行人不易倒閉的信心不是信用風險驗證。"
+        },
+        {
+          "id": "E7",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "主題 ETF 首要檢查持股是否吻合想買的公司或產業，費用其次；主持人修正早期因費用否定主題 ETF 的態度，承認代配、省事與跨市場便利有價值。",
+          "condition": "缺乏選股能力、願意付費省事，或部分市場不易自行投資。",
+          "limitation": "未核對 00893 實際成分；提及其他車廠不能當作已查證持股。供應鏈名義也不代表高營收曝險。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 8,
+          "relationship": "extends",
+          "claim_id": "E2",
+          "reason": "區分公布日與資料期；落後訊息仍可能因角色持續擴大而有用。"
+        },
+        {
+          "card_id": 6,
+          "relationship": "supports",
+          "claim_id": "E2",
+          "reason": "預設營收驗證時點與未如期反應時降低部位的條件。"
+        },
+        {
+          "card_id": 3,
+          "relationship": "supports",
+          "claim_id": "E4",
+          "reason": "炒作、融資改善與本業修復不是同一件事，亦不保證投資人報酬。"
+        },
+        {
+          "card_id": 5,
+          "relationship": "extends",
+          "claim_id": "E4",
+          "reason": "控制炒作部位，並計入借券利息及選擇權成本。"
+        },
+        {
+          "card_id": 8,
+          "relationship": "extends",
+          "claim_id": "E4",
+          "reason": "論壇發言者可能是已持倉機構，不能直接視為獨立散戶共識。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 147,
@@ -14764,30 +15221,212 @@
       "date": "2021-06-16",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP149",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "in_progress"
+      "summary": "主持人從聽眾跟老師放空談起，提醒券資比、強制回補與漲停退出受阻可能使看空者先承受交易機制損失。他轉述前輩深入供應鏈尋找拉貨與高純度受益者，並以價格反轉條件退出，而非到目標價即賣；另談策略公開的容量限制及技術交易的摩擦成本。Q&A中，他自述Mini LED蘋概股在WWDC未發表新品後，因價格未跌而續抱，區分延遲與採用假說被否定；加碼須按情境，先模擬或小額試用。另談PLTR約25元潛在賣壓、現金拖累、債券再平衡及ETF溢價。投資失利不應遷怒家人，也不宜過度苛責自己。以上均為本集自述、轉述或看法，非已核實績效或通則。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。audio_unverified：官方RSS上架時間為2021-06-16 15:40:20（台北）；錄音時間未知，未核原音，也未外部驗證行情、公告或交易。；券資比、標借費、RSI發明人說法、5G營收增幅及ETF溢價均未外部驗證，不宜視為已確立制度或統計結論；原稿價值與帳面價值方向亦有不一致，未據此重建選股規則。；聽眾VOO九成與另留三成現金的分母不明；主持人未完整回答泡沫下指數ETF的所有缺點，亦未提供固定停損期限或加碼百分比。；籌碼解釋保留反例：主持人自承不好用但朋友能用；分點未必代表同一法人，不宜依漲跌事後任意改寫持有人身分。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "放空不只判斷基本面；高券資比、強制回補與漲停退出受阻，可能形成回補推升價格及借券成本的連鎖壓力。跟單也不能移轉自己的下單責任。",
+          "condition": "主持人以券資比逾30%為偏高參考，並提醒除權息、股東會相關回補。",
+          "limitation": "30%非必然軋空門檻；融券、標借適用情境及日息說法待核，不能混同所有放空方式。"
+        },
+        {
+          "id": "E2",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "主持人解釋策略不公開可能出於容量有限、被對作或多人同做後失效；技術條件雖可改善資金效率，反覆停損再買也可能增加摩擦成本，不一定優於持有。",
+          "condition": "討論前輩不公開技術策略的理由，以及規則化交易的利弊；策略須適合使用者。",
+          "limitation": "未揭露前輩策略或容量數據；121買、118減碼、跌至100等是假設例，非實際績效或含成本回測。"
+        },
+        {
+          "id": "E3",
+          "kind": "third_party_report",
+          "actor": "host",
+          "statement": "主持人轉述前輩從5G基地台增加PCB及銅箔基板用量找受益者；即使認為漲過頭，仍持有至自訂價格反轉條件觸發才賣。他本人仍會使用目標價，也會採取價值型逆勢買法。",
+          "condition": "前輩偏好供應鏈深層、高毛利、小股本及題材純度；主持人以資本利得而非收息為題材交易的討論前提。",
+          "limitation": "屬回顧轉述，未交代完整標的、日期、價位及報酬；主持人亦承認既定印象使自己錯過本輪貨櫃行情。收入不保證股東報酬是研究限制，非前輩原話。"
+        },
+        {
+          "id": "E4",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "未具名Mini LED蘋概股遇WWDC未發表MacBook Pro，主持人曾考慮撤出以免資金閒置；價格未跌反彈後續抱。若確定不用Mini LED，則表示會全砍。",
+          "condition": "仍預期當年推出產品；延遲用價格與基本面並判，採用假說否定則退出。",
+          "limitation": "續抱是自述已執行，全砍是條件計畫；價格不跌不能證明其他法人動機或產品傳聞正確，未倒填後續產品結果。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "加碼沒有統一漲幅：他回顧2020年NVIDIA上漲時分批投入，Square則按固定條件；聽到策略應先模擬或小額試用，不能因帳面獲利就全押。",
+          "condition": "先辨識策略適配；主持人提醒槓桿可能改變使用者心態。",
+          "limitation": "Square均線描述混有季、月與60日，無法還原精確規則；未提供加碼比例與總風險上限。"
+        },
+        {
+          "id": "E6",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人認為PLTR約25元有大量成交及選擇權部位，可能遇解套賣壓；但強利多可一次突破。他仍看好公司，也承認估值可能偏高。",
+          "condition": "缺少強利多、且先前炒作造成集中成交時，阻力推測較強。",
+          "limitation": "所稱約1000萬股與選擇權部位未核；歷史成交量不等於現存套牢量、產品展示不等於獲利證據，均屬研究者限制。"
+        },
+        {
+          "id": "E7",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人指出指數投資可能因他人短期高報酬而難以堅持；持現金有拖累與購買力成本，配債旨在保護及再平衡。他以回憶中006208下跌時溢價，質疑大盤ETF必然引發逃殺的說法。",
+          "condition": "區分主題小ETF與大盤ETF；現金、債券須配合既定加碼策略。",
+          "limitation": "個別溢價不能排除ETF流動性風險，股跌債漲非保證；這些是研究限制。他對美國案例沒有印象，並未證明不存在。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 1,
+          "relationship": "extends",
+          "claim_id": "E1",
+          "reason": "存活風險包括無法成交與券源成本，使基本面判斷可能無法等到兌現。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E3",
+          "reason": "終端體驗與建設期供應商收益可分離，須查用量、應用別及受益純度。"
+        },
+        {
+          "card_id": 6,
+          "relationship": "supports",
+          "claim_id": "E4",
+          "reason": "區分催化延遲與核心採用假說被否定，不因消息落空一律砍倉。"
+        },
+        {
+          "card_id": 10,
+          "relationship": "supports",
+          "claim_id": "E5",
+          "reason": "先模擬、小額試用，避免將他人加碼經驗直接變成自身全押。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "supports",
+          "claim_id": "E6",
+          "reason": "看好公司仍須保留價格可能過高的問題。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 150,
       "date": "2021-06-19",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP150",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "pending"
+      "summary": "主持人認為聯準會只是略收鴿派態度；當時科技股反而強於傳產、原物料及金融，是直線推演總經受害族群的反例。他將資金成本造成的估值變動與公司獲利分開，但承認銀行可能受殖利率曲線趨平影響。原料回跌是否傳到終端，須區分競標市場與價格黏著的零售市場，且尚未收到設計業聽眾更新。投資Q&A強調現金比例取決於現金流與急用需求；供應多家客戶不代表獲利或股價必然理想，封測仍受稼動率制約。填息價差策略合理不等於保守；聽眾集中持股先賺後虧呈現突發事件風險。另談QS尚待商業化、難以估值，以及ARKX選股與交叉持有的疑慮。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。audio_unverified：已核對完整文字，未核對原音；官方RSS上架時間為2021-06-19T17:04:33+08:00，錄音時間未知。；未使用外部資料核驗政策、行情、公司公告、持倉與聽眾績效，亦未補入後來結果；原稿點陣圖升息次數與幅度、債券期限及商品漲跌統計口徑仍待查。；主持人以電子股轉強提醒檢視持股，但不能僅由未上漲就判定公司品質差；各claim的風險限制是覆核註記，不全是主持人原話。；回測Q&A提出TradingView樣板、Pine Editor或委託工程師等途徑，未展示回測結果；當時免費功能與使用範圍未外核。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人以利率與購債規模未改，判斷聯準會仍偏鴿；市場先跌傳產而非科技，反駁科技估值高就必先受害的推演。",
+          "condition": "本次會議後及主持人所述近兩週行情",
+          "limitation": "政策與行情均未外核；點陣圖預期不等於實際升息，價格先後不能證明單一因果。"
+        },
+        {
+          "id": "E2",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "資金收緊可能壓低估值倍數，但應另看個股獲利；密集升息時須留意漲幅與乖離過大者，銀行則可能有利差受壓的基本面例外。",
+          "condition": "公司能持續獲利；需分辨緩步與密集升息",
+          "limitation": "倍數固定、EPS成長是條件式例子；不能推論利率對所有非金融企業營運都無影響。"
+        },
+        {
+          "id": "E3",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "原料回跌可能較快反映於低價競爭的標案，消費終端漲價卻可能不易回落；此前設計業聽眾曾回報縮短報價有效期以免自行吸收漲價。",
+          "condition": "標案須競價且成本下降；零售商已調高售價",
+          "limitation": "標案傳導是推測，零售黏著主要來自個人購物經驗，缺少成本回跌後的業者更新。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "留現金會犧牲上漲行情，但剛工作、現金流與急用需求較不確定者仍需緩衝；對提問者保留10%現金表示可以接受。",
+          "condition": "提問者自述70%定期定額0050、20%自行投資、10%閒置",
+          "limitation": "比例分母是否包含全部資產未明；10%不是普遍建議，長期持有預期不保證急用時不虧損。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "供應多家競爭者的構想合理，但封測仍高度依賴稼動率，營收好也未必帶來投資人期待的股價漲幅。",
+          "condition": "服務多家公司仍須檢查產能利用率與獲利",
+          "limitation": "未提供公司別損益平衡稼動率或估值；股性描述不是所有封測公司的固定規律。"
+        },
+        {
+          "id": "E6",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "聽眾計畫兆豐金九月除息後等30元以下買進，隔年除息前以至少3元價差賣出；主持人將其理解為賺填息，認為可嘗試但不算保守。他另以聽眾集中天鈺大賺、世芯重挫及當沖續虧，提醒分散突發事件風險。",
+          "condition": "兆豐金為尚未執行的計畫；天鈺、世芯及當沖經驗為另一位聽眾自述",
+          "limitation": "歷年填息是主持人帶保留的回憶；交易績效及世芯制裁掉單因果未外核。「都賠掉」不能解讀為本金歸零，目標年報酬亦非保證。"
+        },
+        {
+          "id": "E7",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人對公司債配息投入QQQ的構想表示無大問題，但認為QS仍在賣夢階段，固態電池實際應用可能尚需多年、難以估值；另質疑ARKX選股及交叉持有自家ETF，表示提問的三項標的都不是自己傾向購買的。",
+          "condition": "針對聽眾提出的公司債配置構想及QS、AOS、ARKX持有經驗",
+          "limitation": "商用年限、股東背景與基金持倉均未外核；AOS沒有具體分析，公司債配置亦不能據此視為已成交或低風險。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 4,
+          "relationship": "limits",
+          "claim_id": "E1",
+          "reason": "受害族群的直觀預測可能忽略先前估值調整，政策解讀不直接決定交易方向。"
+        },
+        {
+          "card_id": 3,
+          "relationship": "extends",
+          "claim_id": "E2",
+          "reason": "把利率對倍數的作用與EPS變動拆開，並保留銀行利差這項營運例外。"
+        },
+        {
+          "card_id": 1,
+          "relationship": "supports",
+          "claim_id": "E4",
+          "reason": "急用支出可能迫使投資人在下跌時賣出，長期投資論述不能替代現金緩衝。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E5",
+          "reason": "客戶覆蓋面廣只解決接單來源，稼動率仍是需求轉成利潤的關卡。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "supports",
+          "claim_id": "E6",
+          "reason": "策略合理與歷史填息經驗不足以支持重押，仍須考慮未填息與公司事件。"
+        },
+        {
+          "card_id": 5,
+          "relationship": "supports",
+          "claim_id": "E6",
+          "reason": "集中持股可先創造暴利再造成重創，主持人因此建議分散，而非只看成功波段。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 151,
@@ -14802,7 +15441,7 @@
       "relevance": null,
       "key_points": [],
       "card_links": [],
-      "processing_status": "pending"
+      "processing_status": "in_progress"
     },
     {
       "episode": 152,
@@ -14927,45 +15566,297 @@
       "date": "2021-07-03",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP154",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "in_progress"
+      "summary": "主持人提醒短期暴利不等於可持續能力，自己意外搭上飆股也有市場與運氣因素；應先控下檔，不因成功故事放棄配置，獲利後可部分轉向穩健部位。他鼓勵閱讀反方報告，對保證獲利保持警覺。市場面，面板報價拉平與取消單是當時觀察，仍可能改變；美光財報漂亮卻跌價，可能是未來預期保守，也可能尚未被市場注意，並未確認錯價。Q&A涵蓋海外小額投資成本、ETF籃子與費用、台股內部分散與全球配置、併購營收與綜效，以及依長期走勢和參與者行為理解股性，檢查持股是否符合交易目的。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。上架時間依官方RSS為2021-07-03 16:39:16（台北）；索引日期衝突不採用，錄音時間未知。；audio_unverified：僅核對提供的全文，未核原音；行情、公司公告、費率、交易及績效均未外部驗證。；登山規則、名人報酬率、成人平台盈利與未上市原因等屬節目敘述，未當外部事實確認；不以後來資訊補完。；聽眾獲利不是主持人績效，夢境持股不是實際交易；費率、報酬期間及資金分母不清處保留疑點。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "先控制下檔再追求獲利，不能把重押成功個案當通例；暴利後可部分轉向穩健配置，避免越賺越押。主持人亦鼓勵審視反方報告，並提醒保證績效或獲利的說法要停看聽。",
+          "condition": "受到他人暴利、自己成功經驗或確定獲利宣稱影響時",
+          "limitation": "未提供收成比例；反方報告使主持人更有信心是其個人判讀，不代表反方已被證偽。「保本型」隨即被解釋為較穩健型，不能視為本金保證。"
+        },
+        {
+          "id": "E2",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人觀察面板報價開始拉平，另聽聞Chromebook與TV有取消單，提醒面板及相關晶片持有人注意，但保留下半年需求再變的可能。",
+          "condition": "持股涉及面板、DDIC或TDDI等相關產品",
+          "limitation": "取消單屬未具名轉述，報價來源與觀察期間未列明，不能推成永久看壞。"
+        },
+        {
+          "id": "E3",
+          "kind": "uncertain",
+          "actor": "host",
+          "statement": "主持人認為美光財報漂亮卻在隔天下跌約5%，提出未來預期保守或市場尚未注意兩種解釋；若市場忽略且記憶體判斷正確，可能是布局機會。",
+          "condition": "財報表現與股價反應不一致",
+          "limitation": "未提供市場預期、估值或分項數據，也未自述買進；不能直接認定市場錯價。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "解答新唐併購時，主持人指出營收合併也會帶入被併業務的虧損；以整併效應為投資理由，應觀察後續綜效，而非只看當下營收放大。",
+          "condition": "被併業務虧損，投資理由是整併改善",
+          "limitation": "被併業務虧損是主持人帶有記憶保留的說法；未量化綜效、成本或期限，不能據此確認合併公司整體虧損。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "小額按月海外投資須權衡電匯與複委託成本；主題ETF則須檢查持股是否符合自己的受惠判斷及費用。無選股能力者仍可考慮主題ETF，主持人偏好自行配置；對看得懂ETF者，他認為ETF提供許多可能較便宜的基金替代選擇。",
+          "condition": "比較海外投資通路、主題ETF、自行選股與基金",
+          "limitation": "費率未核實，結尾「電支電股」用語不明；原稿混稱主動型與主題式ETF，不能據此認定產品管理方式。偏好自行配置及基金衰退預測均非績效證明。"
+        },
+        {
+          "id": "E6",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "主持人以和碩等例子解釋股性是參與者集體買賣行為的反映；抱怨持股不動前，應看長期走勢並重查買進目的。若要較活潑的標的，可研究相似題材但股性不同的公司。",
+          "condition": "持股長期區間盤整，卻期待快速或活潑的價格表現",
+          "limitation": "屬主持人的定性解釋，不是價格預測；他也舉奇鋐突然上漲為例，且未確定其催化原因。"
+        },
+        {
+          "id": "E7",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "主持人認為0050、0056已具台灣股票內部分散；若仍擔憂集中，可再考慮跨市場配置，而非只增加台灣股票產品。",
+          "condition": "聽眾自述身上資金八成配置於兩檔台股ETF並感到不安",
+          "limitation": "資金分母未明；主持人未分析ETF重疊、整體股票曝險或現金需求。全球股票配置不等於保本，此為覆核限制。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 5,
+          "relationship": "extends",
+          "claim_id": "E1",
+          "reason": "暴利後重新分配資金，避免下一次承擔超出負荷的損失。"
+        },
+        {
+          "card_id": 6,
+          "relationship": "supports",
+          "claim_id": "E2",
+          "reason": "依報價與訂單訊號調整判斷，同時保留需求再變的可能。"
+        },
+        {
+          "card_id": 4,
+          "relationship": "limits",
+          "claim_id": "E3",
+          "reason": "財報漂亮與跌價不足以確認預期差，仍缺市場原先期待。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E4",
+          "reason": "併表放大營收也可能帶入虧損，須追蹤真正綜效。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 155,
       "date": "2021-07-07",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP155",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "pending"
+      "summary": "主持人以健身工廠為主軸：停業營收差已可預期，關鍵是資金能否撐到復甦、競爭者退出後的需求承接，以及會員轉購教練課；台灣回流速度可能慢於歐美。他未買且無意買進，並以內部人持股觀察利益一致性，但承認不是股價上漲的必要條件。Netflix曾取消分批、財報前一次加碼後跌一成，本集自述已解套；中概股則不建議短期抄底或做空。Q&A區分樣機與商用獲利，建議早期題材小額投入；大盤ETF提領生活費較像退休，全職投資應有額外時間投入的目的，不宜只因報酬率提高便賣ETF。串流換股只是競品改善時的條件式想法；投資Amazon主要看AWS。另提醒槓桿也加速虧損、實務需要情緒防呆，並主張透過社交擴大資訊來源但篩選錯誤報價與雜訊。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。上架時間依提供官方RSS為2021-07-07 14:08:42（台北）；索引日期衝突，錄音時間未知。；audio_unverified：僅覆核逐字稿，未核對原音、行情、公告、財報或交易；公司名称沿用原稿，健身房滲透率分母及HOL與ASTS對應待查。；資本支出、展店十家、內部人持股約半與財務安全均為主持人引用或判斷，缺少可重算資料；集團背景不保證資金支援。；年報酬10%是聽眾退休假設，8%是主持人舉例，均非報酬保證；本集未檢驗持續提領風險。；主持人對變種病毒危害的概括未經驗證，不能作為復甦確定性的證據；研究者的風險補充不視為原話。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "Netflix原本可能分三批加碼，改在財報前一次投入，財報後跌10%；主持人稱本集時該筆已解套。",
+          "condition": "財報公布前集中投入原擬分批資金",
+          "limitation": "未提供成交價、金額與資產占比；解套不能證明集中投入合理。"
+        },
+        {
+          "id": "E2",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "中國整改可能不只一波，風險也可波及中國ETF；短期不建議抄底，但考量內需與未來表現可能，也不建議做空。",
+          "condition": "政策整改延續、市場不確定下一個受影響企業",
+          "limitation": "政策動機與後續波數是主持人推測；未提出估值或進出場門檻。"
+        },
+        {
+          "id": "E3",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "健身業競爭者退出可能讓存活者承接復甦需求，但台灣需求回流可能較慢，須先確認資金能撐到復甦。",
+          "condition": "競爭供給減少、需求仍在，且企業能熬過停業期",
+          "limitation": "需求不減與集團支援能力未量化；2020年已有對手退出說法，2021年仍再遇停業。主持人未買且無意買進。"
+        },
+        {
+          "id": "E4",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "會員轉購教練課與附加服務可能是重要營收動能；主持人亦經群友協助，理解直接提供服務的人力及租金可列營業成本。",
+          "condition": "既有會員增加附加服務消費，並正確解讀服務業成本結構",
+          "limitation": "未提供轉換率與增量利潤；底薪、教練費及其他員工薪資的細部分類仍含主持人推估，未核對財報附註。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "主持人引用董監事及關係人持股約半，將公司派大量持股視為與股東同船的參考；也明言公司派持股少的股票仍可能上漲。",
+          "condition": "評估公司派實際投入及利益一致性",
+          "limitation": "持股比例未外部核對；不能單憑持股多推論治理良好、財務安全或未來報酬。後三項為研究限制，非主持人逐字結論。"
+        },
+        {
+          "id": "E6",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "太空題材可用早期創投角度看待，但樣機不等於量產、商用或獲利；主持人建議僅小額投入，並表示未研究提問標的。",
+          "condition": "尚在早期、主要依賴未來願景的公司",
+          "limitation": "主持人另以十幾元股價解釋下檔有限；研究者不能據此推論虧損比例較低，投入本金仍可能全損。"
+        },
+        {
+          "id": "E7",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "社交與討論區可擴大研究來源，不應只因混有雜訊便排除；資訊價值取決於篩選使用，網站報價也可能顯示錯誤。",
+          "condition": "辨識專業內容、錯誤資訊與單純目標價喊話；題材仍須有實際啟動因素與規模",
+          "limitation": "人脈較多不等於來源獨立或正確；社交改善績效僅是主持人自述。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 5,
+          "relationship": "supports",
+          "claim_id": "E1",
+          "reason": "取消分批後承受財報跳空，不能只留下後來解套的結果。"
+        },
+        {
+          "card_id": 1,
+          "relationship": "extends",
+          "claim_id": "E3",
+          "reason": "企業先熬過停業，才有機會分享供給退出後的復甦紅利。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E4",
+          "reason": "會員轉購可提高營收，但轉成利潤仍須分析服務成本；後者是研究待查項。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "limits",
+          "claim_id": "E6",
+          "reason": "小額投入才限制整體資產曝險，低名目股價不等於低虧損比例。"
+        },
+        {
+          "card_id": 8,
+          "relationship": "extends",
+          "claim_id": "E7",
+          "reason": "補充來源本身可能報價錯誤；來源獨立性仍是未解的研究缺口。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 156,
       "date": "2021-07-10",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP156",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "pending"
+      "summary": "主持人提醒本金不足者盤點訂閱支出，並以是否理解操作、勝率與期望值，而非單看持有期間或基本面，區分投資與投機。節目偏向市值型ETF，源於新手聽眾增加，以及追求超額報酬的時間與家庭成本。衍生品可用於套利、避險或槓桿交易，但小額散戶宜先考慮減碼；期貨即使長期看對，也可能因保證金不足提前出場甚至負債。選擇權買方單筆損失有限，重押、反覆歸零與昂貴權利金仍會傷害本金；備兌買權則犧牲上漲收益。Q&A涵蓋參考主動ETF自行換股、富途產品好評與中概股集體估值修正，以及因子策略逆風持有和績效期間挑選問題。以上為本集說法，非外部驗證結論。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。上架時間依官方RSS為2021-07-10 16:39:34（台北）；索引日期衝突不採用，錄音時間未知。；audio_unverified：未核對原音，也未外部驗證行情、公司公告或交易；台積電600元、乘270及槓桿倍數是本集示例，非通用或現行保證金規則。；主持人稱現股買進、期貨賣空套利可無風險，且自述未做；未提供價差方向數據、成本或成交條件，不能確認可執行性。；選擇權損益、到期履約及深度價內安全性的說明有簡化；因子ETF產品歸屬與第三方交易轉述均待核。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "投資起步先累積本金並盤點訂閱支出；主持人也不以長短期或基本面、技術面劃分投資與投機，而重視是否知道自己在做什麼，以及勝率、期望值與賭的成分。",
+          "condition": "本金形成及判斷交易方法性質時",
+          "limitation": "這是主持人的個人定義，未提供勝率或期望值門檻；訂閱盤點尤其針對本金不足者，不是要求取消所有付費內容。"
+        },
+        {
+          "id": "E2",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "小額散戶避險宜優先減碼；不願或不能出售大量現股者，有較明確的衍生品對沖需求，且壞事未發生仍須承擔避險成本。",
+          "condition": "比較可直接減碼的小部位與出售受限的大部位",
+          "limitation": "對沖不是免費保護；本集未量化避險比例、基差與執行成本。"
+        },
+        {
+          "id": "E3",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "期貨與融資的保證金緩衝影響能否撐過途中下跌；增放保證金可降低資金槓桿，長期看對不保證能持有到最後。",
+          "condition": "使用槓桿且行情先逆向波動",
+          "limitation": "研究限制：補保證金不代表同一口數的價格曝險減少或保證免於清算；主持人另提醒期貨可能虧超保證金而負債。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "選擇權須合看部位、權利金與報酬結構：買方單筆損失有限不等於整體安全；熱度高時成本昂貴，達履約價未必回本；covered call收取權利金也會犧牲大漲收益。",
+          "condition": "反覆買進選擇權、追逐高波動標的或以現股賣出買權",
+          "limitation": "10%、20%是示例而非自述部位；本集混述到期損益與到期前轉售條件，賣方風險也須區分是否備兌。"
+        },
+        {
+          "id": "E5",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "回應聽眾能否從ETF挑股，主持人自述一直會參考主動型ETF持股，再替換成自己的組合，以擴大產業認知。",
+          "condition": "將主動ETF選股當研究線索而非整套照抄",
+          "limitation": "未提供替換標準、實際持股或績效；不能據此確認自行組合的風控與報酬。"
+        },
+        {
+          "id": "E6",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "對聽眾富途是否錯殺的問題，主持人認為中概股正因中國政策疑慮遭集體本益比修正，終點未知；他喜歡其看盤產品，但未確認股票便宜或遭錯殺。",
+          "condition": "本集所述中概股族群同步下殺情境",
+          "limitation": "沒有估值或營運數據支持錯殺判定；聽眾稱部位30%，分母未明，主持人未給加減碼指示，並稱自己僅用其看盤。"
+        },
+        {
+          "id": "E7",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "因子ETF未必更低風險或更容易持有，逆風期考驗耐受度；比較策略績效須注意採樣期間可能被挑選成有利於推薦者的結果。",
+          "condition": "評估因子策略、門派宣傳與跨期間績效比較",
+          "limitation": "主持人未讀聽眾指定書籍，也未提供實證比較，不能據此判定因子投資沒有超額報酬。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 1,
+          "relationship": "extends",
+          "claim_id": "E3",
+          "reason": "終點方向正確仍可能因途中維持率不足先被清算。"
+        },
+        {
+          "card_id": 5,
+          "relationship": "extends",
+          "claim_id": "E4",
+          "reason": "風險預算須考慮反覆權利金損失，不能只看單筆上限。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "supports",
+          "claim_id": "E6",
+          "reason": "產品好評與估值修正疑慮並存，不能直接推成買進判斷。"
+        },
+        {
+          "card_id": 10,
+          "relationship": "extends",
+          "claim_id": "E2",
+          "reason": "部位大小及出售限制不同，適合的避險方式也不同。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 157,
@@ -14980,7 +15871,7 @@
       "relevance": null,
       "key_points": [],
       "card_links": [],
-      "processing_status": "pending"
+      "processing_status": "in_progress"
     },
     {
       "episode": 158,
@@ -15002,30 +15893,200 @@
       "date": "2021-07-21",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP159",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "pending"
+      "summary": "主持人因櫃買量能提高警覺，但先轉弱的是美股與台股加權。他自述以期貨空單暫時對沖大量現股，隔日未見擔心的重挫便平倉，付出幾十萬元成本，再減持走弱現股，並非持續押注崩盤。他提醒指數小跌仍可能伴隨個股重傷，別人減碼不代表自己應跟隨；指數投資者可續行原定投入，主動投資做不好也可考慮節省時間賺取市場Beta。Q&A區分碳中和長期趨勢與短線題材，要求檢查營收占比；十年線買大盤須考慮條件及日本式反例。近兩年消息見報後仍續漲，可能與供需、資金及社群參與有關，但未判定永久改變。他也區分投資教學產業可能賺錢與無牌投入的監管風險；EPS問答數字則未釐清。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。上架時間採官方RSS：2021-07-21T14:59:23+08:00；不採衝突的index_date。原稿自稱週三下午錄音，但確切錄音日期未驗證。；audio_unverified：未核對原音，亦未外部驗證行情、公告或交易；回撤數字未明示指數分母，歷史全勝、外資資料及環球晶價格敘述均未獲證實。；EPS問答中提問的4105元與回答的400多不一致，主持人亦稱未研究該公司，不能視為已釐清數值。；投資教學訂閱的法律界線及獲利能力是主持人概括判斷，未附法規或財務證據；各claim的研究限制不應視為主持人原話。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "因現股部位多而建立數口期貨空單，隔日盤勢未如擔心般惡化即清掉，成本幾十萬元；目的為暫時避險而非賺放空報酬。",
+          "condition": "美股重挫且台股夜盤跟跌；持股預期與指數有一定連動。",
+          "limitation": "未提供契約、口數明細與避險比率；指數反彈而個股下跌可能雙輸，不能據自述認定實際保護效果。"
+        },
+        {
+          "id": "E2",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "週二、週三調整現股，優先減持走弱標的；部分持股已超過自身基本面估值，但未因達到目標價便一律賣出，也未全數空手。",
+          "condition": "已有減碼需求，且部分事件型持股的利多未必能延續至明年。",
+          "limitation": "減碼可能錯過深V反彈；亦包含停損，不能概括為全數獲利了結，且無明確減碼比例。"
+        },
+        {
+          "id": "E3",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "外資期貨空單不能單獨解讀為看空，可能搭配現貨多單中和曝險、另有匯率目的；即使現貨與期貨同步偏空，也不保證崩盤。",
+          "condition": "解讀外資現貨、期貨及匯率交易時。",
+          "limitation": "匯率動機及壓低結算皆非已確認意圖；本集未提供部位資料或不同交易主體的對應。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "碳中和長期方向可看好，但短期漲勢可能只是題材交易；台股相關標的須查業務純度、營收占比與實際挹注。",
+          "condition": "以再生能源或碳中和題材選股，尤其台股。",
+          "limitation": "沒有提出個別公司數據；供應鏈採購要求不等於相關概念股基本面迅速改善。"
+        },
+        {
+          "id": "E5",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "認為台股接近十年平均線時買大盤可能有高勝率，前提是公司仍賺錢、困難屬可跨越；同時承認可能出現日本式長期不利情境。",
+          "condition": "不是永久性破壞，且判斷眼前困難可在數年後消退。",
+          "limitation": "「全勝」及國安基金進場說法未附樣本、持有期間或制度依據，不是保證；他也未直接認可跌破月線便重押。"
+        },
+        {
+          "id": "E6",
+          "kind": "uncertain",
+          "actor": "host",
+          "statement": "觀察近兩年消息普及後仍可能大漲，推測供需失衡、寬鬆資金、居家炒股與社群後手資金延長魚尾；尚不確定是特例或市場質變。",
+          "condition": "討論聽眾回測發現持續抱股優於提早賣出的結果。",
+          "limitation": "可能機制未經因果驗證，不能把這兩年持有較佳外推為永遠適用，也不能據此鼓勵追新聞。"
+        },
+        {
+          "id": "E7",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "以對帳單檢查實際交易是否符合自稱策略，辨識過度交易或逆勢攤平；回測發現持有較佳可漸進試行，但要承認樣本可能特殊。",
+          "condition": "檢討自己的交易紀錄並調整方法。",
+          "limitation": "沒有給定回測設計、成本處理或樣本外驗證方式；短樣本改善不代表策略穩健。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 5,
+          "relationship": "extends",
+          "claim_id": "E1",
+          "reason": "風險預算還須容納短期避險成本與現貨、指數不匹配的風險。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "extends",
+          "claim_id": "E2",
+          "reason": "超過自身估值後仍可能保留強勢部位，呈現估值與實際退出規則不必同步。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "supports",
+          "claim_id": "E4",
+          "reason": "把宏觀綠能需求落到營收純度及實際業績挹注，而非僅憑概念名稱。"
+        },
+        {
+          "card_id": 8,
+          "relationship": "limits",
+          "claim_id": "E6",
+          "reason": "資訊較晚不必然代表行情結束；新增後手資金可能改變消息傳播後的價格路徑。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 160,
       "date": "2021-07-24",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP160",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "pending"
+      "summary": "主持人判斷鄭州水災對蘋果供應鏈影響有限，前提是物流恢復且不再強降雨。廣告平台財報令他懷疑隱私限制衝擊被高估，但系統更新可能遞延影響，仍須觀察。中國教育股跌幅超出預期；價值浮現與ETF分散都不能排除共同政策風險。他已以香港小部位試驗企業回流上市假說，結果未明。交易上，買盤與大量成交未必是長線承接，高波動下買選擇權也可能方向正確仍虧損。Q&A強調量化篩選後辨別一次性收益，並將情緒好惡與投資機會分開；雲端遊戲則可能把硬體購買轉為訂閱，運算需求仍留在雲端。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。audio_unverified：僅覆核所供全文，未核原音，也未外部驗證行情、公告、消息來源或交易。；上架時間依官方RSS為2021-07-24 15:24（臺北）；索引日期衝突不採用，錄音時間未知。；Twitter總營收與廣告營收數字在原稿內不一致；FDI成長不足以直接證明證券資金流入中國股市，匯率方向措辭亦不清。；片尾穿越式all in與轉倉屬玩笑；聽眾分批後獲利改善不是主持人績效或策略效果的驗證。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人引述消息稱鄭州水災當月約影響300萬台iPhone出貨，但今年拉貨較晚、下月物流預期恢復，整體衝擊應有限。",
+          "condition": "未再強降雨，物流依預期恢復",
+          "limitation": "數量、停工及復原狀況未獨立驗證；不可將當月影響解讀成全年永久損失。"
+        },
+        {
+          "id": "E2",
+          "kind": "uncertain",
+          "actor": "host",
+          "statement": "Twitter與Snap表現令主持人懷疑隱私衝擊被高估，但系統更新可能遞延衝擊，他也不信服Snap高同意率的說法，仍保守觀察。",
+          "condition": "後續用戶更新系統並面對追蹤授權選擇",
+          "limitation": "公司說法與股價上漲未證明風險消失；主持人未表示因此買進。"
+        },
+        {
+          "id": "E3",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "中概股價值浮現仍須考量政策改變企業存續與募資條件；教育股跌幅超出主持人預期，ETF也未隔絕下跌。他已以小部位布局香港，試驗企業回流上市假說。",
+          "condition": "政策可直接改變經營、上市與募資資格",
+          "limitation": "企業結算是風險情境；香港部位標的、分母與績效未明，回流假說尚待驗證。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "暴跌買單可能是空單回補，成交量可能由當沖或程式交易產生，不能直接視為價值投資者承接或續抱理由。",
+          "condition": "急跌、高波動、持續創低標的",
+          "limitation": "未辨識實際交易者；主持人承認也可能確有買盤並暴力反彈。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "暴跌後高隱含波動率推高權利金，買call或put即使方向正確仍可能因波動率回落虧損；主持人也因賣方可能遭毀滅性損失而不建議聽眾考慮。",
+          "condition": "進場權利金高，後續隱含波動率回落",
+          "limitation": "研究提醒：高IV不自動等於錯價；原稿未提供履約價、期限或完整策略，不能量化損益。"
+        },
+        {
+          "id": "E6",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "選股Q&A主張量化篩選後仍須質化研究，辨別產業與一次性業外收益；另一段Q&A提醒把情緒、貶低標的的定見與投資判斷分開，避免錯失便宜標的中的機會。",
+          "condition": "篩選候選股票，或評估下跌、被市場貶低的標的",
+          "limitation": "篩選合格或跌得便宜都不是買進結論；本集沒有提供篩選門檻，也未撤回中概股政策警告。"
+        },
+        {
+          "id": "E7",
+          "kind": "forecast",
+          "actor": "host",
+          "statement": "主持人由雲端遊戲體驗推測，玩家可能減少自購高階顯卡、改付訂閱費，但雲端仍需顯卡；他更重視NVIDIA資料中心與自駕車動能。",
+          "condition": "網路與雲端服務提供足夠流暢、即時的體驗",
+          "limitation": "個人體驗不是普遍品質證明；研究提醒：需求轉移不保證總銷量、利潤或股東報酬增加。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 6,
+          "relationship": "extends",
+          "claim_id": "E2",
+          "reason": "新財報促使重估假說，但遞延影響使反證尚不完整。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "extends",
+          "claim_id": "E3",
+          "reason": "價值浮現仍不代表適合買進，須考慮政策對企業存續的影響。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "extends",
+          "claim_id": "E5",
+          "reason": "方向正確仍須考慮權利金價格，有限損失不等於划算。"
+        },
+        {
+          "card_id": 3,
+          "relationship": "supports",
+          "claim_id": "E6",
+          "reason": "篩選出的成長須拆解業內與一次性收益，不能直接當成持續營運改善。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E7",
+          "reason": "雲端遊戲改變硬體採購者與收入模式；利潤及股東收益仍須另查。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 161,
@@ -15040,7 +16101,7 @@
       "relevance": null,
       "key_points": [],
       "card_links": [],
-      "processing_status": "pending"
+      "processing_status": "in_progress"
     },
     {
       "episode": 162,
@@ -33021,6 +34082,297 @@
         }
       ],
       "accepted_at_utc": "2026-09-06T20:41:14.060423+00:00",
+      "coverage_limits": "Up to six explicit/lexical queries and two outside targets; omitted or unmatched dependencies remain possible."
+    },
+    {
+      "id": "G020",
+      "members": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140
+      ],
+      "missing_members": [],
+      "method": "accepted notes + bounded original windows; not six full transcripts jointly reread",
+      "summary": "主持人從可能轉積極，到電子股未轉強而重新觀望；伺服器則由資金回流假說，進展為分散持有自述，再提醒族群看對不等於個股受惠。急跌期間的去槓桿與週期辨識，延續風險管理而非證明預測成功。超額下單原始依據、航運提醒與道歉、velo.tw前集預測均缺關鍵窗口；不能以後集回顧補成前集證據。未核原音、行情或交易。",
+      "timeline": [
+        {
+          "episode": 135,
+          "development": "主持人因信賴朋友的說法，考慮從保守稍轉積極；這是意向，不是加碼紀錄。同時回顧股匯雙殺僅短暫出現。",
+          "evidence": [
+            {
+              "episode": 135,
+              "start_line": 85,
+              "end_line": 85,
+              "source_sha256": "8e922538fd076da3b5f877521bc4ce451b74df3ba069887ff47eb58ce366ebf7"
+            }
+          ]
+        },
+        {
+          "episode": 136,
+          "development": "將朋友的超額下單時點轉述為Q4以後；伺服器資金回流仍是假說，明確容許短炒後回落的反例。",
+          "evidence": [
+            {
+              "episode": 136,
+              "start_line": 108,
+              "end_line": 108,
+              "source_sha256": "b5ba09fa9227e2b6a08bae1fd765bd94969ca1f0ca386c9181ec235a16fe20ad"
+            }
+          ]
+        },
+        {
+          "episode": 137,
+          "development": "區分自己猜Q2至Q3與朋友猜Q4以後，要求當成不同劇本。科技股未如期待轉強，仍在加、減、不動之間觀望。",
+          "evidence": [
+            {
+              "episode": 137,
+              "start_line": 157,
+              "end_line": 157,
+              "source_sha256": "7952db4f1677b8cd18d3ca5f18da170ea6ddc2f1f844a1de98bad8333a0acbb6"
+            }
+          ]
+        },
+        {
+          "episode": 138,
+          "development": "自述分散持有伺服器，但最大部位表現落後；另因不滿Teladoc財報大幅減碼，仍留少量，不能當成電子股全面調整。",
+          "evidence": [
+            {
+              "episode": 138,
+              "start_line": 49,
+              "end_line": 49,
+              "source_sha256": "b7f0e61d99619fa86efbf9bf6d42b92890e3f0e307b356f00f2db522e492c283"
+            },
+            {
+              "episode": 138,
+              "start_line": 85,
+              "end_line": 85,
+              "source_sha256": "b7f0e61d99619fa86efbf9bf6d42b92890e3f0e307b356f00f2db522e492c283"
+            }
+          ]
+        },
+        {
+          "episode": 139,
+          "development": "急跌中把去槓桿定位為保本金而非預測；回顧航運提醒曾避跌卻錯過再漲，並自稱曾道歉，原始提醒與道歉仍待查。",
+          "evidence": [
+            {
+              "episode": 139,
+              "start_line": 45,
+              "end_line": 45,
+              "source_sha256": "db532504e30146a3303533d4abaf70f2efc23f28fea1099f3761959d53355662"
+            },
+            {
+              "episode": 139,
+              "start_line": 113,
+              "end_line": 113,
+              "source_sha256": "db532504e30146a3303533d4abaf70f2efc23f28fea1099f3761959d53355662"
+            }
+          ]
+        },
+        {
+          "episode": 140,
+          "development": "要求先用對帳單辨識交易週期，再按長短線處理衝擊；仍看多伺服器等題材，但強調受惠公司與保守指引。",
+          "evidence": [
+            {
+              "episode": 140,
+              "start_line": 61,
+              "end_line": 61,
+              "source_sha256": "e50c60633b007d4cd2557137ffb8b32066cc1e7063103f1d5a5dad1520b8600d"
+            },
+            {
+              "episode": 140,
+              "start_line": 125,
+              "end_line": 125,
+              "source_sha256": "e50c60633b007d4cd2557137ffb8b32066cc1e7063103f1d5a5dad1520b8600d"
+            }
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "from_episode": 135,
+          "to_episode": 137,
+          "relation": "continuation",
+          "finding": "135的可能轉積極，到137變成對科技股加減碼重新觀望，呈現意向受價格表現影響的再評估；不是已完成交易後的反向操作。",
+          "limitations": "135窗口未完整呈現朋友論據與標的範圍；兩集均不足以確認實際加減碼，不能定性為明確改口。",
+          "evidence": [
+            {
+              "episode": 135,
+              "start_line": 85,
+              "end_line": 85,
+              "source_sha256": "8e922538fd076da3b5f877521bc4ce451b74df3ba069887ff47eb58ce366ebf7"
+            },
+            {
+              "episode": 137,
+              "start_line": 157,
+              "end_line": 157,
+              "source_sha256": "7952db4f1677b8cd18d3ca5f18da170ea6ddc2f1f844a1de98bad8333a0acbb6"
+            }
+          ]
+        },
+        {
+          "from_episode": 136,
+          "to_episode": 137,
+          "relation": "continuation",
+          "finding": "兩集均把Q4以後歸屬朋友；137另並列主持人自己的Q2至Q3猜測，強調劇本而非唯一預言。這不是朋友與主持人互相改口。",
+          "limitations": "只能確認兩集當下的歸屬與說法，不能據此證明主持人更早已提出Q2至Q3，也無法驗證時點。",
+          "evidence": [
+            {
+              "episode": 136,
+              "start_line": 76,
+              "end_line": 76,
+              "source_sha256": "b5ba09fa9227e2b6a08bae1fd765bd94969ca1f0ca386c9181ec235a16fe20ad"
+            },
+            {
+              "episode": 137,
+              "start_line": 151,
+              "end_line": 151,
+              "source_sha256": "7952db4f1677b8cd18d3ca5f18da170ea6ddc2f1f844a1de98bad8333a0acbb6"
+            }
+          ]
+        },
+        {
+          "from_episode": 136,
+          "to_episode": 138,
+          "relation": "continuation",
+          "finding": "136以可能被反證的資金回流假說看伺服器；138提供該族群分散持有及個股表現差異的操作自述，補上族群判斷到權重配置的一層。",
+          "limitations": "不能推定買入发生於兩集之間，亦無成本、權重與完整報酬，不能宣告假說已驗證。",
+          "evidence": [
+            {
+              "episode": 136,
+              "start_line": 108,
+              "end_line": 108,
+              "source_sha256": "b5ba09fa9227e2b6a08bae1fd765bd94969ca1f0ca386c9181ec235a16fe20ad"
+            },
+            {
+              "episode": 138,
+              "start_line": 49,
+              "end_line": 49,
+              "source_sha256": "b7f0e61d99619fa86efbf9bf6d42b92890e3f0e307b356f00f2db522e492c283"
+            }
+          ]
+        },
+        {
+          "from_episode": 138,
+          "to_episode": 140,
+          "relation": "continuation",
+          "finding": "138以伺服器最大部位落後說明族群與個股選擇不同；140仍看多題材，進一步要求辨識真正受惠者並聽取保守指引，並非取消族群看多。",
+          "limitations": "未披露是否調整原伺服器持股；題材、公司營運受惠與股價報酬不能互相代替。",
+          "evidence": [
+            {
+              "episode": 138,
+              "start_line": 49,
+              "end_line": 49,
+              "source_sha256": "b7f0e61d99619fa86efbf9bf6d42b92890e3f0e307b356f00f2db522e492c283"
+            },
+            {
+              "episode": 140,
+              "start_line": 125,
+              "end_line": 125,
+              "source_sha256": "e50c60633b007d4cd2557137ffb8b32066cc1e7063103f1d5a5dad1520b8600d"
+            }
+          ]
+        },
+        {
+          "from_episode": 136,
+          "to_episode": 139,
+          "relation": "continuation",
+          "finding": "136事前警告重押槓桿可能使修正變成補錢壓力；139急跌時說明去槓桿不是預測下跌，延續先保留承受力的原則。",
+          "limitations": "139提及的前一天貼文未提供；不能據此認定主持人已去槓桿或預判此次急跌。",
+          "evidence": [
+            {
+              "episode": 136,
+              "start_line": 49,
+              "end_line": 49,
+              "source_sha256": "b5ba09fa9227e2b6a08bae1fd765bd94969ca1f0ca386c9181ec235a16fe20ad"
+            },
+            {
+              "episode": 139,
+              "start_line": 45,
+              "end_line": 45,
+              "source_sha256": "db532504e30146a3303533d4abaf70f2efc23f28fea1099f3761959d53355662"
+            }
+          ]
+        }
+      ],
+      "takeaways": [
+        {
+          "insight": "把意向、觀望與具名減碼分開，才不會誤寫成主持人先全面加碼、再全面撤退。",
+          "limitation": "缺完整持倉與交易日期；Teladoc减碼不代表所有科技股。",
+          "evidence": [
+            {
+              "episode": 135,
+              "start_line": 85,
+              "end_line": 85,
+              "source_sha256": "8e922538fd076da3b5f877521bc4ce451b74df3ba069887ff47eb58ce366ebf7"
+            },
+            {
+              "episode": 138,
+              "start_line": 85,
+              "end_line": 85,
+              "source_sha256": "b7f0e61d99619fa86efbf9bf6d42b92890e3f0e307b356f00f2db522e492c283"
+            }
+          ]
+        },
+        {
+          "insight": "跨集能看出風險規則先於急跌存在；去槓桿的價值不需建立在成功預測崩盤上。",
+          "limitation": "這是原則延續，不是已執行或已保住本金的證據。",
+          "evidence": [
+            {
+              "episode": 136,
+              "start_line": 49,
+              "end_line": 49,
+              "source_sha256": "b5ba09fa9227e2b6a08bae1fd765bd94969ca1f0ca386c9181ec235a16fe20ad"
+            },
+            {
+              "episode": 139,
+              "start_line": 45,
+              "end_line": 45,
+              "source_sha256": "db532504e30146a3303533d4abaf70f2efc23f28fea1099f3761959d53355662"
+            }
+          ]
+        }
+      ],
+      "open_dependencies": [
+        {
+          "episode": 135,
+          "target_episode": null,
+          "question": "先前房貸分享的付款期限、備用資金與核貸安排為何？",
+          "reason_unresolved": "窗口只有本集回述卡關與多問銀行，未提供先前分享及可定位集號。"
+        },
+        {
+          "episode": 135,
+          "target_episode": null,
+          "question": "原警告的觸發條件、時間尺度與失效標準為何？",
+          "reason_unresolved": "135與137皆為事後回述；没有原始警告窗口，不能以後來的解釋重建原預測。"
+        },
+        {
+          "episode": 136,
+          "target_episode": 135,
+          "question": "朋友所指產業、重複下單判定及延至Q4的依據為何？",
+          "reason_unresolved": "135是輸入的唯一上一集候選，但其窗口只留下聽朋友說法後可能轉積極，缺少超額下單與時點的完整原文，無法解答論據。"
+        },
+        {
+          "episode": 137,
+          "target_episode": null,
+          "question": "主持人最早提出Q2至Q3的訊號、產業範圍及失效條件為何？",
+          "reason_unresolved": "136只支持朋友的Q4說法；135相關論據窗口缺漏。137自稱曾說過，不足以證明原始假說內容。"
+        },
+        {
+          "episode": 139,
+          "target_episode": null,
+          "question": "原航運反轉提醒的條件、時點，以及後續道歉如何修正原說法？",
+          "reason_unresolved": "只有139的回顧，缺原提醒與道歉窗口，不能確認集號、原預測或當時適用期限。"
+        },
+        {
+          "episode": 140,
+          "target_episode": 139,
+          "question": "139如何定義數據、來源及創高條件，140所稱創高採何種比較口徑？",
+          "reason_unresolved": "139是輸入的唯一上一集候選，但提供窗口沒有該預測；140也未給數值與比較期間。不能用筆記或140自述替代前集證據。"
+        }
+      ],
+      "accepted_at_utc": "2026-09-06T20:48:15.399299+00:00",
       "coverage_limits": "Up to six explicit/lexical queries and two outside targets; omitted or unmatched dependencies remain possible."
     }
   ],
