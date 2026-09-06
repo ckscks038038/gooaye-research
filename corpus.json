@@ -1,33 +1,29 @@
 {
-  "updated_at_utc": "2026-09-06T08:15:17.002909+00:00",
+  "updated_at_utc": "2026-09-06T08:15:41.598966+00:00",
   "scope": "Pinned RSS-aligned corpus. Completed notes include explicitly labelled lead-assistant and two-subagent methods.",
   "counts": {
     "total": 693,
     "downloaded": 693,
-    "read": 101,
-    "structured_summaries": 101,
+    "read": 102,
+    "structured_summaries": 102,
     "lead_reviewed": 14,
-    "subagent_reviewed": 87,
+    "subagent_reviewed": 88,
     "partial_validation": 8,
-    "pending_read": 592,
+    "pending_read": 591,
     "needs_attention": 1
   },
   "workflow": {
-    "status": "draining",
+    "status": "paused_stop_runtime_or_quality",
     "phase": "grouped_episode_review",
-    "heartbeat_utc": "2026-09-06T08:15:16.871973+00:00",
+    "heartbeat_utc": "2026-09-06T08:15:41.468338+00:00",
     "workers": 4,
-    "active_episodes": [
-      70
-    ],
+    "active_episodes": [],
     "scheduler": "chronological_groups",
     "group_size": 6,
     "parallel_groups": 4,
     "total_groups": 108,
     "groups_completed": 4,
-    "active_groups": [
-      "G009"
-    ],
+    "active_groups": [],
     "note": "Status at export time, not a live process guarantee. Subagent review is not external fact verification."
   },
   "episodes": [
@@ -6793,15 +6789,103 @@
       "date": "2020-09-12",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP70",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "in_progress"
+      "summary": "主持人以美台IPO熱潮提醒：明星公司也會劇烈震盪，看好不代表任何買價都合理，應分批、避免一次重押；抽籤價差須等股票到手並賣出才算實現。他提醒確認上市資產包含哪些獲利來源，不能照搬集團品牌或早年獲利。談Nikola時，他偏信做空報告，但承認影片車輛是否完全無動力仍不確定；另質疑氫能源效率及商業化障礙，推測若Nikola下跌，相關概念股也可能受累。投資Q&A涵蓋小額定期投入指數ETF、散戶量化難度、依自身條件選策略，以及仍在研究的日股機會。最後自述不預測高點，而在明顯修正、已有獲利回吐後才調整，不宜混為固定目標價策略。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。audio_unverified：官方RSS為2020-09-12 15:11:10（臺北）；主持人自述9月12日12:50，非獨立確認的錄音時間。未驗證原音、行情、公司公告或交易。；Nikola相關指控、GM合作條件及氫能源效率數字均未外部核實。主持人承認非能源專業，未斷言氫能源必然不可行；概念股受累只是條件式推測，不可倒填後續結果。；日股段落只是初步研究及可能透過美國ETF參與的想法，非已買進；巴菲特持股比例原文含糊。；量化Q&A同時提及文藝復興基金的成功與散戶實作困難；未交代回測方法、成本或樣本外結果，不能據此判定策略有效或無效。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "IPO即使是熱門好公司也可能大幅震盪，應分批、避免一次重押；BigCommerce急漲後回落是追高風險案例。",
+          "condition": "參與新上市、高波動股票時",
+          "limitation": "分批不保證獲利；所述價格未核實，主持人也承認回落與那斯達克修正有關。"
+        },
+        {
+          "id": "E2",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "公司品質與投資報酬須分開；好公司買太貴仍是爛投資，低品質公司低估買入也可能有短線報酬。",
+          "condition": "評估買進成本與預期報酬時",
+          "limitation": "未提供合理價格計算；低估不代表必然修復，主持人亦指出好公司可能不受市場青睞。"
+        },
+        {
+          "id": "E3",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人稱汎德永業將代理與經銷拆分，只上市經銷部分，提醒確認實際買到的獲利來源，並質疑拿早年高獲利宣傳近期前景。",
+          "condition": "以集團品牌、歷史獲利評估上市標的時",
+          "limitation": "業務邊界與獲利數字未核實；販賣機案例前稱仁寶、後稱研華，指涉不一致。不能推論所有上市公司都留下較差資產。"
+        },
+        {
+          "id": "E4",
+          "kind": "uncertain",
+          "actor": "host",
+          "statement": "主持人認為Nikola影片疑點及做空報告值得重視，但未確定車輛是純滑行或仍有動力；名人與媒體轉傳不能替代技術驗證。",
+          "condition": "評估Nikola展示影片與外界背書的可信度時",
+          "limitation": "坡道測試、內部說法及其他指控均為轉述；主持人的調查自述不是本研究外部驗證，不能據此認定詐欺。"
+        },
+        {
+          "id": "E5",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "對剛有固定小額餘裕的聽眾，主持人建議先選主動或被動路線；多數人難勝大盤，可定期定額指數ETF。他改推VTI但認為無須為此賣VOO換股。",
+          "condition": "有定期可投入資金、選擇被動投資者",
+          "limitation": "未說明改推原因、現金緩衝或市場差異；『穩贏』是主持人口語斷言，不是可保證的相對績效或本金安全。"
+        },
+        {
+          "id": "E6",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "風險平價與研究加碼沒有通用優劣；主持人認為資產規模、收入及風格影響選擇，提出分兩筆資金試行的建議。",
+          "condition": "在風險平價與主動研究加碼之間選策略時",
+          "limitation": "以下為研究者限制：短期試行不能證明長期能力，資金少不等於適合高風險；原文未訂試行期間或損失上限。"
+        },
+        {
+          "id": "E7",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "主持人自述已由早期頻繁波段交易轉向中長期；不猜高點，待像樣修正、獲利已回吐才調整，並稱近期台美股修正已如此處理。",
+          "condition": "持有看好的標的，出現明顯修正時",
+          "limitation": "須承受回吐且未量化觸發門檻；前段曾舉到價減碼、再加碼為可行選項，不宜當成其最終自述規則。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 5,
+          "relationship": "supports",
+          "claim_id": "E1",
+          "reason": "分批對應IPO高波動及追高反例，並非只看幸運低點重押的成功。"
+        },
+        {
+          "card_id": 2,
+          "relationship": "supports",
+          "claim_id": "E2",
+          "reason": "直接限制看好即可買，但仍欠缺估值與部位尺度。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "extends",
+          "claim_id": "E3",
+          "reason": "須確認集團利潤是否歸屬上市股東，不能直接套用整個品牌價值。"
+        },
+        {
+          "card_id": 8,
+          "relationship": "supports",
+          "claim_id": "E4",
+          "reason": "影片經媒體及權勢人物接力背書，可能只是同一來源放大，而非獨立證據。"
+        },
+        {
+          "card_id": 10,
+          "relationship": "supports",
+          "claim_id": "E6",
+          "reason": "策略選擇受資產與收入條件影響，主持人偏好不配債不能直接移植。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 71,
