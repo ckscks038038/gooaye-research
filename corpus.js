@@ -19,10 +19,48 @@
     const data = await response.json();
     if (!Array.isArray(data.episodes)) throw new Error('Invalid progress');
     const workflow = data.workflow || {};
-    const labels = { running: '執行中', starting: '啟動中', draining: '停止接新任務，等待目前工作結束', completed: '本輪流程完成', completed_with_gaps: '本輪結束，仍有待處理項目', pilot_completed: '試跑通過', pilot_completed_with_gaps: '試跑有待處理項目', idle_no_pending_in_scope: '本次範圍沒有待執行項目', stopped_or_unconfirmed: '程序已停止或狀態未確認', crashed: '程序異常停止', not_started: '尚未啟動' };
+    const labels = { running: '執行中', starting: '啟動中', draining: '停止接新任務，等待目前工作結束', completed: '本輪流程完成', completed_with_gaps: '本輪結束，仍有待處理項目', completed_with_unresolved_dependencies: '本輪結束，仍有未解跨集指涉', group_pilot_completed: '分組試跑結束', pilot_completed: '試跑通過', pilot_completed_with_gaps: '試跑有待處理項目', idle_no_pending_in_scope: '本次範圍沒有待執行項目', stopped_or_unconfirmed: '程序已停止或狀態未確認', crashed: '程序異常停止', not_started: '尚未啟動' };
     const label = labels[workflow.status] || (workflow.status?.startsWith('paused_') ? '已暫停，需檢查額度、時限或待處理問題' : '狀態待確認');
-    const phase = workflow.phase === 'cross_episode_synthesis' ? '跨集歸納' : workflow.phase === 'finished' ? '流程收尾' : '逐集讀稿／覆核';
+    const phase = workflow.phase === 'cross_episode_synthesis' ? '跨集歸納' : workflow.phase === 'cross_group_full_pair_check' ? '跨組雙集全文回查' : workflow.phase === 'finished' ? '流程收尾' : workflow.phase === 'grouped_episode_review' ? `分組讀稿／原文對照 · ${workflow.parallel_groups} 組並行 · ${workflow.groups_completed}/${workflow.total_groups} 組完成` : '逐集讀稿／覆核';
     document.getElementById('workflow-status').textContent = `${label} · ${phase} · 雙子agent已完成 ${data.counts.subagent_reviewed || 0} 集。資料更新：${new Date(data.updated_at_utc).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' })}（台灣時間）。`;
+    const groupTarget = document.getElementById('group-list');
+    const relations = { continuation: '延續', revision: '調整', contradiction: '矛盾候選', retrospective_claim: '事後回顧', uncertain: '關係待釐清' };
+    function connectionBody(c, body) {
+      body.append(element('p', `EP${c.from_episode} → EP${c.to_episode} · ${relations[c.relation] || c.relation}：${c.finding}`));
+      body.append(element('p', `限制：${c.limitations}`, 'episode-caution'));
+      const refs = element('p', '原稿快照定位：', 'refs');
+      for (const r of c.evidence || []) {
+        const a = element('a', ` EP${r.episode} L${r.start_line}–${r.end_line} `);
+        a.href = `https://whatmkreallysaid.com/episode.html?file=EP${Number(r.episode)}`;
+        a.title = `SHA256 ${r.source_sha256}；來源網站排版可能不同於保存的原稿快照。`; refs.append(a);
+      }
+      body.append(refs);
+    }
+    if (data.groups?.length && groupTarget) {
+      groupTarget.replaceChildren();
+      for (const g of data.groups) {
+        const box = document.createElement('details'); box.id = `group-${g.id}`;
+        box.append(element('summary', `${g.id} · ${g.members.map(n => `EP${n}`).join('、')}`));
+        const body = element('div', '', 'card-body'); body.append(element('p', g.summary));
+        if (g.missing_members.length) body.append(element('p', `本組尚缺：${g.missing_members.map(n => `EP${n}`).join('、')}`, 'episode-caution'));
+        for (const t of g.timeline) body.append(element('p', `EP${t.episode}：${t.development}`));
+        for (const c of g.connections) connectionBody(c, body);
+        for (const t of g.takeaways) body.append(element('p', `研究價值：${t.insight}`), element('p', `限制：${t.limitation}`, 'muted'));
+        for (const q of g.open_dependencies) body.append(element('p', `組內未解 EP${q.episode} → ${q.target_episode ? `EP${q.target_episode}` : '對象待辨識'}：${q.question}（${q.reason_unresolved}）。後續回查另見下方。`, 'episode-caution'));
+        box.append(body); groupTarget.append(box);
+      }
+    }
+    const depTarget = document.getElementById('dependency-list');
+    if (data.dependency_checks?.length && depTarget) {
+      depTarget.append(element('h3', '跨組回查／待查清單'));
+      const depLabels = { pair_checked: '兩集全文已對照', pair_checked_still_uncertain: '全文對照後仍未解', needs_target_identification: '對象待辨識', deferred_check_limit: '超出本階段檢查上限，待查', paused: '已暫停', needs_attention: '覆核待處理' };
+      for (const q of data.dependency_checks) {
+        const box = document.createElement('details'); box.append(element('summary', `EP${q.episode} → ${q.target_episode ? `EP${q.target_episode}` : '未知'} · ${depLabels[q.status] || q.status}`));
+        const body = element('div', '', 'card-body'); body.append(element('p', q.question));
+        for (const c of q.findings || []) connectionBody(c, body);
+        box.append(body); depTarget.append(box);
+      }
+    }
     const syntheses = data.syntheses || [];
     if (syntheses.length) {
       const target = document.getElementById('synthesis-list'); target.replaceChildren();

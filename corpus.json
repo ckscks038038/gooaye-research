@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-09-06T06:53:01.576134+00:00",
+  "updated_at_utc": "2026-09-06T07:34:59.414818+00:00",
   "scope": "Pinned RSS-aligned corpus. Completed notes include explicitly labelled lead-assistant and two-subagent methods.",
   "counts": {
     "total": 693,
@@ -13,11 +13,17 @@
     "needs_attention": 2
   },
   "workflow": {
-    "status": "paused_by_stop_file",
-    "phase": "episode_review",
-    "heartbeat_utc": "2026-09-06T06:53:01.457019+00:00",
-    "workers": 2,
+    "status": "running",
+    "phase": "grouped_episode_review",
+    "heartbeat_utc": "2026-09-06T07:34:59.304519+00:00",
+    "workers": 4,
     "active_episodes": [],
+    "scheduler": "chronological_groups",
+    "group_size": 6,
+    "parallel_groups": 4,
+    "total_groups": 108,
+    "groups_completed": 0,
+    "active_groups": [],
     "note": "Status at export time, not a live process guarantee. Subagent review is not external fact verification."
   },
   "episodes": [
@@ -13787,5 +13793,7 @@
       "processing_status": "pending"
     }
   ],
-  "syntheses": []
+  "syntheses": [],
+  "groups": [],
+  "dependency_checks": []
 }
