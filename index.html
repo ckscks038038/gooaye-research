@@ -19,7 +19,7 @@
   </div>
 </header>
 <nav aria-label="章節導覽"><div class="wrap navlinks">
-  <a href="#overview">先看總結</a><a href="#cards">10 張卡片</a><a href="#cases">案例對照</a><a href="#progress">研究進度</a><a href="#sources">來源與限制</a>
+  <a href="#overview">先看總結</a><a href="#cards">10 張卡片</a><a href="#cases">案例對照</a><a href="#progress">研究進度</a><a href="#episodes">逐集清單</a><a href="#sources">來源與限制</a>
 </div></nav>
 <main id="main" class="wrap">
   <section id="overview" aria-labelledby="overview-title">
@@ -27,10 +27,10 @@
     <h2 id="overview-title">最值得學的是調整，不是神準。</h2>
     <p>目前樣本比較像「原判斷受挑戰後，重新思考部位與風險」，而不是「從頭精準抓到每個轉折」。以下卡片是研究歸納，<strong>不是主持人原句，也不是已驗證能提高報酬的策略</strong>。</p>
     <div class="stats" aria-label="研究摘要">
-      <div><strong>14<span> 集</span></strong><p>完整讀過逐字稿</p></div>
+      <div><strong><span class="stat-value" data-count="read">14</span><span> 集</span></strong><p>完整讀過逐字稿</p></div>
       <div><strong>10<span> 張</span></strong><p>候選思維卡</p></div>
-      <div><strong>8<span> 集</span></strong><p>另核部分價格與消息</p></div>
-      <div><strong>22<span> 集</span></strong><p>擴充樣本尚待閱讀</p></div>
+      <div><strong><span class="stat-value" data-count="partial_validation">8</span><span> 集</span></strong><p>另核部分價格與消息</p></div>
+      <div><strong><span class="stat-value" data-count="pending_read">679</span><span> 集</span></strong><p>全量樣本尚待閱讀</p></div>
     </div>
     <aside class="notice"><strong>先記住三個區別</strong><ul><li>下載原稿 ≠ 已完整讀過。</li><li>市場後來上漲 ≠ 主持人實際賺到。</li><li>原文定位正確 ≠ 語意、轉錄與投資效果都已驗證。</li></ul></aside>
   </section>
@@ -150,7 +150,7 @@
   <section id="progress" aria-labelledby="progress-title">
     <p class="eyebrow">04 / 進度透明，不灌水</p>
     <h2 id="progress-title">讀到哪裡了？</h2>
-    <p>網站索引有693集。目前完整讀稿14集，約占 <b>2.0%</b>，仍不足以代表整個節目的完整投資思維。</p>
+    <p>研究範圍已擴大為固定索引的 <span data-count="total">693</span> 集，本機已下載 <span data-count="downloaded">693</span> 集。完整讀稿 <span data-count="read">14</span> 集，約占 <b><span data-count="read_percent">2.0</span>%</b>；仍不足以代表整個節目的完整投資思維。</p><p>先完成下列24集跨行情樣本，再續接其餘集數。重複觀點將合併，非投資內容不硬做卡片；先保留各集的新證據、判斷變化與反例。</p>
     <ul class="progress-list">
       <li><span class="tag done">已讀 6 集</span><h3>2020 疫情初期</h3><p>EP2、6、10、14、18、22。已讀逐字稿，這組尚未獨立補齊價格與官方消息。</p></li>
       <li><span class="tag done">已讀 6 集 · 部分交叉驗證</span><h3>2025 關稅衝擊</h3><p>EP545–550。已補官方RSS時間、歷史價格與部分政策資料；產業、交易及部分數字仍待核實。</p></li>
@@ -160,6 +160,21 @@
     </ul>
     <p class="muted">新增24集計畫已完成2集，尚餘22集。此頁是人工更新的研究快照，不代表背景持續自動讀稿。</p>
     <details class="method"><summary>為什麼改用官方RSS選集？</summary><div class="card-body"><p>核对693集索引與官方RSS的台灣日期：591集同日、4集相差一天、97集相差超過一天、1集缺日期。一天差距可能涉及時區，多日差距則不能直接用作事件分期。</p><p>例如EP227、228在網站索引被列到2022年5月，官方RSS則在3月。因此我們在讀稿前作廢原本的索引日期選樣，改用RSS。這是日期核對，不是讀完全部集數；上架時間仍不等於錄音時間。</p><p>固定取事件日期分界前後各一集，不因內容好壞換集。但事件本身是事後選擇，且AI組集中NVIDIA財報，仍有選樣偏差，不是樣本外實驗。</p></div></details>
+  </section>
+
+  <section id="episodes" aria-labelledby="episodes-title">
+    <p class="eyebrow">逐集清單 / 已讀與待讀分開</p>
+    <h2 id="episodes-title">找一集，看看整理到哪裡。</h2>
+    <p class="muted">只有實際讀過並寫成筆記的集數會顯示摘要。摘要是節目觀點的歸納，不等於全部論點已核實。日期依官方RSS的台灣時間。</p>
+    <div class="filters">
+      <label>搜尋集號或日期<input id="episode-search" type="search" placeholder="例如 EP228、2025-04" autocomplete="off"></label>
+      <label>年份<select id="episode-year"><option value="">所有年份</option></select></label>
+      <label>閱讀狀態<select id="episode-status"><option value="read">已讀／有摘要</option><option value="all">全部集數</option><option value="pending">尚待閱讀</option><option value="partial">部分外部核驗</option></select></label>
+    </div>
+    <p id="episode-result" role="status" aria-live="polite">正在載入逐集進度…</p>
+    <div id="episode-list" class="episode-list"></div>
+    <button id="episode-more" type="button" hidden>顯示更多</button>
+    <noscript><p>逐集篩選需要JavaScript；上方全部知識卡與案例不需要。亦可直接查看<a href="corpus.json">公開摘要及進度JSON</a>。</p></noscript>
   </section>
 
   <section id="sources" aria-labelledby="sources-title">
@@ -179,5 +194,6 @@
   </section>
 </main>
 <footer><div class="wrap"><p><b>把結論留得有條件，讓它有機會被修正。</b></p><p>非《股癌》官方網站，與主持人及逐字稿網站無隸屬或背書關係。內容由AI助理協助整理，可能有錯誤，僅供研究，不是個人化投資建議。</p><p>免費靜態網站 · 無第三方追蹤程式 · <a href="https://github.com/ckscks038038/gooaye-research">GitHub原始碼</a> · <a href="#main">回到上方 ↑</a></p></div></footer>
+<script src="corpus.js" defer></script>
 </body>
 </html>
