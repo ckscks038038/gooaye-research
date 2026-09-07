@@ -1,35 +1,31 @@
 {
-  "updated_at_utc": "2026-09-07T07:58:11.130704+00:00",
+  "updated_at_utc": "2026-09-07T07:59:19.789002+00:00",
   "scope": "Pinned RSS-aligned corpus. Completed notes include explicitly labelled lead-assistant and two-subagent methods.",
   "counts": {
     "total": 693,
     "downloaded": 693,
-    "read": 624,
-    "structured_summaries": 624,
+    "read": 625,
+    "structured_summaries": 625,
     "lead_reviewed": 14,
-    "subagent_reviewed": 610,
+    "subagent_reviewed": 611,
     "partial_validation": 8,
-    "pending_read": 69,
+    "pending_read": 68,
     "needs_attention": 1,
     "candidate_cards": 11,
     "candidate_new": 6
   },
   "workflow": {
-    "status": "draining",
+    "status": "paused_stop_runtime_or_quality",
     "phase": "grouped_episode_review",
-    "heartbeat_utc": "2026-09-07T07:58:04.487059+00:00",
+    "heartbeat_utc": "2026-09-07T07:59:19.458806+00:00",
     "workers": 4,
-    "active_episodes": [
-      626
-    ],
+    "active_episodes": [],
     "scheduler": "chronological_groups",
     "group_size": 6,
     "parallel_groups": 4,
     "total_groups": 108,
     "groups_completed": 89,
-    "active_groups": [
-      "G096"
-    ],
+    "active_groups": [],
     "note": "Status at export time, not a live process guarantee. Subagent review is not external fact verification."
   },
   "episodes": [
@@ -66313,15 +66309,103 @@
       "date": "2026-01-10",
       "source": "https://whatmkreallysaid.com/episode.html?file=EP626",
       "downloaded": true,
-      "read": false,
-      "review_method": null,
+      "read": true,
+      "review_method": "two_subagents",
       "validation": "not_independently_validated",
-      "summary": null,
-      "caution": null,
-      "relevance": null,
-      "key_points": [],
-      "card_links": [],
-      "processing_status": "in_progress"
+      "summary": "主持人認為市場情緒瘋狂，但漲勢集中於少數具基本面或AI關聯標的，並非全面普漲。他稱部分部位被洗出後未追回，而是收回資金、降低槓桿、減持擁擠或久未表現的標的，尋找較不擁擠的停泊處。記憶體報價及台積電展望是其觀察循環與擴廠題材的節點；他傾向等待展望落地後，研究設備、廠務、水電氣與無塵室等需求。Q&A中，他區分記憶體顆粒與控制器的受惠邏輯，也提醒光通熱門美股可能因共識擁擠而有回落風險。均屬主持人個人說法與做法，未經外部核實。",
+      "caution": "雙子agent讀稿／覆核通過，不等於外部事實核驗。主持人所述報價、融資、開戶數、擴廠與公司訊息均未由本研究外部驗證。；多項標的與產業方向屬主持人持倉、朋友交流或市場傳聞，不能視為獨立交易證據。；台積電展望、記憶體循環及擴廠需求的後續發展，本集尚未提供結果。；音訊與逐字稿內容仍屬audio_unverified；贊助段落已排除。",
+      "relevance": "high",
+      "key_points": [
+        {
+          "id": "E1",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "主持人稱部分部位被洗出後沒有追回，而是收回資金並降低槓桿。",
+          "condition": "其判斷市場高檔、擔心回檔且部位或槓桿偏高時",
+          "limitation": "未說明各部位、實際出場規則、槓桿比例及後續績效；不代表適用所有投資人。"
+        },
+        {
+          "id": "E2",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人觀察指數處高位主要由少數強勢股支撐，認為隨機買入未必能獲利。",
+          "condition": "其所描述的當前市場結構持續存在",
+          "limitation": "市場廣度、核心族群與其對指數的因果關係均是主持人判讀，未提供量化資料。"
+        },
+        {
+          "id": "E3",
+          "kind": "plan",
+          "actor": "host",
+          "statement": "主持人計畫待台積電展望公布、市場消化後，持續研究擴廠相關的廠務供應鏈，尤其水、電、氣項目。",
+          "condition": "台積電展望未令市場失望，且擴廠趨勢延續時",
+          "limitation": "土地、資本支出、擴廠時程與供應鏈受惠程度均未經外部核實；主持人也稱會混搭動能判斷。"
+        },
+        {
+          "id": "E4",
+          "kind": "principle",
+          "actor": "host",
+          "statement": "主持人認為設備商若因新增客戶而增加出貨，較可能是營收與獲利量增，而非估值倍數必然重評。",
+          "condition": "既有半導體設備供應商新增面板廠等客戶時",
+          "limitation": "價格、毛利、客戶品質與市場敘事仍可能改變PE；此為主持人個人估值框架。"
+        },
+        {
+          "id": "E5",
+          "kind": "self_reported_action",
+          "actor": "host",
+          "statement": "主持人稱因持股久未表現且另有較佳機會成本，減碼一檔帳面虧損約兩成以上的標的。",
+          "condition": "持股表現停滯、資金效率較差且出現其他候選機會時",
+          "limitation": "未揭露公司、買賣時點與完整研究依據；價格停滯本身不能推論基本面惡化。"
+        },
+        {
+          "id": "E6",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人於群聯與慧榮比較中稱，本輪價格上漲的重點在記憶體顆粒與庫存，而不是控制器。",
+          "condition": "其所討論的記憶體漲價循環與兩家公司產品組合下",
+          "limitation": "未提供兩家公司庫存、價格、毛利與財報資料；此為主持人產業判讀。"
+        },
+        {
+          "id": "E7",
+          "kind": "observation",
+          "actor": "host",
+          "statement": "主持人稱光通押注資金多集中於特定美股，並提醒熱門共識題材後續仍可能回落。",
+          "condition": "市場資金持續集中於其所述光通族群時",
+          "limitation": "未提供持倉、估值、基本面或資金流量資料；其對回落風險僅為提醒，不是結果預測。"
+        }
+      ],
+      "card_links": [
+        {
+          "card_id": 1,
+          "relationship": "supports",
+          "claim_id": "E1",
+          "reason": "以降低槓桿及接受被洗出部位，優先避免回檔對資金存活造成過大傷害。"
+        },
+        {
+          "card_id": 5,
+          "relationship": "supports",
+          "claim_id": "E1",
+          "reason": "以調節及降槓桿取代全有全無的處理。"
+        },
+        {
+          "card_id": 9,
+          "relationship": "supports",
+          "claim_id": "E5",
+          "reason": "以未來機會成本作為減碼理由，而非執著等待回本。"
+        },
+        {
+          "card_id": 3,
+          "relationship": "extends",
+          "claim_id": "E4",
+          "reason": "區分出貨與獲利量增加，和估值倍數重評兩種不同驅動。"
+        },
+        {
+          "card_id": 7,
+          "relationship": "supports",
+          "claim_id": "E3",
+          "reason": "由擴廠需求延伸至水電氣與廠務環節，呈現需求向供應鏈收益傳導的觀察。"
+        }
+      ],
+      "processing_status": "reviewed"
     },
     {
       "episode": 627,
