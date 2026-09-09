@@ -64,6 +64,13 @@
     const syntheses = data.syntheses || [];
     if (syntheses.length) {
       const target = document.getElementById('synthesis-list'); target.replaceChildren();
+      const controls = document.createElement('div'); controls.className = 'knowledge-controls';
+      const search = document.createElement('input'); search.type = 'search'; search.placeholder = '搜尋：買進、估值、新聞、風險…'; search.setAttribute('aria-label','搜尋知識卡');
+      const select = document.createElement('select'); select.setAttribute('aria-label','依分類篩選知識卡');
+      select.append(new Option('全部分類',''));
+      const categories = [...new Set(syntheses.flatMap(s => s.document.patterns || []).map(p => p.category).filter(Boolean))].sort();
+      categories.forEach(c => select.append(new Option(c,c)));
+      controls.append(search, select); target.append(controls);
       const final = syntheses.filter(s => s.stage === 'final').slice(-1);
       const shown = final.length ? final : syntheses.slice(-3);
       if (!final.length) target.append(element('p', `已完成 ${syntheses.length} 個歸納分組；目前展示最近3組線索，尚在合併候選卡。`, 'muted'));
@@ -71,11 +78,17 @@
       for (const s of shown) {
         target.append(element('h3', s.document.title), element('p', s.scope, 'muted'), element('p', s.document.summary));
         for (const p of s.document.patterns) {
-          const box = document.createElement('details'); const body = document.createElement('div'); body.className = 'card-body';
+          const box = document.createElement('details'); box.className = 'knowledge-card'; box.dataset.category = p.category || ''; box.dataset.search = `${p.title} ${p.category || ''} ${p.decision_question} ${p.conditions} ${p.interpretation}`.toLowerCase(); const body = document.createElement('div'); body.className = 'card-body';
           box.append(element('summary', `${p.card_id ? `#${p.card_id} · ` : ''}${p.title}`));
           const novelty = { new: '新決策問題候選', specialization: '舊框架的情境細分', revision: '舊框架修訂候選', overlap: '與前期框架重疊' };
-          body.append(element('p', `${p.category ? `分類：${p.category} · ` : ''}${novelty[p.baseline_relationship] || '與前期卡關係待判定'}`, 'status'));
-          for (const [key, prefix] of [['decision_question', '決策問題'], ['conditions', '適用條件'], ['failure_conditions', '失效／限制'], ['interpretation', '研究價值'], ['difference_from_baseline', '與前期卡差異']]) body.append(element('p', `${prefix}：${p[key]}`));
+          body.append(element('p', `${p.category ? `◉ ${p.category} · ` : ''}${novelty[p.baseline_relationship] || '與前期卡關係待判定'}`, 'status'));
+          body.append(element('p', `先記住：${p.interpretation}`, 'takeaway'));
+          body.append(element('p', `你要問：${p.decision_question}`, 'question'));
+          body.append(element('p', `什麼時候用：${p.conditions}`));
+          body.append(element('p', `什麼時候不要直接套用：${p.failure_conditions}`, 'caution'));
+          body.append(element('details', '查看研究差異與完整限制'));
+          const detail = body.lastChild; const detailBody = document.createElement('div'); detailBody.className = 'card-body';
+          detailBody.append(element('p', `研究價值：${p.interpretation}`), element('p', `與前期卡差異：${p.difference_from_baseline}`)); detail.append(detailBody);
           for (const [key, prefix] of [['supporting_refs', '支持／案例'], ['counter_refs', '反例／限制案例']]) {
             const row = element('p', `${prefix}：`, 'refs');
             for (const r of p[key]) { const a = element('a', ` EP${r.episode}／${r.claim_id} `); a.href = `https://whatmkreallysaid.com/episode.html?file=EP${Number(r.episode)}`; row.append(a); }
@@ -87,6 +100,9 @@
         }
         for (const q of s.document.open_questions) target.append(element('p', `待查：${q}`, 'muted'));
       }
+      const allCards = [...target.querySelectorAll('.knowledge-card')];
+      function filterCards() { const q = search.value.trim().toLowerCase(); allCards.forEach(card => { card.hidden = Boolean((select.value && card.dataset.category !== select.value) || (q && !card.dataset.search.includes(q))); }); }
+      search.addEventListener('input', filterCards); select.addEventListener('change', filterCards);
     }
     const years = [...new Set(data.episodes.map(e => e.date?.slice(0, 4)).filter(Boolean))].sort();
     for (const value of years) {
