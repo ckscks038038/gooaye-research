@@ -32,12 +32,38 @@
     category.value = b.dataset.topic; search.value = ''; cardLimit = 12; filterCards();
   }));
   more.addEventListener('click', () => { cardLimit += 12; filterCards(); });
+  const cases = [...document.querySelectorAll('#case-list > .case-study')];
+  const caseSearch = document.getElementById('case-search');
+  const caseCategory = document.getElementById('case-category');
+  const caseMore = document.getElementById('case-more');
+  const caseResult = document.getElementById('case-result');
+  const caseText = new Map(cases.map(c => [c, c.textContent.toLowerCase()]));
+  let caseLimit = 6;
+  function filterCases() {
+    const q = caseSearch.value.trim().toLowerCase();
+    const matches = cases.filter(c => (!caseCategory.value || c.dataset.category === caseCategory.value) && (!q || caseText.get(c).includes(q)));
+    const visible = new Set(matches.slice(0, caseLimit));
+    cases.forEach(c => { c.hidden = !visible.has(c); });
+    caseResult.textContent = matches.length ? `符合 ${matches.length} 個案例，目前顯示 ${visible.size} 個。` : '沒有符合的案例，試試公司名稱或切回全部案例。';
+    caseMore.hidden = visible.size >= matches.length;
+  }
+  document.getElementById('case-controls').hidden = false;
+  caseSearch.addEventListener('input', () => { caseLimit = 6; filterCases(); });
+  caseCategory.addEventListener('change', () => { caseLimit = 6; filterCases(); });
+  caseMore.addEventListener('click', () => { caseLimit += 6; filterCases(); });
+  filterCases();
   function revealHash() {
     const node = document.getElementById(location.hash.slice(1));
     if (!node) return;
-    if (node.classList.contains('knowledge-card')) {
-      search.value = ''; category.value = ''; cardLimit = Math.max(cardLimit, cards.indexOf(node) + 1);
+    const card = node.closest('.knowledge-card');
+    if (card) {
+      search.value = ''; category.value = ''; cardLimit = Math.max(cardLimit, cards.indexOf(card) + 1);
       filterCards();
+    }
+    const study = node.closest('.case-study');
+    if (study) {
+      caseSearch.value = ''; caseCategory.value = ''; caseLimit = Math.max(caseLimit, cases.indexOf(study) + 1);
+      filterCases();
     }
     for (let parent = node; parent; parent = parent.parentElement) {
       if (parent.tagName === 'DETAILS') parent.open = true;
@@ -145,7 +171,7 @@
       // Keep existing group deep links usable without putting the logs before the lessons.
       if (location.hash.startsWith('#group-')) { groups.open = true; renderGroups(); revealHash(); }
     } catch {
-      status.textContent = '研究資料暫時無法載入；上方90張知識卡仍可閱讀與搜尋。';
+      status.textContent = '研究資料暫時無法載入；上方90張知識卡與42個案例仍可閱讀與搜尋。';
       episodeMore.hidden = true;
     }
   }
