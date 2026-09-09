@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-09-09T06:36:29.137537+00:00",
+  "updated_at_utc": "2026-09-09T06:36:55.701412+00:00",
   "scope": "Pinned RSS-aligned corpus. Completed notes include explicitly labelled lead-assistant and two-subagent methods.",
   "counts": {
     "total": 693,
@@ -15,9 +15,9 @@
     "candidate_new": 3
   },
   "workflow": {
-    "status": "running",
+    "status": "completed_with_unresolved_dependencies",
     "phase": "finished",
-    "heartbeat_utc": "2026-09-09T06:36:28.798525+00:00",
+    "heartbeat_utc": "2026-09-09T06:36:55.354947+00:00",
     "workers": 4,
     "active_episodes": [],
     "scheduler": "chronological_groups",
