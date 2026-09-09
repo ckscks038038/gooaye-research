@@ -4,231 +4,1363 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123c36">
-  <meta name="description" content="股癌非官方研究筆記：全量逐集摘要、10張前期候選思維卡與跨集歸納，區分主助理讀稿、子agent覆核與外部核驗。">
-  <title>股癌研究筆記｜持續更新的投資思維框架</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="把股癌投資思考拆成90張白話知識卡：什麼時候用、先問什麼、怎麼檢查，以及什麼情況不適用。">
+  <title>股癌學習筆記｜買、抱、賣，先問對問題</title>
+  <link rel="stylesheet" href="styles.css?v=0.6">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
-<header class="hero">
-  <div class="wrap">
-    <p class="eyebrow">GOOAYE RESEARCH · 非官方研究筆記</p>
-    <h1>不是找下一檔股票，<br>而是學會怎麼判斷。</h1>
-    <p class="intro">從逐集內容、當時消息與後續行情，整理可追溯的投資思維。記住成功，也不刪掉失準與反例。</p>
-    <p class="version">摘要版本 0.5 · 知識卡頁更新 <time datetime="2026-09-09">2026/09/09</time></p>
-  </div>
-</header>
+<header class="hero"><div class="wrap">
+  <p class="eyebrow">GOOAYE RESEARCH · 非官方學習筆記</p>
+  <h1>買、抱、賣，<br>先問對問題。</h1>
+  <p class="intro">一張卡只學一件事。先看「什麼時候用」，再用中間的問題檢查自己的判斷。</p>
+  <p class="version">學習版 0.6 · 更新 2026/09/09 · 90 張卡統一呈現</p>
+</div></header>
 <nav aria-label="章節導覽"><div class="wrap navlinks">
-  <a href="#overview">先看總結</a><a href="#learn">學習路線</a><a href="#synthesis">90張知識卡</a><a href="#cases">案例對照</a><a href="#progress">研究進度</a><a href="#episodes">逐集清單</a><a href="#sources">來源與限制</a>
+  <a href="#synthesis">知識卡</a><a href="#cases">案例對照</a><a href="#research">研究與來源</a>
 </div></nav>
 <main id="main" class="wrap">
-  <section id="overview" aria-labelledby="overview-title">
-    <p class="eyebrow">01 / 目前知道什麼</p>
-    <h2 id="overview-title">最值得學的是調整，不是神準。</h2>
-    <p>目前樣本比較像「原判斷受挑戰後，重新思考部位與風險」，而不是「從頭精準抓到每個轉折」。以下卡片是研究歸納，<strong>不是主持人原句，也不是已驗證能提高報酬的策略</strong>。</p>
-    <div class="stats" aria-label="研究摘要">
-      <div><strong><span class="stat-value" data-count="read">693</span><span> 集</span></strong><p>已完成逐集筆記</p></div>
-      <div><strong><span data-count="candidate_cards">90</span><span> 張</span></strong><p><a href="#synthesis">全量知識卡</a></p></div>
-      <div><strong><span class="stat-value" data-count="partial_validation">8</span><span> 集</span></strong><p>另核部分價格與消息</p></div>
-      <div><strong><span class="stat-value" data-count="pending_read">0</span><span> 集</span></strong><p>全量樣本尚待閱讀</p></div>
+  <section id="overview" aria-labelledby="overview-title" class="learning-intro">
+    <p class="eyebrow">先懂這一件事</p>
+    <h2 id="overview-title">有好消息，不等於現在就該買。</h2>
+    <div class="decision-map" aria-label="學習檢查順序，不是已驗證的買賣公式">
+      <div class="map-step"><span class="map-icon">1</span><b>事情真的變好？</b><small>看需求、訂單、獲利</small></div><span class="map-arrow" aria-hidden="true">→</span>
+      <div class="map-step"><span class="map-icon">2</span><b>價格已經反映？</b><small>比預期、估值、走勢</small></div><span class="map-arrow" aria-hidden="true">→</span>
+      <div class="map-step"><span class="map-icon">3</span><b>我承受得起？</b><small>查部位、期限、退出</small></div>
     </div>
-    <p class="muted">主助理直接讀稿 <span data-count="lead_reviewed">14</span> 集；雙子agent讀稿／覆核 <span data-count="subagent_reviewed">679</span> 集。原稿完整送入兩個隔離模型程序，並檢查逐字引用；這不等於外部事實已核實。</p>
-    <aside class="notice"><strong>先記住三個區別</strong><ul><li>下載原稿 ≠ 已完整讀過。</li><li>市場後來上漲 ≠ 主持人實際賺到。</li><li>原文定位正確 ≠ 語意、轉錄與投資效果都已驗證。</li></ul></aside>
+    <p class="muted">這是依節目材料整理的學習順序，不是主持人固定公式，也不是獲利保證。我們沒有完整交易紀錄，不能據此證明他為什麼賺錢。</p>
   </section>
-
-  <section id="learn" aria-labelledby="learn-title">
-    <p class="eyebrow">02 / 建議閱讀順序</p>
-    <h2 id="learn-title">先學他的判斷流程，再看細節</h2>
-    <p>不要從90張卡片隨機跳讀。先看這張地圖，再用知識卡查案例。</p>
-    <div class="decision-map" aria-label="投資判斷流程">
-      <div class="map-step"><span class="map-icon">01</span><b>能撐住？</b><small>資金與期限</small></div><span class="map-arrow">→</span>
-      <div class="map-step"><span class="map-icon">02</span><b>故事成真？</b><small>需求與獲利</small></div><span class="map-arrow">→</span>
-      <div class="map-step"><span class="map-icon">03</span><b>超出預期？</b><small>新資訊與價格</small></div><span class="map-arrow">→</span>
-      <div class="map-step"><span class="map-icon">04</span><b>怎麼做？</b><small>買／等／賣</small></div>
-    </div>
-    <ol class="progress-list">
-      <li><span class="tag done">第一步：先問能不能撐住</span><h3>資金、期限與槓桿</h3><p>如果判斷晚半年才對，自己會不會先被迫賣出？先確保能活下來。</p></li>
-      <li><span class="tag done">第二步：再問公司是否真的變好</span><h3>需求 → 訂單 → 營收 → 利潤</h3><p>新聞或題材只是起點，要追到誰付錢、公司賺多少，以及這件事能維持多久。</p></li>
-      <li><span class="tag done">第三步：比較預期，不只看新聞</span><h3>新資訊改變了什麼？</h3><p>把原本的假設寫下來，再比較新數據。好消息若早已反映，股價仍可能下跌。</p></li>
-      <li><span class="tag done">第四步：決定買、等、加碼或減碼</span><h3>分批是控制錯誤成本</h3><p>不是看到跌就買，也不是看到漲就追；要先知道下一步需要什麼證據，以及何時停止。</p></li>
-      <li><span class="tag done">第五步：檢查自己是否看錯</span><h3>價格波動 ≠ 論點失效</h3><p>分開檢查價格、估值、營運與資金壓力。新證據推翻哪個假設，就只修正相應部分。</p></li>
-    </ol>
-    <aside class="notice"><strong>一句話版本</strong><p>他和一般人的差異，不只是知道更多新聞，而是把「故事」拆成可檢查的假設，並同時管理時機、部位與被迫出場的風險。</p><p><a href="#synthesis">接著閱讀90張知識卡 →</a></p></aside>
-  </section>
-
-  <section id="cards" aria-labelledby="cards-title">
-    <p class="eyebrow">入門範例（已整合至知識卡庫）</p>
-    <h2 id="cards-title">前期10張思維卡：精簡入門版</h2>
-    <p class="muted">這10張卡是前期14集研究的版本，已納入2022年案例修訂。新增子agent筆記的卡片關聯仍是候選；新增研究不必等全量完成，另見<a href="#synthesis">階段候選卡</a>；兩者包含重疊、細分與修訂，不可直接相加，不默默把自動歸納當作原卡已驗證。</p>
-    <div class="cards">
-      <details id="card-1"><summary><span class="number">01</span><span>先確保自己不會被迫出場<small>把流動性與還款現金流分開看</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>股災、連續跌停、升息，或借款投資時。</p>
-        <p class="question">如果連續幾天賣不掉，或還款壓力持續一兩年，我撐得住嗎？</p>
-        <p><b>怎麼做：</b>分開檢查價格損失、追繳／成交風險，以及家庭收支與償付能力。</p>
-        <p class="caution"><b>反例與限制：</b>信貸買現股仍是槓桿，不因免追繳而無風險。多留現金也可能錯過反彈，沒有證明某個比例最優。</p>
-        <p class="status">狀態：跨事件候選原則；部分市場風險已核實，策略效益未驗證。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP10">EP10</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP547">EP547</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP550">EP550</a></p>
-      </div></details>
-      <details id="card-2"><summary><span class="number">02</span><span>看好公司，不代表任何價格都該重押<small>長期也需要風險預算</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>仍認同產業，但估值、股價或自己的資金需求已改變。</p>
-        <p class="question">我看好的是公司前景，還是「這個價格、這個部位、這段時間」的投資？</p>
-        <p><b>怎麼做：</b>分別寫下產業論點、估值、持有期限與最大可承受損失。</p>
-        <p class="caution"><b>反例與限制：</b>長期標籤無法消除中途大跌；反過來，頻繁調節也可能錯失上漲。EP2 的 Tesla 買賣措辭仍待核音。</p>
-        <p class="status">狀態：跨事件候選原則；尚未驗證調節是否提高報酬。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP2">EP2</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP548">EP548</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP550">EP550</a></p>
-      </div></details>
-      <details id="card-3"><summary><span class="number">03</span><span>研究看對，不等於投資賺錢<small>營運、估值與報酬不是同一件事</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>基本面似乎變好，持股卻下跌。</p>
-        <p class="question">營運真的如預期嗎？好消息是否已反映？市場給的估值有沒有下降？</p>
-        <p><b>怎麼做：</b>分開追蹤營運、估值與實際持有結果。發現產業風險，也不代表已經避開風險。</p>
-        <p class="caution"><b>反例與限制：</b>EP545 美光「研究正確卻受損」是主持人自評，沒有全部獨立驗證；不能自動判定是市場錯了。</p>
-        <p class="status">狀態：優先保留的研究框架，不是已證明的獲利規則。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP2">EP2</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545</a></p>
-      </div></details>
-      <details id="card-4"><summary><span class="number">04</span><span>消息要跟原先預期比較<small>先留下預期，再看結果</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>財報、升息、關稅與重大數據公布前後。</p>
-        <p class="question">新消息相對於我原本的預期，究竟改變了什麼？</p>
-        <p><b>怎麼做：</b>記錄事前預期、資料來源與公布時間，再判斷是否需要修正。個人預期與市場共識要分列。</p>
-        <p class="caution"><b>反例與限制：</b>EP227 猜台灣可能跟半碼，次日央行實際升一碼；EP545 利空出盡期待也未立即實現。不能用「已反映」事後解釋一切。</p>
-        <p class="status">狀態：有事前原文與官方結果可對照；精確市場共識仍未全面查證。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP14">EP14</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP22">EP22</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP546">EP546</a></p>
-      </div></details>
-      <details id="card-5"><summary><span class="number">05</span><span>分批是控制錯誤成本，不是保證買到底<small>試探、加碼與暫停要分開</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>想參與機會，但轉折尚未明朗。</p>
-        <p class="question">初步投入後，什麼條件才加碼？什麼情況必須停止？</p>
-        <p><b>怎麼做：</b>先訂總風險預算；分清新增資金慢慢投入、減少舊部位與單純因股價跌而現金占比上升。</p>
-        <p class="caution"><b>反例與限制：</b>沒有上限的分批可能變無限攤平。EP6 的部分論述是轉述 Howard Marks，不能算主持人當時親自操作。</p>
-        <p class="status">狀態：跨事件候選原則；原稿不足以量化成完整策略。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP6">EP6</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP14">EP14</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP546">EP546</a></p>
-      </div></details>
-      <details id="card-6"><summary><span class="number">06</span><span>假設錯了，就更新劇本<small>但不要把情緒搖擺當成靈活</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>新證據推翻原本的投資條件。</p>
-        <p class="question">是哪項證據變了？我要改的是長期策略、配置、部位，還是訂單？</p>
-        <p><b>怎麼做：</b>留下原假說、反證、新假說及調整意向；保留舊版本。操作計畫、本人執行與朋友操作不可混用。</p>
-        <p class="caution"><b>反例與限制：</b>EP228 同時反對朝令夕改，又在急漲後偏保守。合理更新與情緒反應需要更多規則來區分，不能每次改口都算優勢。</p>
-        <p class="status">狀態：2022／2025 都有演變序列；沒有證明調整提高報酬。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP546">EP546</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP549">EP549</a></p>
-      </div></details>
-      <details id="card-7"><summary><span class="number">07</span><span>題材必須落到公司收益<small>從需求一路追到股東權益</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>宅經濟、AI、轉單、急單或公司分拆題材。</p>
-        <p class="question">誰付錢、誰接單、占多少營收？是新增需求，還是提前拉貨？</p>
-        <p><b>怎麼做：</b>追蹤需求、產品、訂單、利潤與收益歸屬；分拆後也要問母公司股東還能認列多少。</p>
-        <p class="caution"><b>反例與限制：</b>需求成立也可能沒有利潤，或早已反映在股價。EP227 對技嘉分拆明說尚未詳查；關稅急單透支後續需求也仍待營運資料驗證。</p>
-        <p class="status">狀態：跨事件研究框架，個別產業因果链未全部核實。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP18">EP18</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP548">EP548</a></p>
-      </div></details>
-      <details id="card-8"><summary><span class="number">08</span><span>供應鏈訊號有不同時間差<small>不要把傳聞、訂單與財報混成一件事</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>龍頭財報仍好，下游或通路卻出現雜音。</p>
-        <p class="question">這份資料反映哪一段時間？是獨立來源，還是同一個傳聞被轉貼？</p>
-        <p><b>怎麼做：</b>將已實現財報、公司指引、短單及傳聞分列。用後續公告檢查先前假說，不把事後資料倒填為當時已知。</p>
-        <p class="caution"><b>反例與限制：</b>EP228 的 GPU 警訊有後來營運修正作對照，但沒有驗證每一筆3月零售報價，更不證明所有上游同步修正。</p>
-        <p class="status">狀態：部分後續營運資料支持；完整傳導鏈與來源獨立性待查。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP22">EP22</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP548">EP548</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP550">EP550</a></p>
-      </div></details>
-      <details id="card-9"><summary><span class="number">09</span><span>持股不欠你一次回本<small>成本不是公司未來價值</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>股災反彈，不同持股修復速度差很多。</p>
-        <p class="question">如果今天手上是現金，我還會買這檔嗎？</p>
-        <p><b>怎麼做：</b>檢查原論點與未來機會成本。相對強弱可以引出研究問題，不能只盯住自己的買入價。</p>
-        <p class="caution"><b>反例與限制：</b>弱勢也可能是暫時錯價。EP545 有小型股長期持有的自述，不能簡化成所有不漲的都要換掉；本批2022案例不足以新增直接支持。</p>
-        <p class="status">狀態：主要來自2025樣本，待其他行情複驗。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP549">EP549</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP550">EP550</a></p>
-      </div></details>
-      <details id="card-10"><summary><span class="number">10</span><span>借鑑判斷，不照抄別人的部位<small>同一檔股票，不同人的風險不一樣</small></span></summary><div class="card-body">
-        <p><b>什麼時候用：</b>想跟買主持人、名人或朋友時。</p>
-        <p class="question">我的現金流、持有期限、借款形式與退出能力，真的跟對方一樣嗎？</p>
-        <p><b>怎麼做：</b>先比對自身條件，再決定參考哪一段判斷；不能只複製股票名稱或持股百分比。</p>
-        <p class="caution"><b>反例與限制：</b>沒有全資產資料時，無法比較不同人的部位。「穩定工作」不保證借款安全，指數投資也不保本。</p>
-        <p class="status">狀態：跨事件候選原則；不是任何配置比例的推薦。</p>
-        <p class="refs">原稿：<a href="https://whatmkreallysaid.com/episode.html?file=EP10">EP10</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP22">EP22</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227</a> · <a href="https://whatmkreallysaid.com/episode.html?file=EP549">EP549</a></p>
-      </div></details>
-    </div>
-  </section>
-
-  <section id="cases" aria-labelledby="cases-title">
-    <p class="eyebrow">03 / 用反例把卡片磨清楚</p>
-    <h2 id="cases-title">加入價格後，故事有什麼改變？</h2>
-    <article class="case"><span class="tag">2025 關稅 · EP545–550</span><h3>利空出盡，沒有立即實現。</h3>
-      <p>EP545 在政策公布前期待可能利空出盡。之後從 <b>2025/4/2 收盤到 4/9 收盤</b>，台股加權跌 <strong class="down">18.34%</strong>，櫃買跌 <strong class="down">22.01%</strong>。</p>
-      <p>後來市場反彈，不能倒過來證明原先就已抓到底。官方RSS也確認，EP547在台灣4/9下午上架，當天美股的完整大漲尚未發生；EP548上架時，暫緩政策與第一輪反彈則已經發生。</p>
-      <p class="takeaway">卡片修訂：留下事前預期與失準，不以最後結果覆寫過程。</p>
-      <p class="refs"><a href="#source-twse">TWSE資料</a> · <a href="#source-rss">官方RSS</a> · <a href="#source-wh">白宮政策</a></p>
-    </article>
-    <article class="case"><span class="tag">2022 升息／GPU · EP227–228</span><h3>長期持有，也可能先承受四成下跌。</h3>
-      <p>EP228提醒GPU供需與通路價格風險，同時認為長期股東不必太在意。從上架後下一個美股開盤 <b>2022/3/21</b> 到第60交易日 <b>6/14收盤</b>，NVDA價格變化為 <strong class="down">−40.26%</strong>，S&amp;P 500為 <strong class="down">−16.29%</strong>。</p>
-      <p>這不能用來否定未定義期限的長期論點，卻要求投資人把中途損失、資金需求與承受能力說清楚。8月NVIDIA官方財報支持後來遊戲業務出現修正；那是事後驗證，不是3月已知的結果。</p>
-      <p class="takeaway">卡片修訂：長期標籤不能代替風險預算；知道風險不代表已避開。</p>
-      <p class="refs"><a href="#source-prices">行情口徑</a> · <a href="#source-nvidia">NVIDIA官方財報</a></p>
-    </article>
-    <article class="case"><span class="tag">2022 決策更新 · EP228</span><h3>「朋友減碼」不等於「他本人清倉」。</h3>
-      <p>EP228在急漲後轉向保守，也提到朋友降低部位；但描述本人美股時，又說既有部位持續算滿倉，只是新入金未全投入。</p>
-      <p>這些仍是節目自述，沒有交易明細。不能將它們混成「他大幅清倉、成功避跌」，也不能自行拼成精確總資產比例。</p>
-      <p class="takeaway">卡片修訂：先辨識說話主體、策略層次、計畫與執行。</p>
-      <p class="refs"><a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228原稿來源</a></p>
-    </article>
-    <aside class="notice"><strong>價格不是績效</strong><p>以上是固定窗口的市場價格變化，不是主持人的投資報酬。不含股息、稅費與匯率；股票行情依拆股調整。第60交易日從起點當天計第1日。沒有完整成本、權重、成交時間與可成交資料，也沒有建立可複製的回測策略。</p></aside>
-  </section>
-
-  <section id="progress" aria-labelledby="progress-title">
-    <p class="eyebrow">04 / 進度透明，不灌水</p>
-    <h2 id="progress-title">讀到哪裡了？</h2>
-    <p>研究範圍已擴大為固定索引的 <span data-count="total">693</span> 集，本機已下載 <span data-count="downloaded">693</span> 集。已形成逐集筆記 <span data-count="read">693</span> 集，約占 <b><span data-count="read_percent">100.0</span>%</b>；仍不足以代表整個節目的完整投資思維。</p><p>先完成下列24集跨行情樣本，再續接其餘集數。重複觀點將合併，非投資內容不硬做卡片；先保留各集的新證據、判斷變化與反例。</p>
-    <aside class="notice"><strong>自動工作流快照</strong><p id="workflow-status" role="status">執行狀態請見逐集資料；此頁不是即時程序監控。</p><p class="muted">工作流有並行數、重試、用量及運行時限；額度或品質檢查有問題會暫停。約每10分鐘發布一次進度，網頁顯示上次匯出的狀態，不保證此刻程序仍存活。</p></aside>
-    <h3>前期深讀樣本與擴充選樣</h3>
-    <ul class="progress-list">
-      <li><span class="tag done">已讀 6 集</span><h3>2020 疫情初期</h3><p>EP2、6、10、14、18、22。已讀逐字稿，這組尚未獨立補齊價格與官方消息。</p></li>
-      <li><span class="tag done">已讀 6 集 · 部分交叉驗證</span><h3>2025 關稅衝擊</h3><p>EP545–550。已補官方RSS時間、歷史價格與部分政策資料；產業、交易及部分數字仍待核實。</p></li>
-      <li><span class="tag done">已讀 2 集 · 部分交叉驗證</span><h3>2022 升息／庫存修正</h3><p>EP227–228是主助理原先深讀樣本，已補Fed、台灣央行決策及價格。擴充選樣為EP253、254、265、266、293、294；子agent最新進度見下方清單。</p></li>
-      <li><span class="tag pending">固定擴充選樣</span><h3>2023 AI上升行情</h3><p>EP325、326、351、352、377、378、402、403。檢驗上升行情、營運兌現與過早賣出的代價；各集最新完成狀態見下方清單。</p></li>
-      <li><span class="tag pending">固定擴充選樣</span><h3>2024 延續行情與回檔</h3><p>EP429、430、455、456、469、470、476、477。是否已由子agent完成，以下方逐集狀態為準；沒有先行判定卡片成立。</p></li>
-    </ul>
-    <p class="muted">前期14集由主助理直接研究。固定擴充樣本已先行處理；剩餘佇列改按官方RSS排序，每組最多6集，依最新設定維持最多4組並行，不自動升至8組。已完成逐集筆記不重做；只有通過原文hash、逐字定位與第二次模型覆核的筆記才公開。兩個子agent仍可能共享盲點，覆核不是原音、交易與行情驗證。</p>
-    <details class="method"><summary>為什麼改用官方RSS選集？</summary><div class="card-body"><p>核对693集索引與官方RSS的台灣日期：591集同日、4集相差一天、97集相差超過一天、1集缺日期。一天差距可能涉及時區，多日差距則不能直接用作事件分期。</p><p>例如EP227、228在網站索引被列到2022年5月，官方RSS則在3月。因此我們在讀稿前作廢原本的索引日期選樣，改用RSS。這是日期核對，不是讀完全部集數；上架時間仍不等於錄音時間。</p><p>固定取事件日期分界前後各一集，不因內容好壞換集。但事件本身是事後選擇，且AI組集中NVIDIA財報，仍有選樣偏差，不是樣本外實驗。</p></div></details>
-  </section>
-
-  <section id="episodes" aria-labelledby="episodes-title">
-    <p class="eyebrow">逐集清單 / 已讀與待讀分開</p>
-    <h2 id="episodes-title">找一集，看看整理到哪裡。</h2>
-    <p class="muted">只有實際讀過並寫成筆記的集數會顯示摘要。摘要是節目觀點的歸納，不等於全部論點已核實。日期依官方RSS的台灣時間。</p>
-    <div class="filters">
-      <label>搜尋集號或日期<input id="episode-search" type="search" placeholder="例如 EP228、2025-04" autocomplete="off"></label>
-      <label>年份<select id="episode-year"><option value="">所有年份</option></select></label>
-      <label>閱讀狀態<select id="episode-status"><option value="read">已有逐集筆記</option><option value="all">全部集數</option><option value="pending">尚待完成</option><option value="agents">雙子agent覆核</option><option value="attention">待人工處理</option><option value="partial">部分外部核驗</option></select></label>
-    </div>
-    <p id="episode-result" role="status" aria-live="polite">正在載入逐集進度…</p>
-    <div id="episode-list" class="episode-list"></div>
-    <button id="episode-more" type="button" hidden>顯示更多</button>
-    <noscript><p>逐集篩選需要JavaScript；上方全部知識卡與案例不需要。亦可直接查看<a href="corpus.json">公開摘要及進度JSON</a>。</p></noscript>
-  </section>
-
   <section id="synthesis" aria-labelledby="synthesis-title">
-    <p class="eyebrow">04 / 跨集歸納 / 不只是堆積摘要</p>
-    <h2 id="synthesis-title">從事件到候選框架</h2>
-    <p class="muted">這裡是完整查詢庫，不是建議從第一張讀到第九十張。先讀上方五步學習路線，再依你想理解的問題閱讀：買進、賣出、持有、證據、風險或思考流程。每張卡都保留引用、條件與限制。</p>
-    <h3>組內觀點演變與跨集依賴</h3>
-    <p class="muted">每組逐集讀稿／覆核後，再以筆記與重要原文窗口對照；這不是六集全文重新聯讀。組間未解指涉另作有限的雙集全文回查；無法辨識對象或超出檢查上限者保留待查。贊助、業配與導流全部排除，包括金融商品廣告。以下不是外部事實驗證。</p>
-    <div id="group-list"><p>尚未發布組內對照成果。</p></div>
-    <div id="dependency-list"></div>
-    <h3>90張知識卡：用來查細節，不必一次讀完</h3>
-    <div id="synthesis-list"><p>尚未發布跨集自動歸納。這不影響上方已有的卡片及案例閱讀。</p></div>
+    <p class="eyebrow">90 張知識卡 · 同一套閱讀方式</p>
+    <h2 id="synthesis-title">今天，你想弄懂哪一件事？</h2>
+    <p>不必一次讀完。每張都有<strong>使用情境 → 關鍵問題 → 檢查步驟 → 反例與限制</strong>；想追原文，再展開卡片底部的來源。</p>
+    <p class="muted">卡片是研究整理，不是買賣指令；不同情境可能共用原則，不代表90套獨立策略。</p>
+    <div id="knowledge-controls" class="knowledge-controls" hidden>
+      <label>找一個問題<input id="knowledge-search" type="search" placeholder="例如：買進、回本、財報、AI" autocomplete="off"></label>
+      <label>依主題閱讀<select id="knowledge-category"><option value="">全部主題</option><option value="風險與部位">風險與部位</option><option value="買進與加碼">買進與加碼</option><option value="基本面與估值">基本面與估值</option><option value="新聞與證據">新聞與證據</option><option value="思考與檢討">思考與檢討</option><option value="賣出與減碼">賣出與減碼</option><option value="持有與等待">持有與等待</option><option value="工具與成本">工具與成本</option><option value="價格與趨勢">價格與趨勢</option></select></label>
+    </div>
+    <div id="knowledge-topics" class="topic-buttons" aria-label="快速選擇閱讀主題" hidden>
+      <button type="button" data-topic="" aria-pressed="true">全部</button><button type="button" data-topic="買進與加碼" aria-pressed="false">＋ 買進與加碼</button><button type="button" data-topic="持有與等待" aria-pressed="false">＝ 持有與等待</button><button type="button" data-topic="賣出與減碼" aria-pressed="false">− 賣出與減碼</button><button type="button" data-topic="新聞與證據" aria-pressed="false">？ 怎麼判斷</button>
+    </div>
+    <p id="knowledge-result" class="status" role="status" aria-live="polite">共90張；點標題展開。</p>
+    <div id="synthesis-list" class="cards"><details id="card-1" class="knowledge-card" data-category="風險與部位" data-source="legacy-1">
+  <summary><span class="number">01</span><span>先確保自己不會被迫出場<small>看對方向，也要撐得到結果出現</small></span></summary>
+  <div class="card-body">
+    <span class="tag">風險與部位</span>
+    <p class="card-context"><b>什麼時候用：</b>借錢投資、股市急跌，或近期需要用錢時。</p>
+    <p class="question">如果連續幾天賣不掉，我還能付生活費和貸款嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先留出生活費與還款資金。</li><li>分開檢查跌價、追繳，以及想賣卻賣不掉的風險。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>信貸買現股仍是槓桿；免追繳不等於安全。留現金也可能錯過反彈。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP10">EP10 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP547">EP547 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP550">EP550 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-2" class="knowledge-card" data-category="買進與加碼" data-source="legacy-2">
+  <summary><span class="number">02</span><span>看好公司，不代表任何價格都該重押<small>公司前景、買入價格、部位大小要分開</small></span></summary>
+  <div class="card-body">
+    <span class="tag">買進與加碼</span>
+    <p class="card-context"><b>什麼時候用：</b>仍看好產業，但股價、估值或用錢計畫改變時。</p>
+    <p class="question">我看好的是公司，還是這個價格下的投資機會？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分別寫下公司前景、買入價格與預計持有多久。</li><li>再問：如果跌了，我這個部位是否太大？</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>長期看好不能消除中途大跌；太常調節也可能錯失上漲。EP2的買賣措辭仍待核音。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP2">EP2 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP548">EP548 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP550">EP550 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-3" class="knowledge-card" data-category="基本面與估值" data-source="legacy-3">
+  <summary><span class="number">03</span><span>研究看對，不等於投資賺錢<small>公司賺更多，市場卻可能願意付更低的價格</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>公司業績看似變好，持股卻下跌時。</p>
+    <p class="question">是營運沒達標，還是好消息已反映在價格裡？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先檢查公司是否真的賺到預期的錢。</li><li>再檢查市場願付的估值，以及自己的買入成本。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>主持人說自己研究正確，仍只是自評；不能直接認定市場錯了。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP2">EP2 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-4" class="knowledge-card" data-category="新聞與證據" data-source="legacy-4">
+  <summary><span class="number">04</span><span>消息要跟原先預期比較<small>不是分好消息、壞消息就夠了</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>財報、升息、關稅或重要數據公布前後。</p>
+    <p class="question">這個結果，比我原先想的好，還是差？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>公布前先記下預期，不要看完結果才改答案。</li><li>公布後比較差距，再看股價反應；個人預期與市場預期分開列。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>不能用「早已反映」事後解釋所有漲跌。EP227的升息預測就與後來結果不同。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP14">EP14 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP22">EP22 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP546">EP546 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-5" class="knowledge-card" data-category="買進與加碼" data-source="legacy-5">
+  <summary><span class="number">05</span><span>分批是控制錯誤成本，不是保證買到底<small>先決定何時加碼，也決定何時停止</small></span></summary>
+  <div class="card-body">
+    <span class="tag">買進與加碼</span>
+    <p class="card-context"><b>什麼時候用：</b>想參與機會，但還看不清楚轉折時。</p>
+    <p class="question">買第一筆之後，要看到什麼才買下一筆？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先訂整體可承受的投入上限。</li><li>把試買、加碼、停止投入分開，不只因價格更低就一直買。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有上限的分批可能變成無限攤平。EP6有轉述他人的部分，不能全算主持人本人操作。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP6">EP6 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP14">EP14 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP546">EP546 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-6" class="knowledge-card" data-category="思考與檢討" data-source="legacy-6">
+  <summary><span class="number">06</span><span>假設錯了，就更新劇本<small>改判斷要有新證據，不是跟著心情走</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>新資訊挑戰原本買進理由時。</p>
+    <p class="question">究竟是哪一個假設變了？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>留下原判斷，指出新證據推翻了哪一部分。</li><li>再決定要改長期看法、部位大小，還是暫停下一筆買進。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>靈活與反覆改口不一樣。計畫、本人執行與朋友操作也不能混為一談。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP546">EP546 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP549">EP549 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-7" class="knowledge-card" data-category="基本面與估值" data-source="legacy-7">
+  <summary><span class="number">07</span><span>題材必須落到公司收益<small>熱門產業，不代表每家相關公司都賺得到</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>看到AI、轉單、急單或公司分拆新聞時。</p>
+    <p class="question">誰付錢、誰接單，最後是哪家公司的股東受益？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>沿著需求、訂單、營收、利潤一路追。</li><li>確認這項業務占公司多少，以及收益是否真的歸到股東。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>需求可能只是提前拉貨，也可能賺不到利潤；即使受益，股價也可能早已反映。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP18">EP18 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP548">EP548 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-8" class="knowledge-card" data-category="新聞與證據" data-source="legacy-8">
+  <summary><span class="number">08</span><span>傳聞、訂單和財報，看的不是同一段時間<small>先分清資料的新舊與來源</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>龍頭財報很好，下游卻開始傳出雜音時。</p>
+    <p class="question">這份資料反映過去，還是接下來的變化？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把已實現財報、公司預測、短期訂單與傳聞分開。</li><li>用後續公告檢查先前判斷，不把事後資訊當成當時已知。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>多個人轉述同一消息，不算多份獨立證據；下游轉弱也不代表全部上游同步轉弱。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP22">EP22 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP228">EP228 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP548">EP548 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP550">EP550 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-9" class="knowledge-card" data-category="賣出與減碼" data-source="legacy-9">
+  <summary><span class="number">09</span><span>持股不欠你一次回本<small>自己的成本，不是公司未來的價值</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>套牢後只想等回本，或反彈時想換股。</p>
+    <p class="question">如果今天手上是現金，我還會買這檔嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>重新檢查買進理由，而不是只盯著成本價。</li><li>比較繼續持有與其他機會的代價。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>弱勢可能只是暫時錯價，不能簡化成不漲就賣；也不能因此否定有依據的長期持有。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP545">EP545 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP549">EP549 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP550">EP550 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-10" class="knowledge-card" data-category="風險與部位" data-source="legacy-10">
+  <summary><span class="number">10</span><span>借鑑判斷，不照抄別人的部位<small>同一檔股票，不同人承受的風險不同</small></span></summary>
+  <div class="card-body">
+    <span class="tag">風險與部位</span>
+    <p class="card-context"><b>什麼時候用：</b>想跟買主持人、名人或朋友時。</p>
+    <p class="question">我的現金流、期限和退出能力，真的跟他一樣嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先比較自己的資金用途、借款條件與持有期限。</li><li>學他的判斷依據，不直接複製股票名稱或持股比例。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有對方完整資產資料，無法比較部位。穩定工作不保證借款安全，指數投資也不保本。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP10">EP10 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP22">EP22 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP227">EP227 原稿 ↗</a></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP549">EP549 原稿 ↗</a></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-11" class="knowledge-card" data-category="新聞與證據" data-source="pattern-1">
+  <summary><span class="number">11</span><span>公司說要買回股票，先看有沒有做到<small>信用線索，不是股價底部訊號</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>公司宣布庫藏股，並公布執行結果時。</p>
+    <p class="question">承諾買多少，最後真的買了多少？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把公告與實際買回結果對照。</li><li>用落差評估管理層信用，不直接推論股價要漲。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒買足不一定是欺騙；全部買完也不保證落底。部分年度、比例仍待釐清。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：公告履約是信用線索，不是股價底部。執行不足可能另有原因，不能直接認定欺騙；本次部分年度與比例矛盾。完整買回不保證落底，EPS因註銷提高也不等於營運改善。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP17">EP17／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>庫藏股公告與實際買回須分開看，執行率才反映公司究竟買了多少，且通常後續才揭露。</p><p class="muted">原筆記限制：主持人另稱未買回沒有罰則，但法規與公告條件未經核實；本集沒有完整公告或執行明細。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP17">EP17／E3 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人以橘子低執行率後仍曾大漲，以及另次盤整或隨股災下跌為反例，認為執行率更適合作為公司信用線索，而非單獨預測股價。</p><p class="muted">原筆記限制：逐字稿出現「140%」與後文「買兩趴買零趴」矛盾，年度也不清楚；不能據此確認數值或認定公司故意欺騙。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP17">EP17／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人稱京城銀行上次庫藏股執行率為100%，但明確否認完整買回就代表落底，建議檢視歷次案例。</p><p class="muted">原筆記限制：京城銀行數字未核實；未提供回測期間、基準、樣本選擇與交易成本，不能推導有效策略。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-12" class="knowledge-card" data-category="基本面與估值" data-source="pattern-2">
+  <summary><span class="number">12</span><span>工廠復工，不代表生意已恢復<small>能生產、能交貨、有人買是三件事</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>看到復工消息，但營收仍差時。</p>
+    <p class="question">訂單只是延後，還是客戶已經不買了？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先查人力、缺料是否仍限制出貨。</li><li>再看終端需求與後續營收，判斷能不能追回。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>復工率與朋友個案不足以代表整家公司，更不能代表全產業。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：復工、交付與需求追回須逐層辨識。名義復工率不能代表有效產出；營收年減也無法單獨識別需求消失。朋友個案、總體失業與產業敘述不足以確認個別公司訂單。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP1">EP1／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>疫情由中國擴及全球後，轉單題材須加入缺料與需求萎縮條件；無薪假與收入下降可能壓抑消費。</p><p class="muted">原筆記限制：工廠延後復工、可能倒廠及航空排班縮減部分是朋友轉述，未量化影響範圍與期限。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP1">EP1／E4 原稿 ↗</a><p class="status">主持人 · 預測</p><p>中國設廠企業復工後仍可能因感染再停線；台灣設廠也未必免疫，仍可能受缺料與消費緊縮拖累。</p><p class="muted">原筆記限制：停線及單日重跌是風險情境，不是已發生的公司事件，也未估算機率。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP3">EP3／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>疫情研究應由病例與名義復工率，轉向實際恢復產能、缺料斷鏈及就業衝擊；開工不代表人員與產線已正常運作。</p><p class="muted">原筆記限制：產線僅開一成是說明性情境，非具名公司的實測數據；未提供可追蹤資料來源。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP5">EP5／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人認為第一季衰退已廣為預期，重點是需求是否保留；若歐美消費未受影響，後續季度可能追回營收。</p><p class="muted">原筆記限制：這是主持人對鴻海轉述的延伸，不是保證復甦；未比較衰退幅度與市場預期，也未估算利潤。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP16">EP16／E6 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人認為新公布的海外資料開始支持歐美終端需求衰退、台灣外銷電子業受衝擊的假說，但尚未提出公司層級的驗證。</p><p class="muted">原筆記限制：主持人自稱開始驗證，不等於研究者已核實；失業與總體資料無法直接證明所有電子業訂單、利潤同步下降。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP16">EP16／E7 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>主持人提出後續以公司營收年減幅度觀察衝擊；若三、四月仍延續二月的弱勢，他會更擔心終端需求消失，而不只中國停工。</p><p class="muted">原筆記限制：原稿所稱二月下降10至20%未指明公司或樣本；營收下滑也可能來自供給、遞延出貨等因素，無法單獨識別需求。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-13" class="knowledge-card" data-category="思考與檢討" data-source="pattern-3">
+  <summary><span class="number">13</span><span>本金小時，也要研究怎麼提高收入<small>時間投在哪裡，可能比選哪檔更重要</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>職涯初期、本金不多，卻花很多時間盯盤時。</p>
+    <p class="question">下一小時拿來研究股票，還是提升工作能力更值得？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>比較本金規模、薪資提升空間與研究時間。</li><li>把生活支出、家庭時間與未來職涯一起算進去。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>不是說小資族不該投資；也不能假設研究一定能讓本金翻倍。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：本金小時先比較薪資與研究投入。只以即期薪資或投資翻倍想像判斷，未計生活支出、職涯選擇權與研究結果時，無法定案。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP286">EP286／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>面對聽眾所述三倍薪資但專業較窄的工作機會，先比較原職追上薪資所需時間，再衡量轉職限制與專業稀缺性；若原職幾年可追上且選擇更多，可考慮留下，若需十五至二十年則高薪較合理。狹窄但難以取代、須傳承的專業也可能值得選。</p><p class="muted">原筆記限制：主持人自承圈外人，未替聽眾定案；年數是條件式例子，非已知職涯預測。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP289">EP289／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>重返期貨交易先確認過去是否獲利，再用小口數適應不同市場。主動投資是否擴大應納入時間、本業與家庭成本；略勝大盤但耗時過多可能不值得，可保留被動投資退路。</p><p class="muted">原筆記限制：年度策略有效性的例子未附績效；三成大盤只是起始建議，分母未明，不能視為通用配置。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP291">EP291／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>本金小時，薪資增加本金的效果可能比追求投資翻倍更直接；主持人偏好高薪工作加自行研究，但承認優質研究員職位能提供公司接觸及學習優勢。</p><p class="muted">原筆記限制：未比較實際職缺；大本金不代表投資獲利必然勝過薪資，舉例也未扣除生活支出。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-14" class="knowledge-card" data-category="持有與等待" data-source="pattern-4">
+  <summary><span class="number">14</span><span>別把短線套牢，改名叫長期投資<small>先說清楚當初為什麼買</small></span></summary>
+  <div class="card-body">
+    <span class="tag">持有與等待</span>
+    <p class="card-context"><b>什麼時候用：</b>短線部位下跌，開始想改成長抱時。</p>
+    <p class="question">我的持有理由，跟買進時還是同一個嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>辨認自己原先靠的是估值、趨勢，還是長期分散。</li><li>用對應的標準檢查續抱理由，不事後換一套說法。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>有依據的逆勢買入不一定錯；跌價也不直接等於基本面失效。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 7筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：持有期限與進場邏輯不能事後改名。下跌不直接證明基本面錯誤，低估值也不保證止跌；分批未設定總曝險仍可能重傷。等待可能少賺，趨勢訊號亦未提供完整判準。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP1">EP1／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>定期投入者與主動交易者應分開處理；融資或短線部位遇走勢不利，不能只靠新聞與疫情終將過去的信念續抱。</p><p class="muted">原筆記限制：均線規則與退出門檻未完整定義；其指數長期上行論述不是保證，也未限定指數與持有期限。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP3">EP3／E1 原稿 ↗</a><p class="status">聽眾 · 第三方轉述</p><p>據主持人轉述，聽眾因不想承認當沖空單虧損，改為融券隔夜並在更高價加空；市場下跌曾減輕損失，但是否回補未明。</p><p class="muted">原筆記限制：僅有節目轉述，未驗證對帳單；短暫減損不代表策略有效，也不能推定已平倉。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP9">EP9／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>下跌趨勢中的抄底不是順勢交易，但有估值或前景依據的逆勢買入不必然錯；應少量買入並預留熊市延續時的加碼能力。</p><p class="muted">原筆記限制：未提供加碼間距、資金比例或停止條件；分批不能保證標的估值正確或避免虧損。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP20">EP20／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人原先肯定第三方用閒錢長抱配息股票，得知買台灣電子股後指出技術更替與集中風險，建議長期少管理者用指數ETF分散，但仍須理解產品。</p><p class="muted">原筆記限制：第三方持股明細不明；ETF仍有市場與集中風險，不能保證填息或本金安全。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP21">EP21／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人偏好等待多頭趨勢後參與，接受可能少賺，避免預測形成偏見；他也指出持續看多並攤平的他人可能財力雄厚，不能忽略條件差異。</p><p class="muted">原筆記限制：這是策略偏好，非已執行交易；他人財力是主持人的推測，未提供績效比較。等待也可能遭遇假突破屬研究者風險提醒。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP13">EP13／E6 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人預期真正穩定的翻轉會形成一段行情，故長線投資者不必爭搶最低點，可等待情勢穩定。</p><p class="muted">原筆記限制：沒有界定穩定或打底的判準；翻轉未必提供充裕進場時間，等待也可能錯失快速回升。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP20">EP20／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>持續盤跌時，不宜只憑基本面印象越跌越買；應檢視是否有問題，並思考賣方的想法與動機。</p><p class="muted">原筆記限制：研究者限制：價格下跌本身不能證明基本面惡化，也不能直接得知賣方動機；原稿語氣較絕對。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-15" class="knowledge-card" data-category="新聞與證據" data-source="pattern-5">
+  <summary><span class="number">15</span><span>降息救的是什麼，不要只看股價<small>資金便宜，不代表客戶願意消費</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>政府降息、紓困，但經濟仍很差時。</p>
+    <p class="question">政策解決的是缺錢，還是沒有人買？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先辨認衝擊：借款成本、收入中斷，或需求消失。</li><li>再看政策能處理哪一項，不把政策名稱當買進理由。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>資金寬鬆仍可能推升資產；單日股價不能判定政策對經濟是否有效。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 8筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：政策須對準衝擊，不能以股價代替成效。單日漲跌無法辨識政策對實體經濟的作用；政策力度也不能單獨證明衰退。尚缺政策傳導、企業現金缺口與需求恢復的量化比較。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP5">EP5／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>緊急降息後股市先漲後跌，政策利多不保證價格上升；主持人推測前日反彈後，降息可能成為短線獲利了結機會。</p><p class="muted">原筆記限制：獲利了結只是可能解釋；單日走勢不能證明政策全面無效。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP5">EP5／E5 原稿 ↗</a><p class="status">第三方 · 第三方轉述</p><p>據主持人轉述，達利歐區分病毒、應對措施的經濟影響及資本市場反應，認為拋售多源於現金流壓力，降息難刺激不願外出的消費者；公司財務可能呈V或U型恢復，但仍有不確定性，並主張貨幣與財政政策協調。</p><p class="muted">原筆記限制：僅為主持人轉述，未核對達利歐原文；長期影響並未排除，債務、政治衝突等疊加風險可能使情勢惡化。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP12">EP12／E1 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人觀察緊急降息後市場僅短暫反彈，因而質疑釋放流動性必然維持或推高資產價格的假設。</p><p class="muted">原筆記限制：屬主持人的市場描述，未核對行情；短期下跌不足以證明政策對經濟完全無效。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP12">EP12／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>聯準會政策應從經濟與就業目標理解，不能視為單純替股市服務。</p><p class="muted">原筆記限制：這是主持人的政策解讀，並非對本次決策動機的獨立驗證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP12">EP12／E4 原稿 ↗</a><p class="status">主持人 · 預測</p><p>停工及收入中斷不會同步停止租金、利息與貨款支出；疫情若拖延，缺乏周轉金的中小企業可能倒閉，並將風險傳給銀行。</p><p class="muted">原筆記限制：是條件式風險情境，不代表倒閉潮或銀行危機已發生；未估計企業資金缺口。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP11">EP11／E5 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人整理多方說法：寬鬆資金可能流入股票與房地產，若治療有效或疫苗出現，資產價格可能繼續上行。</p><p class="muted">原筆記限制：是主持人整理的多方說法，不是已確認的療效、政策結果或資金流向；未比較其與需求衰退的相對力量。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP16">EP16／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人承認失業可能降低購屋需求並增加房貸繳不出而遭處分的供給，與寬鬆資金支撐房價形成拉鋸。</p><p class="muted">原筆記限制：屬情境推演，不是台灣已出現大量失業或房貸違約的陳述；亦未估計兩股力量大小。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP19">EP19／E6 原稿 ↗</a><p class="status">主持人 · 預測</p><p>他認為QE與降息增加資金尋找收益的動機，偏向有利資產持有人；同時全球投資美國的美元需求可能抵銷印鈔造成的貶值壓力。</p><p class="muted">原筆記限制：未提供時間範圍與流量證據；不能推出所有股票或房地產必漲，也不能推論美元必不貶值。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-16" class="knowledge-card" data-category="工具與成本" data-source="pattern-6">
+  <summary><span class="number">16</span><span>等行情回來之前，產品可能先出問題<small>看方向以外，也看清算與存續規則</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>買期貨型、槓桿ETF，尤其有溢價或清算疑慮時。</p>
+    <p class="question">我買的產品，能安全撐到預期行情出現嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查市價與淨值差距、持有成本及清算條件。</li><li>把制度變更與融資風險加入退出計畫。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>延後清算不保證回本；不同產品不能套同一規則，具體條文仍須核對。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：標的看對之外，還須檢查產品與規則。產品機制、清算條文及公告時序均未核實；不能概括所有期貨ETF必然耗損，也不能由券商彙總交易推定內線。延後清算不保證回本。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP7">EP7／E4 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人稱石油正二當時溢價約20%，認為買進價格高於淨值，本身已構成額外報酬障礙。</p><p class="muted">原筆記限制：數字及對應時點未獨立核實；不能把當時溢價直接當作已實現損失。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP7">EP7／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>原油便宜不代表見底；正二再加融資會疊加槓桿，大額押注可能在反彈前被追繳斷頭。</p><p class="muted">原筆記限制：屬風險情境，不是已確認個案；單日跌幅不能直接當作全部資產歸零。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP15">EP15／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>原油正二具有溢價、期貨轉倉與槓桿風險；長期震盪可能使其偏離追蹤期貨的表現。</p><p class="muted">原筆記限制：未提供耗損計算或實際追蹤誤差；不能將其後「持有越久賠越多」的絕對說法視為所有價格路徑皆成立。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP15">EP15／E2 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人稱清算將以剩餘淨值扣費後退款，而非以投資人的買入市價結算，因此高溢價買入者可能承受額外損失。</p><p class="muted">原筆記限制：清算條款、費用與最終結算淨值均未外部核實；不是自述已發生的清算結果。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP15">EP15／E3 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人敘述3月19日原先公告將申請清算，其後主管機關將低淨值下市門檻由三個營業日放寬為三十個，改變依原規則交易者的決策前提。</p><p class="muted">原筆記限制：正式條文、適用範圍與公告時序待核；三十個營業日不能直接等同一個月，也不代表保證存續期限。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP19">EP19／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>他反對因溢價高而仍買00672L，也批評延緩下市改變既定規則，增加公平性疑慮；短暫反彈不能消除商品與制度風險。</p><p class="muted">原筆記限制：規則、公告與盤後籌碼未核實；圖利及內線僅為質疑。提及期貨無溢價，不代表期貨沒有其他風險。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-17" class="knowledge-card" data-category="工具與成本" data-source="pattern-7">
+  <summary><span class="number">17</span><span>小額分批，別讓最低手續費吃掉本金<small>買得起，不代表成本划算</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>用小額資金頻繁買零股或海外ETF時。</p>
+    <p class="question">這一筆投入，有多少先變成費用？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把最低手續費、匯款與換匯成本一起比較。</li><li>再評估是否累積一段金額後投入，並計入持續費用。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有適用所有人的最低本金；零手續費也不等於總成本為零。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：小額投入的總成本與可行規模。費率、匯款、換匯及賣出成本不完整，不能推出通用最低本金；零手續費也不等於總成本為零。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP82">EP82／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>零股與複委託的小額交易須先計入最低手續費；買得起單股不代表交易成本合理，亦須確認下單單位。</p><p class="muted">原筆記限制：屬主持人舉例，非所有券商費率；472 元只加了買進費，未涵蓋賣出費稅。原稿後續公式省略千分比，不能直接照算。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP85">EP85／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>小額長期投資應同時比較 ETF 內扣費用與複委託最低手續費；未達經濟交易規模可先累積資金，亦提及海外券商。</p><p class="muted">原筆記限制：金額只是主持人概估；未提供費率、匯款與換匯成本，零手續費不代表總成本為零，也未證明個股與 ETF 曝險相同。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP87">EP87／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>對僅一兩萬元台幣的美股入門提問，建議先累積資金或投資自己；另提出約三十萬元起步的個人門檻，理由是匯款、複委託低消與配置空間。</p><p class="muted">原筆記限制：不是普遍最低投資額；費率、平台限制及可用配置方式均未獨立核實。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-18" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-8">
+  <summary><span class="number">18</span><span>競爭變了，先重看買進理由<small>停止加碼、考慮退出、實際賣出要分開</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>平台規則、競爭者或公司策略改變時。</p>
+    <p class="question">新變化有沒有傷到我原本看好的優勢？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>回頭檢查用戶成長、差異化與獲利路徑。</li><li>區分消息、調整計畫與已執行交易，不把三者混在一起。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>Spotify案例仍有未賣出的不確定性；傳聞未量化影響前，不等於買進理由已失效。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：治理或競爭變數觸發假說重審。消息僅為論壇流出、未量化營運影響，或退出門檻前後不一致時，不能確認假說已失效或計畫已執行。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP69">EP69／E7 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>主持人懷疑Spotify言論審查不符原始平台期待，表示會停止加碼並考慮減碼；若Joe Rogan事件無合理解釋，將下修其成為Podcast平台共主的想像。</p><p class="muted">原筆記限制：主持人承認公司尚未正面回應；審查指控仍屬懷疑，不代表已減碼，前期獲利與後期加碼損益不可合併推算。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP71">EP71／E3 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>主持人自述Spotify由一百多買至276，決定停止建倉，賣出未定；理由是Apple One的生態競爭及內容審查偏離原本Podcast增利假說，但仍看見名人內容等機會。</p><p class="muted">原筆記限制：276是自述買進價格，非成本均價或部位比例；未證明已停止交易或已賣出。審查範圍及營收影響未核實。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP73">EP73／E1 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人認為Spotify內部內容監管爭議侵蝕原投資假說，目前看不到加倉理由；依據包含論壇流出消息。</p><p class="muted">原筆記限制：罷工、下架數量與管理失控未獨立查證；強烈情緒不等同營運損害已量化。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP73">EP73／E2 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>先計畫Spotify回到225並往下跌即全數退出，後又稱約200；自述買價從一百多至207，非已執行賣出。</p><p class="muted">原筆記限制：225與200不一致，不能確定正式執行門檻；未交代幣別、平均成本、持股權重與實際委託，不能驗算所稱小賺。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-19" class="knowledge-card" data-category="買進與加碼" data-source="pattern-10">
+  <summary><span class="number">19</span><span>便宜之外，也可以等止跌再出手<small>接受買貴一點，換取多一點確認</small></span></summary>
+  <div class="card-body">
+    <span class="tag">買進與加碼</span>
+    <p class="card-context"><b>什麼時候用：</b>看好個股，但股價仍一直創低時。</p>
+    <p class="question">我願意等哪些訊號，再開始試買？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把個股走勢與大盤、估值和基本面一起看。</li><li>區分短暫反彈與持續轉強，不把一次突破當證明。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>可能錯過快速反彈；現有材料沒有完整價格門檻，也不保證止跌後不再跌。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：價格訊號可作確認但不可單獨證明。全面市場下殺、技術突破可能遭拉抬，或未定義觀察期間與部位上限時，價格訊號不足以單獨支持決策。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP53">EP53／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人偏好連日未創低後分批，上漲再加碼、看錯減碼；認為個股獨弱可能先反映未公布的營運惡化，但承認全面下殺及其他獲利策略的例外。</p><p class="muted">原筆記限制：是經驗與假說，非具體公司已證實事件；上漲不必然證明基本面判斷正確，亦未提供加減碼上限。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP60">EP60／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>應先準備風險應對，待相關股票實際轉弱、持續下跌再規劃減碼，不因政策消息立刻賣光。</p><p class="muted">原筆記限制：未給轉弱、持續下跌或減碼比例的量化標準；等待確認亦可能承受跌幅。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP60">EP60／E4 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>看好騰訊投資能力與雲端布局，但只在政治事件壓低價格、且數日不創新低後考慮進場；若迅速反彈則接受錯過。</p><p class="muted">原筆記限制：未定義甜價、估值或天數；不是已買入，止跌也不保證基本面風險解除。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP64">EP64／E1 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>急跌當天先不動；之後若個股估值已高、修正後未站回，會考慮減碼增加現金，不預先猜高點。</p><p class="muted">原筆記限制：未定義站回價位、等待天數或減碼比例；便宜股票不適用同一推論，亦非自述本次已減碼。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-20" class="knowledge-card" data-category="基本面與估值" data-source="pattern-12">
+  <summary><span class="number">20</span><span>AI會回答，不等於平台賺得到錢<small>要從展示能力追到付費與抽成</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>看到AI或Agent展示新功能時。</p>
+    <p class="question">誰願意付錢，最後又是誰能收走這筆錢？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>檢查任務能否穩定完成，而非只看一次展示。</li><li>再看訂閱、抽成、成本與平台議價能力。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>展示不證明規模化；合作、成本與隱私條件未明，收益仍是假設。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：AI能力驗證應看任務完成與變現。單次展示無法證明可靠性、規模化或收益；合作、成本與隱私安排未明時，變現仍屬假說。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP460">EP460／E1 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人自述達哥完成訂票並收到確認簡訊；他據此將Agent的差異定位為整合模型與插件後能執行任務，而非只回答問題。</p><p class="muted">原筆記限制：未公開訂票方式；單次展示不能證明跨服務可靠性、規模化能力或商業收益。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP460">EP460／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>達哥體驗促使他重估蘋果：掌握終端用戶的平台未必須自建大型模型，可能靠外部模型與訂閱、抽成獲利，甚至反向向模型商收入口費。</p><p class="muted">原筆記限制：屬多種假設劇本；朋友認同不是獨立證實。模型費用、隱私安排、毛利及合作條件均未確定。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP461">EP461／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人推測模型可替換可能削弱單一LLM護城河，掌握用戶入口、理解與執行的整合者更有優勢；利基企業軟體可能提高採用率或收費，但也可能先有題材行情才檢驗獲利。</p><p class="muted">原筆記限制：當時合作與未來多模型構想不可混同；架構類比不是技術實測，營收與股東收益亦未證實。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP462">EP462／E5 原稿 ↗</a><p class="status">主持人 · 預測</p><p>預期AI資本投入初期侵蝕獲利，平台與軟體收益較晚浮現。蘋果若須付推論費亦有毛利壓力，但掌握終端客戶可能帶來議價及訂閱變現空間。</p><p class="muted">原筆記限制：先投入不保證回收；免費取得模型服務僅為報導轉述。供應鏈開始詢問蘋果伺服器，不等於訂單或出貨確定。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-21" class="knowledge-card" data-category="新聞與證據" data-source="pattern-14">
+  <summary><span class="number">21</span><span>先查清楚新聞，再決定要不要交易<small>查證事實與決定時機是兩個步驟</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>看到爭議新聞或二手轉述，想立即買賣時。</p>
+    <p class="question">事情是真的嗎？它又會傷到哪一項業務？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先找原始說法，避免只看別人摘要。</li><li>再查用戶、營收與股價反應，判斷是否改變持有理由。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>倒帳、跑路等急迫風險不能一律慢慢等；股價反應也不能代替事實查核。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：原始資料與市場反應分工。原始資料不可得，或屬倒帳、跑路等需即時處理事件；市場反應不能替代事實查核。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP37">EP37／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>以台積電筆記爭議提醒轉述會失真，能取得原始資料應優先取得；他稱自己說的是2024年，並否認曾說設廠可交換對華為出貨。</p><p class="muted">原筆記限制：僅核對本集澄清，未比對被指涉集數、原貼文或公司公告。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP39">EP39／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>一般投資人應讓消息與情緒沉澱，再決定是否調倉，而非搶新聞速度；短線交易者及倒帳跑路等極端事件另論。</p><p class="muted">原筆記限制：研究者提醒：等待三至五天不保證真相浮現，重複報導也未必形成獨立查證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP44">EP44／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>政治或資安爭議不能直接推出做空方向；須檢查是否造成用戶與營收受損。主持人稱Zoom季報反而呈現強勢增長。</p><p class="muted">原筆記限制：未列季報期間、數值或估值；用戶與營收增長不能證明爭議無害，也不能推出任何價格都值得買。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-22" class="knowledge-card" data-category="工具與成本" data-source="pattern-15">
+  <summary><span class="number">22</span><span>買原油商品，不一定是在買現在的油價<small>合約月份與交割方式會改變結果</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>使用期貨型ETF或需要換約的商品時。</p>
+    <p class="question">這個商品實際追蹤哪一份合約？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查清近月、遠月及換約方式。</li><li>再確認交割、申贖與極端行情下能否平倉。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>設定停損不保證能成交；換成期貨也不必然更安全。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：方向判斷之外的商品曝險與退出機制。產品代碼、配置與契約多未核實；不能把所有轉倉視為耗損，也不能假設改用期貨更安全。系統故障與責任仍缺委託紀錄。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP25">EP25／E4 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人轉述朋友曾想做ETF套利，卻因聯繫及申辦障礙未能進行；並憑記憶提出五百張與四百多萬元等門檻。</p><p class="muted">原筆記限制：朋友遭遇不能證明全面禁止散戶；金額、單位、保證金與正式申辦條件均未核實。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP27">EP27／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>回應原油期貨近月與次近月價差，提醒正價差下續持並轉倉會增加成本。</p><p class="muted">原筆記限制：未交代合約、價差與轉倉方式；轉倉價差不能一概等同券商手續費。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP29">EP29／E1 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人將WTI五月負價歸因於交割與儲運壓力，強調不能推成所有原油都負價。</p><p class="muted">原筆記限制：行情、庫存與交割規則未獨立核實；遠月較貴不宜只解釋成復甦預期。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP29">EP29／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>高溢價原油ETF可能在油價反彈時仍下跌；若恢復申購套利，溢價收斂也是買方風險。</p><p class="muted">原筆記限制：口述淨值0.49、價格2.2與600多%溢價不一致；不能把高風險說成必然虧損，也不能因此推成期貨適合新手。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP31">EP31／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>他描述負油價下部分交易系統無法下單或斷頭，加上買賣價差擴大，令投資人無法按預期出場；由此可見保證金與自動平倉不能確保損失上限。</p><p class="muted">原筆記限制：損失上限是研究歸納；券商範圍、委託簿價位及故障原因未核實。原稿追繳比例分母不清，不能視為通用規則。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP32">EP32／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人稱00672L實際槓桿約1.2倍且已轉往遠月，近月反彈未必帶動它；價格仍可能因溢價亂漲亂跌，並警告歸零風險。</p><p class="muted">原筆記限制：原稿代碼有00672與00672L、槓桿有1.2與1.21倍的說法；產品機制與風險未核實，「騙局」為主持人評語。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-23" class="knowledge-card" data-category="工具與成本" data-source="pattern-16">
+  <summary><span class="number">23</span><span>分幾天買，跟同一天拆單不是同一件事<small>一個管理時點，一個管理成交衝擊</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>比較分批投入、拆單，或基金規模時。</p>
+    <p class="question">我要降低的是買錯時間，還是一次買太多的成本？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>跨日分批看投入時點；當日拆單看買賣盤深度。</li><li>小資金查最低費，大資金查市場是否容納得下。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>拆單不保證更便宜；基金大也不直接等於未來績效差。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 7筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：投資分批、執行拆單與策略容量分開。缺實際費率、成交及容量測算；拆單不保證總成本更低，基金規模大也不足以證明績效必然衰退。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP102">EP102／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>複委託的最低手續費會放大小額交易成本，應按單筆金額比較管道，而非只考慮方便。</p><p class="muted">原筆記限制：二、三十萬元門檻及20美元為口述說明，未明確券商、方案與適用日期；買一千股是條件例子，非成交紀錄。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP111">EP111／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>市價單滑價取決於委託量相對掛單深度；小型低流動性股票的大單宜在當日拆小執行，與跨日分批投資不同。</p><p class="muted">原筆記限制：對VOO等高流動性ETF使用「不可能」是主持人的強斷言，不是本研究保證；比特幣段落中的六顆對兩顆掛單量屬示例，不能當成已核實事件數據。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP113">EP113／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>ETF須區分廣泛指數與主題、策略產品；熱門基金若集中持有小型股至大股東地位，風險可能不同。選擇時還須看費用、選股及權重。</p><p class="muted">原筆記限制：本集未完整重述Burry所指事件機制；主持人自述配置勝過某ETF，未提供區間及績效，權重比較語句亦有疑點。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP114">EP114／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>投資基金應重視費後報酬；主持人稱對外三基金過往超額報酬可能被多層費用吃掉，但大獎章若公布績效屬實，高收費仍可能合理。</p><p class="muted">原筆記限制：未提供完整費率、期間及計算；大獎章績效為公司公布資料的轉述，未獨立驗證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP114">EP114／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>策略有資金胃納量；規模擴張可能改變可投資標的並降低報酬，可能是大獎章不對外開放的原因之一。</p><p class="muted">原筆記限制：數字純屬假設例子；未證實大獎章實際容量或封閉原因。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP105">EP105／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>行情漲跌皆宜分批，並非看好台積電就可在600元一次押滿；新手先以ETF入門，主動選股需投入時間，投機與IPO類配置宜低且須看費用。</p><p class="muted">原筆記限制：分批不保證獲利，持續上漲時有少賺成本；IPO一兩趴的口語表述不宜當成已執行持倉紀錄。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP114">EP114／E3 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>主持人借其他機構案例猜測對外基金是否替旗艦基金抬轎，同時保留只是特殊年度表現失常的解釋，反對單憑異常年度否定策略。</p><p class="muted">原筆記限制：主持人承認帶有陰謀論性質；績效落差不能證明利益輸送。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-24" class="knowledge-card" data-category="持有與等待" data-source="pattern-18">
+  <summary><span class="number">24</span><span>看空經濟，不代表現在就該放空<small>長期風險與眼前走勢，可能不同步</small></span></summary>
+  <div class="card-body">
+    <span class="tag">持有與等待</span>
+    <p class="card-context"><b>什麼時候用：</b>經濟很差，政策卻持續支持市場時。</p>
+    <p class="question">我的風險判斷，什麼時候才可能反映在價格上？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分開看長期問題與短期政策帶來的資金。</li><li>把空手等待也列為選項，不把不做空解讀成必須買進。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>政策何時失效仍未知；不能從悲觀看法推導出精準交易時點。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：政策支撐與風險實現期限分開。未提供政策失效、重啟放空或估值門檻；不能把不宜逆勢推成必須做多，更不能將政策續命期限視為已驗證預測。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP24">EP24／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>疫情期間多項消息與政策交互作用，主持人認為不能沿用承平時期的單一事件推演來預測盤勢。</p><p class="muted">原筆記限制：這是對預測能力的判斷，不代表任何條件式推演皆無價值；他稍後仍提出政策風險期限預測。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP26">EP26／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人將政府視為市場中力量極強的參與者，主張政府決定救市做多時不要站在其對面。</p><p class="muted">原筆記限制：語氣絕對但未列政策失效反例、買進價格或停損條件；不等於政府能保證資產上漲。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP26">EP26／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人承認QE後果與發生時間未知，認為交易判斷應重視時間尺度；長年喊空即使終遇下跌，也可能錯過中間上漲。</p><p class="muted">原筆記限制：沒有可操作的擇時方法；不能因後果遙遠就忽略尾端風險，或把歷史上漲延伸為未來保證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP27">EP27／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>即使認為未來會修正，只要政府表態支撐市場，便主張空方收手；反對政策干預不能變成情緒性對做。</p><p class="muted">原筆記限制：屬風險原則，不是已執行平倉；未提供退出或重啟放空的具體門檻，也不能推論政策保證上漲。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP33">EP33／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人把政策救市與不要對作的觀點，轉成可以做多或空手、不要放空的交易主張。</p><p class="muted">原筆記限制：研究限制：未區分期限、標的或避險用途；政策支持不等於股價不會下跌。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP24">EP24／E4 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人推測政策可使經濟金融風險至少延至選前，甚至川普若當選後一至兩年仍不爆發；若疫情利空排除，連任機會高。</p><p class="muted">原筆記限制：「炸彈」的具體事件與驗證標準不明；不是已實現結果，亦與他對盤勢不可預測的強烈表述形成張力。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-25" class="knowledge-card" data-category="持有與等待" data-source="pattern-19">
+  <summary><span class="number">25</span><span>願意買貴一點，是為了等到動起來<small>營運看好，與現在要不要投入可以不同</small></span></summary>
+  <div class="card-body">
+    <span class="tag">持有與等待</span>
+    <p class="card-context"><b>什麼時候用：</b>公司有潛力，但股價遲遲不動時。</p>
+    <p class="question">我要提早等，還是等行情啟動後再參與？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>比較等待成本與確認後較高的買入價。</li><li>既有持股與新增資金分開想，不把不加碼當成看壞。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>轉換標的也可能虧損；案例中的停損方法有差異，不能拼成單一規則。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：等待動能與維持長抱的理由分流。未定義動能、退出與估值門檻，無法判斷換股能否抵銷較高買價及交易成本；換入標的亦可能下跌。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP82">EP82／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>看好 WiFi 6 成為台股後續題材，但尚未看見資金推動；傾向等族群受關注、營收持續上升及資金進場，以降低提前布局的等待成本。</p><p class="muted">原筆記限制：未指定公司、估值或可操作的資金訊號；提前布局可能等待一兩年，亦未聲稱已買進。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP85">EP85／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>自述偏好等股價開始上漲再進場，願付較高價格換取動能訊號；要求方法一致、自行回測與反覆試錯。</p><p class="muted">原筆記限制：未給突破幅度、量能、停損及部位規則；均線不是全體投資人實際成本，勝率過半亦不足單獨證明獲利。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP86">EP86／E2 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述Fastly報酬由正六、七成轉負後減碼，轉買Cloudflare；仍看好原公司，但認為資金可有更好用途。</p><p class="muted">原筆記限制：未提供完整交易或比例；主持人明言換入標的也可能下跌。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP83">EP83／E6 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述Spotify爭議後未加碼，也未停損；先前跌破兩百多後分批賣出的說法只是條件計畫。他反省固定10%停損可能被正常波動反覆觸發。</p><p class="muted">原筆記限制：兩百多的確切價位、幣別及部位未明；上漲不證明爭議不影響基本面，也不代表停損一概無效。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP92">EP92／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>停利停損應事先設定並執行；分批投入須拉開時間，對沖則須負擔成本。</p><p class="muted">原筆記限制：特斯拉價位只是示例而非已執行交易；599、566、515、540的跌價敘述順序有疑點。期貨與選擇權成本未拆分。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-26" class="knowledge-card" data-category="新聞與證據" data-source="pattern-21">
+  <summary><span class="number">26</span><span>消息來源換了角色，說法也可能改變<small>先問他為誰說話，再評估內容</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>聽公司、供應鏈或談判相關人的說法時。</p>
+    <p class="question">他的立場，會限制他能說什麼嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>辨認發言人的利益與所代表的角色。</li><li>區分可驗證事實、個人觀點和仍在協商的提案。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沉默不代表沒有看法；說得多也不代表更準確。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 2筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：來源角色改變資訊可用性。把沉默視為沒有看法，或把早期較多揭露誤當成更準確；匿名或轉述來源缺乏獨立性。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP585">EP585／E8 原稿 ↗</a><p class="status">主持人 · 原則</p><p>美股研究可找券商報告，並從earnings call的分析師Q&amp;A切入，再看公司回答，使用AI輔助理解。另指出創作者早期可能揭露較多，建立利益關係後可能因斷人財路而收斂；他也自述代表公司後，公開評論須考慮對其他投資與成員的影響。</p><p class="muted">原筆記限制：覆核提醒：早期分享較直接不代表更準確；法說問題、公司回答與AI整理仍須區分來源及核對，原稿未提供完整驗證流程。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP586">EP586／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人表示即使併購或漲價傳聞看似不合理，仍可能值得考察；消息可能因後續發展而無法落實，不能只以事後真假評價研究價值。政策方面，他將美國做法解讀為向企業與盟友索取資源；並觀察台灣出口商多能轉嫁關稅，推測通膨影響可能待需求復甦才更明顯。</p><p class="muted">原筆記限制：值得考察不等於消息可信或可立即交易；關稅觀察無樣本支持。Intel可能獲政策訂單是推測，不代表製造能力提升。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-27" class="knowledge-card" data-category="持有與等待" data-source="pattern-22">
+  <summary><span class="number">27</span><span>高配息，不是永遠持有的理由<small>要看未來賺錢與配息的能力</small></span></summary>
+  <div class="card-body">
+    <span class="tag">持有與等待</span>
+    <p class="card-context"><b>什麼時候用：</b>因殖利率、土地資產或產業穩定而長抱時。</p>
+    <p class="question">公司未來還能維持獲利與配息嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>追蹤競爭、利率、資本支出與本業盈虧。</li><li>用未來機會檢查續抱理由，不只等成本回來。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>跌深與高殖利率都不能單獨證明便宜；弱勢也不一定代表營運惡化。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：長期持有理由須隨營運條件更新。僅因跌深、高殖利率、土地資產或等待回本而持有；但價格弱勢本身也不能單獨證明營運惡化。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP43">EP43／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>存股不等於定存；主持人以低利率可能壓抑銀行獲利、電信降價與5G支出增加為例，要求重新檢視原有長期持有理由。</p><p class="muted">原筆記限制：銀行展望是條件式推測，未量化個別公司影響；原稿以國債作無風險對照，不足以涵蓋其所有持有風險。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP45">EP45／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>對長期套牢宏碁的提問，若看不到產品前景與翻身可能，應考慮換至更看好的標的，避免為回本再付時間成本。</p><p class="muted">原筆記限制：不是無條件賣出指令；未完整分析公司，未來十年價格停滯是假設，換股也不保證較佳報酬。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP49">EP49／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>土地價值不保證實現，本業虧損可能耗損資產；等待回本須比較其他機會。主持人也反對僅因跌深便挑選前景不明公司，但承認若潛在上檔足以補償風險，承擔風險可以說得通。</p><p class="muted">原筆記限制：群組買進「萊德」由14元至5元為轉述；後續漲至50、60元或反彈14元是條件例子。原稿混用本益比與淨值，不宜當估值公式。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-28" class="knowledge-card" data-category="思考與檢討" data-source="pattern-23">
+  <summary><span class="number">28</span><span>回測好看，實際做得到嗎？<small>規則、成本、執行缺一不可</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>看到均線策略、交易機器人或漂亮回測時。</p>
+    <p class="question">扣掉成本，換段行情，我還能照規則做嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先把進出條件寫到能重複執行。</li><li>檢查交易成本、其他時期表現與實際操作壓力。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>高命中率不等於高報酬；挑最好看的歷史規則，可能只是碰巧。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：規則回測與實盤執行不可混同。只憑圖形敘事、命中率、名人說法或回測宣傳；未處理成本、樣本外、規則選擇偏誤及實盤心理壓力。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP37">EP37／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>回測可用歷史走勢檢查技術規則，不能只接受看圖說故事；他承認難有百分之百準的指標，另稱日線或週線取決於操作週期。</p><p class="muted">原筆記限制：未展示回測結果、成本或樣本外檢驗；KD80先說賣、後說買，方向須待核音。六七成準度亦未定義分母或績效口徑。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP41">EP41／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>對0050以K值20買、80賣的必勝說存疑，主張以歷史資料回測並計入手續費。</p><p class="muted">原筆記限制：沒有展示回測結果；必勝說來自聽眾轉述，不能據此認定被提及者實際作過保證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP49">EP49／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>不建議新手使用不透明的機器人理財；須理解且認同規則、檢驗回測有效性，並警戒保證獲利話術，較偏好分散投資的ETF工具。</p><p class="muted">原筆記限制：未評測特定服務；回測不能保證未來報酬、ETF不能一概視為低風險，均為覆核提醒。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP43">EP43／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人反對執著起漲點，認為容易演變為反覆抄底；但又以長期上漲股票主張挑對趨勢後隨時投入都會賺。</p><p class="muted">原筆記限制：未提供事前辨識方法、估值或持有期限；成功案例不能證明任何價格買入皆可獲利。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-29" class="knowledge-card" data-category="工具與成本" data-source="pattern-24">
+  <summary><span class="number">29</span><span>猜對崩盤，也可能買錯避險商品<small>方向與工具報酬之間還有一層機制</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>用反向、波動率或期貨連結商品表達看法時。</p>
+    <p class="question">我的看法成立時，這個工具真的會照想像獲利嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>確認工具追蹤什麼，以及適合持有多久。</li><li>把溢價、換約與持有成本納入計算。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>不同商品風險不同；不能只看市場方向就推算商品報酬。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 2筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：看對市場方向仍受商品結構限制。只判斷崩盤或波動方向，卻忽略商品溢價與時間耗損，或把不同工具視為相同機制時，方向正確也可能無法獲利。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP56">EP56／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>法人可能因部位龐大、出場有市場衝擊而對沖；主持人強調VXX等工具有持有成本與操作門檻，一般散戶可改用減碼。</p><p class="muted">原筆記限制：九成多單、一成對沖及倍數為理想算例，非實際績效；工具機制及成本未完整拆解。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP64">EP64／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>VIX期貨商品須留意溢價與正價差耗損；即使看對崩盤方向，持有過久仍可能無法回本，僅主張短線且溢價不大時考慮。</p><p class="muted">原筆記限制：五天是情境非交易紀錄；「一定輸」過度絕對，並列VXX與SQQQ不能視為兩者耗損機制相同。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-30" class="knowledge-card" data-category="買進與加碼" data-source="pattern-25">
+  <summary><span class="number">30</span><span>低估值是研究起點，不一定是買點<small>先分清計畫分批與套牢攤平</small></span></summary>
+  <div class="card-body">
+    <span class="tag">買進與加碼</span>
+    <p class="card-context"><b>什麼時候用：</b>股價很低，但仍沒看到止穩時。</p>
+    <p class="question">如果它繼續跌，我還能照原計畫走嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先核對估值依據與分批資金安排。</li><li>採趨勢方法時，把止穩確認與試買條件分開。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>這是特定方法的取捨，不是所有投資都必須等止跌；確認後仍可能續跌。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：估值便宜仍須等待可執行的止穩條件。止穩後仍可能續跌；分批僅改善承受度，不保證報酬或買在低點。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP157">EP157／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>事前分批不同於套牢後持續攤平：預定三批完成後通常等待，除非新增資金容許比例調整；極少數對基本面高度有信心的情況才逆勢加碼。</p><p class="muted">原筆記限制：三批為做法舉例，不是本集成交紀錄；未提供最高配置比例，並警告信心膨脹後持續攤平可能失敗。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP166">EP166／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>低Forward P/E並非價格底線；分批應盡量保留資金至止跌回升，重點是降低心理崩潰風險。左側不等於短線，反覆搶反彈也會累積試錯成本。</p><p class="muted">原筆記限制：預期EPS可能失準；分批不保證反彈或較高期望報酬。不倒閉也不足以證明值得持有。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP167">EP167／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>單日下影線不等於落底；應依停止創低或站回季線等自訂條件，預寫估值與分批投入劇本。分批改善承受能力，不保證報酬。</p><p class="muted">原筆記限制：150至200元合理價等均為假設案例；未提供實際買進紀錄，便宜後仍可能更便宜。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP168">EP168／E1 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>即使依預估獲利看到低估，仍計畫等大盤數日不再創低後分批試單；下影線不足以確認止跌，分批也可能使反彈時投入不足。</p><p class="muted">原筆記限制：不是已執行買進；不保證買在低點，也不等於否定不看走勢的價值策略。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP159">EP159／E5 原稿 ↗</a><p class="status">主持人 · 預測</p><p>認為台股接近十年平均線時買大盤可能有高勝率，前提是公司仍賺錢、困難屬可跨越；同時承認可能出現日本式長期不利情境。</p><p class="muted">原筆記限制：「全勝」及國安基金進場說法未附樣本、持有期間或制度依據，不是保證；他也未直接認可跌破月線便重押。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-31" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-26">
+  <summary><span class="number">31</span><span>決定賣出，到真的賣掉，中間還有關卡<small>停損計畫不能代替成交能力</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>股票有質押、槓桿，或市場接近跌停時。</p>
+    <p class="question">需要退出的那一天，程序和買盤允許我賣嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>事前查解押、授權與處分流程。</li><li>另外檢查跌停、流動性不足時的成交風險。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>個人解押經驗不適用所有券商；觸及停損價也不保證成交。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：退出意圖不等於可成交能力。個人解押經驗不能推成通用規則；停損觸價不保證成交，等待止跌也不保證避開後續跌勢。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP134">EP134／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>動能交易須事先設退出條件，且依賴行情與執行能力；本金不足、無法持續盯盤又遇鎖跌停時，停損意圖不保證能成交。</p><p class="muted">原筆記限制：主持人亦肯定當沖提供流動性，並非認定所有當沖必虧；原稿漲幅百分點例子不是依成交價精算的報酬率，也未提供機率與成本。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP136">EP136／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>兩三年內急用資金不宜全配股票；若仍持有大盤 ETF，主持人提出移動停損折衷參與行情，觸價須執行並接受賣後反彈。</p><p class="muted">原筆記限制：主持人認為大盤 ETF 較易執行；研究上不能因此視為保證成交或虧損封頂，亦非已執行交易。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP138">EP138／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述4147投資虧損約三四百萬元，曾在下跌時找理由；決定退出後，又因質押解押要求本人親簽、人在海外，延後約兩個月才賣出。</p><p class="muted">原筆記限制：屬個人歷史自述，未核交易與契約；不能推成所有機構現行解押規則，亦無法拆分槓桿及延遲各造成多少損失。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP139">EP139／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人把急跌視為全職交易適性的第一關；去槓桿著重保本金而非預測成功，並強調勝率須搭配部位管理。對連跌且高融資標的，他會等待不再持續創低，以避開可能的強制賣壓。</p><p class="muted">原筆記限制：屬主持人的風險與擇時規則，非保證；他也承認提醒去槓桿後可能反彈。朋友分批買入非他的成交，5%與10%分母不明。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-32" class="knowledge-card" data-category="價格與趨勢" data-source="pattern-27">
+  <summary><span class="number">32</span><span>ETF買賣會影響多大，要看市場有多深<small>資金量要跟能成交的量比較</small></span></summary>
+  <div class="card-body">
+    <span class="tag">價格與趨勢</span>
+    <p class="card-context"><b>什麼時候用：</b>聽到被動基金流入或贖回造成漲跌的說法時。</p>
+    <p class="question">這筆資金相對於成分股的買賣盤，有多大？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查基金流量與成分股成交規模。</li><li>分開評估一般行情與恐慌時的市場深度。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>缺少流量與深度資料，就不能認定基金造成跌勢；占比小也不代表永遠沒影響。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 2筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：被動資金衝擊須經市場深度檢驗。缺乏流量、成交占比、壓力情境深度及因果分解，不能確認被動資金造成跌勢，也不能以占比小證明永無泡沫。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP24">EP24／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人援引Burry論點，認為被動資金可能形成估值上推及贖回續跌循環，並自述觀察到美股下跌有此現象。</p><p class="muted">原筆記限制：沒有流量、估值或因果分解資料；Burry原意及不同基金、ETF交易與贖回機制未獨立核實。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP24">EP24／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人認為0050買賣成分股的成交占比太小，即使持有人恐慌賣出，對台灣大盤影響仍有限。</p><p class="muted">原筆記限制：未交代占比數字、期間及壓力情境流動性；不可擴張為台股沒有被動資金或共振風險。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-33" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-28">
+  <summary><span class="number">33</span><span>同一家公司，換了價格就可能換了交易理由<small>轉型投資與高價軋空，不是同一種機會</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>題材大漲、股價已遠離原先買入區間時。</p>
+    <p class="question">現在持有的理由，還是當初那個嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>區分長期前景、短期事件與價格動能。</li><li>檢查目前價格與期限是否仍適用原先判斷。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>GME、Netflix等案例條件不同，不能整理成通用賣點；警告後也可能續漲。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 8筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：退出理由須匹配假說、價格與交易期限。漂亮財報可能落後反轉，風險警告後也可能續漲；缺一致估值、停利幅度與動能期限，不能拼成通用買賣規則。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP103">EP103／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>缺貨機會財應預先設定跌破價或動態停利，不以漂亮財報續抱；月營收、自結EPS較即時，但仍不足以單獨判斷買賣。</p><p class="muted">原筆記限制：未給回吐幅度或具體執行方法；曾過早警告防疫股，後來仍續漲。國巨及撼訊例證僅為本集回述，非獨立回測。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP106">EP106／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>漲價及供應鏈題材可能隨產品改版消退，需考慮退出；廣泛ETF則偏向有現金需求才賣，不必為落袋而賣。他自述定期定額006208並長抱，美股通常少賣，但曾減碼輪動不太動的大型科技股。</p><p class="muted">原筆記限制：產品改版是舉例；台股也有可長抱的獨門生意。主持人承認換股未必勝過不動；可變現不代表價格不跌，交割匯回仍需時間。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP107">EP107／E5 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>持續看好Netflix，但要求一兩個月內突破所稱高點575；若未突破，可能將挪來的資金獲利了結並放回原標的。</p><p class="muted">原筆記限制：不是已執行賣出；未說明撤出比例，突破後持續操作亦不等於明確加碼量。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP108">EP108／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人推測Cohen的電商經驗可帶來GME轉型及估值重評，也轉述微軟合作的數位消費分潤；反方理由是疫情與其他電商擠壓實體通路。</p><p class="muted">原筆記限制：轉型是情境推測；未給盈利預測、合理倍數或分潤規模，研究上不能等同成果已實現。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP110">EP110／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人認為轉型成功或能支撐GME五、六十元，但三百多元已主要依賴軋空，不能沿用較低價格時的基本面論述。</p><p class="muted">原筆記限制：未提供估值模型；基本面脫鉤不構成立即下跌或可安全放空的證據。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP110">EP110／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>退出應依基本面改變、預先界定的投機期限或更佳機會，而非只因某批部位回到成本；買賣皆須有分批策略。</p><p class="muted">原筆記限制：提問未交代具體標的，主持人拒絕給個別買賣答案；另一位聽眾自述只買回一些，不能改寫成全額追回。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP103">EP103／E1 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人轉述業界朋友估計貨櫃供需壓力約農曆年前後緩解；這是產業時點推估，不是股價見頂預告。</p><p class="muted">原筆記限制：朋友身分、資料與來源獨立性未明；主持人承認股價可能續漲，且自述未參與航運股。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP111">EP111／E1 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人認為GME事件已退潮，套牢賣壓使重返高價困難；轉型展望不等於能支撐三四百塊價格。他仍自述留幾股作紀念。</p><p class="muted">原筆記限制：不是斷言公司毫無基本面；保留股份不代表看好回到高點，未交代總持倉分母或完整交易。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-34" class="knowledge-card" data-category="基本面與估值" data-source="pattern-29">
+  <summary><span class="number">34</span><span>營收成長很快，還要問獲利怎麼來<small>熱度、成長與投資價值不是同義詞</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>看到新品、5G或高成長公司的故事時。</p>
+    <p class="question">這些需求最後能變成多少利潤？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先查營收、用戶留存或訂單等營運指標。</li><li>再查獲利轉換、現金流，以及現在價格反映多少成長。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>產品熱度與營收增幅不足以推導股東報酬。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：成長敘事須拆成需求、營運與估值。只有概念股報導、產品熱度或營收增幅，卻缺訂單、利潤、現金流與估值假設時，不能推導股東報酬。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP66">EP66／E3 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人轉述公司資料，稱啟碁管理層尚無法估計Starlink營收占比，因此限制自己先前「最純概念股」說法。</p><p class="muted">原筆記限制：本次未提供公司資料；題材相關不等於營收高度曝險。利潤或股東收益貢獻亦未獲證明，此為研究限制。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP67">EP67／E4 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>新卡性價比超乎預期，使主持人預測未來一兩季換卡需求增強，改採NVIDIA長期續抱、遇合適買點再加碼。</p><p class="muted">原筆記限制：未定義買點或加碼上限；玩家購買意願尚非實際銷售，低售價對毛利及股東報酬未分析。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP67">EP67／E5 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>主持人稱新卡採三星製程，台股宜觀察PC周邊整體需求，不宜把媒體概念股名單當成確定接單；發表隔天尚無具體產業觀察。</p><p class="muted">原筆記限制：製程與訂單未外部核實；換顯卡帶動整機周邊採購仍是推測，不能直接推出各公司獲利。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP72">EP72／E3 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人認為Snowflake營收成長、行銷支出下降及158%淨留存率顯示營運良好，但以收盤PS 173.8倍判斷估值極高。</p><p class="muted">原筆記限制：主持人承認同業業務不同；PS日期與營收期間未明，淨留存率算法說明未交代同一客戶群口徑，大客戶數字亦有單位疑點。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP78">EP78／E6 原稿 ↗</a><p class="status">主持人 · 預測</p><p>聯發科營收上升可能來自禁令前提前拉貨，不能單憑當期營收判定復甦；未來是否開放出貨仍是另一待觀察條件。</p><p class="muted">原筆記限制：提前拉貨是推測，未提供訂單拆分；研究者提醒其他廠商CPU出貨許可不能直接推論手機與通訊產品也會獲准。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-35" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-30">
+  <summary><span class="number">35</span><span>不猜最高點，也要想好何時調節<small>接受一點回吐，換取走勢確認</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>長期看好，但估值已偏高的持股回檔時。</p>
+    <p class="question">它能收復跌幅，還是相對其他股票越來越弱？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把自己的估值範圍與價格強弱一起看。</li><li>區分續抱、小額試買與減碼，不只靠猜頂。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>等待確認會回吐獲利；原材料未提供統一期間、估值模型或減碼比例。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：高估值下以價格強弱調整，而非預猜頂。收復期間、估值模型、減碼比例與例外條件不明時，價格走弱不能單獨證明基本面失效；等待也會產生回吐。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP66">EP66／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>高檔下殺後未爬回、估值又接近上緣時，可考慮減碼；主持人判斷ABF短線轉弱，但未否定長期機會。</p><p class="muted">原筆記限制：未提供明確收復點、合理價或減碼比例；並非自述已賣出ABF。等待訊號亦有回吐獲利的成本。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP68">EP68／E1 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>不因預測高點提前退出，這次急跌仍持倉承受回吐；以實際下殺作為後續調整基準，並自述8月20日後新增部位獲利大致歸零。</p><p class="muted">原筆記限制：代價是先承受損失；未提供交易紀錄，新增部位起始日期另有8月15日至20日的含混表述，不是本金歸零。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP69">EP69／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主動交易在認為估值偏高時，可用大盤明顯修正日作基準：恢復強勢則續抱，未站回、轉為盤跌者考慮減倉；不是下跌一律不交易。</p><p class="muted">原筆記限制：修正幅度先說3%至5%，又說可能2%，含體感而非固定門檻；站回期限未定，非常看好的公司可例外，主持人承認未必遵守自身機制。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP70">EP70／E7 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述已由早期頻繁波段交易轉向中長期；不猜高點，待像樣修正、獲利已回吐才調整，並稱近期台美股修正已如此處理。</p><p class="muted">原筆記限制：須承受回吐且未量化觸發門檻；前段曾舉到價減碼、再加碼為可行選項，不宜當成其最終自述規則。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP72">EP72／E5 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述買進Teladoc，採打底後突破近期高點才試單，不接持續下跌；提醒資金有限者先設定交易標準，避免連續攤平耗盡資金。</p><p class="muted">原筆記限制：明確承認可能假突破；未提供停損及總風險預算，不能推論此買法優於所有其他策略。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP72">EP72／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>對Snowflake先說太貴而放手，後自述上市第二或第三天在200多元少量試單；100出頭才大量建倉是條件式計畫，尚非已執行。</p><p class="muted">原筆記限制：試單數量與占總資產比例不明；價格站穩不等於基本面足以支持估值，也沒有交代完整退出規則。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-36" class="knowledge-card" data-category="基本面與估值" data-source="pattern-31">
+  <summary><span class="number">36</span><span>技術做得到，不代表生意做得成<small>使用者、合作方也得願意參加</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>新商業模式需要平台、車主或供應鏈配合時。</p>
+    <p class="question">除了技術，還差誰願意加入？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>檢查採用意願、平台規則與合作條件。</li><li>再問定價、成本，以及最後的利潤歸誰。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>會員數、補助或技術可行性，還不是股東收益的證據。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：技術或題材模型須驗證參與及獲利。只有技術可行性、會員數、政策題材或早期敘事，未見採用率、定價、成本與利益歸屬時，無法驗證股東收益。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP120">EP120／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>Apple與Google的隱私政策可能限制精準廣告投放，影響依賴平台資料的廣告公司；主持人將相關股價下修與此風險連結。</p><p class="muted">原筆記限制：主持人承認不熟廣告技術；政策實施狀態、各公司曝險與下跌因果均未獨立核實。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP125">EP125／E4 原稿 ↗</a><p class="status">主持人 · 預測</p><p>看好MIH公版代工，但軟體、品質及獲利仍須驗證；可等首車或營收獲利出現再介入。另質疑ARK假設的Robotaxi車主出租率，以自身及論壇觀察認為愛車者未必願出租。</p><p class="muted">原筆記限制：等待驗證不保證買價合理或報酬必較低；論壇觀察不是出租意願調查，ARK報告內容未外部核實。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP125">EP125／E5 原稿 ↗</a><p class="status">主持人 · 預測</p><p>MIH若成功，最大受惠者可能是被大量指名採用的會員，不必然是賺代工收入的鴻海；訂單分配仍有挑戰。</p><p class="muted">原筆記限制：這是假設，未指定已符合條件的公司；會員數不等於訂單或利潤。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP128">EP128／E4 原稿 ↗</a><p class="status">主持人 · 預測</p><p>基建支出可能惠及機械、原料與充電設施；主持人補充IFRA並觀察外溢受惠者，推測補助可強化特斯拉充電網路優勢，開放他牌使用則可能新增收入。</p><p class="muted">原筆記限制：未自述買進；Intel背後政府推動、充電站受惠名單及特斯拉開放網路均屬主持人推測，非確認公告。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-37" class="knowledge-card" data-category="工具與成本" data-source="pattern-32">
+  <summary><span class="number">37</span><span>ETF的名字，不能告訴你全部風險<small>看規則與成分，比看標籤重要</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>比較大盤、主題、動能或期貨ETF時。</p>
+    <p class="question">我買到的，真的是我想要的投資組合嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查成分更換規則、權重與重疊持股。</li><li>確認它是長期市場組合，還是特定策略工具。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>成分會更新不保證上漲；同產業多檔股票也可能一起跌。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：ETF名稱之外的規則、權重與持有機制。成分更新不保證上漲；產業內分散仍有共同風險。動能勝出、期貨商品耗損與終止條件均未完整驗證，不能依標籤推定安全。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP102">EP102／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>單一國家的被動投資仍有集中風險；可用VT涵蓋全球，或拆成美國與其他市場，但自行增減區域即含主動判斷。</p><p class="muted">原筆記限制：新興市場加碼是偏好示例，不是已執行交易；VT的北美與美國權重在口述中混用。全球配置不保證獲利是研究提醒。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP104">EP104／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人認同 FIVG 多數成分股，卻因權重不合偏好表示不會買；自述更重高通與 NXP，ADI、Xilinx 等較小，並看好車用與 5G 基地台帶動通訊機會。</p><p class="muted">原筆記限制：持股與費用資料是主持人現場讀取的資訊，未獨立核實；自行配置不保證優於 ETF，產業機會仍是預期。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP109">EP109／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>持有006208再買2330，是提高台積電的整體曝險，漲跌影響都會放大。另可將半導體ETF當配置參考，利用零股自組產業鏈持股，降低單一標的風險。</p><p class="muted">原筆記限制：原稿稱006208接近一半為台積電，當時權重未核；產業內分散不代表消除共同風險，此為研究者限制。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP111">EP111／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>固定熱門股名單會隨成員衰退失色；指數ETF持續調整成分及權重，投資的是更新中的市場組合，而非永遠持有同一批龍頭。</p><p class="muted">原筆記限制：成分更新不保證正報酬或不會大跌；「指數型 ETF 它是不會有下去的一天」不能當作風險保證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP112">EP112／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>回應聽眾MTUM回測勝過SPY：動能與大盤ETF目的不同，宜先在同策略內比較費用與表現；強者恆強環境可能有利動能。</p><p class="muted">原筆記限制：聽眾未提供回測區間；主持人稱動能ETF幾乎都勝大盤，未附證據，也未核實指數編製規則。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP106">EP106／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人認為VIX期貨型商品有持有耗損，只宜短期小比例避險，稱配置極限約2%至5%；一般散戶更宜減碼。他另預測富邦VIX終將下市。</p><p class="muted">原筆記限制：比例分母未嚴格定義；年耗損、必然虧損與下市門檻未核。短期仍可能上漲；開頭消失措辭不能當成已清算事實，千元逐年減半是試算例子。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-38" class="knowledge-card" data-category="思考與檢討" data-source="pattern-33">
+  <summary><span class="number">38</span><span>停損一筆，和暫停整套方法不一樣<small>連續失利時，別只重複進場</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>動能、事件或槓桿交易接連失敗時。</p>
+    <p class="question">是這一筆錯了，還是方法暫時不適合市場？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>核對單筆失效原因與整體投入上限。</li><li>把停止加碼、暫停策略、重新啟動分別記錄。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>現有材料沒有驗證過的停機門檻；反覆重啟也可能抵銷每次停損的作用。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：分批與停機須區分單筆及策略層級。沒有總曝險、停止加碼、成交核對、策略停機與重啟規則時，分批可能只是延後集中，單筆停損也可能被反覆重啟抵銷。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP86">EP86／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>投資收益若用來支付固定生活開銷，可能形成每月必須獲利的壓力；報酬時間不均會干擾持有與退出。</p><p class="muted">原筆記限制：小额操作與心情平穩是聽眾自述；研究上不能據此認定生活資金風險已排除。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP247">EP247／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述因接近前低、停損容易設定而以槓桿搶反彈，卻反覆停損；其規則是破底後暫停，待幾天未創新低再試，與無槓桿長線分批承接不同。</p><p class="muted">原筆記限制：無交易紀錄、部位及累積損失數字；停損好設不代表底部成立，反覆試單仍會消耗資金與睡眠。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP310">EP310／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述動能策略失效後縮減期貨交易，將動能帳戶資金移到現股或台指期，續用台指期搭配00850；台指期無限轉倉並保留小幅主動調整。</p><p class="muted">原筆記限制：未附交易與績效；90%至110%槓桿比例的分母未明。其稱「保本」不代表產品保證本金，轉倉成本亦未交代。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP319">EP319／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>題材或技術突破交易偏向價格停損，熟悉基本面的長線部位可用部位上限承擔波動；兩者分別可能錯過反彈或承受較大虧損。</p><p class="muted">原筆記限制：原稿後文「第一種／第二種」指稱混亂，未直接回答只砍加碼股數或全部；5%、15%分母未明。研究者限制：長抱不保證數倍報酬，價格停損也不保證不受傷。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP87">EP87／E6 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>原欲分批試買Pure Storage幾百股，因委託反覆顯示失敗而重送，最後自述買到六千股；發現後未沖銷，仍持有，並提醒核對成交。</p><p class="muted">原筆記限制：未核實成交紀錄；將未縮回意外部位視為分批執行反例，是研究者比較，不是主持人自評。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP317">EP317／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>箱底等明顯價位容易集中停損；可考慮提早或放寬，而非取消停損。反覆停損再追買的小損耗也可能侵蝕本金。</p><p class="muted">原筆記限制：下移3%只是示例，沒有回測；放寬也提高單次損失，主持人承認有人能精準交易。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-39" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-34">
+  <summary><span class="number">39</span><span>賣掉股票後，別換進同樣的風險<small>先知道自己為什麼退出</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>減碼後想改買債券、其他股票或避險商品時。</p>
+    <p class="question">我是避開一家公司，還是整體市場，還是準備用錢？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先說清楚退出原因。</li><li>再檢查替代工具是否真的移除了那個風險。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>股債組合不是現金；高波動時買保護可能很貴，保留現金也會錯過上漲。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：減碼後的工具必須對應退出原因。股票與股債組合不等同現金；SPAC保護受條款、期限與收購狀態限制。高波動時才買避險可能付出過高成本，跌破價位減碼亦可能遇反彈。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP172">EP172／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>減碼後須區分族群與整體市場風險，再選停泊工具；績效須包含閒置現金。近期用款Q&amp;A另提醒槓桿滿倉可能導致被迫低點賣出，是否減碼仍須知道持倉是大盤或個股及個人條件。</p><p class="muted">原筆記限制：主持人承認現金在真正崩盤時最強；大盤、股債ETF與個股不能等同現金。用款Q&amp;A的五成分母有疑點，不能據此認定風險適中。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP172">EP172／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人把接近票面價值、資金信託中的SPAC視為下檔有限且帶收購上漲機會的停泊選項，但也補充特殊目的公司風險較大，不懂者不宜採用。</p><p class="muted">原筆記限制：未交代個別贖回條款、期限與資金可用時間；這些是研究缺口，不能把主持人的下檔保護說法推成隨時保本。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP176">EP176／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人以信託資金及未完成收購須退款的機制，將接近票面價值的SPAC視為資金停泊選項；另自述持有Bill Ackman的SPAC。</p><p class="muted">原筆記限制：不能延伸為併購後股價保本；原稿未交代贖回期限、交易成本、等待時間或各案條款。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP178">EP178／E5 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述股票通常滿倉，跌破自設價位才減碼持有現金；代價是吃到首段跌幅且可能賣後反彈，不能當成無成本保護。</p><p class="muted">原筆記限制：满倉分母、價位設定及實際執行未明；主持人亦接受他人持有較多現金，未提出通用比例或調整頻率。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP179">EP179／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>波動升高後才買VXX、UVXY的Call，可能因買貴波動率而在盤跌中仍虧損；對一般散戶，減碼比複雜對沖更易掌握。</p><p class="muted">原筆記限制：未提供履約價、期限及避險比例；異常選擇權量不證明交易者知情，原文亦保留過去未崩盤的反例。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-40" class="knowledge-card" data-category="持有與等待" data-source="pattern-36">
+  <summary><span class="number">40</span><span>延期、失敗、恢復，要走不同的判斷路線<small>不是沒照時間表就一律賣出</small></span></summary>
+  <div class="card-body">
+    <span class="tag">持有與等待</span>
+    <p class="card-context"><b>什麼時候用：</b>產品或事件進度不如預期，股價卻仍強時。</p>
+    <p class="question">機會只是晚到，還是已經不存在？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把產品延後與不再採用分開查。</li><li>若原理由恢復，再重新評估；不要只因價格沒跌就續抱。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>消息可能誤判；沒有期限與估值界線，等待也可能變成找藉口。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：理由失效、延遲與恢復的持有分支。價格不跌不能證明需求成立；消息可能被誤判。缺少驗證期限與估值界線時，續抱或買回仍可能只是情緒反應。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP147">EP147／E1 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>快篩股進場原估需求延續三、四個月；見美日送疫苗消息後於週一賣出，即使當日創新高，仍優先處理他認定已改變的買進理由。</p><p class="muted">原筆記限制：未提供標的、成交價或部位；研究上不能由疫苗消息推定快篩需求已消失，也不能排除情緒反應。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP149">EP149／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>未具名Mini LED蘋概股遇WWDC未發表MacBook Pro，主持人曾考慮撤出以免資金閒置；價格未跌反彈後續抱。若確定不用Mini LED，則表示會全砍。</p><p class="muted">原筆記限制：續抱是自述已執行，全砍是條件計畫；價格不跌不能證明其他法人動機或產品傳聞正確，未倒填後續產品結果。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP152">EP152／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述因某公司取消代工漲價而賣出，後判定只是短暫現象便買回；重返部位應依投資理由恢復，而非只因賣後上漲。</p><p class="muted">原筆記限制：未提供公司、證據、價格與部位；對易受情緒影響的新手，他另建議賣出後先不要回看。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP152">EP152／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人自認混合動能的價值投資者：先挑成長故事，再偏好股價會動的標的；看趨勢可用日K觀察六至八個月，而非兩根K棒。他也以宏捷科提醒，好公司買太貴仍可能是爛投資，須有資金規劃。</p><p class="muted">原筆記限制：不是完整進出場規則；聽眾問指數ETF是否適用順勢規則，本集未直接回答。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP146">EP146／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>只進不出是少出金、仍可換股，不是永不賣股。移動停損能鎖利但可能錯失後續上漲；長抱也可能遇到績優股衰退，沒有必勝策略。</p><p class="muted">原筆記限制：停損價格為假設示例；南電早賣是主持人自述，Nvidia 上漲不能證明所有續抱都正確。原文未討論跳空成交風險。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-41" class="knowledge-card" data-category="基本面與估值" data-source="pattern-37">
+  <summary><span class="number">41</span><span>法規變了，原本的估值比較可能失準<small>商業模式相似，不代表風險相同</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>用同業估值比較金融科技公司時。</p>
+    <p class="question">新的資本要求或信用損失，會不會改變獲利？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>拆開用戶成長、借貸收入與風險承擔。</li><li>查監管是否改變資本需求，再看同業是否仍可比較。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>缺少法規與損失資料，不能算出合理折價；救援也不保證股東受保護。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：監管改變後的相對估值可比性。缺少實際倍數、可比性調整、法規效力及損失承擔資料，不能量化折價；推測國家救援不等於股東受保護。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP83">EP83／E5 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人以PE或PS比較Square，認為螞蟻金服相對估值合理；其微貸收入占比約40%，他看好中國用戶與放貸金額成長。</p><p class="muted">原筆記限制：未給實際倍數、計算基期或可比性調整；借貸業務的信用、監管及資金成本風險未充分討論，亦無買入自述。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP84">EP84／E6 原稿 ↗</a><p class="status">主持人 · 預測</p><p>回應聽眾對螞蟻微貸的疑慮，他承認單一業務集中及景氣下行可能放大呆帳，但推測國家會救援，並明確區分救援、基本面與股價。</p><p class="muted">原筆記限制：國家救援只是推測，無政策或損失承擔證據；聽眾提供的借貸案例亦未核實，不能推論股東獲保護。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP85">EP85／E3 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>將螞蟻暫緩上市解讀為人治風險；轉述另一觀點：若新規提高資本與營運限制，延後上市可能避免投資人承受估值下修。</p><p class="muted">原筆記限制：針對馬雲而立法是主持人歸因，非已證實因果；草案內容、效力及各省註冊要求待核，並無量化估值。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-42" class="knowledge-card" data-category="買進與加碼" data-source="pattern-38">
+  <summary><span class="number">42</span><span>收購價看起來有賺頭，也要算等多久<small>價差不是白送的獲利</small></span></summary>
+  <div class="card-body">
+    <span class="tag">買進與加碼</span>
+    <p class="card-context"><b>什麼時候用：</b>公司宣布收購，股價還低於收購價時。</p>
+    <p class="question">誰能讓交易失敗？我的資金會卡多久？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查收購條件、關鍵股東與完成障礙。</li><li>比較成功價差、失敗損失及等待成本。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>公告不等於成交；缺少條款與持股資料，就不能當成確定套利。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 2筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：收購溢價須通過控制權與等待成本。股東意願、持股及收購條件尚未核實，不能由公告推定成交；缺少失敗價格與替代用途資料，也無法判定等待或退出優劣。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP98">EP98／E1 原稿 ↗</a><p class="status">主持人 · 預測</p><p>日盛股價能否維持收購溢價，取決於交易完成；兩大股東合計過半形成控制權門檻。主持人偏向認為會釋股，但提醒後進追價者可能在失敗時虧損。</p><p class="muted">原筆記限制：持股及收購條件未外核；所謂私下探詢與公告前有人先知均屬推測，漲價不證明內線交易。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP98">EP98／E2 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述2018年因金金併政策與日盛規模小、兼具銀行及證券業務而買入，約半年後認為資金占用不值得而退出。</p><p class="muted">原筆記限制：稱部位約整體個位數百分比，分母不明；未提供成交價、損益及替代投資報酬，不能判定退出優劣。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-43" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-39">
+  <summary><span class="number">43</span><span>買的是事件，事件不成立就要重想<small>不要用漂亮線圖掩蓋理由消失</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>交易依賴寒冬等特定催化因素時。</p>
+    <p class="question">促使我買進的那件事，還會發生嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>買進前說清楚事件成立與失效的條件。</li><li>新資料削弱催化因素時，重新檢查持有理由。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>這不是所有持股通用的停損法；跳空或沒買盤時，也可能無法照計畫退出。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：事件假說失效優先於線型續抱。若催化劑、價格反應與持有目的未區分，或遇跳空、流動性不足而無法執行，則不足以證明此方法有效。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP298">EP298／E1 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述因暖冬報告與歐洲天然氣庫存上升，將押注寒冬的股票停損出清；事件入場理由失效時，線型不能成為續抱藉口。</p><p class="muted">原筆記限制：未提供交易日期、標的、損失或報告來源；公司體質不差也不代表原事件交易仍成立。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP301">EP301／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>依Powell發言或單次CPI數據操作並不容易；若做事件交易，應事前設定方向與停損，而非隨隔日漲跌更換故事。市場也可能已預期鷹派發言。</p><p class="muted">原筆記限制：主持人未提供已執行交易；研究限制：有規劃不代表存在獲利優勢。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP305">EP305／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>押注Powell發言不能只看哪種結果較可能；超乎預期的驚喜可能漲更多，普遍預期的下跌未必跌得同樣大。主持人另期待市場回到業績導引，但樂觀的是可理解性而非股價方向。</p><p class="muted">原筆記限制：對發言後下跌機率的說法是主持人口語估計，沒有樣本或統計依據；未披露本次事件押注成交，也不能倒填後來結果。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-44" class="knowledge-card" data-category="工具與成本" data-source="pattern-40">
+  <summary><span class="number">44</span><span>平台好用，不代表資產保管就安全<small>平台公司與你的資產，要分開看</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>選擇券商或交易平台長期存放資產時。</p>
+    <p class="question">如果平台出問題，我的資產屬於誰、能怎麼移轉？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>確認權屬、託管與轉出安排。</li><li>把平台營運狀況、公司上市與客戶資產保障分開。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>上市或使用方便都不是安全保證；適用制度與實際條款仍要查。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 2筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：平台營運與資產權屬須分開。未確認實際權屬、託管、轉倉、費用及適用制度時，不能由平台可交易、公司上市或個人使用經驗推論資產安全。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP117">EP117／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>回應券商倒閉疑慮時，主持人區分透過券商持有證券與持有券商股票，並以集中保管及轉託管解釋前者不應直接等同券商破產損失。</p><p class="muted">原筆記限制：原文混合券商、基金發行管理與保管制度；Robinhood不能轉倉及0050僅滅國才失去價值等說法均不可照單全收。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP123">EP123／E5 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述試用eToro曾遇交易中斷，因而不太推薦；另自述建立FTCV部位。他將上市資訊透明度與客戶股票所有權、託管保障分開討論。</p><p class="muted">原筆記限制：FTCV部位規模及主要資金的指涉不精確；平台實股、DTCC、轉倉及費用說法均未外部核實，不能據此斷言客戶無所有權。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-45" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-41">
+  <summary><span class="number">45</span><span>不漲就換股，也可能剛好錯過起漲<small>等待有成本，提早離開也有</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>持股一段時間沒動，想追其他強勢股時。</p>
+    <p class="question">是買進理由失效，還是我只是等得不耐煩？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先辨認是事件、動能，還是等價值被看見。</li><li>比較繼續等與換股各自可能錯失什麼。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>價值投資不能只用一兩個月評勝負；套牢後也不能臨時改稱價值投資。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：退出理由與等待成本須雙向檢查。不能套牢後無因果地改稱價值投資，也不能把短期停滯直接當作基本面失敗。移動停利與追求資金效率都可能錯失續漲。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP171">EP171／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>因事件進場就應按事件邏輯管理退出，不可套牢後無因果地改稱價值投資；獲利回吐與虧損持倉應看未來機會成本，移動停利則可能錯失續漲。</p><p class="muted">原筆記限制：未提供退出價位或移動停利參數；特別股Q&amp;A只回到機會成本，未分析重整或股利回收。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP177">EP177／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>營收、獲利與低本益比不保證市場青睞。研究並買進後，若標的不賺錢而其他機會在動，仍須衡量繼續等待的機會成本；不預設立場不是省略買前研究。</p><p class="muted">原筆記限制：主持人也容許選擇繼續等待，未提供統一退出期限；部分IC設計便宜且隔年仍佳是當時判斷，也提到高基期疑慮。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP181">EP181／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>偏好以股價向上分批，藉平均成本安排停損，帶有動能交易取向；但承認曾因好事多不動而賣出，隨後股價才動，存在等待與錯失成本。</p><p class="muted">原筆記限制：100、120買入後均價110隱含等股數，非任何配置均成立；停損設在成本之上不保證能按價成交。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP175">EP175／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>對資金增加的聽眾，主持人認為小比例投入配置可行，但核心仍是整體淨值與報酬；若依基本面價值浮現投資，不宜用一至三個月判定成敗。</p><p class="muted">原筆記限制：聽眾所述1至3%的配置分母未明確；主持人稱未挑到ASML，與聽眾列出ASML有落差，不能據此判定實際持倉。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-46" class="knowledge-card" data-category="持有與等待" data-source="pattern-42">
+  <summary><span class="number">46</span><span>別人的耐心，可能來自你沒有的資金條件<small>長抱能力不只靠信念</small></span></summary>
+  <div class="card-body">
+    <span class="tag">持有與等待</span>
+    <p class="card-context"><b>什麼時候用：</b>看別人回檔仍抱得住，自己卻很焦慮時。</p>
+    <p class="question">我的部位、成本與現金流，真的容許我等嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>檢查投資資金是否會被生活支出用到。</li><li>把部位大小、回撤壓力與等待時間一起看。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>低成本與既有獲利不是免死金牌；未來仍可能大跌。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：持有耐心受成本與現金需求約束。部位過度集中、成本接近高檔或中途需要用錢時，長期看對仍可能被迫賣出；低成本也不消除未來下跌。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP52">EP52／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>特斯拉的軟體潛力可支持高評價，但仍有競爭與關鍵人物風險；即使長期看對，All-in也可能受中途資金需求限制。另提醒新進者成本不同，應先評估最壞損失是否可承受。</p><p class="muted">原筆記限制：遠期價格與用錢案例均為條件式情境，不是預測承諾或真實事件。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP53">EP53／E2 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述修正時仍打電動，主要因成本低、既有獲利緩衝，而非單純心理堅強；近期小帳戶加碼的獲利亦有回吐。</p><p class="muted">原筆記限制：報酬未驗證；六月底至七月初的開戶、入金與下單時間混述，小帳戶不能代表整體資產績效，低成本也不消除回撤。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP54">EP54／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>成本價會影響實際持有時的情緒；即使理性上應看未來，真金白銀回撤仍可能迫使投資人賣出，因此建議分批而非一次重壓。</p><p class="muted">原筆記限制：十分之一是示例，分母及總風險上限未明；分批改善情緒不等於提高報酬，也未回答完整停損規則。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP56">EP56／E7 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述聯詠、創意重壓虧損約58至60萬元；另曾因精材走勢不如預期而賣出，錯過後續上漲。他承認已有分批觀念仍重蹈重壓覆轍。</p><p class="muted">原筆記限制：金額為口述概數，案例不可混算；勝率四五成可獲利的說法仍缺盈虧比等條件，此為覆核限制。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP54">EP54／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主張基本面選股與長期持有優先，技術面只輔助短線買點；頻繁交易增加費用與反覆受損風險，但也強烈宣稱選到好標的便不必在意買點。</p><p class="muted">原筆記限制：以過往贏家舉例有事後選樣問題；「一定都賺錢」不是保證，且與過熱估值可能永不回高點的提醒有張力。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-47" class="knowledge-card" data-category="價格與趨勢" data-source="pattern-43">
+  <summary><span class="number">47</span><span>突破可以是訊號，不是獲利保證<small>熱度高，也可能代表交易太擁擠</small></span></summary>
+  <div class="card-body">
+    <span class="tag">價格與趨勢</span>
+    <p class="card-context"><b>什麼時候用：</b>先研究基本面，再考慮突破進場時。</p>
+    <p class="question">這個突破有延續性，還是又會掉回區間？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把突破與基本面、相對估值一起檢查。</li><li>觀察失敗突破與交易成本，不用融資或分點單獨猜方向。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>盤整時容易反覆追高砍低；尚無足以證明訊號有效的回測與交易紀錄。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：動能訊號須與基本面及擁擠風險分開。盤整與突破倒回會造成追高砍低及摩擦成本；未有回測與交易紀錄，不能確認任何籌碼或動能訊號有效。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP164">EP164／E1 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述將動能納入策略：先篩基本面及相對合理估值，待股價突破數週或數月新高再買進。</p><p class="muted">原筆記限制：後文稱近期黏盤時容易追進後隔日倒回；未提供交易紀錄、停損幅度或淨績效，不能確認策略優勢。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP164">EP164／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>當沖率、隔日沖買進與融資升高不能直接推出後續漲跌；這些訊號較可描述熱門度或參與情況，急漲本身也可能讓基本面買方卻步。</p><p class="muted">原筆記限制：案例是主持人敘述，不是統計檢驗；他稱融資已測過但未交代方法，且後段補充美國也有融資數據，限縮前段「沒有籌碼」的概括。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP165">EP165／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>相同看多假說下，動能交易可能因反覆追砍累積摩擦成本；但若假說錯誤且股價持續下跌，停損也可能比長抱少賠。</p><p class="muted">原筆記限制：Amazon等為情境例子，不是實際交易績效；不能推論任何策略普遍較優。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP166">EP166／E1 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>動能失靈可能源於使用者擁擠使Alpha消退，也可能只是市況輪替；看不懂可休息，換策略不能把多頭獲利當成已熟練。</p><p class="muted">原筆記限制：擁擠與大鯨魚對作均未獲實證；朋友休假不構成看空訊號，主持人也承認不擅盤整盤。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-48" class="knowledge-card" data-category="基本面與估值" data-source="pattern-44">
+  <summary><span class="number">48</span><span>預測公司賺多少，比預測股價少一個變數<small>市場願付幾倍，也會變</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>看好多項業務成長，準備估合理價時。</p>
+    <p class="question">我估的是獲利，還是也假設市場會給高倍數？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>拆開產能、售價、毛利與現金流。</li><li>再獨立檢查市場倍數與買入折價，不把兩個預測當一個。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>示例模型不能直接變成目標價；營運轉弱時，原估值也要重估。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：營運預測與市場給價分開。營運資料、合理倍數或安全邊際僅為示例時，不能推導特定價格；基本面轉弱或未知消息出現時，原假說須重估。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP123">EP123／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>基本面好仍須比較價格與估值；下跌可成買點，但若出現未知負面消息或業績指引轉差，不能沿用原買進理由。</p><p class="muted">原筆記限制：一百元估值、八十元等買點均為示例，不是特定標的估值；非長抱題材另建議預設停利，並非所有下跌都加碼。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP126">EP126／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>營收、EPS預測接近，不代表合理價一致，差異可能來自願付倍數；可參考認同的報告再打八至九折、分批投入，但寶麗來反例顯示專業與便宜感都不能保證成功。</p><p class="muted">原筆記限制：持續投入不是勝利保證；淨收入留存率不能直接當成獲利，原稿稱相關SaaS皆獲利良好仍待核。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP128">EP128／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>特斯拉交車超預期顯示預測會錯；營運獲利推估與本益比給價是兩道問題。閱讀ARK報告重在假設與業務，而非目標價，並質疑其模擬納入不合理產能。</p><p class="muted">原筆記限制：EPS 25為假設例子；主持人非專業統計人員，未展示ARK模型，不能據此判定模型錯誤或合理買價。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-49" class="knowledge-card" data-category="工具與成本" data-source="pattern-47">
+  <summary><span class="number">49</span><span>有期限的工具，等不到也可能歸零<small>正二、溢價與選擇權是不同機制</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>用槓桿ETF或選擇權代替現股時。</p>
+    <p class="question">就算最後看對，途中路徑與到期日容許我等嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分別查每日重設、溢價與到期條件。</li><li>用相近風險規模比較，不只比投入金額或單次漲幅。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>有限損失仍可能是本金全損；單向多頭績效不能外推到震盪行情。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：標的方向與工具報酬機制分開。單向多頭績效不能外推震盪結果；有限損失仍可能是投入資金全損。缺契約、費用及等額曝險比較時，不能判定哪種工具較佳。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP130">EP130／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>槓桿ETF追求當日倍數效果，單向上漲與反覆震盪結果不同。主持人不建議直接長抱，要求理解產品原理並比較費用、行情路徑與融資成本。</p><p class="muted">原筆記限制：盤整一兩年是情境假設；房貸融資是他明示高風險的替代方式，未完整討論還款及擔保品風險，也未量化震盪耗損。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP133">EP133／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>正二上市後上漲績效不能直接支持長期持有；趨勢上行可加速，但盤整與每日再平衡可能侵蝕淨值。他另偏好0050勝於高股息基金或0056，但強調投資台灣市場仍須有看好依據，不能無腦買。</p><p class="muted">原筆記限制：未提供回測或高股息比較期間；便宜借款形成兩倍曝險不代表與正二長期風險報酬相同。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP135">EP135／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>ETF報酬不能只看國家或方向：高溢價收斂可能造成損失，部分期貨、槓桿及反向商品另有持有成本。ESG標籤也不能代替與大盤的績效比較。</p><p class="muted">原筆記限制：00885溢價先述27%、後述17%，時點不清；代碼與下市敘述待核。研究限制：各商品機制不可混同，溢價也不保證立即收斂；ESG比較未交代期間及風險。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP138">EP138／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>買進選擇權的有限損失仍可能吃掉投入資金全部；同樣看多公司，現股與有到期日的買權可能得到不同結果。融資極端下跌更可能需額外還債。</p><p class="muted">原筆記限制：亞馬遜價格路徑是舉例，非交易紀錄；未交代權利金、契約及等額曝險比較，不能據此精算報酬。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP141">EP141／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>借款抄底不能把2020年V轉當作必然，長期盤跌可能使人撐不到反彈，也不應擅用他人出資的房產。十年線進場與正二是否適用是不同問題：每日槓桿及再平衡在長期震盪下可能減損淨值。主持人另提出房貸買0050作為不同槓桿選擇，並非全面反對借款。</p><p class="muted">原筆記限制：房貸與融資斷頭機制不能混同；還款壓力測試是研究補充，非原話。原稿未展示勝率回測，亦將多種商品的轉倉與再平衡風險並列，不能視為各商品機制完全相同。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-50" class="knowledge-card" data-category="思考與檢討" data-source="pattern-48">
+  <summary><span class="number">50</span><span>最近賺錢，是進步還是行情順？<small>方法、市況、執行要分開檢討</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>連續獲利或停損後，想調整交易方法時。</p>
+    <p class="question">我有照規則做嗎？換一種行情還會有效嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>保留事前理由，核對是否省略試單或追高加碼。</li><li>比較不同市況，不拿一次轉盈當成方法改對的證據。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有完整交易與一致風險口徑，無法分辨能力提升或只是順風。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：把策略失效、市況逆風與執行偏離分開。缺少一致期間、風險口徑與完整交易紀錄，無法判定能力提升。事後轉盈不能證明改法有效，分艙測試也尚無結果。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP182">EP182／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>追高本身可作為提高資金效率的策略，問題是沒有認識標的、加減碼及失敗退出規則；市場仍有機會，FOMO不應取代原有策略。策略評價不宜只看單季，亦須衡量研究時間相對於直接投大盤的效益。</p><p class="muted">原筆記限制：未定義假突破或停損幅度；雖稱勝過大盤即贏家，也說單季績效無意義，未做風險調整比較。聽眾報酬並非主持人績效，來信七月滿倉與Q2績效的期間關係不清。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP184">EP184／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人將追突破、跌破放空類比為捕捉厚尾；相較提前埋伏可追求資金效率，但須承受假訊號與連續停損，並指出近期市況不利。</p><p class="muted">原筆記限制：是主持人的思維類比，不證明動能與尾端避險等價；兩個標準差不能由本稿直接證成實際股價覆蓋率，亦無停損尺度或績效統計。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP184">EP184／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>安全邊際應事前設定，不能買後下跌才補設；左右側轉換宜分帳試驗比較績效。當期暴利不可直接外推，競爭擴產可能侵蝕未來毛利。主持人據此對航運回高點偏悲觀，仍容許反彈，並承認先前依朋友說法預告农曆年退潮過早；對2330回升則較樂觀。</p><p class="muted">原筆記限制：75元是聽眾估值，20%折讓至60元是主持人示例；分艙不是已執行紀錄。航運及2330判斷未給期限與資料，『沒有新常態』屬概括論斷。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP186">EP186／E6 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述八月一個帳戶虧損約490萬元，因跳過右側交易慣用的試單程序而直接滿倉、反覆停損；後來降低追漲、增加區間與價值因子，上週補回並轉盈。</p><p class="muted">原筆記限制：先稱帳上虧損、後述反覆停損，已實現與未實現分布不明；帳戶規模、標的及報酬率未交代，轉盈也伴隨行情改善。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP190">EP190／E7 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述相信鎖漲停後續漲而高檔加碼，期貨短單獲利大幅回吐，仍在觸及預設點位時平倉；紀律也讓事後檢討有固定比較基準。</p><p class="muted">原筆記限制：自述最高逾1700萬、最終約400萬混含未實現及保留部位，缺乏完整損益口徑；均價上方停利不保證跳空、滑價及成本後仍獲利。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP194">EP194／E6 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>近期台股延續性改善，動能交易回暖；僅近期開始獲利，不能據此認定技術進步，應比較難做與順風行情的表現。</p><p class="muted">原筆記限制：未取得交易紀錄；多數人獲利與八二法則屬主持人概括，不是本次驗證的統計。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-51" class="knowledge-card" data-category="新聞與證據" data-source="pattern-49">
+  <summary><span class="number">51</span><span>已經提告，不代表股東風險解除了<small>法律程序與實際控制權有時間差</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>公司治理爭議進入訴訟時。</p>
+    <p class="question">現在到底誰控制公司？訴訟何時可能改變現況？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>追蹤程序進度，不只看已提訴的新聞。</li><li>分開檢查控制權、營運與股東權益是否真的改善。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>尚未確認法律結果與營運影響，就不能把救濟當成風險解除。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 1筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：治理救濟的時間與控制權風險。僅知已提訴，未能確認程序進度、實際控制權或營運影響時，不能把救濟視為風險解除。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP51">EP51／E1 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人轉述投保中心對林郭文艷提起解任訴訟，並認為訴訟耗時可能讓公司派繼續掌控公司。</p><p class="muted">原筆記限制：提起訴訟不等於已解任或法院認定違法；拖延動機是主持人判斷。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-52" class="knowledge-card" data-category="新聞與證據" data-source="pattern-50">
+  <summary><span class="number">52</span><span>三個來源，可能其實只有一個消息<small>先查資料怎麼來，再談交叉驗證</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>爬蟲數據、公司回覆與供應鏈消息互相矛盾時。</p>
+    <p class="question">這些資料真的獨立嗎？有沒有漏掉看不到的部分？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查樣本涵蓋、更新時間與通路缺口。</li><li>追溯消息是否最後都來自同一團隊。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>公司反駁也有立場；資料不完整不能直接判定造假，股價上漲也不能證明傳聞真實。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：交叉核對前先檢查資料如何生成。公司反駁有自身立場，上下游未必獨立；價格上漲不能證明傳聞真實或合法。缺少完整資料時，無法裁定造假或建立股價因果。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP200">EP200／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>對聽眾所稱內線，主持人以假想口吻主張檢查來源身分、過往準確度及股價強弱，也承認高層未必準、消息可能是誘人接貨；否認這是自身實務操作。</p><p class="muted">原筆記限制：上漲不能證明消息真實或合法；來源與價格可能受同一傳聞驅動，非獨立驗證，亦不能視為已執行交易。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP200">EP200／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>品牌公司可深入研究單一企業；供應鏈則應先建立上下游全貌，以不同環節說法交叉檢查公司敘事，再逐步深入，起點可選自身熟悉產業。</p><p class="muted">原筆記限制：上下游說法未必獨立，矛盾也不必然代表欺騙；研究熟悉不直接等於價格便宜或報酬較高。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP202">EP202／E5 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>轉述貝殼對渾水的反駁：爬蟲可能漏抓通路、沿用舊價格，且以部分季度外推全年；主持人因此質疑指控完整性。</p><p class="muted">原筆記限制：公司回覆有自身立場，第三方機構未具名；未裁定真偽，股價回穩也不能排除政策或財務風險。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP203">EP203／E1 原稿 ↗</a><p class="status">第三方 · 第三方轉述</p><p>主持人轉述圈內人士認為NFT可能重挫，大幣則未必再跌八九成、可能跌五成便有買盤；他表示後者符合自己的想像。</p><p class="muted">原筆記限制：沒有時間範圍與模型；不同引薦管道最後指向同一團隊，不能當多個獨立來源，也不能將五成當跌幅上限。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-53" class="knowledge-card" data-category="基本面與估值" data-source="pattern-51">
+  <summary><span class="number">53</span><span>滿手訂單，也可能藏著重複下單<small>缺貨會放大需求，也會吸引擴產</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>產業缺貨、漲價、工廠滿載時。</p>
+    <p class="question">這些訂單是客戶真的要用，還是怕買不到先多訂？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>追蹤終端銷售、庫存與訂單取消。</li><li>一起看新增產能，評估供需是否可能反轉。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>需求也可能真的很強；沒有訂單與供給資料，不能直接斷言見頂。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：短缺訂單不等於可持續需求。缺乏訂單取消、庫存、產能與終端銷售資料時，不能判定循環轉折；需求確實強勁時亦未必抽單。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP123">EP123／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>缺貨漲價可能比原預期持久，但會誘發擴產與後續庫存過剩；產品線調整也會改變供給，不能把當下缺貨線性外推。</p><p class="muted">原筆記限制：主持人同時指出部分晶圓廠擴產較保守；循環轉折時間未明，股價也可能早於基本面反應。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP125">EP125／E1 原稿 ↗</a><p class="status">主持人 · 預測</p><p>承認原先預期航運只有一波、農曆年前後緩解，漏掉第二波；仍預期暫時短缺行情會快速反轉，堵船影響取決於排除時間。</p><p class="muted">原筆記限制：未提供反轉時點；歷史走勢不能證明本次路徑。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP127">EP127／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>漲價與缺料可能促使下游多處下單，產能排滿未必是終端需求；需求高估後抽單可能重創供應鏈。</p><p class="muted">原筆記限制：部分判斷來自匿名分析師朋友；未證實特定公司已抽單。需求確實強勁時未必有問題，2018年案例僅為主持人歷史類比。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-54" class="knowledge-card" data-category="買進與加碼" data-source="pattern-52">
+  <summary><span class="number">54</span><span>繼續抱，不代表還要繼續買<small>既有部位與新增資金，可以有不同答案</small></span></summary>
+  <div class="card-body">
+    <span class="tag">買進與加碼</span>
+    <p class="card-context"><b>什麼時候用：</b>看好公司，但股價弱勢或反彈不穩時。</p>
+    <p class="question">現在的證據只夠支持續抱，還是也足以加碼？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分開評估選股、持有與新增投入。</li><li>把成長、相對強弱與止跌觀察一起看。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>抗跌也可能只是尚未補跌；案例有續抱卻不加碼的例外，不能整理成一律追強。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：動能是研究入口，不是續抱與加碼的共同答案。抗跌可能只是尚未補跌，反彈仍可能破底；支撐及跳空都不能保證延續。未交代部位、退出規則，便無法重建可檢驗策略。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP196">EP196／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>修正時不一律撿便宜：主持人用基本面找明後年營收成長公司，再搭配相對強势與法人關注，弱勢可汰換。創新Q&amp;A以ARK當年表現不佳提醒，創新題材未必符合當期市場偏好；海選可從業內經驗、IPO與研究報告開始。</p><p class="muted">原筆記限制：ARK表現與公司變化均為主持人當時描述；相對強勢不等於鼓勵無計畫追高，他另強調動能交易需要盯盤與迅速認錯。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP198">EP198／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>通殺時優先研究跌得少的標的，推測其賣壓較小、籌碼穩健，再檢查未來產業故事，而非直接撿跌最深的股票。</p><p class="muted">原筆記限制：抗跌只是研究入口；主持人承認也有之後補跌的說法，並觀察權值股開始受拖累。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP202">EP202／E4 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>基本面上願意試單，但仍等待羅素 2000、Nasdaq 或個股停止創低；願付出較高買價，降低過早接跌的機會。</p><p class="muted">原筆記限制：屬條件式意願，未證實下單；反彈可能失敗，也可能錯過最低價。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP203">EP203／E2 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述近期逐步加回美股；以部分成長股NTM估值回到疫情前、明年成長未變及羅素兩千反彈，支持帶狀試單。</p><p class="muted">原筆記限制：未提供標的、估值倍數或部位比例；主持人亦舉NASDAQ大反彈後破底為反例，不宣稱已見底。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP203">EP203／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>技術指標可能因多人據以交易而產生反身性，但支撐只能等待價格反應驗證，不能預先保證；事後雙向都能解釋的說法價值有限。</p><p class="muted">原筆記限制：未提供統計檢驗；崩盤時均線可逐一失守，廣泛關注不等於穩定獲利。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP198">EP198／E2 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>Square、CrowdStrike 為其十大持股之二，本波未停損而由盈轉虧。暫留、不加碼，等待下一季財報；以五至十日不創低作為想加碼者的候選條件，不是本人立即買入計畫。</p><p class="muted">原筆記限制：實際權重、持股分母與成本未知；偏離其原本接近成本即鎖利的做法，並承認低估跌幅。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-55" class="knowledge-card" data-category="基本面與估值" data-source="pattern-53">
+  <summary><span class="number">55</span><span>景氣好轉，不代表股價還有同樣漲幅<small>復甦速度，要追得上市場期待</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>庫存下降、稼動率回升或公司上修指引時。</p>
+    <p class="question">股價是不是已經先演完這段復甦？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>比較月季趨勢、庫存、產能利用與公司指引。</li><li>再查復甦是否比市場原本預期更快或更慢。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>單一減產或回升訊號可能受備貨影響；低檔仍可再跌。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：復甦訊號與股價預期須分開判讀。單一減產、稼動率回升或公司指引可能受備貨、壓價、競爭力惡化或非獨立消息影響。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP338">EP338／E4 原稿 ↗</a><p class="status">主持人 · 預測</p><p>由Galaxy S23銷售較佳、分析師說法及朋友提供的射頻廠稼動率訊息，推測手機可能落底；主持人認為穩懋稼動率可能高於所轉述預估，但未給數字。</p><p class="muted">原筆記限制：蘋果砍單與業界悲觀看法仍在；復產可能壓價，復甦速度不明；朋友與分析師資訊是否獨立未知。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP339">EP339／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>年增率適合比較同季節，但高基期衰退期可觀察月增、季增是否偏離歷史季節性，推測補庫存或復甦；大單傳聞也可用後續月營收檢視。</p><p class="muted">原筆記限制：季度比較是示例，不是已發生的第三季結果；主持人強調這只是參考指標。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP342">EP342／E1 原稿 ↗</a><p class="status">主持人 · 預測</p><p>復甦可能延後一兩季；AI訓練需求不足以立即抵銷PC、手機疲弱，較大量動能可能須等邊緣推論應用，先進封裝可作交叉檢驗。</p><p class="muted">原筆記限制：仍維持低檔與將復甦判斷；砍單、庫存消息來源未具名，封裝總數也非純AI指標。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP343">EP343／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>以智原庫存下降指引、旺宏減產與科技公司財報交叉檢視這兩季打底的假說；旺宏車用工控亦衰退，可能另有競爭力問題。總經Q&amp;A則主張慢變機制不宜隨單筆數據頻繁翻轉論述。</p><p class="muted">原筆記限制：公司指引不是實績，主持人承認復甦可能延後；一致說法也不等於獨立驗證。總經更新門檻未交代，不能推成重大衝擊也不必更新。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-56" class="knowledge-card" data-category="新聞與證據" data-source="pattern-54">
+  <summary><span class="number">56</span><span>看到券商買賣，不代表知道是誰在交易<small>通路資料不能直接變成人物故事</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>用分點、行庫買超或研究報告解釋行情時。</p>
+    <p class="question">這個數字能辨認帳戶本人，還是只看得到通路？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先確認制度上誰能做這筆交易。</li><li>再分開看報告立場、客戶交易與帳戶歸屬。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>排除某種交易方式，也不能直接證明剩餘賣方的動機或獲利。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：先查可行行為與歸屬，再解釋籌碼。交易資格未核實，通路統計不等於帳戶身分；排除某種交易方式，也不能直接證明剩餘賣方的動機或否認不當協作。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP145">EP145／E3 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人稱高端當時無信用交易、借券賣出或期貨等放空管道，將連跌歸為多方賣壓；並提醒八大行庫交易包含客戶下單，不足以認定政府護盤。</p><p class="muted">原筆記限制：交易資格與買方身分未核實；制度限制不能單獨證明賣方動機，非政府買盤也是主持人推測。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP151">EP151／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>賣方研究與買方客戶可有不同判斷；報告喊多而分點賣出，不能直接推論券商刻意出貨或操縱。</p><p class="muted">原筆記限制：是可能的正常解釋，非逐筆交易歸屬證明；主持人未否認可能存在不當協作。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP152">EP152／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>朋程轉型須取得車廠認證，高效二極體則可能暫時支撐舊業務。主持人稱認證新聞遭澄清後股價仍續漲，依分點推估先買者獲利退出；朋友將其解釋為搶先承接市場注意力的動能交易。</p><p class="muted">原筆記限制：重訊轉述為IGBT尚需時間、SiC不評論，不能概括為所有認證均被否認；分點不等於單一交易人，獲利未完整扣除成本。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-57" class="knowledge-card" data-category="思考與檢討" data-source="pattern-55">
+  <summary><span class="number">57</span><span>一筆持股，先決定由哪套規則管理<small>不要進場看價值，出場又臨時看短線</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>同時使用價值、動能或逆勢方法時。</p>
+    <p class="question">這一筆到底由什麼條件決定加碼與退出？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>替部位標示進場理由、資金用途與期限。</li><li>檢討時用原先標準，不因別的族群上漲就換規則。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>可以用多種方法，但若沒有清楚邊界，就難分選股錯誤與執行混亂。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 2筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：同一部位須有單一策略歸屬。若未定義動能門檻、價值假說或策略資金邊界，事後無法判別虧損是選股、執行或策略混用所致。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP206">EP206／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>淡旺季是營收週期，不是股價訊號；淡季營收反升值得追查。公開利多仍不漲要小心，不宜用已知新聞倒解行情。由車用PCB轉追IC設計，須分清價值與動能邏輯；主持人自述先建價值股池，再等動能進場。</p><p class="muted">原筆記限制：利多公開卻不漲僅是主持人的警訊判斷，不能證明利多無效；未定義動能門檻。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP214">EP214／E5 原稿 ↗</a><p class="status">聽眾 · 操作自述（非交易驗證）</p><p>提問者自述年底一次投入餘款後回吐獲利，同一科技股混用左右側交易，導致修正時不知依哪套系統調整；擬分開標的與策略，主持人肯定其辨識問題及部位控制。</p><p class="muted">原筆記限制：分開策略是提問者計畫，尚無執行績效；主持人的肯定不是有效性證明，並另警告成長股抄底及集中部位風險。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-58" class="knowledge-card" data-category="工具與成本" data-source="pattern-56">
+  <summary><span class="number">58</span><span>零手續費，不代表交易免費<small>看總費用，不只看最顯眼的數字</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>比較券商或ETF費率時。</p>
+    <p class="question">省下手續費後，我會不會在其他地方付更多？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>統一比較持有期、頻率與資金規模。</li><li>合計管理費、保管費、最低費、點差與融資成本。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有實際費率、稅負與成交資料，不能認定哪個一定便宜。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：低手續費不等於低總交易成本。未取得費率、點差、稅負或實際交易頻率時，不能以名目手續費或單年費用判定較便宜。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP65">EP65／E1 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人認為大型券商降費會迫使同業跟進，小券商因較依賴手續費而承壓，並預期台灣可能走向接近零或零手續費。</p><p class="muted">原筆記限制：未提供期限；降費不等於總交易成本歸零，融資、點差及複委託低消仍須分開看。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP65">EP65／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>回應00757時，主持人因經理費與保管費偏高表示不會買，將0.5%作個人費用門檻，強調長期費用侵蝕報酬。</p><p class="muted">原筆記限制：未列00757實際費率；原稿對主被動ETF與報酬數字有疑義，0.5%不是通用適合度標準。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP66">EP66／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>長期被動投資應持續投入並再投資配息，比較ETF時重視每年內扣及流動性，不宜只用一年費用對比一次進出成本。</p><p class="muted">原筆記限制：主持人偏好指數型而非策略型ETF；未完整量化匯費、交易頻率、稅負及各管道總成本。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-59" class="knowledge-card" data-category="基本面與估值" data-source="pattern-58">
+  <summary><span class="number">59</span><span>景氣最旺時，本益比反而可能看起來最便宜<small>短期高獲利，不一定能一直延續</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>缺貨、封城或漲價讓產業大賺時。</p>
+    <p class="question">如果這波紅利結束，現在的獲利還剩多少？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>檢查需求退潮、擴產與去庫存的可能性。</li><li>估值時分開看短期高峰與可持續獲利。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>循環轉折很難抓準；低本益比不是續抱保證，預測退潮也可能太早。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：事件紅利期限與循環估值。低本益比與漂亮財報不足以確認便宜或續抱價值；供需轉折預測也可能過早。沒有完整回測與成本，不能證明退出規則優於長抱。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP142">EP142／E3 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述已拆掉遊戲股組合；以回測觀察延長持有至今年後與VTI相近，認為事件型交易優勢可能短暫，若無額外報酬不值得承受產業集中風險。</p><p class="muted">原筆記限制：未提供權重、起訖日、再平衡或成本；不是實際帳戶績效，也不能由單次回測證明大盤永遠較佳。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP144">EP144／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>缺貨機會財可能刺激大量擴產；需求退潮後，產能過剩及去庫存可能加重下行。</p><p class="muted">原筆記限制：跨產業類比未量化航運擴產時程或需求，不能據此斷定已見頂。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP144">EP144／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>機會財股票不宜以漂亮財報或營收作為續抱的充分理由；主持人以國巨、撼訊說明股價可能先反轉，偏好回吐停利或跌破預設價出場，而非固定目標價。</p><p class="muted">原筆記限制：未給停利幅度；營收與自結EPS被稱較即時，又被警告不可當依據，保留表述張力。不是本波航運賣出紀錄。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP151">EP151／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>上漲後減碼可為控制集中度而非看壞；移動停利或分段出場皆有取捨。另警告循環股低本益比不必然便宜，不能由此確定航運頂部。</p><p class="muted">原筆記限制：ARK與李嘉誠案例未核實，持股比例分母及門檻表述不夠清楚；不調整可能多賺，也可能承受更大集中風險。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP151">EP151／E4 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人承認航運轉折看錯；所詢業內人士原估農曆年緩解，後續更新為持續塞港、可能延至八九月。他不知行情終點，並自述今年未做散裝。</p><p class="muted">原筆記限制：第三方消息未獨立核實；高管身分不保證預測可靠，更新觀點不等於已買進航運。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP149">EP149／E3 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人轉述前輩從5G基地台增加PCB及銅箔基板用量找受益者；即使認為漲過頭，仍持有至自訂價格反轉條件觸發才賣。他本人仍會使用目標價，也會採取價值型逆勢買法。</p><p class="muted">原筆記限制：屬回顧轉述，未交代完整標的、日期、價位及報酬；主持人亦承認既定印象使自己錯過本輪貨櫃行情。收入不保證股東報酬是研究限制，非前輩原話。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-60" class="knowledge-card" data-category="思考與檢討" data-source="pattern-59">
+  <summary><span class="number">60</span><span>先看自己怎麼交易，再替方法取名字<small>說是長線，不代表行為真的是長線</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>想判斷自己是事件、動能還是長期投資者時。</p>
+    <p class="question">我的進出頻率與風險控制，符合我說的方法嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>對照實際買賣理由與持有期限。</li><li>再檢查當前市況是否適合，別只看自我標籤。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>放寬停損會增加單次損失；概念改變不代表持倉已實際轉換。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：用行為與市況稽核策略身分。低量、震盪與題材不足可能使突破反覆失敗；長期看好不保證回本，放寬停損也提高單次損失。材料未提供有效門檻或回測。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP311">EP311／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>動能策略依賴強勢族群與延續行情，突破買入、跌破停損、上漲加碼；主持人認為當下震盪與題材不足不利執行。</p><p class="muted">原筆記限制：屬主持人體感，未提供策略回測、停損幅度或交易成本；他自承並未執行得特別好。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP311">EP311／E5 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>經前輩追問後，主持人將自身定位由基本面為主修正為更偏事件與催化劑；自述台股多空配置、美股以多單為主並有一筆LNG空單回血。</p><p class="muted">原筆記限制：LNG所指標的未明，且「很大的賭注」與「部位也不大」並存，無法推算曝險；中國手機補貼是催化劑假例。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP312">EP312／E2 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>主持人依供應鏈詢問與製程時序反駁當時蘋果砍價砍單傳聞，強調未來砍單應另案判斷；另認為資料中心下修見報後可找買點，長期看好者與短期事件賣方可能因期限不同而採相反行動。</p><p class="muted">原筆記限制：匿名來源獨立性未知，所稱證實並非研究已查證；見報不等於利空出盡，也未提供反向布局的充分門檻。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP319">EP319／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>題材或技術突破交易偏向價格停損，熟悉基本面的長線部位可用部位上限承擔波動；兩者分別可能錯過反彈或承受較大虧損。</p><p class="muted">原筆記限制：原稿後文「第一種／第二種」指稱混亂，未直接回答只砍加碼股數或全部；5%、15%分母未明。研究者限制：長抱不保證數倍報酬，價格停損也不保證不受傷。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP317">EP317／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>箱底等明顯價位容易集中停損；可考慮提早或放寬，而非取消停損。反覆停損再追買的小損耗也可能侵蝕本金。</p><p class="muted">原筆記限制：下移3%只是示例，沒有回測；放寬也提高單次損失，主持人承認有人能精準交易。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-61" class="knowledge-card" data-category="新聞與證據" data-source="pattern-60">
+  <summary><span class="number">61</span><span>比別人早聽到，不代表比市場早知道<small>資訊優勢要扣掉價格已反映的部分</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>拿到供應鏈或政策線索時。</p>
+    <p class="question">消息公布前，股價已經漲了多少？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>核對消息可信度與最早出現時間。</li><li>把認證、出貨、毛利、每股盈餘分開追，不只看標題。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有訂單與估值資料，就不能判定還有多少空間；上漲也不能反推消息一定真。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：消息領先不等於價格未反映。若無價格、估值與訂單資料，或僅以股價上漲倒推消息真實，無法判定尚有空間。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP355">EP355／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>供應鏈消息或商品報價公開時，股價可能已先反映；發表會後不漲不能直接解讀為不看好，面板亦應區分通路拉貨訊號與正式報價。</p><p class="muted">原筆記限制：未提供報价與股價序列驗證；貢獻小、出貨延遲也可能解釋股價，不宜全部歸因資訊差。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP356">EP356／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>預期修正時新聞可能以早已存在的低AI占比解釋跌勢；提醒取得認證不保證有料出貨，大量營收也未必帶來相稱毛利與EPS。</p><p class="muted">原筆記限制：未點名負面案例；MGX料況與占比未核實，不能認定特定公司造假。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP358">EP358／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>認為緯創GPU卡受惠仍須防客戶扶植其他供應商壓價；台廠ABF份額未必大，雙鴻MGX認證也不保證份額或立即放量。另警告產業消息相對媒體領先，不代表領先股價。</p><p class="muted">原筆記限制：華勤系統分工、日商份額等屬主持人理解或謠傳；MGX僅稱可能明年放量，並非已確認訂單。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP361">EP361／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>題材資金可能早於基本面證據推高价格；主持人支持有經驗者先買再研究，以可承擔的停損交換較早進場，不適用所有人。</p><p class="muted">原筆記限制：自認消息前線不證明領先市場；盤整不保證跌幅有限，策略成效未驗證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP363">EP363／E3 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>散熱題材可能仍在驗證、營收未明時就先漲；若後來營收與獲利兌現，股價未必回落，等待公開消息者也未必取得便宜價格。</p><p class="muted">原筆記限制：只說明搶先押注機制，未提供成功率、估值或失敗損失，並非建議先買再說。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-62" class="knowledge-card" data-category="工具與成本" data-source="pattern-61">
+  <summary><span class="number">62</span><span>追蹤同一方向，不代表工具能互換<small>法律結構、信用與期限也會影響報酬</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>比較ETF、ETN、期貨或自己買成分股時。</p>
+    <p class="question">除了追蹤目標相近，我還多承擔了什麼？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查底層資產、到期、信用與溢價風險。</li><li>再比較交易成本與管理便利，不只選費率最低的。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>現金足額不會消除期貨換約與管理風險；工具名稱相似不足以證明可替代。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：相似曝險不等於相同投資工具。名稱或追蹤方向相近不足以證明可替代；底層市場上漲仍可能被溢價消退抵銷。現金足額也未消除期貨轉倉、基差與管理缺口。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP145">EP145／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>ETF須分開看底層市場與工具成本：主題型ETF應比較費用、權重和自行配置能力；越南市場上漲，仍可能因買入溢價消退而虧損。</p><p class="muted">原筆記限制：本集未提供可重算的報酬、淨值或完整費率；部分主題ETF費用逾1%的說法不能直接套到提問的兩檔產品。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP146">EP146／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>比較 ETN 與 ETF 不能只信小資版標籤，須檢查發行人信用、到期清算、費用、追蹤指數與追蹤效果。</p><p class="muted">原筆記限制：主持人尚未研究提問產品；較低費用只是理論期待，對發行人不易倒閉的信心不是信用風險驗證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP146">EP146／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主題 ETF 首要檢查持股是否吻合想買的公司或產業，費用其次；主持人修正早期因費用否定主題 ETF 的態度，承認代配、省事與跨市場便利有價值。</p><p class="muted">原筆記限制：未核對 00893 實際成分；提及其他車廠不能當作已查證持股。供應鏈名義也不代表高營收曝險。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP144">EP144／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>台指期貨可用去槓桿方式追蹤指數；主持人以一萬五千點、每點兩百元示範，一口大台對應三百萬元現金，僅放三十萬元則是十倍槓桿，波動可能造成非自願出場。</p><p class="muted">原筆記限制：點位是原稿示例；未討論轉倉、基差、成本及現金管理，不能推論與0050績效完全相同。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-63" class="knowledge-card" data-category="風險與部位" data-source="pattern-62">
+  <summary><span class="number">63</span><span>資金鎖得越久，越要在意治理風險<small>能否退出，會改變你能承受的問題</small></span></summary>
+  <div class="card-body">
+    <span class="tag">風險與部位</span>
+    <p class="card-context"><b>什麼時候用：</b>評估管理層有疑慮的公司或私募投資時。</p>
+    <p class="question">如果我不再信任管理者，我能退出嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先分短期可交易部位與長期鎖定資金。</li><li>再分開評估執行能力、利益衝突與退出條款。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>做事能力好不代表股東能獲利；短期能賣也不表示沒有治理風險。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 2筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：治理判斷取決於退出權與持有期。治理事件、退出條款與營運結果未獲核實；短期可退出不代表治理風險不存在，執行力也不證明股東可獲利。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP273">EP273／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人未撤回治理疑慮，但看過Neumann訪問後，因其募資說服力與執行力，推測A16Z投Flow可能大賺。</p><p class="muted">原筆記限制：早期WeWork投資者賺錢是Neumann自述；未提供Flow退出條款、治理約束或營運驗證，不能推論後期股東也獲利。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP278">EP278／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>短線操作容許喜歡炒話題但仍經營公司的老闆；若私募資金須鎖五年，會更在意私德。對他認為涉及欺騙或經營失當者，則表示不買。</p><p class="muted">原筆記限制：鎖五年是例示，非已承諾私募；未具名公司的負面評價不是已證實事實，不自行指認。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-64" class="knowledge-card" data-category="風險與部位" data-source="pattern-63">
+  <summary><span class="number">64</span><span>指數上漲，不代表大多數股票都好<small>檔數多，也可能押在同一件事上</small></span></summary>
+  <div class="card-body">
+    <span class="tag">風險與部位</span>
+    <p class="card-context"><b>什麼時候用：</b>大盤創高，自己的持股卻不動時。</p>
+    <p class="question">漲的是整個市場，還是少數權值股？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查上漲股票與族群的分布。</li><li>用目前市值算權重，檢查多檔科技股是否其實高度集中。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>缺少完整權重與相關性，就不能只靠檔數認定已分散。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：指數表現不能代替市場廣度與主題集中檢查。缺乏完整部位、相關性與權重分母時，不能由持有檔數或指數上漲認定已分散；多檔科技股也可能同步下跌。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP68">EP68／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主張分批投入並分散單股配置，提出每檔5至10%的目標；但自述Tesla配置4%，隨後卻稱歸零損失為總資產10%，無法據此重建風險。</p><p class="muted">原筆記限制：4%與10%矛盾且前者分母不清；多檔科技股也可能同步下跌，分散檔數不等於分散共同風險。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP74">EP74／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>自組投資組合應按市價計算權重，而非取得成本；再平衡可保留彈性，不必股票一漲就立即賣回固定比例。</p><p class="muted">原筆記限制：未訂容許偏離區間；集中度提高及無法精確追蹤0050是研究者補充限制。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP75">EP75／E3 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>假設自組遊戲組合，優先 NVIDIA、微軟，其次 Amazon、Google；提出比例示例與分兩個月投入，並未自述已照此配置。</p><p class="muted">原筆記限制：「ETF」指自組組合；比例僅示例，Amazon Luna 資料不足，既有持倉與新增資金的合併曝險未交代。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP78">EP78／E4 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人觀察台積電支撐指數，但許多中小型股正在修正，指數強勢不代表多數個股好做。</p><p class="muted">原筆記限制：未列市場廣度數據；研究者不能據其漲勢末端說法確定市場已見頂。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-65" class="knowledge-card" data-category="價格與趨勢" data-source="pattern-64">
+  <summary><span class="number">65</span><span>壞消息出來，先看股價怎麼回應<small>不再破底，是觀察線索，不是買進口令</small></span></summary>
+  <div class="card-body">
+    <span class="tag">價格與趨勢</span>
+    <p class="card-context"><b>什麼時候用：</b>砍單、疲弱指引或景氣利空公布後。</p>
+    <p class="question">新利空有沒有讓股價再創低？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先分清已公布事實、傳聞與原先預期。</li><li>比較公布後價格與前低，並持續追蹤基本面。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>短暫不跌可能只是籌碼因素；利空消化不等於營運或股價一定落底。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 6筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：利空公布後以價格反應檢驗假說。資訊來源未核實、基本面持續惡化，或不破底只是短暫籌碼因素時，不能視為景氣或股價已落底。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP255">EP255／E4 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>計畫觀察大型科技公司下修展望後是否不再破底，作為利空已消化的候選訊號；若仍探底，不因歷史罕見跌幅而認定底部。</p><p class="muted">原筆記限制：不破底不保證立即上漲；原文的下一次財報季與Q3財報時間指涉待釐清。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP256">EP256／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>取消單傳至晶圓代工可能是去庫存末端、股價先落底的訊號，但不能套用到所有產品。</p><p class="muted">原筆記限制：主持人另估筆電、PC、面板可能到2024年下半仍去不完；消費縮手可能拉長修正，尚無落底確認。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP257">EP257／E5 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>預期7月科技業財報指引疲弱，計畫先看壞消息後股價是否續跌；不再下跌才可能構成機會，續跌則不預設低點，並檢查營收結構是否掩蓋惡化。</p><p class="muted">原筆記限制：是條件式應對而非自述已買進；消息消化不代表基本面已觸底。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP252">EP252／E5 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>自述反彈部位已被停利洗出；不因跌回原買點便加碼，當日創新低不抄底，需重新盤整才考慮短多，也不再重演高強度地獄週操作。入金頻率、收入及部位不同，不能照抄他人操作。</p><p class="muted">原筆記限制：並非普遍禁止逆勢交易，主持人承認高手有其他方法；港股大部位停損後留下的一手自述仍虧49%，不是整筆交易虧49%。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP256">EP256／E1 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>7與16奈米稼動率剩90%至95%屬市場傳聞；主持人提出砍單與擴產空窗兩種解釋，主張以公司展望為主，但下游惡化時須折扣解讀。</p><p class="muted">原筆記限制：未確認稼動率、砍單客戶與幅度；蘋果未來填補7奈米產能亦只是推估。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP257">EP257／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人更新為16奈米可能較穩、7奈米仍有鬆動消息；推測砍單傳至代工端意味去庫存接近尾聲，但仍取決於終端購買力。另將高通受惠蘋果5G晶片開發受阻的未驗證消息，解讀為營收流失延後、爭取替代營收時間，而非蘋果放棄自研。</p><p class="muted">原筆記限制：車用轉製程與蘋果開發時程未確認；高通份額消息稱至少到2023年下半年，自研合作調查亦指向該期間，不宜自行消解時程疑點。去庫存末期不等於股價見底。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-66" class="knowledge-card" data-category="基本面與估值" data-source="pattern-65">
+  <summary><span class="number">66</span><span>營收還很好，毛利和估值可能已先轉弱<small>不要只用一個好數字看整家公司</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>缺貨或漲價讓營收創高時。</p>
+    <p class="question">公司賣更多，是真的更會賺，還是只是售價暫時高？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分開追訂單、報價、成本與毛利。</li><li>再查新增供給、估值與市場資金偏好。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>高獲利不必然馬上反轉；沒有個別產業資料，也不能直接說毛利見頂。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：高獲利不等於可延續的股東報酬。未有個別供需與利潤資料時，不能斷定毛利已見頂；高獲利也不必然立即反轉。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP158">EP158／E6 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>面板報價仍升但增速趨緩，PC、TV、NB拉貨也趨緩；主持人傾向觀望，但不否定次年表現。新聞及分析師報告有好有壞，應讀產業內容而非目標價；不能因一份報告短線看對就奉為先知。</p><p class="muted">原筆記限制：面板是主持人對匿名題材的猜測；未提供報價序列，亦承認可能判斷錯誤。聽眾獲利回吐不是主持人績效。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP165">EP165／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>缺貨受惠電子股也可能有景氣循環；低價庫存耗盡、漲價條件消退或擴產增加供給，可能使毛利見頂，即使營收與獲利仍不差，股價也可能提前反映。</p><p class="muted">原筆記限制：未指明公司或見頂時間；高毛利不必然已見頂，也不代表公司往後變差。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP165">EP165／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>即使企業成長沒有減弱，解封後可投資題材增加、資金轉往其他產業，也可能壓低原受惠股估值；營運預測正確不保證股價會在等待期間上漲。</p><p class="muted">原筆記限制：Zoom與Peloton用於情境說明，未量化資金流或證明特定跌幅由輪動造成。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP168">EP168／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>估值要檢查未來訂單與漲價能否延續；若高獲利引發同業集體擴產，短期物流障礙消退後可能供過於求，不能直接延伸當年高毛利。</p><p class="muted">原筆記限制：屬條件性風險推演，未提供個別產業供需數據；主持人也提醒報價拉平時股價可能已跌。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP158">EP158／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>台積電法說數字符合財測，不代表一定滿足市場期待；先進製程搭配低毛利率封裝，若平均售價與營收提高，仍可能更賺錢。</p><p class="muted">原筆記限制：大資金嫌數字不夠好而賣出只是主持人的可能解釋；未量化利潤或股東報酬。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-67" class="knowledge-card" data-category="持有與等待" data-source="pattern-66">
+  <summary><span class="number">67</span><span>提前布局，要付出等待的成本<small>早買與追趨勢，各有代價</small></span></summary>
+  <div class="card-body">
+    <span class="tag">持有與等待</span>
+    <p class="card-context"><b>什麼時候用：</b>預期旺季或復甦，但行情遲遲沒發動時。</p>
+    <p class="question">這段等待值得嗎？我在等哪個具體變化？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>列出可追蹤的催化因素與時間。</li><li>比較久等、看錯與轉向其他機會的代價。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有條件的等待容易變成事後合理化；追趨勢也可能反覆停損。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：提前布局須與資金效率並列。沒有可追蹤的催化條件、持有期限或替代機會比較時，提前布局容易被事後合理化；追趨勢亦可能反覆停損。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP415">EP415／E3 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述會先小額持有追蹤標的、表態後追價加碼；目前更偏向部位風控與等待，過去大額槓桿則須嚴格停損。聲稱勝率提高，但效率未必較好。</p><p class="muted">原筆記限制：5%為示例且分母未明；原稿部位大小有語意不順處。等待或領息不保證回本，勝率未附紀錄。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP420">EP420／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>旺季不能直接當買入時鐘；主持人偏好提前布局，但自承曾久蹲一年未發酵。追趨勢可能提升資金效率，也可能反覆停損。PA問答同樣區分元件必要性、供需改善與資金發動時間，並承認等待超出預期。</p><p class="muted">原筆記限制：未保證提前多久有效；PA公司業務與稼動率不同，不宜把同題材三家公司視為相同。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP422">EP422／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>持股數應受研究管理能力約束；未發酵持股若有更確信能發酵的替代機會，可依當前淨值換股，不必等待回本。</p><p class="muted">原筆記限制：沒有提出如何驗證「立刻發酵」；也未回答所有跌爛標的是否應無條件砍掉。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-68" class="knowledge-card" data-category="思考與檢討" data-source="pattern-67">
+  <summary><span class="number">68</span><span>改看法，不一定是從看多變看空<small>有時只需改時間、範圍或適用場景</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>產業復甦或新技術採用比預期慢時。</p>
+    <p class="question">是整個看法錯了，還是只在某些地方不成立？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>用訂單、交期、庫存等新資料檢查。</li><li>區分延後、限縮場景與全面推翻，不把單一樣本外推全產業。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>資料口徑與來源不明，無法判定該改多少；更新本身也不代表更準確。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：產業假說應容許條件式延後或限縮。若調查樣本、口徑與來源獨立性不明，或把單一題材、庫存現象外推全產業，更新幅度無從判斷。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP355">EP355／E5 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>面對他人看好台勝科、稱SUMCO價格穩定，主持人提出部分矽晶圓現貨價仍跌的反證；族群反彈可能是打底，但先看618消費狀況。</p><p class="muted">原筆記限制：價格來源、品項與期間未明；股價反彈不能確認營運落底，亦未釐清不同報價口徑。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP358">EP358／E3 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>接受業界朋友回饋，修正原先浸沒式液冷仍需四五年以上才大型放量的悲觀看法；現階段仍以氣冷為主，冷板與浸沒方案依環境條件並存，而非單一路徑全面取代。</p><p class="muted">原筆記限制：沒有新的量化放量時程；導入案例為轉述，原稿液冷分類及材料名稱仍待原音與外部資料核對。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP362">EP362／E4 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人自述交叉了解IC設計、電感與代工後，下修下半年消費電子復甦預期至持平或略優上半年，復甦可能延至2024年第一季；AI占比小不足救整體稼動率。</p><p class="muted">原筆記限制：調查樣本、來源獨立性與AI占比分母未提供；品牌可能快速調整訂單，第一季不是確定復甦時點。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP363">EP363／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>原偏向雙相浸沒式液冷出局，現因中東高溫、缺水、資金充裕及AI伺服器高功耗，重估特定地區採用機會；Intel標案也是未完全出局的反例。</p><p class="muted">原筆記限制：詢價不等於採用；耗材補充、環保、3M停產及GPU浸泡保固說法待核，不能推成全面替代。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-69" class="knowledge-card" data-category="風險與部位" data-source="pattern-68">
+  <summary><span class="number">69</span><span>買了一籃股票，仍可能一起遇上政策風險<small>分散公司，不等於分散制度</small></span></summary>
+  <div class="card-body">
+    <span class="tag">風險與部位</span>
+    <p class="card-context"><b>什麼時候用：</b>投資單一國家、地區或受同一監管的ETF時。</p>
+    <p class="question">這些公司是不是都會被同一條新規則影響？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分開檢查個別公司風險與共同制度風險。</li><li>追蹤政策是否改變經營、上市或募資條件。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>ETF仍可降低單一公司風險；只是不能因此認為共同政策衝擊消失。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：ETF分散不能隔離共同政策風險。ETF可降低單一公司風險，卻不能據此推定可消除共同制度衝擊；政策後續與估值終點仍未知。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP155">EP155／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>中國整改可能不只一波，風險也可波及中國ETF；短期不建議抄底，但考量內需與未來表現可能，也不建議做空。</p><p class="muted">原筆記限制：政策動機與後續波數是主持人推測；未提出估值或進出場門檻。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP160">EP160／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>中概股價值浮現仍須考量政策改變企業存續與募資條件；教育股跌幅超出主持人預期，ETF也未隔絕下跌。他已以小部位布局香港，試驗企業回流上市假說。</p><p class="muted">原筆記限制：企業結算是風險情境；香港部位標的、分母與績效未明，回流假說尚待驗證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP161">EP161／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>指數投資仍可能遭遇單一市場長期低迷；可同時配置台美或全球，但分散會犧牲全押最強市場的報酬。</p><p class="muted">原筆記限制：未給全球配置權重或再平衡方法；台灣加全球仍可能重疊，分散不等於保本。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-70" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-69">
+  <summary><span class="number">70</span><span>等到確認基本面變差，價格可能已跌很遠<small>進場時的部位上限，也是在保護退出</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>長期持股需要等待營運數據才能判斷時。</p>
+    <p class="question">在證據還沒完整前，我最多能承受多少損失？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先限制單一看法占用的部位。</li><li>把確認太慢與提早賣出的代價一起想。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有比例與觸發條件，仍不是可執行策略；太早退出也可能錯失上漲。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：長期假說失效需有延遲退出防呆。未定義部位分母、上限、賣出比例或重估觸發條件時，逐步賣出仍不可操作；過早退出亦可能錯失上漲。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP287">EP287／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>長線基本面投資不宜照搬超短線的窄幅停損；可事先以部位上限承擔最壞損失，避免頻繁洗出，但上檔仍以看對為前提。</p><p class="muted">原筆記限制：5%部位只是示例；未交代基本面惡化如何退出，也不適用無上限加碼或槓桿部位。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP290">EP290／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>長期持股若等到確認不如預期才賣，價格可能已大跌；按部位上限逐步賣出是他提出的防呆方法，而非已執行交易。</p><p class="muted">原筆記限制：未定義部位分母、上限、賣出比例與時程；不能推論他已賣出特斯拉。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP297">EP297／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>基本面進場可在估值反映或理由消失時出場，也容許混合技術訊號；等基本面確認可能太晚，較早出場則可能錯過後續大漲。</p><p class="muted">原筆記限制：尚未提供完整框架，不能把8%或10%回檔當通用出場線；第三方價投案例不是主持人的交易成果。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-71" class="knowledge-card" data-category="風險與部位" data-source="pattern-71">
+  <summary><span class="number">71</span><span>買了避險，不一定真的保護到持股<small>工具、比例與成本要對得上</small></span></summary>
+  <div class="card-body">
+    <span class="tag">風險與部位</span>
+    <p class="card-context"><b>什麼時候用：</b>考慮用空單、期貨或選擇權保護多單時。</p>
+    <p class="question">它保護的是我真正擔心的那個風險嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>先分個股意外與市場共同下跌。</li><li>再檢查多空關聯、比例及持續保護的成本。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>配錯可能多空雙虧；持續避險也可能拖累上漲時報酬，案例不等於效果驗證。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：避險是曝險設計，非方向看空替代品。僅因看弱便任意放空、關聯性不足或比例失衡時，可能多空雙虧；常駐保護亦可能落後單純持有。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP249">EP249／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>避險應先定義被保護的部位、風險、工具關聯性與比例；隨便找族群放空，可能多空兩邊都虧損。</p><p class="muted">原筆記限制：三商家購案例及反一商品描述未外核；對公司不當行為的猜測無證據，不採為事實。換用期貨也不保證避險成功。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP249">EP249／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>多空配置旨在降低市場方向風險並保留選股超額報酬，但普漲時空單會拖累績效；Beta估計也受採樣期間影響。</p><p class="muted">原筆記限制：兩倍做多、一倍做空的示例未列實際Beta，不能直接認定市場中性；震盪盤獲利者是主持人轉述，非策略驗證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP258">EP258／E2 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>自述第一季後台股加入多空配置、減輕第二季衝擊；美股未加入對沖，主要持股特斯拉與輝達回吐甚多。</p><p class="muted">原筆記限制：無完整損益、曝險及避險比例；CrowdStrike反而相對強健，也推翻其成長股普遍更弱的預想。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP258">EP258／E4 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>考慮更早或常駐使用空方ETF與short call平滑績效，並將空單獲利再平衡至多單，但未來不一定全撤空方。</p><p class="muted">原筆記限制：承認事後可能發現直接持有更好；未提供工具、配比與成本，持股跑贏Nasdaq也不是保證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP253">EP253／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人將分散定位為防個股意外，而非消除大盤下跌；提出五六檔、單檔一至兩成的示例，但與大師集中下注不同，建議先用部分資金測試適配性。</p><p class="muted">原筆記限制：比例分母未明示，也非自述現有持股；多空或負相關配置不保證避險，他承認近期股債配失效。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-72" class="knowledge-card" data-category="基本面與估值" data-source="pattern-72">
+  <summary><span class="number">72</span><span>同樣缺貨，上下游可能一個賺、一個受傷<small>數量、售價與成本要沿供應鏈拆開</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>代工漲價、供給中斷或庫存累積時。</p>
+    <p class="question">對這家公司，是賣更多，還是成本更高、交不了貨？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>逐公司查訂單、交付、零件搭載與成本轉嫁。</li><li>比較競爭者是否也漲價，以及終端需求能否持續。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>大家一起漲價也不會消除成本上升；缺貨解除不保證收益改善。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 7筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：沿供應鏈拆開數量、價格與相對成本。競爭者同步漲價僅縮小相對劣勢，不消除絕對成本增加；庫存提高可能減少上游拉貨。解除缺貨若無持續需求，也不能推出收益改善。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP170">EP170／E2 原稿 ↗</a><p class="status">主持人 · 預測</p><p>IP授權收入可能隨晶圓報價受惠；IC設計可能承受代工與授權雙重漲價，但最終損益取決於供應商曝險與轉嫁能力，而非只看投片占比。</p><p class="muted">原筆記限制：報告轉述中信驊、祥碩曝險100%但競爭低；聯發科70%、群聯35%仍可能受影響。低價庫存可緩衝原料成本，晶圓長約是否有類似保護未知。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP171">EP171／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>他認為晶圓漲價後矽智財及部分IC設計短線走勢支持第二層思考，但承認可能漲過頭；三星跟漲若屬實，可縮小台積電客戶相對成本劣勢。</p><p class="muted">原筆記限制：只是市場消息；相對劣勢縮小不代表絕對成本不升。短線價格驗證不能證明長期獲利或已完成交易。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP172">EP172／E5 原稿 ↗</a><p class="status">主持人 · 預測</p><p>主持人猜美元隨政策收緊偏升，對台幣續升較保守；終端需求減緩加上先前拉庫存，可能使減少拉貨由通路逐層傳至晶圓代工。</p><p class="muted">原筆記限制：屬方向猜測；惠普財報被主持人稱為證實減緩，但未提供數據，不能推成需求消失或匯率必然如此。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP173">EP173／E3 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>CIS砍單有漲價遭拒與終端需求減緩兩種轉述；通路庫存提高可能使拉貨減少逐層傳到晶圓代工。主持人自述多單未回原水位，另持約1.2億元名目額的台指期避險空單，稱約千萬元即可；本次空單略賺、多單回吐，過去避險常遇反彈。</p><p class="muted">原筆記限制：消息未具名，備貨亦有節慶目的；影響一兩季及動能轉往電動車、第三代半導體是估計。無完整交易、保證金及組合損益資料。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP178">EP178／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>認為晶片短缺壓抑家機出貨，供應改善後可期待收入回升；但供應鏈受益須核對機型是否使用該零件，不能只看概念股標籤。</p><p class="muted">原筆記限制：美國家機銷量不是任天堂單家公司數據；供應關係、缺貨改善時點未核實。收入改善不等於利潤或股價必漲，歷史季節性也非交易保證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP171">EP171／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>馬來西亞停產對台灣被動元件加分有限，須與國巨通路降價一起權衡；也保留降價利空已先反映、後續只反映利多的可能。</p><p class="muted">原筆記限制：降價原因、替代供貨能力及利空反映程度未確認；未給明確買賣方向。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP175">EP175／E1 原稿 ↗</a><p class="status">主持人 · 預測</p><p>看好iPhone 13銷售，傾向以營收遞延而非蘋果錯估解釋供應鏈落差；但設計更動可能使當期佳績短命，資金轉向也可能壓縮估值。</p><p class="muted">原筆記限制：銷量與營收遞延均為推估；台表科營收漂亮而股價不動是反例，不能由營收推論報酬。設計更動與本益比壓縮是風險機制及假設例子，未證實為本次下跌原因。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-73" class="knowledge-card" data-category="基本面與估值" data-source="pattern-73">
+  <summary><span class="number">73</span><span>AI示範成功，還要過客戶日常工作這一關<small>能用一次，與願意長期付費不同</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>看到AI新服務展示令人驚豔時。</p>
+    <p class="question">客戶真的能把它放進每天的工作流程嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>檢查可靠性、可控性與轉換成本。</li><li>再看付費、留存與加價能力，而不是只看個人試用。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>局部功能可用不代表全流程商用；方向正確，採用時間也可能延後。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：展示能力與工作流程商用分離。個人測試或案例轉述不足以代表普遍採用；局部功能可用也不等於完整工作流已商用。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP510">EP510／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>自認願為科技付高溢價，可能高估普遍付費意願；若擔心AI滲透率，可觀察既有服務導入AI後的留存與單客營收。成熟企業採用另受轉換痛點限制。</p><p class="muted">原筆記限制：既有訂閱加值只是研究方向；未提供付費轉換、流失率或服務成本的實測結果。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP513">EP513／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>較關注 Cloudflare 等 CDN 業者；模型商可能因競爭讓利，雲端巨頭則受營收純度與內部低價服務限制。儲存、編碼、壓縮及 AI 影音專用技術的宣布也是研究入口，目前仍在探索。</p><p class="muted">原筆記限制：微軟低於成本支援 OpenAI 屬推測；未證明 CDN 流量轉為利潤，也未提供新技術標的交易。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP515">EP515／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人實測Sora後，因角色跨場景連續性不足而拉長Text-to-Video機會時間軸；仍看好長期方向，等待版本或開源模型改善。</p><p class="muted">原筆記限制：屬個人測試，未涵蓋全部工作流程；他承認獨立素材已有用途。把能力限制歸因於審查、預測開源受惠仍是推測。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-74" class="knowledge-card" data-category="新聞與證據" data-source="pattern-74">
+  <summary><span class="number">74</span><span>財報優於預估，為什麼還跌？<small>公開預估，不一定是市場心中的門檻</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>高成長公司公布好財報，股價反應卻差時。</p>
+    <p class="question">結果只是比分析師預估好，還是也比持有人期待好？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分開列實際營運、公開預估與自己的估計。</li><li>有來源時再比較買方期待，不用跌價倒推出唯一答案。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>買方期待若沒有可靠來源與時間點，就只能當假設；一次財報不足以判定轉折。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：財報須比較買方隱含門檻。買方預期來源、時間點或樣本不明時，無法確認真正預期差；單次財報也不足以判定估值轉折。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP395">EP395／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>原想在 Celestica 財報前減碼，最後未減；理由是其 EPS 與展望預期不高。以 Supermicro 即使 beat 仍未必討喜作反例，並自述美股無槓桿。</p><p class="muted">原筆記限制：未提供預期數值、持倉大小及虧損上限；過往曾因賭財報受傷，本次成敗尚未知。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP396">EP396／E2 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>未執行Celestica財報前減碼規劃，部位回吐至成本線附近；仍因財報符合個人預期、TPU需求判斷及依公司指引計算不到十倍的本益比而加碼。</p><p class="muted">原筆記限制：法說對應、估值口徑及beat基準未外部核實；先減再買較好的結果是反事實檢討，不是實際交易。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP403">EP403／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>輝達營收18.1B低於主持人猜測18.5B；他稱買方估18.5至19.5B，次季指引20B也低於其所述22至23B期待，不能只用擊敗賣方預估判斷利多。</p><p class="muted">原筆記限制：買方區間來源、樣本與事前時間未交代，不能當成全市場共識；主持人明確認列自己估得過高。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-75" class="knowledge-card" data-category="工具與成本" data-source="pattern-75">
+  <summary><span class="number">75</span><span>省費用之前，先看工具能不能裝下你的部位<small>ETF、現股、期貨的管理代價不同</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>考慮把現股換成期貨，或用ETF取代自組持股時。</p>
+    <p class="question">換工具後，我還是在承擔同樣的風險嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查實際持股、集中度與市場成交容量。</li><li>比較持有期、費稅、換約與管理工作。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>足額備款不能消除流動性與規則風險；分散也不保證報酬更高。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：同一投資方向不代表工具可以互換。工具曝險未必相同；費稅、轉倉與產品資料未核實，足額備款不能消除規則及流動性風險。分散亦不保證低波動或較高報酬。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP184">EP184／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>不熟悉產業可考慮主題ETF並支付管理費；有明確配置想法者可自行組合，避免成分不符需求。單買特斯拉使成敗集中於一家公司，ETF則分散持股，但也稀釋單押贏家的報酬。</p><p class="muted">原筆記限制：成分排名、費率與『主動ETF』分類均未核實；分散不保證低波動，原稿也未提供適合個人的比例。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP190">EP190／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>足額備款、不開槓桿且流動性足夠時，主持人認為期貨可替代部分長期現貨曝險，節省費稅；代價是到期管理、轉倉及流動性限制。</p><p class="muted">原筆記限制：費稅優勢未核實；台指期與台灣50並非可直接視為同一曝險。原文由期現逆價差推論轉倉收益，未區分跨月價差及除息影響。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP193">EP193／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>朋友補充FCN標的可選、利息可談，主持人表示自己未申請專業投資人亦不會購買，並分享依資金與交易貢獻議價的經驗。ETF問答則比較同追蹤台灣50產品的費用、成交量與折溢價：密集進出偏重交易量，長期持有可考量費用。</p><p class="muted">原筆記限制：FCN資訊來自朋友；利率與費用是當時轉述。朋友回測未交代方法，主持人亦稱差異可忽略，不能推論固定績效優勢。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP194">EP194／E7 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>網通配置使用現貨，因期貨標的及容量不足；看好Open RAN增加設備需求，但不把個股上漲直接歸因於缺料緩解，資金偏好也可能推高估值。</p><p class="muted">原筆記限制：未明現貨標的、成本與部位；台揚主力炒作是傳聞。研究者註：Open RAN量增尚未連結個別公司利潤。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-76" class="knowledge-card" data-category="賣出與減碼" data-source="pattern-76">
+  <summary><span class="number">76</span><span>小型股買得進，不代表大部位賣得掉<small>先想退出，再決定持有多少</small></span></summary>
+  <div class="card-body">
+    <span class="tag">賣出與減碼</span>
+    <p class="card-context"><b>什麼時候用：</b>小型股交易清淡，想建立較大部位時。</p>
+    <p class="question">我要賣的張數，需要多少買盤才能接走？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>比較部位與平常成交量、買盤深度。</li><li>想清楚出量窗口、成交價格與需要的退出時間。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>只有個別案例，沒有足夠資料可形成固定賣出規則；看到量也不保證賣得完。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 2筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：持倉容量先於退出意願。僅有單一持股或朋友案例，未取得成交深度、賣壓與實際執行紀錄，無法形成固定退出規則。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP439">EP439／E3 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>部分小型持股買盤僅十張、持倉卻逾百張，無法即時退出；朋友建議趁出量減碼，但他自述不易執行，且賣與不賣均曾後悔。</p><p class="muted">原筆記限制：出量減碼主要是朋友方法，不是主持人已穩定採用的規則；沒有完整案例績效比較。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP439">EP439／E4 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>他打算稍增分散以提高持有耐性，並用數季至一年檢驗；玉晶光因不動而賣出、其後上漲，促使他檢討研究與執行落差。</p><p class="muted">原筆記限制：看對率提高屬自評；賣飛案例不能證明停損無效。後文「再上一點」方向不清，不能解讀為已加碼。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-77" class="knowledge-card" data-category="工具與成本" data-source="pattern-77">
+  <summary><span class="number">77</span><span>買指數，也是在買未來更換成分的規則<small>不只是把今天的贏家打包</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>比較單一龍頭、大型股與全市場指數時。</p>
+    <p class="question">我要的是現在的明星，還是能持續更替的組合？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查指數編製、換股與權重規則。</li><li>檢查實際集中度，不用最近贏家倒推未來一定勝出。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>指數可能仍很集中；未來納入強者也不保證報酬更高。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：指數更替機制與集中偏好的衝突。未核對成分、權重及編製規則，不能由名稱判斷曝險；指數仍可能集中，未來納入強者亦不保證較高報酬。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP84">EP84／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>投資與現金比例無通用答案，須依個人舒適度及急難時可動用資金決定；他另提醒研究指數成分，不要直接以單一指數代表整體市場。</p><p class="muted">原筆記限制：未估算必要支出或備用金期間；原稿把A股基金與上證混稱，未檢視聽眾實際基金，不能據此否定所有A股基金。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP88">EP88／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>0050不等於單買台積電；核心是持有大型公司組合，可參與未來新強者，單押台積電則有更大的損益波動可能。</p><p class="muted">原筆記限制：新強者是假設，非保證；未詳述指數規則。分散不代表沒有權重集中風險是研究者限制。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP91">EP91／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>ETF先看費用與成分股；主持人偏好0050但承認未來勝負未知，也認同聽眾規劃八九成ETF、一兩成主動選股。</p><p class="muted">原筆記限制：回測期間、費用及報酬口徑未提供；配置比例是聽眾計畫，不是主持人已執行部位。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP89">EP89／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>指數投資保留強者更替的可能；不應因當前贏家突出便集中重壓。主持人偏好大型股，但承認越集中越受少數公司變數影響。</p><p class="muted">原筆記限制：同段稱前三大表現「一定」優於0050、VOO「當然」優於VTI，與反結果論存在張力；未提供期間及報酬資料。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-78" class="knowledge-card" data-category="價格與趨勢" data-source="pattern-78">
+  <summary><span class="number">78</span><span>股價先不跌，營運卻可能還在變差<small>價格底與景氣底，不一定同時出現</small></span></summary>
+  <div class="card-body">
+    <span class="tag">價格與趨勢</span>
+    <p class="card-context"><b>什麼時候用：</b>具體業績利空公布後，股價沒破前低時。</p>
+    <p class="question">只是價格先反映，還是營運真的好轉了？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>記錄新利空與公布後價格反應。</li><li>另追後續獲利修正，不把兩個問題混成一個。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>不破低不保證上漲；新利空與獲利續降都可能再帶來下跌。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：利空反應不是營運落底確認。不破低不保證上漲，後續新利空或獲利續降仍可再跌；未提供價格區間與期限時，證據不足。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP262">EP262／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>建議將壞消息與股價反應共同觀察；即使估值已修正，2023年獲利預估仍可能下調。美元強勢與台幣貶值可能造成台美企業獲利修正差異。</p><p class="muted">原筆記限制：跌不下去不是底部保證；中期反彈後可能再跌是轉述市場看法，非已發生結果。多份同論述報告不代表獨立證據。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP268">EP268／E3 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>預期比共識更悲觀且事後看對，仍可能放空賠錢；主持人以科技股差於預期的財報與展望卻不跌反漲，說明價格可能事先過度反映。</p><p class="muted">原筆記限制：未提供公司、日期或價格，超跌為解釋而非已證明原因；不是所有利空不跌都代表可做多。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP269">EP269／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人轉述美光下修展望、自由現金流可能轉負，認為營運至翌年第一季仍不樂觀；操作上觀察壞消息後是否跌破前低，以測試價格是否已反映衰退。</p><p class="muted">原筆記限制：不破低只是主持人的測底框架，不能保證上漲；自由現金流轉負的解釋涉及營收下降及資本支出難以大減，未外部核實。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP263">EP263／E3 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>引用2022年7月FMS的衰退共識、成長與獲利悲觀作相對低檔參考，但承認極端悲觀後股價仍能大跌；另認為股價通常領先庫存及需求改善。</p><p class="muted">原筆記限制：原文同段又稱今年逆向投資表現應不錯，語意有張力；所列歷史時點不足以驗證穩定勝率。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP265">EP265／E6 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主段與底部指標Q&amp;A均稱極端悲觀常出現在相對低點，但本次BofA／FMS訊號低迷後股價仍可下跌，不能確認絕對底部。</p><p class="muted">原筆記限制：所稱99%看空不是已確認統計；標普3000以下等為轉述劇本，非主持人目標價。未提供回測樣本、門檻及等待時間。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-79" class="knowledge-card" data-category="基本面與估值" data-source="pattern-79">
+  <summary><span class="number">79</span><span>電動車賣更多，供應商不一定多賺同樣多<small>替代需求與公司占比會稀釋題材</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>用熱門終端成長挑供應鏈或母公司時。</p>
+    <p class="question">增加的是新需求，還是只是取代原來的生意？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>比較每單位用量、售價與毛利。</li><li>再查該業務占公司多少，以及被替換、競爭擴產的風險。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>供貨關係不等於利潤貢獻；母公司太大時，熱門業務影響可能很小。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：題材增量須穿透替代需求與公司占比。供貨關係、業務占比或價格不明時，不能形成收益結論；需求增量可能被既有需求減少、競爭擴產及母公司體量稀釋。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP183">EP183／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>看好鴻海以展示造車能力爭取代工，但母公司體量大，新業務未必明顯推升EPS；挑戰200元是轉型奏效下的可能性，不是確定目標。</p><p class="muted">原筆記限制：沒有估值模型或交易自述；科技日當時尚未發生，不能預設利多出盡或必然成功。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP187">EP187／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>供貨電動車不必然增加獲利，須比較油電車的ASP、用量與毛利，並確認供應路徑；品牌競爭力與供應鏈替換風險須分開研究。</p><p class="muted">原筆記限制：旺宏供貨特斯拉是主持人轉述；自述詢問後仍不知道價格，沒有獲利增量結論。台積電被他列為台股中較接近品牌邏輯的反例。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP191">EP191／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>供應鏈投資須看訂單能否跨贏家承接：伺服器台廠可受惠品牌或白牌競爭，VR則因量小、價格與中國供應商競爭，不宜直接類推。</p><p class="muted">原筆記限制：VR出貨量、中國供應占比與AR量較大的說法未核實；不能推論所有台灣伺服器公司都受惠。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP194">EP194／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>VR投資偏好內容而非小量設備概念股，但看好VIVE團隊不等於買宏達電就能充分取得內容成長曝險。</p><p class="muted">原筆記限制：投資偏好不是已買進；占比未明。研究者註：拆分後必成飆股是強烈推測，沒有估值支持。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP194">EP194／E3 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>全球被動元件同步上漲引發研究；若電動車提升單車用量的趨勢成立，可能成為2022台美股布局主軸。另須把壞消息與股價位置連結：跌深後壞消息不再壓低股價值得觀察；股價可能領先財報，也可能只是炒作。</p><p class="muted">原筆記限制：轉述TrendForce年增二十幾趴只指量，各廠也在擴產，未確認價格及利潤。未宣稱已買被動元件；特斯拉、IDM為自述既有配置。5G類比亦保留毫米波押注成效有限的反例。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-80" class="knowledge-card" data-category="思考與檢討" data-source="pattern-80">
+  <summary><span class="number">80</span><span>AI可以幫你整理，不能替你負責判斷<small>重要資訊仍要回到原始脈絡</small></span></summary>
+  <div class="card-body">
+    <span class="tag">思考與檢討</span>
+    <p class="card-context"><b>什麼時候用：</b>用AI讀財報、摘要法說或整理研究時。</p>
+    <p class="question">哪些結論我已核對，哪些只是AI說的？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把資料按重要性分級，先說清楚整理規則。</li><li>重要法說保留原始內容，計算與結論自行核對。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>輸入不完整或未驗算，摘要不能當投資結論；語氣變化也不等於營運改善。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：AI可整理資訊但不取代判讀責任。規則未定義、輸入資料不完整或未核對輸出時，AI摘要與計算不能作為投資結論；語氣變化也不等於營運落實。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP571">EP571／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>次要資料可交 AI 整理，重要法說仍親聽；管理層相對自身慣常語氣的變化，是文字摘要可能漏掉的訊號。</p><p class="muted">原筆記限制：語氣不等於營運實現；NotebookLM 準確度及原生平台優勢只是主持人自述檢查與推測。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP568">EP568／E7 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>因朋友長期表現而重新對波浪理論產生興趣；自述先向AI定義條件，再提供圖表協助計算，而非直接採信模型搜尋結果。</p><p class="muted">原筆記限制：未展示計算核對或交易成績；朋友表現為主持人觀察，不證明波浪理論或AI具預測力。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP574">EP574／E5 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述已累積、整理研究文件資料庫，期待未來交給AI分析；並引用第三方對人際交流重要性上升的看法，認為公開資料報告產出已大幅加速。</p><p class="muted">原筆記限制：整理資料已執行，整庫餵入AI仍是期待。研究者限制：短期試用不能證明報告正確或投資績效；主持人表示不在意機敏問題，不代表風險已解決。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-81" class="knowledge-card" data-category="新聞與證據" data-source="pattern-81">
+  <summary><span class="number">81</span><span>績效截圖是線索，不是完整成績單<small>摘要、轉述與個人體驗都有缺口</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>看到獲利截圖、供應鏈筆記或產品心得時。</p>
+    <p class="question">沒顯示的成本、虧損和時間，會不會改變結論？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>追查來源、樣本與發生時間。</li><li>把研究靈感與已核實證據分開，不靠截圖重建績效。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>單一體驗不代表全部用戶；消息流傳多次也不等於獨立驗證。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：二手資訊與展示績效的證據折價。來源無法追溯、樣本與成本不明或資訊可能已擴散時，不能當成獨立驗證，更不能重建績效或因果。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP423">EP423／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>事件交易應按資訊取得條件選戰場：處置股制度相對公開，營收、加單與併購消息則可能早已傳播。停損較明確仍有耗時及假消息成本。</p><p class="muted">原筆記限制：資訊領先不自動等於法律上的內線交易；未提供可回測規則，也不保證公開制度事件能獲利。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP424">EP424／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>評估投資分享應重視論述與啟發，而非可能來自極小部位或造假的報酬率截圖；即使聽眾曾借款買AI獲利，也不應聽題材便借錢集中押注，須控制槓桿與配置。</p><p class="muted">原筆記限制：截圖造假為主持人的一般性指述，不能據此認定特定人士造假；聽眾獲利未驗證，七成勝率也非主持人已驗證績效。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP425">EP425／E7 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人稱看過的節目筆記約三、四成有亂寫成分，甚至出現相反解讀，提醒應回到節目本體，避免以整理者的錯誤認知代替原意。</p><p class="muted">原筆記限制：比例只是主持人的經驗估計，沒有樣本清單；逐字稿或AI摘要也不因此自動正確。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP427">EP427／E4 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>認為開箱錄影清晰度高於實際佩戴所見，不能用展示影片直接判斷戶外使用成熟度，並反對戴裝置上街或滑雪。</p><p class="muted">原筆記限制：屬試用觀察，未有量測；他同時肯定Vision Pro比Quest清晰。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-82" class="knowledge-card" data-category="工具與成本" data-source="pattern-82">
+  <summary><span class="number">82</span><span>事件完成後，原本的保護可能就消失了<small>工具條件變了，要重新評估</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>用SPAC贖回機制當作資金停泊理由時。</p>
+    <p class="question">現在還能贖回嗎？原先的保障還存在嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查贖回期限、條款與交易完成狀態。</li><li>完成後重新評估公司，而不是沿用先前的資金保護理由。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>條款保障不等於任何時間的市價保證；未核對契約前不能直接套用。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 1筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：事件完成後重驗工具身分。未核對贖回期限、契約條款、市價與完成狀態時，不能將保障視為價格保證。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP233">EP233／E2 原稿 ↗</a><p class="status">主持人 · 原則</p><p>以接近票面價值的SPAC停泊現金，其理由不能直接延伸至完成合併後的GGR；若目的仍是停泊，應重新評估標的。</p><p class="muted">原筆記限制：原稿把10美元說成不會跌破的底，未交代贖回期限、條款及市價差異；不可視為價格保證。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-83" class="knowledge-card" data-category="風險與部位" data-source="pattern-83">
+  <summary><span class="number">83</span><span>投資朋友的事業，先分清支持與回報<small>信任不能代替監督與退出安排</small></span></summary>
+  <div class="card-body">
+    <span class="tag">風險與部位</span>
+    <p class="card-context"><b>什麼時候用：</b>投資非上市事業、早期或興趣型項目時。</p>
+    <p class="question">我是為了賺錢，還是也在為興趣與支持付費？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分開看財務回報與心理滿足。</li><li>先談查核、租金等持續支出、退出安排與可承受損失。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>能承受全損不等於能無限追加；信任與小額投入都不會自動解決監督問題。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：實業與早期投資須分開處理監督、退出與非財務目的。以信任替代查核、忽略租金與退出折價，或把可承受全損誤作可無限追加資金時，不能將投入視為一般資產配置。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP565">EP565／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>實業投資有租金、退出折價與監督成本，相對小額投入容易因信任而疏於查核。主持人並以遊戲投資說明心理滿足可成為目的，但承認高失敗可能，重視能否承受損失及避免身心、訴訟負擔。</p><p class="muted">原筆記限制：金額例子不宜當成特定已發生交易；挪用情節主要是朋友圈故事，心理滿足不等於財務報酬。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP569">EP569／E1 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>參與喜劇事業早期投資，原先預設可能全損，如今自述財務穩健程度超出預期；以支持經營者為主，但若每筆都無回收仍會縮手。</p><p class="muted">原筆記限制：未提供金額、持股比例或財報；不求回報並非永續追加資金的承諾。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP571">EP571／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人將退出能力納入部位大小：上市股票因可停損而容許較大部位，創投無法隨時退股，應以全損看待並更分散。</p><p class="muted">原筆記限制：可停損不保證能成交或損失有限；同族群廣灑也不等於分散共同風險，少數贏家補回全損並無保證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP571">EP571／E6 原稿 ↗</a><p class="status">主持人 · 計畫</p><p>遊戲創投自述已完成公司登記，未來希望以較小金額參與更多早期案、保留重點項目；台股也逐漸從短期供應鏈交易轉向部分長抱。</p><p class="muted">原筆記限制：登記不等於投資已完成；未明確配置與案數，也提醒新手不可立刻模仿 VC 管理人。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-84" class="knowledge-card" data-category="買進與加碼" data-source="pattern-84">
+  <summary><span class="number">84</span><span>這次加碼，是照計畫，還是不甘心？<small>分批、再平衡、攤平的理由不同</small></span></summary>
+  <div class="card-body">
+    <span class="tag">買進與加碼</span>
+    <p class="card-context"><b>什麼時候用：</b>跌了想多買，或漲了想調整集中度時。</p>
+    <p class="question">如果不知道我的成本，我還會做這次調整嗎？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>分清預定投入、降低集中風險與訊號改變。</li><li>重新評估前景與停止加碼條件，不只追求平均成本下降。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>五批等數字只是示例；長期配置與突破交易不能直接共用同一套退出規則。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：分批、再平衡與情緒攤平必須分流。缺乏重新評估及停止加碼門檻，分批容易變成凹單；五批僅是示例，長抱與突破操作也都缺乏完整績效證據。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP94">EP94／E4 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>主持人將母親追隨市場熱門、買會漲的股票且不漲則砍的操作概括為動能投資；並認為估值推算也存在分歧，不必用投資或投機標籤否定其他方法。</p><p class="muted">原筆記限制：獲利僅為主持人觀察，沒有完整交易、回撤或基準；ARKW、ARKK、QQQ 部分主要是轉述購買意向，不能全記為已成交。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP97">EP97／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>技術分析可協助避開盤整、提高資金效率，但突破可能倒回；技術、基本面與其他訊號均受使用者能力及機率限制，不是必要或百分之百準確的工具。</p><p class="muted">原筆記限制：未提供策略績效或交易成本；四巫日Q&amp;A亦只承認交易量可能增加，不接受固定漲跌敘事。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP98">EP98／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>對持續看好的大型公司，主持人偏好長抱而非只因漲多便賣出等低接；但自述曾因特斯拉占組合比例過高而減碼，區分擇時與集中風險管理。</p><p class="muted">原筆記限制：未給比例門檻；以近期上漲反駁停損具有事後性，大市值或美國市場不保證長期成長。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP98">EP98／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>對追突破後遇修正便不敢再買的聽眾，建議將預定資金分成五批，先投入一批，保留續漲加碼或下跌再投入的彈性，降低帳面波動引發的恐慌賣出。</p><p class="muted">原筆記限制：五分之一是示例而非最適比例；未交代假說失效或停止加碼條件，分批不保證免虧。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP101">EP101／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>面對套牢後想降均價的提問，主持人區分預先規劃分批與情緒凹單，偏向將新資金配置其他股票、降低原持股占比。</p><p class="muted">原筆記限制：另保留真正非常看好公司的例外，但未給重估標準；分散可能犧牲押中單一股的報酬，並非保證不虧。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-85" class="knowledge-card" data-category="價格與趨勢" data-source="pattern-85">
+  <summary><span class="number">85</span><span>以前有效的規則，市場換了也可能失靈<small>基本面研究也要接受價格的提醒</small></span></summary>
+  <div class="card-body">
+    <span class="tag">價格與趨勢</span>
+    <p class="card-context"><b>什麼時候用：</b>持續放量創低，或熟悉的方法反覆失敗時。</p>
+    <p class="question">是我漏看風險，還是市場的交易方式已改變？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>核對基本面依據，別只相信歷史會回到平均。</li><li>追蹤價格、成交與方法在不同市況的表現。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>價格只能提醒重查，不是證明基本面；停利停損也會有假訊號和少賺代價。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：市場機制改變時，基本面須受價格約束。持續放量創低、恐慌或市場結構改變時，僅憑歷史均值回歸或基本面攤平的證據不足。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP344">EP344／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>主持人認同技術與基本面互設限制：持續放量創低時不宜只憑研究攤平；但有基本面與估值支持時，也可能買入醜線型。</p><p class="muted">原筆記限制：主持人承認會破例；歷史低PB不保證底部，價格異常也不證明舞弊。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP344">EP344／E2 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>轉述Druckenmiller認為量化與程式交易改變價格反應，使過去財報差、急跌後抄底的招式失效；主持人另提醒回測不代表未來且須防過度擬合。</p><p class="muted">原筆記限制：屬訪談轉述及主持人解讀，沒有策略樣本、績效或失效原因的獨立驗證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP345">EP345／E2 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>本波未找到新的看壞理由而選擇續加碼，自述砍掉一些部位、可能加碼新標的；但後段表示已不再一路跌一路加，暴跌時反而不加，不偏好同標的反覆賣出追回。</p><p class="muted">原筆記限制：未交代交易明細或技術門檻，也承認加碼理由可能錯；兩段適用條件不能自行補完。有槓桿者技術停損再買回仍可能必要。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP346">EP346／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>回應中長線停利問題，提出跌破季線開始減碼，不必全賣；均線是取回部分獲利的限制器，代價是震盪白出場或少賺。</p><p class="muted">原筆記限制：不同股票、期貨或商品不宜套同一規則；偏好均線、認為KD與RSI易鈍化是主持人意見，非經驗證的優越策略。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-86" class="knowledge-card" data-category="基本面與估值" data-source="pattern-86">
+  <summary><span class="number">86</span><span>庫存低，可能是賣得好，也可能是做不出來<small>同一數字，可以有相反含義</small></span></summary>
+  <div class="card-body">
+    <span class="tag">基本面與估值</span>
+    <p class="card-context"><b>什麼時候用：</b>用低庫存判斷供應鏈機會時。</p>
+    <p class="question">是需求拉走庫存，還是缺料讓公司無法出貨？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查終端用途、訂單成熟度與料件取得。</li><li>再看公司營收占比與真正利潤，不只貼上缺貨題材。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>缺料可能卡住出貨；營收占比不是利潤占比，需求好也不保證賺錢。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 7筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：低庫存須穿透需求用途與出貨瓶頸。缺料可能使訂單無法出貨；挖礦吸收需求也可能帶來二手供給回流。營收占比不等於利潤占比，需求或療效良好也不保證銷售。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP196">EP196／E3 原稿 ↗</a><p class="status">主持人 · 預測</p><p>偏好2022年車用與通訊；轉述車商低庫存，視補庫存空間為相對保護。車用以零件增量及公司營收占比辨識受惠，品牌油車換電車未必多賺。</p><p class="muted">原筆記限制：庫存與營收占比僅為轉述；低庫存不保證利潤或股價，通訊需求證據較少展開。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP199">EP199／E3 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>供應鏈反彈後追問仍得到需求下調的轉述；主持人據朋友及礦工說法，推測挖礦需求被低估，可能延緩消費電子重複下單衝擊，但升級後拋售或轉挖其他幣仍有分歧。</p><p class="muted">原筆記限制：沒有終端用途占比、訂單或獲利量化資料；照片與訪談不證明整體需求，更不證明股價因果。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP200">EP200／E4 原稿 ↗</a><p class="status">主持人 · 第三方轉述</p><p>網通原先預期下半年缺貨減緩，實際仍缺；主持人轉述朋友稱明年可能繼續缺料，並以缺料改善作為網通表現轉佳的條件。</p><p class="muted">原筆記限制：朋友資訊未獨立核實；未量化訂單、毛利或改善時間，也未回答太陽能題目。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP203">EP203／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>跨市場映射題材須核對產品、客戶與業務占比；DRAM與利基型記憶體報價不必連動，衛星板占比低也會限制題材貢獻。</p><p class="muted">原筆記限制：主持人所述CCL用途分類、華通衛星板營收占比五至八個百分比及客戶尚未核實；營收占比不等於利潤占比。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP205">EP205／E3 原稿 ↗</a><p class="status">主持人 · 原則</p><p>電動車題材應找油轉電後單車用量顯著增加的元件，而非只貼車用標籤；輪胎、玻璃、雨刷若僅一比一替換，未必享有增量。</p><p class="muted">原筆記限制：他提出家庭持車增加、總市場擴大作為例外；未量化各元件價值或用量。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP205">EP205／E4 原稿 ↗</a><p class="status">主持人 · 原則</p><p>題材受惠須檢查公司營收曝險與客戶訂單成熟度；以車用切入時，低車用占比公司應降低順位，同元件再比較毛利與質化條件。</p><p class="muted">原筆記限制：低占比不代表公司不能投資；打樣不等於穩定量產，高毛利也僅被視為技術及議價權的概略代理。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP205">EP205／E6 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述曾深入研究並投資生技股仍受傷，藥本身好卻銷售不佳；回應聽眾滿倉案例時，拒絕代判買賣並要求避免all in。</p><p class="muted">原筆記限制：聽眾的解盲效果與滿倉屬其自述；主持人對臨床期程漲幅的歸納非統計驗證，亦未證明該藥療效。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-87" class="knowledge-card" data-category="價格與趨勢" data-source="pattern-87">
+  <summary><span class="number">87</span><span>大家都知道要買，買盤可能早就提前了<small>事件落地，不一定還有新推力</small></span></summary>
+  <div class="card-body">
+    <span class="tag">價格與趨勢</span>
+    <p class="card-context"><b>什麼時候用：</b>ETF換股或大額申購有明確時間表時。</p>
+    <p class="question">我期待的買盤，是不是已被別人先交易掉了？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>把事件本身與事件前的股價路徑分開。</li><li>查實際流量與成交，不只等公告日。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有持有人與流量資料，不能直接把不漲歸因套利賣壓；也不能推論長期報酬。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：預期買盤可提前耗盡催化。未有資金流、成交與持有人資料時，不能把價格未漲直接歸因套利賣壓，也不能推論長期報酬。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP435">EP435／E2 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>ETF預期成分買盤吸引提前布局，推高後來投資人的買入成本；高權重標的策略擁擠，交易者轉找較低權重或處置股。</p><p class="muted">原筆記限制：未提供成交資料；公布前買進者是否事先知情及資訊來源均未知，不能認定違法交易。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP438">EP438／E5 原稿 ↗</a><p class="status">主持人 · 預測</p><p>高股息ETF資金湧入前，專業交易者可能先拉抬候選成分股再退出，造成後續疲弱；若投資人多重借貸，升息及回檔可能觸發連鎖壓力。</p><p class="muted">原筆記限制：朋友圈觀察不代表全市場交易；主持人仍認為長期持有可能勝過原先定存或更差產品，非保證獲利。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP440">EP440／E1 原稿 ↗</a><p class="status">主持人 · 觀察／轉述</p><p>00940集中採買對股價影響有限；主持人推測預先卡位者大量賣出抵銷需求，不能等公開事件落地才假設有套利空間。</p><p class="muted">原筆記限制：未提供成交與買賣方資料；供給解釋是推論，不能據此確認套利者獲利或ETF長期報酬。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-88" class="knowledge-card" data-category="工具與成本" data-source="pattern-88">
+  <summary><span class="number">88</span><span>不只問會不會漲，也問來不來得及<small>期限、換約與危機時能否交易都重要</small></span></summary>
+  <div class="card-body">
+    <span class="tag">工具與成本</span>
+    <p class="card-context"><b>什麼時候用：</b>用短天期選擇權或商品ETF表達看法時。</p>
+    <p class="question">看對的那一天，工具是否已到期或無法退出？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>核對追蹤方法、到期日與履約價。</li><li>檢查換約、追繳與壓力行情的交易能力。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>工具價格不是現貨價格；方向正確仍可能拿不到預期報酬。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 4筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：方向判斷與投資載體須分開驗證。把商品價格當作標的現貨、忽略轉倉耗損或期限限制，或危機時無法交易與賣出時，方向正確仍未必取得報酬。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP254">EP254／E5 原稿 ↗</a><p class="status">聽眾 · 操作自述（非交易驗證）</p><p>聽眾自述曾邀親友加碼USO，負油價後組合虧逾五成，因認為期貨正價差持續侵蝕工具價值而全部認賠；不是改看空油價。後轉向被動投資，並反省揪團與跟抄不完整組合。</p><p class="muted">原筆記限制：交易、虧損分母與事件順序未核實；親友事後惋惜不證明當時續抱較佳，也非主持人的交易。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP256">EP256／E4 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>主持人自述買進AMD現股及買權；買權期限僅數月、履約價100，承認太躁進且可能歸零，選擇權占比相對小。</p><p class="muted">原筆記限制：確切到期日、權利金、損益與占比均不明；本集並未證實已歸零。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP248">EP248／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>危機抄底先檢查能否買到及賣出；俄股受資本管制、指數剔除或下市影響，即使看到反彈，也未必能取得報酬。原油案例同時包含朋友獲利與機構爆倉，主持人自述未跟進。</p><p class="muted">原筆記限制：俄股處置與原油損益均未附具體證券、公告或帳目，不能概括所有相關資產與投資人。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP250">EP250／E6 原稿 ↗</a><p class="status">主持人 · 原則</p><p>ETF溢折價可透過初級市場申購贖回與成分股交易收斂；開盤時差與造市不積極亦可能產生錯價機會。</p><p class="muted">原筆記限制：喊盤0050是假設，不是實際行動。費用、借券、流動性與跨開盤曝險未充分交代；一口對兩張未指明契約，不能泛化或視為穩賺。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-89" class="knowledge-card" data-category="風險與部位" data-source="pattern-89">
+  <summary><span class="number">89</span><span>基金越熱門，也要問市場裝不裝得下<small>規模成長可能改變原本的方法</small></span></summary>
+  <div class="card-body">
+    <span class="tag">風險與部位</span>
+    <p class="card-context"><b>什麼時候用：</b>主動基金快速吸金，又集中持有小型股時。</p>
+    <p class="question">進來的錢推得動股價，出去時誰能接？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>比較申購贖回規模與底層股票成交量。</li><li>檢查基金是否已超過原策略能有效運用的資金量。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>沒有持股交易與市場深度資料，不能確認價格回饋；爆量也不直接代表反轉。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 3筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：基金容量與底層流動性的回饋風險。沒有持股交易、申贖流量及市場深度資料，就不能確認自我強化循環；大型股占比增加也可能只是原持股漲大。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP94">EP94／E1 原稿 ↗</a><p class="status">主持人 · 原則</p><p>ETF 的集中賣出風險應看底層股票流動性；主持人認為冷門持股產品較可能擴大跌幅，不應因此否定所有 ETF。</p><p class="muted">原筆記限制：對大型股及全市場 ETF「不用擔心」的說法偏強；本集未提供流動性數據或申贖機制驗證。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP101">EP101／E2 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>爆量不能單獨判定反轉；規模擴張可能限制小型股策略容量，但大型股占比增加也可能只是原持股上漲後跨越市值分類。</p><p class="muted">原筆記限制：未拆解價格變動與實際買賣的貢獻；未來績效變差只是疑慮，尚未發生。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP101">EP101／E3 原稿 ↗</a><p class="status">主持人 · 待確認</p><p>推測ARK資金流入透過申購增加成分股需求，推升小型股並吸引更多ETF買盤；集中持股遇出清或利空可能滑價並衝擊淨值。</p><p class="muted">原筆記限制：未證明基因編輯股上漲或當次急跌的實際原因；主持人以特斯拉量體較大作反例，不能推及所有成分股。</p></li></ul>
+    </div></details>
+  </div>
+</details>
+<details id="card-90" class="knowledge-card" data-category="新聞與證據" data-source="pattern-90">
+  <summary><span class="number">90</span><span>公開消息不是你的專屬優勢<small>聽懂一則消息，與有能力持續研究不同</small></span></summary>
+  <div class="card-body">
+    <span class="tag">新聞與證據</span>
+    <p class="card-context"><b>什麼時候用：</b>想跟著節目、熱門筆記或公開訊號交易時。</p>
+    <p class="question">除了大家都看得到的內容，我多理解了什麼？</p>
+    <div class="card-action"><b>怎麼做：</b><ol><li>查時間差、同源轉述與消息是否已廣泛擴散。</li><li>聚焦能持續追蹤的領域，不為了每個題材擴張方法。</li></ol></div>
+    <p class="caution"><b>反例與限制：</b>後來上漲不能證明原消息品質；被廣泛使用的訊號也可能失效。</p>
+    <details class="card-evidence"><summary>原文案例與查證限制 · 5筆來源</summary><div class="card-body">
+      <p class="status">上方是學習改寫，不是主持人逐字原話；檢查步驟是研究整理，不是已驗證的交易規則。</p>
+      <p class="muted">原歸納：公開訊息不能取代研究優勢。把公開訊息視為獨有優勢，或以事後價格驗證消息品質；若優勢已被廣泛採用，原訊號可能失效。</p><ul class="evidence-list"><li><a href="https://whatmkreallysaid.com/episode.html?file=EP366">EP366／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>MEMO是法說、訪談或節目的快速筆記，不等同完整財務模型；品質同時取決於講者與記錄者。主持人認為流通報告或筆記者可能有持倉宣傳、探測市場認知等目的，取得MEMO並非仙丹。</p><p class="muted">原筆記限制：流通動機屬主持人判斷；多份轉述可能同源是研究者提醒，不是本段已證實的個案。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP371">EP371／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>網路反指標可能因跟隨、反向交易及套利而影響市場，但優勢被廣泛利用後可能達到高峰再失效。</p><p class="muted">原筆記限制：無因果或績效證據，不能把玩笑式反指標當成可重複策略。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP374">EP374／E3 原稿 ↗</a><p class="status">主持人 · 操作自述（非交易驗證）</p><p>與高手交流後，自述已收掉多項過去使用的策略，集中時間於最有把握的個股領域；即使策略回測過或能獲利，也不一定值得繼續投入。</p><p class="muted">原筆記限制：未交代策略、退出成本及績效比較；他也承認只需相對多數參與者強，不必擊敗頂尖者。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP376">EP376／E7 原稿 ↗</a><p class="status">主持人 · 原則</p><p>節目資訊通常篩選後才分享，已非第一時間；追逐熱門股不能把公開消息當獨有優勢，也不應依隔日漲跌倒推財報好壞。</p><p class="muted">原筆記限制：研究更深也不保證獲利；主持人承認動能交易可以賺錢，並非全面否定追漲殺跌。</p></li><li><a href="https://whatmkreallysaid.com/episode.html?file=EP375">EP375／E5 原稿 ↗</a><p class="status">主持人 · 原則</p><p>新手應先讀法說及券商報告、交叉比較模型，再追求更好的消息來源；主持人以台光電為例，主張公開資訊與價格反應可能有時間差。交易室可能加速入門，但不必然有利於發展自己的路線。</p><p class="muted">原筆記限制：台光電報告發布、當時股價及外資下修均為回述，未提供可核對報告，亦非主持人成交紀錄；未示範EPS或CAGR計算。</p></li></ul>
+    </div></details>
+  </div>
+</details></div>
+    <button id="knowledge-more" type="button" hidden>再看12張</button>
+    <noscript><p>未啟用JavaScript，仍可直接展開閱讀全部90張卡。</p></noscript>
   </section>
-
-  <section id="sources" aria-labelledby="sources-title">
-    <p class="eyebrow">05 / 回到證據，而不是相信摘要</p>
-    <h2 id="sources-title">來源與研究限制</h2>
-    <ul class="source-list">
-      <li><strong>逐字稿：</strong><a href="https://whatmkreallysaid.com/">whatmkreallysaid.com</a>，非官方轉錄，以節目原音為準。此站只發布研究摘要與連結，不重刊全文。</li>
-      <li id="source-rss"><strong>上架時間：</strong><a href="https://feeds.soundon.fm/podcasts/954689a5-3096-43a4-a80b-7810b219cef3.xml">SoundOn官方RSS</a>。採本次取得的快照；若平台曾修改日期，本輪未還原歷史版本。</li>
-      <li id="source-twse"><strong>台股：</strong><a href="https://www.twse.com.tw/exchangeReport/FMTQIK?response=json&amp;date=20250401">TWSE 2025/04市場成交資訊（JSON）</a>。台股加權收盤與Yahoo比對；關稅批次另核奇鋐、健策、台積電4月官方日價格。</li>
-      <li id="source-prices"><strong>其他價格：</strong><a href="https://finance.yahoo.com/quote/NVDA/history/">Yahoo Finance歷史行情</a>（NVDA示例）、<a href="https://finance.yahoo.com/quote/%5EGSPC/history/">S&amp;P 500</a>與其他指定市場／個股日線。為本次下載快照，日後供應商可能修訂歷史資料；本頁不是即時行情。</li>
-      <li><strong>VIX：</strong><a href="https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv">Cboe官方歷史資料（CSV）</a>，恐慌指數不等於可直接投資的ETF報酬。</li>
-      <li id="source-wh"><strong>關稅政策：</strong>白宮<a href="https://www.whitehouse.gov/presidential-actions/2025/04/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices-that-contribute-to-large-and-persistent-annual-united-states-goods-trade-deficits/">2025/4/2命令</a>、<a href="https://www.whitehouse.gov/presidential-actions/2025/04/modifying-reciprocal-tariff-rates-to-reflect-trading-partner-retaliation-and-alignment/">4/9修正命令</a>，以及<a href="https://www.federalreserve.gov/newsevents/speech/powell20250404a.htm">Fed 4/4講稿</a>。正式文件日期與網頁時間不等於最早媒體披露時刻。</li>
-      <li><strong>2022升息：</strong><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm">Fed 3/16決策</a>、<a href="https://www.cbc.gov.tw/en/cp-448-149596-b051b-2.html">台灣央行3/17決策</a>。</li>
-      <li id="source-nvidia"><strong>GPU營運的事後對照：</strong><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2023">NVIDIA 2022/8/24財報</a>：Gaming營收年減33%、季減44%。此份事後資料不能回填為3月已知資訊，也不足以驗證整條供應鏈因果。</li>
-    </ul>
-    <aside class="notice warning"><strong>這份筆記還不能告訴你什麼？</strong><ul><li>沒有核對原音、完整持倉或對帳單，無法估算主持人真實績效。</li><li>樣本偏向壓力行情；後續窗口彼此重疊，不是獨立成敗次數。</li><li>行情方向相符，不代表某條決策規則有效，更不代表單一消息造成全部漲跌。</li><li>部分公司原文存取受阻，營運因果與精確口述數字仍有待核項目。</li></ul></aside>
+  <section id="cases" aria-labelledby="cases-title">
+    <p class="eyebrow">用案例檢查，不只背原則</p>
+    <h2 id="cases-title">知道風險，不等於已經避開。</h2>
+    <article class="case"><span class="tag">EP227–228 · 長期看好 vs 中途風險</span><h3>看好長期，也可能先遇到四成下跌。</h3>
+      <p>EP228提到GPU供需與通路價格風險，也談到長期持有。上架後下一個美股開盤（2022/3/21）到第60交易日（6/14收盤），NVDA價格變化為 <strong class="down">−40.26%</strong>，S&amp;P 500為−16.29%。</p>
+      <p class="takeaway">要學的不是「不能長抱」，而是：我能否承受中途下跌與用錢需求？</p>
+      <p class="muted">這段價格不是主持人的報酬，也不能否定未定義期限的長期看法。<a href="#card-1">回看：被迫出場</a></p>
+    </article>
+    <article class="case"><span class="tag">EP228 · 辨認誰做了什麼</span><h3>「朋友減碼」，不等於「他本人清倉」。</h3>
+      <p>節目提到朋友降低部位；談到自己的美股時，卻又說既有部位仍算滿倉，只是新入金未全投入。</p>
+      <p class="takeaway">先分清本人、朋友、計畫與執行，不能把幾句話拼成成功避跌的故事。</p>
+      <p class="refs"><a href="https://whatmkreallysaid.com/episode.html?file=EP228">閱讀EP228原稿</a> · <a href="#card-10">回看：不照抄部位</a></p>
+    </article>
+    <details class="method"><summary>再看一個反例：利空出盡，沒有立即實現</summary><div class="card-body">
+      <p>EP545在政策公布前期待可能利空出盡。2025/4/2到4/9收盤，台股加權跌18.34%，櫃買跌22.01%。後來反彈，不能倒過來證明當初抓到底。</p>
+      <p class="question">先寫下當時的預期，別用最後結果覆寫過程。</p>
+      <p class="muted">以上是固定窗口市場價格，不含股息、稅費與匯率；股票依拆股調整，第60交易日包含起始日。不是主持人績效。</p>
+    </div></details>
+  </section>
+  <section id="research" aria-labelledby="research-title">
+    <p class="eyebrow">需要查證時再往下看</p>
+    <h2 id="research-title">研究紀錄與來源</h2>
+    <p>693集都有筆記；只有原先8集另做了部分外部核驗。逐集覆核與文字定位，不等於核對原音、真實交易或投資效果。</p>
+    <details id="progress"><summary>研究範圍與完成狀態</summary><div class="card-body">
+      <p>固定<span data-count="total">693</span>集，已下載<span data-count="downloaded">693</span>集；已讀<span data-count="read">693</span>集，待讀<span data-count="pending_read">0</span>集。</p>
+      <p>主助理直接讀稿<span data-count="lead_reviewed">14</span>集；雙子agent讀稿／覆核<span data-count="subagent_reviewed">679</span>集。另有<span data-count="partial_validation">8</span>集核對部分價格與消息。</p>
+      <p id="workflow-status" role="status">已完成本輪流程，仍有未解跨集指涉；不是即時程序監控。</p>
+      <p class="muted">日期採官方RSS，發布時間不等於錄音時間。兩個模型仍可能共享盲點。90張學習卡由主助理依既有筆記改寫，未重新進行雙模型覆核。</p>
+    </div></details>
+    <details id="episodes"><summary>查某一集的完整筆記</summary><div class="card-body">
+      <div class="filters">
+        <label>集號或日期<input id="episode-search" type="search" placeholder="例如 EP228、2025-04" autocomplete="off"></label>
+        <label>年份<select id="episode-year"><option value="">所有年份</option></select></label>
+        <label>閱讀狀態<select id="episode-status"><option value="read">已有筆記</option><option value="all">全部集數</option><option value="pending">尚待完成</option><option value="agents">雙子agent覆核</option><option value="attention">待人工處理</option><option value="partial">部分外部核驗</option></select></label>
+      </div>
+      <p id="episode-result" role="status" aria-live="polite">正在載入筆記…</p><div id="episode-list" class="episode-list"></div><button id="episode-more" type="button" hidden>顯示更多</button>
+      <noscript><p>逐集筆記可從<a href="corpus.json">公開摘要JSON</a>查看。</p></noscript>
+    </div></details>
+    <details id="group-research"><summary>108組原文對照與跨集待查事項</summary><div class="card-body">
+      <p class="muted">組內比較筆記與重要原文窗口；部分跨組疑問再看兩集全文。不是外部事實驗證，無法確認者保留待查。</p>
+      <div id="group-list"></div><div id="dependency-list"></div>
+    </div></details>
+    <details id="sources"><summary>資料來源與不能證明的事</summary><div class="card-body">
+      <ul class="source-list">
+        <li>原稿：<a href="https://whatmkreallysaid.com/">whatmkreallysaid.com</a>，非官方轉錄，以節目原音為準。</li>
+        <li>集數日期：<a href="https://feeds.soundon.fm/podcasts/954689a5-3096-43a4-a80b-7810b219cef3.xml">SoundOn官方RSS</a>。</li>
+        <li>台股行情：<a href="https://www.twse.com.tw/exchangeReport/FMTQIK?response=json&amp;date=20250401">TWSE 2025年4月資料</a>。</li>
+        <li>其他行情：<a href="https://finance.yahoo.com/quote/NVDA/history/">Yahoo Finance歷史行情</a>；拆股調整，不含股息、稅費與匯率。</li>
+        <li>營運的事後對照：<a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2023">NVIDIA 2022/8/24財報</a>。不能倒填成3月已知資訊。</li>
+      </ul>
+      <p class="caution">沒有完整持倉或對帳單，無法計算主持人的真實績效；也沒有證明這些卡片能提高報酬。材料中的自述、推論與市場價格，必須分開看。</p>
+    </div></details>
   </section>
 </main>
-<footer><div class="wrap"><p><b>把結論留得有條件，讓它有機會被修正。</b></p><p>非《股癌》官方網站，與主持人及逐字稿網站無隸屬或背書關係。內容由AI助理協助整理，可能有錯誤，僅供研究，不是個人化投資建議。</p><p>免費靜態網站 · 無第三方追蹤程式 · <a href="https://github.com/ckscks038038/gooaye-research">GitHub原始碼</a> · <a href="#main">回到上方 ↑</a></p></div></footer>
-<script src="corpus.js" defer></script>
+<footer><div class="wrap"><p>非《股癌》官方網站，無隸屬或背書關係。AI協助整理，可能有錯誤；僅供學習，不是個人化投資建議。</p><p><a href="https://github.com/ckscks038038/gooaye-research">GitHub原始碼</a> · <a href="#main">回到上方 ↑</a></p></div></footer>
+<script src="corpus.js?v=0.6" defer></script>
 </body>
 </html>
