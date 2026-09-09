@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-09-09T06:36:55.701412+00:00",
+  "updated_at_utc": "2026-09-09T07:08:43.171349+00:00",
   "scope": "Pinned RSS-aligned corpus. Completed notes include explicitly labelled lead-assistant and two-subagent methods.",
   "counts": {
     "total": 693,
@@ -11,8 +11,8 @@
     "partial_validation": 8,
     "pending_read": 0,
     "needs_attention": 0,
-    "candidate_cards": 10,
-    "candidate_new": 3
+    "candidate_cards": 90,
+    "candidate_new": 25
   },
   "workflow": {
     "status": "completed_with_unresolved_dependencies",
@@ -81977,219 +81977,1127 @@
       "evidence_status": "provisional_note_level_synthesis; no independent external validation"
     },
     {
-      "id": "d008e75ace533fbf",
+      "id": "d1b22de0e1219f08",
       "stage": "final",
-      "scope": "本輪候選框架：依679份雙子agent筆記歸納；非693集全量外部驗證，與原14集前期卡分列",
-      "accepted_at_utc": "2026-09-09T06:36:28.787739+00:00",
-      "input_digest": "d008e75ace533fbf6f951750cc5204b0f5ab2f4f34cd522d9e31c1a7e59020c4",
+      "scope": "全693集知識卡：買賣判斷、證據與思考路線",
+      "accepted_at_utc": "2026-09-09T00:00:00Z",
+      "input_digest": "d1b22de0e1219f0864b91b286cd00665ff56da7ae9daa3ab0ec32660152e6c07",
       "document": {
-        "title": "跨事件候選框架總整",
-        "summary": "本輪依提供的跨事件中繼組歸納整合候選框架，未進行全量外部驗證。核心差異是將題材、方向與價格判斷拆為收益傳導、預期定價、工具載體、期限存活、容量與來源品質；長抱、估值逆勢與動能確認仍不可互相取代。",
+        "title": "全量知識卡：從買進、持有到賣出的思考路線",
+        "summary": "依現有693集逐集筆記與已接受跨集歸納整理的廣泛知識卡。卡片保留原有引用與限制，區分主持人原則、操作自述與研究推論；不代表外部績效或原音已獨立驗證。",
         "patterns": [
           {
-            "title": "題材至股東收益的逐關驗證",
-            "decision_question": "需求、合作、缺貨或技術採用，是否依序轉為公司可歸屬的訂單、收入、毛利、現金流與合理估值？",
-            "conditions": "論點依賴新技術、供應鏈、政策、缺貨、合作或產品採用，且可區分資格、產能、交付、定價及公司占比。",
-            "failure_conditions": "僅有展示、傳聞、總需求、產能或營收成長，缺訂單品質、競爭、成本、毛利與估值資料時，不能推導股東報酬。",
-            "interpretation": "多組材料將產業方向拆為採用、供給、歸屬、利潤與市場給價；需求增加也可能轉單、遞延、被競爭或擴產稀釋。",
-            "baseline_relationship": "revision",
-            "difference_from_baseline": "修訂需求到股東收益：合併資格、認證、產能、採用、訂單、議價與毛利等傳導斷點。",
+            "title": "公告履約是信用線索，不是股價底部",
+            "decision_question": "管理層公告了什麼、實際執行多少；承諾落差應如何影響信用評估，而非直接轉成價格預測？",
+            "conditions": "公司公告庫藏股並於後續揭露執行結果，可比較承諾、用途及實際買回情況時。",
+            "failure_conditions": "執行不足可能另有原因，不能直接認定欺騙；本次部分年度與比例矛盾。完整買回不保證落底，EPS因註銷提高也不等於營運改善。",
+            "interpretation": "同集已提供低執行率仍上漲、完整執行仍不代表底部的限制，使履約研究與護盤想像分離；此卡目前僅有單集材料支持。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增管理層承諾與行動落差的信用問題；與「時間差與來源獨立」不同，重點不是消息快慢，而是持續追蹤履約，且不將信用線索當報酬保證。",
             "supporting_refs": [
               {
-                "episode": 341,
+                "episode": 17,
                 "claim_id": "E2"
               },
               {
-                "episode": 454,
-                "claim_id": "E4"
-              },
-              {
-                "episode": 603,
-                "claim_id": "E2"
-              },
-              {
-                "episode": 654,
+                "episode": 17,
                 "claim_id": "E3"
               }
             ],
             "counter_refs": [
               {
-                "episode": 368,
-                "claim_id": "E4"
-              },
-              {
-                "episode": 614,
-                "claim_id": "E4"
+                "episode": 17,
+                "claim_id": "E6"
               }
-            ]
+            ],
+            "card_id": 1,
+            "category": "價格與市場訊號",
+            "source_scope": "2020／組1：2020-02-28至2020-04-03"
           },
           {
-            "title": "營運、預期與價格須分開驗證",
-            "decision_question": "營運改善或利多是否超過市場既有預期，且價格反應是否能與後續基本面及估值變化分開檢驗？",
-            "conditions": "追蹤財報、指引、供需、價格反應與估值，尤其適用高預期成長或題材股。",
-            "failure_conditions": "買方預期、資金流、資訊擴散與估值要求不明時，不能以beat、利多上漲或利空不跌確認假說。",
-            "interpretation": "價格可作研究更新與曝險管理線索，但不是營運驗證；基本面正確仍可能已反映，價格走強也可能主要由籌碼驅動。",
-            "baseline_relationship": "revision",
-            "difference_from_baseline": "修訂預期差及營運估值報酬分開：加入事件提前反映、價格成因不可識別與後續驗證。",
+            "title": "復工、交付與需求追回須逐層辨識",
+            "decision_question": "營收疲弱究竟來自暫時停工、產能未恢復，還是終端需求消失；後續能否追回？",
+            "conditions": "疫情同時衝擊供應與消費，企業已有復工消息，但人員、缺料及客戶購買力仍不明朗。",
+            "failure_conditions": "名義復工率不能代表有效產出；營收年減也無法單獨識別需求消失。朋友個案、總體失業與產業敘述不足以確認個別公司訂單。",
+            "interpretation": "早期轉單想像被加入缺料與再停線限制，後續轉向海外需求及營收追蹤。需求保留時仍可能遞延追回，不能把所有衰退都當永久流失。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「需求到股東收益」與「更新假說」：新增復工指標是否對準持續交付，以及遞延收入能否追回的辨識問題，尚未延伸至利潤驗證。",
             "supporting_refs": [
               {
-                "episode": 373,
+                "episode": 1,
                 "claim_id": "E3"
               },
               {
-                "episode": 423,
+                "episode": 1,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 3,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 5,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 16,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 16,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 2,
+            "category": "基本面與估值",
+            "source_scope": "2020／組1：2020-02-28至2020-04-03"
+          },
+          {
+            "title": "本金小時先比較薪資與研究投入",
+            "decision_question": "下一單位時間應投入提高薪資、累積本金，還是投入主動研究？",
+            "conditions": "處於職涯初期、本金有限，且可比較工作報酬、技能可移轉性、研究資源與家庭時間成本。",
+            "failure_conditions": "只以即期薪資或投資翻倍想像判斷，未計生活支出、職涯選擇權與研究結果時，無法定案。",
+            "interpretation": "本次把投資決策放回人力資本限制：本金規模與時間成本會影響主動投資是否值得。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增人力資本與金融資本的投入排序，非單純現金配置或不可跟抄部位。",
+            "supporting_refs": [
+              {
+                "episode": 286,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 289,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 291,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 3,
+            "category": "思考流程與限制",
+            "source_scope": "2022／組7：2022-10-05至2022-11-16"
+          },
+          {
+            "title": "持有期限與進場邏輯不能事後改名",
+            "decision_question": "部位依靠長期分散、估值逆勢，還是價格動能成立；遇到下跌時，是否偷換了原先理由？",
+            "conditions": "需要決定續抱、加碼或等待，尤其涉及集中個股、短線轉隔夜、融資，或希望長期少管理的部位。",
+            "failure_conditions": "下跌不直接證明基本面錯誤，低估值也不保證止跌；分批未設定總曝險仍可能重傷。等待可能少賺，趨勢訊號亦未提供完整判準。",
+            "interpretation": "資料保留規律投入與主動交易的差別，並明確認可有依據的逆勢買入不必然錯。後期將等待描述為接受少賺的選擇，而非保證市場留下進場時間。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂「價格與部位」「分批風險預算」的適用邊界：價格驗證不能一律取代長期持有與估值判斷；須先辨認策略，再討論現金、槓桿及失效條件。",
+            "supporting_refs": [
+              {
+                "episode": 1,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 3,
                 "claim_id": "E1"
               },
               {
-                "episode": 628,
-                "claim_id": "E3"
+                "episode": 9,
+                "claim_id": "E6"
               },
               {
-                "episode": 645,
-                "claim_id": "E4"
-              }
-            ],
-            "counter_refs": [
-              {
-                "episode": 263,
-                "claim_id": "E3"
-              },
-              {
-                "episode": 643,
-                "claim_id": "E5"
-              }
-            ]
-          },
-          {
-            "title": "價格訊號不得改寫原始策略",
-            "decision_question": "同一部位屬長抱、估值等待、事件或動能策略；加減碼與退出是否仍依其原始假說和規則？",
-            "conditions": "同時使用基本面、估值、動能或事件方法，且價格弱勢、反彈或催化延遲時需調整部位。",
-            "failure_conditions": "未定義期限、假說、訊號、策略資金邊界與退出條件時，不能區分合理更新、策略混用或事後合理化。",
-            "interpretation": "下跌不單獨否證基本面，反彈也不自動證明修復；動能確認可輔助進出，但不能取代長期或估值論點。",
-            "baseline_relationship": "specialization",
-            "difference_from_baseline": "細化更新假說：先辨認部位策略身分，再判斷價格訊號能否改變持有理由。",
-            "supporting_refs": [
-              {
-                "episode": 131,
-                "claim_id": "E3"
-              },
-              {
-                "episode": 206,
-                "claim_id": "E5"
-              },
-              {
-                "episode": 584,
+                "episode": 20,
                 "claim_id": "E4"
               },
               {
-                "episode": 685,
+                "episode": 21,
                 "claim_id": "E6"
               }
             ],
             "counter_refs": [
               {
-                "episode": 131,
+                "episode": 13,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 20,
+                "claim_id": "E7"
+              }
+            ],
+            "card_id": 4,
+            "category": "持有／等待",
+            "source_scope": "2020／組1：2020-02-28至2020-04-03"
+          },
+          {
+            "title": "政策須對準衝擊，不能以股價代替成效",
+            "decision_question": "政策是在降低資金成本、填補收入缺口，還是恢復需求；投資人期待的股價效果是否與政策目標一致？",
+            "conditions": "緊急降息、寬鬆或紓困與停業、收入中斷同時發生，市場又期待政策立即支撐資產價格。",
+            "failure_conditions": "單日漲跌無法辨識政策對實體經濟的作用；政策力度也不能單獨證明衰退。尚缺政策傳導、企業現金缺口與需求恢復的量化比較。",
+            "interpretation": "由降息不保證上漲，深化為不願外出的需求未必受低利刺激，以及收入停止但固定支出持續的問題。同時保留寬鬆資金可能支撐資產的相反力量。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增政策工具、衝擊來源與評估目標是否匹配的問題，不只是預期差或個人流動性；資產價格與企業存活的政策效果須分開衡量。",
+            "supporting_refs": [
+              {
+                "episode": 5,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 5,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 12,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 12,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 12,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 11,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 16,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 19,
+                "claim_id": "E6"
+              }
+            ],
+            "card_id": 5,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2020／組1：2020-02-28至2020-04-03"
+          },
+          {
+            "title": "標的看對之外，還須檢查產品與規則",
+            "decision_question": "標的回升能否傳至持有人報酬；溢價、持有成本、融資與存續規則是否會先改變結果？",
+            "conditions": "使用期貨型或槓桿ETF，尤其市價高於淨值、疊加融資，或接近清算門檻與規則調整時。",
+            "failure_conditions": "產品機制、清算條文及公告時序均未核實；不能概括所有期貨ETF必然耗損，也不能由券商彙總交易推定內線。延後清算不保證回本。",
+            "interpretation": "反覆警告由溢價與追繳，延伸至制度變動會改寫原先退出前提。這是同一產品敘事的深化，並非多次独立驗證；短暫反彈不消除結構風險。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「流動性存活」與「營運估值報酬分開」：新增產品存續條件可變的檢查，不能只由油價方向或未來回升推論持有人可存活並獲利。",
+            "supporting_refs": [
+              {
+                "episode": 7,
                 "claim_id": "E4"
               },
               {
-                "episode": 684,
+                "episode": 7,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 15,
                 "claim_id": "E1"
+              },
+              {
+                "episode": 15,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 15,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 19,
+                "claim_id": "E3"
               }
-            ]
+            ],
+            "counter_refs": [],
+            "card_id": 6,
+            "category": "產品與制度",
+            "source_scope": "2020／組1：2020-02-28至2020-04-03"
           },
           {
-            "title": "方向正確仍須驗證投資載體",
-            "decision_question": "ETF、ETN、期貨、選擇權、槓桿或反向商品的曝險、期限、轉倉、信用與退出機制，是否仍承載原假說？",
-            "conditions": "以衍生品、槓桿商品、期貨或基金取代現股，且可能面臨每日重設、轉倉、溢價、到期或申贖摩擦。",
-            "failure_conditions": "未核對契約、淨值、轉倉、費用、清算、流動性及等額曝險時，不能判定工具優劣或特定商品必然耗損。",
-            "interpretation": "標的方向、工具實際曝險與持有人結果是不同問題；停損、長抱或單向行情表現皆不能替代結構研究。",
+            "title": "小額投入的總成本與可行規模",
+            "decision_question": "單次投入扣除最低手續費、持續費用及跨境成本後，是否仍能有效取得所需曝險？",
+            "conditions": "本金較少、頻繁分批，且交易管道設有最低收費；需比較ETF與其他持有方式。",
+            "failure_conditions": "費率、匯款、換匯及賣出成本不完整，不能推出通用最低本金；零手續費也不等於總成本為零。",
+            "interpretation": "零股改善可負擔性與配置空間，但固定費用可能抵銷頻繁分批的益處。後續補入ETF內扣費用與累積後交易的取捨，主持人提出的本金門檻仍只是特定管道下的概估。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增「交易規模是否具經濟性」的問題；不同於前期著重跌幅承受與部位比例，這裡檢查取得曝險本身的成本。",
+            "supporting_refs": [
+              {
+                "episode": 82,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 85,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 87,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 7,
+            "category": "買進／進場",
+            "source_scope": "2020／組6：2020-10-14至2020-11-28"
+          },
+          {
+            "title": "治理或競爭變數觸發假說重審",
+            "decision_question": "原投資理由遭平台治理、競爭結構或策略變化挑戰時，應如何更新而非直接視為已失敗？",
+            "conditions": "能清楚辨識原始假說，並追蹤新事件是否影響差異化、內容可用性、用戶成長或獲利路徑。",
+            "failure_conditions": "消息僅為論壇流出、未量化營運影響，或退出門檻前後不一致時，不能確認假說已失效或計畫已執行。",
+            "interpretation": "Spotify案例呈現停止加碼、考慮退出到提出價格門檻的演變，但仍保留成長機會與未賣出的不確定性。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分前期「更新假說」卡：將治理與內容決策權列為可能改變差異化的假說變數，但仍須與可驗證營運影響分開。",
+            "supporting_refs": [
+              {
+                "episode": 69,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 71,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 73,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 73,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 71,
+                "claim_id": "E3"
+              }
+            ],
+            "card_id": 8,
+            "category": "賣出／減碼",
+            "source_scope": "2020／組5：2020-08-26至2020-10-10"
+          },
+          {
+            "title": "分批與槓桿仍取決於現金及執行能力",
+            "decision_question": "分批投入或保留借款後，若再次下跌，現金需求與心理壓力是否仍容許調整？",
+            "conditions": "極端波動減弱但疫情風險未消失，投資人有可投入資金；涉及借款時須另看用途、成本與還款需求。",
+            "failure_conditions": "未定義成熟投資人、槓桿上限、持股分母或分批門檻；波動降低不代表底部確認，有停損計畫也不保證能執行。",
+            "interpretation": "分批保留調整空間的主張反覆出現；但主持人自述過往120%曝險，故不能歸納成從不槓桿。學貸周轉考量亦不同於借款追價。",
+            "baseline_relationship": "overlap",
+            "difference_from_baseline": "主要重複流動性存活與分批風險預算；本次補充行為執行條件及不同負債用途，未形成新的可複製比例。",
+            "supporting_refs": [
+              {
+                "episode": 23,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 25,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 30,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 33,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 34,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 35,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 30,
+                "claim_id": "E2"
+              }
+            ],
+            "card_id": 9,
+            "category": "風險與部位",
+            "source_scope": "2020／組2：2020-04-07至2020-05-16"
+          },
+          {
+            "title": "價格訊號可作確認但不可單獨證明",
+            "decision_question": "應否等待止跌、相對強勢或反彈確認，再調整部位或建立部位？",
+            "conditions": "個股弱勢可與整體市場、估值及基本面資訊共同比較，且投資人接受可能錯過快速反彈。",
+            "failure_conditions": "全面市場下殺、技術突破可能遭拉抬，或未定義觀察期間與部位上限時，價格訊號不足以單獨支持決策。",
+            "interpretation": "本組將順勢與等待確認定位為降低過早接刀或情緒賣出的暫定方法，但其門檻仍未量化。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分前期「更新假說」：新增價格持續弱勢、未創低與未站回作為待驗證的輔助條件。",
+            "supporting_refs": [
+              {
+                "episode": 53,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 60,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 60,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 64,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 10,
+            "category": "價格與市場訊號",
+            "source_scope": "2020／組4：2020-07-08至2020-08-22"
+          },
+          {
+            "title": "題材驗證須跨越營收歸因與估值",
+            "decision_question": "題材開始反映時，如何判斷受益是否落地，且未被價格提前透支？",
+            "conditions": "新技術、供應鏈、研發或產業主題尚缺穩定獲利驗證。",
+            "failure_conditions": "營收增加未必來自該題材，也不代表利潤、現金收款或股東報酬；等待營收也可能錯過早期爆發。",
+            "interpretation": "補強「需求到股東收益」：題材可先追查訂單與營收，再辨識營收來源、獲利路徑及市場給予的估值。",
             "baseline_relationship": "revision",
-            "difference_from_baseline": "修訂價格與部位：將工具追蹤偏差、到期性、持有成本與退出制度納入報酬實現。",
+            "difference_from_baseline": "修訂需求到股東收益卡：不能以營收單點驗證題材，還須處理歸因、利潤與估值擴張。",
+            "supporting_refs": [
+              {
+                "episode": 44,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 48,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 50,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 42,
+                "claim_id": "E6"
+              }
+            ],
+            "card_id": 11,
+            "category": "基本面與估值",
+            "source_scope": "2020／組3：2020-05-20至2020-07-04"
+          },
+          {
+            "title": "AI能力驗證應看任務完成與變現",
+            "decision_question": "模型或Agent展示的價值，能否轉成平台議價、訂閱或抽成？",
+            "conditions": "任務可跨服務穩定執行、用戶願付費，且平台保有開發者與模型商議價能力。",
+            "failure_conditions": "單次展示無法證明可靠性、規模化或收益；合作、成本與隱私安排未明時，變現仍屬假說。",
+            "interpretation": "AI判斷由模型回答能力延伸至工作流執行與平台價值取得，但兩者尚未被收益驗證。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「需求到股東收益」：先以任務完成驗證使用者效用，再檢查平台能否取得收益。",
+            "supporting_refs": [
+              {
+                "episode": 460,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 460,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 461,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 462,
+                "claim_id": "E5"
+              }
+            ],
+            "card_id": 12,
+            "category": "思考流程與限制",
+            "source_scope": "2024／組4：2024-05-22至2024-07-03"
+          },
+          {
+            "title": "價格反證不能偷換持有假說",
+            "decision_question": "持續逆向走勢是在提示研究遺漏，還是正常波動；繼續持有是否仍依原始理由？",
+            "conditions": "長期下跌、攤平、追逐題材後套牢，或以趨勢作為研究輔助時。",
+            "failure_conditions": "好公司也會下跌；未定義長期、乖離或假說失效門檻。均線不能證明基本面，頻繁切換依據亦可能增加交易耗損。",
+            "interpretation": "本次把查未知風險、避免資金雄厚式攤平與禁止套牢後改稱存股串起來，同時保留順勢追高風險及好公司下跌的限制。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "實質延續更新假說，但新增價格訊號與進出場依據一致性的細分；不是單憑下跌就停損，也不是長期看好便忽略價格。",
+            "supporting_refs": [
+              {
+                "episode": 28,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 29,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 31,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 32,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 34,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 23,
+                "claim_id": "E6"
+              }
+            ],
+            "card_id": 13,
+            "category": "持有／等待",
+            "source_scope": "2020／組2：2020-04-07至2020-05-16"
+          },
+          {
+            "title": "原始資料與市場反應分工",
+            "decision_question": "新聞或爭議出現後，哪些內容須先查原始資料，哪些可等待市場與營運反應？",
+            "conditions": "二手轉述可能失真；一般投資人面對非極端、非短線交易型消息。",
+            "failure_conditions": "原始資料不可得，或屬倒帳、跑路等需即時處理事件；市場反應不能替代事實查核。",
+            "interpretation": "將資訊查證與交易節奏分開：避免依二手轉述立即行動，並檢查爭議是否實際傷害用戶、營收或持有假說。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「預期差」與來源獨立：二手轉述失真及市場價格反應，都不能單獨作為事實證據。",
+            "supporting_refs": [
+              {
+                "episode": 37,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 39,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 44,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 14,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2020／組3：2020-05-20至2020-07-04"
+          },
+          {
+            "title": "方向判斷之外的商品曝險與退出機制",
+            "decision_question": "看對標的方向後，合約月份、溢價、轉倉與交易系統是否仍可能讓持有結果相反？",
+            "conditions": "適用於期貨型ETF、需轉倉或實物交割的商品，尤其產品實際曝險改變、申贖受限或極端價格出現時。",
+            "failure_conditions": "產品代碼、配置與契約多未核實；不能把所有轉倉視為耗損，也不能假設改用期貨更安全。系統故障與責任仍缺委託紀錄。",
+            "interpretation": "本次從高溢價延伸至遠月曝險、交割負擔及無法平倉，顯示長期持有與設定停損均不能取代產品機制研究。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "不同於一般價格與部位管理，新增「買到的曝險是否仍是原本想要的曝險」；退出系統失靈另與流動性存活重疊。",
             "supporting_refs": [
               {
                 "episode": 25,
                 "claim_id": "E4"
               },
               {
-                "episode": 190,
-                "claim_id": "E2"
+                "episode": 27,
+                "claim_id": "E3"
               },
               {
-                "episode": 286,
-                "claim_id": "E6"
-              },
-              {
-                "episode": 349,
-                "claim_id": "E4"
-              }
-            ],
-            "counter_refs": [
-              {
-                "episode": 340,
-                "claim_id": "E4"
-              }
-            ]
-          },
-          {
-            "title": "權利鏈與中介履約先於交易敘事",
-            "decision_question": "取得的是證券所有權、平台債權或其他權利；保管、轉換、資金隔離與求償安排是否支持預期交易？",
-            "conditions": "經由差價合約、跨市場證券、平台放貸或海外交易載體取得曝險。",
-            "failure_conditions": "缺契約、託管、資金隔離、轉換及適用制度資料時，不能推定平台故障必然全損，也不能將表面價差視為可執行套利。",
-            "interpretation": "中介履約、權利可移轉與資產安全，不能由平台便利性、營運描述或價格差直接推論。",
-            "baseline_relationship": "new",
-            "difference_from_baseline": "新增交易載體的法律權利與中介履約問題，非單純流動性或部位規模。",
-            "supporting_refs": [
-              {
-                "episode": 94,
-                "claim_id": "E5"
-              },
-              {
-                "episode": 96,
-                "claim_id": "E4"
-              },
-              {
-                "episode": 117,
-                "claim_id": "E7"
-              }
-            ],
-            "counter_refs": []
-          },
-          {
-            "title": "期限與槓桿共同決定存活路徑",
-            "decision_question": "在反彈或假說實現前，生活付款、追繳、還款、解押、休市與補款時效是否迫使部位提前處置？",
-            "conditions": "存在融資、質押、期貨、選擇權、固定用款日期或家庭現金流需求。",
-            "failure_conditions": "未掌握保證金、負債條件、可用現金、資金到位時間、處分限制及壓力情境時，無法判定承受能力。",
-            "interpretation": "槓桿風險不只在最終方向；帳面浮盈、低利成本或停損意圖均不能取代壓力下的退出與支付能力。",
-            "baseline_relationship": "revision",
-            "difference_from_baseline": "修訂流動性存活：加入追繳時效、跨帳戶調度、行政摩擦、生活用途與行為承載。",
-            "supporting_refs": [
-              {
-                "episode": 163,
-                "claim_id": "E4"
-              },
-              {
-                "episode": 302,
-                "claim_id": "E6"
-              },
-              {
-                "episode": 565,
+                "episode": 29,
                 "claim_id": "E1"
               },
               {
-                "episode": 683,
+                "episode": 29,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 31,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 32,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 15,
+            "category": "產品與制度",
+            "source_scope": "2020／組2：2020-04-07至2020-05-16"
+          },
+          {
+            "title": "投資分批、執行拆單與策略容量分開",
+            "decision_question": "報酬折損來自等待進場、最低費用、滑價，還是資金規模超過策略容量？",
+            "conditions": "比較投入方式、交易管道或基金規模時，分別檢查單筆金額、委託量相對掛單深度及可部署標的。",
+            "failure_conditions": "缺實際費率、成交及容量測算；拆單不保證總成本更低，基金規模大也不足以證明績效必然衰退。",
+            "interpretation": "跨日分批處理投入時點，當日拆單處理瞬間價格衝擊；小額交易可能受最低費侵蝕，大額資金則可能受市場深度與策略胃納量限制。基金費後績效另須計入多層費用。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "與分批風險預算及價格與部位部分overlap，但委託量相對市場深度、策略規模改變可投資集合，是不同的執行與容量機制；降低心理壓力不等於改善成交品質。",
+            "supporting_refs": [
+              {
+                "episode": 102,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 111,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 113,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 114,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 114,
                 "claim_id": "E2"
               }
             ],
             "counter_refs": [
               {
-                "episode": 232,
+                "episode": 105,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 114,
+                "claim_id": "E3"
+              }
+            ],
+            "card_id": 16,
+            "category": "買進／進場",
+            "source_scope": "2021／組1：2021-01-02至2021-02-13"
+          },
+          {
+            "title": "退出依據須與原始策略一致",
+            "decision_question": "持有理由是事件、基本面、估值還是動能？退出或續抱時，是否偷偷更換了判斷標準？",
+            "conditions": "先辨識實際持有週期及進場理由；長線檢查營運與存活條件，動能或事件交易另須有可執行的退出依據。",
+            "failure_conditions": "未界定期限、訊號及失效條件時，難分策略調整與事後合理化；只因股價疲弱不能判定營運失效。",
+            "interpretation": "材料同時支持長線重視基本面與動能交易依訊號退出。Netflix因不漲減碼的自述呈現混合方法的張力，不能整理成一律長抱或一律停損，也不能將介紹的方法全當成主持人的固定規則。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化更新假說：不只問資訊是否改變，也問原始策略使用何種退出依據，避免短線失敗後改稱長期投資。",
+            "supporting_refs": [
+              {
+                "episode": 131,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 132,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 133,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 140,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 140,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 131,
+                "claim_id": "E4"
+              }
+            ],
+            "card_id": 17,
+            "category": "賣出／減碼",
+            "source_scope": "2021／組3：2021-04-07至2021-05-19"
+          },
+          {
+            "title": "政策支撐與風險實現期限分開",
+            "decision_question": "長期悲觀假說何時可能實現，政策反應是否使當下逆勢曝險承受不同風險？",
+            "conditions": "政府持續注入流動性，而經濟弱勢與市場反彈並存；須區分短期交易、長期持有及空手選項。",
+            "failure_conditions": "未提供政策失效、重啟放空或估值門檻；不能把不宜逆勢推成必須做多，更不能將政策續命期限視為已驗證預測。",
+            "interpretation": "第24集提出具體風險延後推測，第26集承認後果與時間未知，第33集保留空手。這是信心與時間尺度的張力，非明確撤回預測。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "將時間差基準細分為政策反應與投資期限是否匹配；保留政策動能、估值不足及現金選項之間的衝突。",
+            "supporting_refs": [
+              {
+                "episode": 24,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 26,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 26,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 27,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 33,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 24,
+                "claim_id": "E4"
+              }
+            ],
+            "card_id": 18,
+            "category": "風險與部位",
+            "source_scope": "2020／組2：2020-04-07至2020-05-16"
+          },
+          {
+            "title": "等待動能與維持長抱的理由分流",
+            "decision_question": "營運仍被看好時，等待、換股或持有的理由究竟是價格動能、估值，還是基本面變化？",
+            "conditions": "已研究標的，但資金尚未推動行情；或既有持股表現不佳，需要比較未來資金用途。",
+            "failure_conditions": "未定義動能、退出與估值門檻，無法判斷換股能否抵銷較高買價及交易成本；換入標的亦可能下跌。",
+            "interpretation": "WiFi 6的等待論述延伸為願付較高價格取得動能確認；Fastly減碼自述卻未否定營運。Spotify案例反省固定跌幅停損，後期又強調預設並執行停損，尚待釐清適用情境。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂「更新假說」與「自身未來機會」：價格可影響資金配置，但不應被改寫成營運假說已遭否證；長抱與動能方法須分開辨認。",
+            "supporting_refs": [
+              {
+                "episode": 82,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 85,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 86,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 83,
                 "claim_id": "E6"
               },
               {
-                "episode": 611,
+                "episode": 92,
+                "claim_id": "E2"
+              }
+            ],
+            "card_id": 19,
+            "category": "價格與市場訊號",
+            "source_scope": "2020／組6：2020-10-14至2020-11-28"
+          },
+          {
+            "title": "題材到股東收益須跨越驗證關卡",
+            "decision_question": "熱門題材、合作關係或產品突破，何時才足以支持公司層級的投資假說？",
+            "conditions": "能追蹤營收、獲利、業務占比、客戶需求及商業化進度，並辨識供需循環與競爭變化。",
+            "failure_conditions": "只憑供應鏈傳聞、價格上漲、目標價或研發成果，未確認收入與利潤貢獻時，題材不能等同股東收益。",
+            "interpretation": "資料以新藥、跨業轉型、衛星供應鏈與缺貨股反覆說明，需求敘事須轉化為公司可驗證的經濟貢獻。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂前期「需求到股東收益」：補入商業化、業務占比及供給反轉等多重斷點。",
+            "supporting_refs": [
+              {
+                "episode": 54,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 55,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 62,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 64,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 20,
+            "category": "基本面與估值",
+            "source_scope": "2020／組4：2020-07-08至2020-08-22"
+          },
+          {
+            "title": "來源角色改變資訊可用性",
+            "decision_question": "研究來源的公開說法是否受利益關係、代表角色或談判狀態限制？",
+            "conditions": "來源可能是公司代表、投資人、供應鏈參與者或談判相關方，且需區分其觀點與可驗證事實。",
+            "failure_conditions": "把沉默視為沒有看法，或把早期較多揭露誤當成更準確；匿名或轉述來源缺乏獨立性。",
+            "interpretation": "研究來源不是固定品質：角色與利益關係會改變公開資訊邊界，傳聞也可能反映仍在變動的談判或提案。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化前期來源獨立框架：加入來源角色與利益關係造成的揭露限制。",
+            "supporting_refs": [
+              {
+                "episode": 585,
+                "claim_id": "E8"
+              },
+              {
+                "episode": 586,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 21,
+            "category": "思考流程與限制",
+            "source_scope": "2025／組5：2025-07-26至2025-09-06"
+          },
+          {
+            "title": "長期持有理由須隨營運條件更新",
+            "decision_question": "原本以配息、資產或產業穩定性持有的理由，是否仍受競爭、資本支出與獲利前景支持？",
+            "conditions": "公司面臨利率、競爭、資本支出、本業虧損或配息能力變化。",
+            "failure_conditions": "僅因跌深、高殖利率、土地資產或等待回本而持有；但價格弱勢本身也不能單獨證明營運惡化。",
+            "interpretation": "長期持有理由可被營運條件推翻；退出或續抱應比較未來機會，而非只追求回本。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂更新假說與未來機會卡：加入殖利率幻覺、資產未實現及時間成本的具體檢查。",
+            "supporting_refs": [
+              {
+                "episode": 43,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 45,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 49,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 22,
+            "category": "持有／等待",
+            "source_scope": "2020／組3：2020-05-20至2020-07-04"
+          },
+          {
+            "title": "規則回測與實盤執行不可混同",
+            "decision_question": "技術規則或自動化工具在採用前，是否已有明確規則、成本處理與可檢驗的執行限制？",
+            "conditions": "技術指標、均線、機器人理財或主動選股規則可被明確定義。",
+            "failure_conditions": "只憑圖形敘事、命中率、名人說法或回測宣傳；未處理成本、樣本外、規則選擇偏誤及實盤心理壓力。",
+            "interpretation": "將回測定位為起點，並納入操作週期與實盤壓力，避免把歷史關聯直接升格為可複製績效。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "相對前期基準屬方法驗證細分：新增回測結果與實際執行間的落差，非新的買賣框架。",
+            "supporting_refs": [
+              {
+                "episode": 37,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 41,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 49,
                 "claim_id": "E7"
               }
-            ]
+            ],
+            "counter_refs": [
+              {
+                "episode": 43,
+                "claim_id": "E4"
+              }
+            ],
+            "card_id": 23,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2020／組3：2020-05-20至2020-07-04"
+          },
+          {
+            "title": "看對市場方向仍受商品結構限制",
+            "decision_question": "投資工具是否能把對市場方向的判斷轉成可承受的報酬？",
+            "conditions": "使用期貨連結、反向或波動率商品時，已理解溢價、轉倉、持有成本及預定持有期間。",
+            "failure_conditions": "只判斷崩盤或波動方向，卻忽略商品溢價與時間耗損，或把不同工具視為相同機制時，方向正確也可能無法獲利。",
+            "interpretation": "本組補足公司與估值以外的工具層風險：商品結構可能切斷市場判斷與實際績效。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增商品結構與持有期間的決策問題，非前期十張卡中的一般部位或估值框架。",
+            "supporting_refs": [
+              {
+                "episode": 56,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 64,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 24,
+            "category": "產品與制度",
+            "source_scope": "2020／組4：2020-07-08至2020-08-22"
+          },
+          {
+            "title": "估值便宜仍須等待可執行的止穩條件",
+            "decision_question": "估值低時，是否已有足以承受續跌並開始投入的條件？",
+            "conditions": "適用於重視趨勢、預先規劃估值與分批資金，且可接受較高確認價格者。",
+            "failure_conditions": "止穩後仍可能續跌；分批僅改善承受度，不保證報酬或買在低點。",
+            "interpretation": "資料將價格與部位框架細化為：低估不是進場訊號，需區分事前分批、套牢攤平與確認後試單。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂「價格與部位」：新增止穩確認、保留資金與心理承受條件，非僅按估值分批。",
+            "supporting_refs": [
+              {
+                "episode": 157,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 166,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 167,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 168,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 159,
+                "claim_id": "E5"
+              }
+            ],
+            "card_id": 25,
+            "category": "買進／進場",
+            "source_scope": "2021／組5：2021-07-07至2021-08-21"
+          },
+          {
+            "title": "退出意圖不等於可成交能力",
+            "decision_question": "決定減碼後，解押、授權或價格限制，是否仍可能阻止資金及時退出？",
+            "conditions": "持有質押股票、使用槓桿，或依賴停損保護近期用款時，辨識行政程序與市場成交的不同障礙；另考慮其他持有人強制賣出造成的價格壓力。",
+            "failure_conditions": "個人解押經驗不能推成通用規則；停損觸價不保證成交，等待止跌也不保證避開後續跌勢。",
+            "interpretation": "質押親簽造成延遲的自述補上認錯到成交的程序缺口；鎖跌停是成交限制。其他持有人融資壓力則影響價格與承接風險，不宜直接等同無法處分。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化流動性存活：除保留現金與控制負債外，還須確認資產處分程序及市場成交條件，不能把停損意圖當成現金保障。",
+            "supporting_refs": [
+              {
+                "episode": 134,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 136,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 138,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 139,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 26,
+            "category": "賣出／減碼",
+            "source_scope": "2021／組3：2021-04-07至2021-05-19"
+          },
+          {
+            "title": "被動資金衝擊須經市場深度檢驗",
+            "decision_question": "基金流入或贖回相對於成分股可交易深度有多大，足以形成價格回饋嗎？",
+            "conditions": "資金集中追蹤成分股，或恐慌贖回可能迫使賣出時；跨市場比較須先確認交易占比與機制。",
+            "failure_conditions": "缺乏流量、成交占比、壓力情境深度及因果分解，不能確認被動資金造成跌勢，也不能以占比小證明永無泡沫。",
+            "interpretation": "同集提出美股回饋循環與0050影響有限的不同判斷，價值在於要求檢查適用尺度，而非判定被動投資整體優劣。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增基金交易相對市場承接能力的系統性問題，不等同個人現金存活或資訊來源獨立性。",
+            "supporting_refs": [
+              {
+                "episode": 24,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 24,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 27,
+            "category": "風險與部位",
+            "source_scope": "2020／組2：2020-04-07至2020-05-16"
+          },
+          {
+            "title": "退出理由須匹配假說、價格與交易期限",
+            "decision_question": "長抱理由仍成立，還是題材、价格或動能條件已改變？",
+            "conditions": "區分廣泛指數、缺貨機會財及限期投機，檢視基本面、價格與替代機會；不能只因回到成本便退出。",
+            "failure_conditions": "漂亮財報可能落後反轉，風險警告後也可能續漲；缺一致估值、停利幅度與動能期限，不能拼成通用買賣規則。",
+            "interpretation": "GME由轉型想像到高價軋空，呈現原論述的價格適用範圍修正，不是轉型可能性被撤回。Netflix突破期限是主持人的個別計畫，不能套用其他資產；廣泛ETF長抱也有前景與用款條件。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分更新假說、價格與部位及未來機會而非回本，明確區別不同資產與交易目的的退出理由；GME是其中的價格條件revision，不是全新退出框架。",
+            "supporting_refs": [
+              {
+                "episode": 103,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 106,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 107,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 108,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 110,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 110,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 103,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 111,
+                "claim_id": "E1"
+              }
+            ],
+            "card_id": 28,
+            "category": "價格與市場訊號",
+            "source_scope": "2021／組1：2021-01-02至2021-02-13"
+          },
+          {
+            "title": "成長敘事須拆成需求、營運與估值",
+            "decision_question": "新品、題材或高成長數據，是否足以支持投資價值？",
+            "conditions": "需區分需求預測、營收或留存等營運指標、未來獲利轉換與當前估值；供應鏈還須確認訂單與受益占比。",
+            "failure_conditions": "只有概念股報導、產品熱度或營收增幅，卻缺訂單、利潤、現金流與估值假設時，不能推導股東報酬。",
+            "interpretation": "本次以NVIDIA、Starlink、Snowflake與5G供應鏈反覆限制「需求故事即投資結論」的跳躍。",
+            "baseline_relationship": "overlap",
+            "difference_from_baseline": "與前期「營運、估值、報酬分開」重複；新增供應鏈受益占比與提前拉貨可能扭曲當期營收的細節。",
+            "supporting_refs": [
+              {
+                "episode": 66,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 67,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 67,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 72,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 78,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 29,
+            "category": "基本面與估值",
+            "source_scope": "2020／組5：2020-08-26至2020-10-10"
+          },
+          {
+            "title": "高估值下以價格強弱調整，而非預猜頂",
+            "decision_question": "長期看好但估值偏高的持股，何時應續抱、等待或減碼？",
+            "conditions": "出現明顯修正後，觀察個股是否收復、相對其他股票是否轉弱；估值接近自身認定上緣時才納入減碼判斷。",
+            "failure_conditions": "收復期間、估值模型、減碼比例與例外條件不明時，價格走弱不能單獨證明基本面失效；等待也會產生回吐。",
+            "interpretation": "多集重複呈現不猜頂、承受回吐後再調整，但亦有突破試單與價格站穩即小額進場的張力。",
+            "baseline_relationship": "overlap",
+            "difference_from_baseline": "實質重複前期「價格與部位」及「動能」卡；本次補充估值偏高與修正後相對強弱須共同成立。",
+            "supporting_refs": [
+              {
+                "episode": 66,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 68,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 69,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 70,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 72,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 72,
+                "claim_id": "E4"
+              }
+            ],
+            "card_id": 30,
+            "category": "持有／等待",
+            "source_scope": "2020／組5：2020-08-26至2020-10-10"
+          },
+          {
+            "title": "技術或題材模型須驗證參與及獲利",
+            "decision_question": "新技術的使用者、合作方或供應鏈是否真會參與，並能轉成可分配的獲利？",
+            "conditions": "投資論點依賴平台政策、車主出租、公版代工或政府補助等尚未落地假設時。",
+            "failure_conditions": "只有技術可行性、會員數、政策題材或早期敘事，未見採用率、定價、成本與利益歸屬時，無法驗證股東收益。",
+            "interpretation": "本次強調商業模型的斷點常在參與意願、平台規則與受惠者分配，而非技術本身。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分前期「需求到股東收益」：新增使用者參與、上游規則改變與供應鏈受惠歸屬的條件。",
+            "supporting_refs": [
+              {
+                "episode": 120,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 125,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 125,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 128,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 31,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2021／組2：2021-02-17至2021-04-03"
+          },
+          {
+            "title": "ETF名稱之外的規則、權重與持有機制",
+            "decision_question": "買入的是更新中的市場組合、主動區域押注、動能曝險，還是特殊用途工具？",
+            "conditions": "比較ETF或與個股並持時，辨認成分更新規則、權重、重疊曝險及商品用途。",
+            "failure_conditions": "成分更新不保證上漲；產業內分散仍有共同風險。動能勝出、期貨商品耗損與終止條件均未完整驗證，不能依標籤推定安全。",
+            "interpretation": "全球ETF的區域增減仍含主動判斷；指數更新不同於固定明星名單。動能與大盤目的不同，期貨避險商品也不能直接套用廣泛指數長抱理由。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化價格與部位及更新假說，增加工具內部規則、穿透重疊及用途匹配；這些機制值得保留，但不能把所有ETF問題統稱全新框架。",
+            "supporting_refs": [
+              {
+                "episode": 102,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 104,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 109,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 111,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 112,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 106,
+                "claim_id": "E1"
+              }
+            ],
+            "card_id": 32,
+            "category": "產品與制度",
+            "source_scope": "2021／組1：2021-01-02至2021-02-13"
           },
           {
             "title": "分批與停機須區分單筆及策略層級",
@@ -82226,130 +83134,1820 @@
                 "episode": 317,
                 "claim_id": "E4"
               }
-            ]
+            ],
+            "card_id": 33,
+            "category": "買進／進場",
+            "source_scope": "本輪候選框架：依679份雙子agent筆記歸納；非693集全量外部驗證，與原14集前期卡分列"
           },
           {
-            "title": "容量、基金規則與擁擠改變可執行性",
-            "decision_question": "部位、基金規模或公開訊號放大後，滑價、基金規則、底層深度、競爭與共同退出是否使原方法失真？",
-            "conditions": "小型股、有限流動性標的、主題ETF、套利、動能或公開規則，且交易規模可能占成交量較高比例。",
-            "failure_conditions": "缺成交明細、持有人結構、申贖流量、基金權重與規則、容量、費稅、滑價及跨市況紀錄時，不能量化擁擠或宣稱策略必然失效。",
-            "interpretation": "市場可承載資金不同於個人願承受風險；基金規則、公開性與持倉重疊可能內生改變進出成本。",
-            "baseline_relationship": "new",
-            "difference_from_baseline": "新增策略與基金的市場承載量、公開反身性及退出外部性，超出一般部位管理。",
+            "title": "減碼後的工具必須對應退出原因",
+            "decision_question": "減碼是避開個別族群、整體市場，還是確定用款需求；替代工具是否仍承受同一風險？",
+            "conditions": "減碼後重新配置、需要生活預備金，或考慮以股債工具、SPAC及選擇權替代現金時。",
+            "failure_conditions": "股票與股債組合不等同現金；SPAC保護受條款、期限與收購狀態限制。高波動時才買避險可能付出過高成本，跌破價位減碼亦可能遇反彈。",
+            "interpretation": "資料保留現金拖累多頭報酬、崩盤時可用性較高的張力；178至179集的先跌後減碼是同類取捨，不能當成兩次有效避險驗證。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化流動性存活：不只問有多少現金，還問停泊工具是否真正消除了原減碼理由，以及保護何時能兌現。",
             "supporting_refs": [
               {
-                "episode": 24,
-                "claim_id": "E2"
-              },
-              {
-                "episode": 175,
-                "claim_id": "E5"
-              },
-              {
-                "episode": 320,
-                "claim_id": "E1"
-              },
-              {
-                "episode": 439,
+                "episode": 172,
                 "claim_id": "E3"
               },
               {
-                "episode": 496,
+                "episode": 172,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 176,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 178,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 179,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 34,
+            "category": "賣出／減碼",
+            "source_scope": "2021／組6：2021-08-25至2021-10-06"
+          },
+          {
+            "title": "方向正確不等於工具與時點正確",
+            "decision_question": "表達宏觀或商品看法時，是否選到能承受等待成本、追蹤偏差與極端波動的工具？",
+            "conditions": "使用槓桿ETF、期貨相關商品、放空或其他需持續承擔成本的部位。",
+            "failure_conditions": "未掌握淨值、溢價、轉倉、槓桿或持有成本；即使最終論點成立，途中損失仍可能迫使退出。",
+            "interpretation": "將價格與部位、時間差延伸至工具結構：標的方向正確或放空論點最終成立，都不足以保證商品報酬或交易存活。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂價格與部位、時間差卡：產品追蹤結構與等待成本會使方向判斷失去可交易性。",
+            "supporting_refs": [
+              {
+                "episode": 42,
                 "claim_id": "E1"
+              },
+              {
+                "episode": 45,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 50,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 35,
+            "category": "風險與部位",
+            "source_scope": "2020／組3：2020-05-20至2020-07-04"
+          },
+          {
+            "title": "理由失效、延遲與恢復的持有分支",
+            "decision_question": "價格仍強時，原先理由是被否定、只是延遲，還是已恢復？",
+            "conditions": "能明確描述成長或事件假說，並區分產品延後與不再採用；價格動能可作輔助，但須與持有目的相符。",
+            "failure_conditions": "價格不跌不能證明需求成立；消息可能被誤判。缺少驗證期限與估值界線時，續抱或買回仍可能只是情緒反應。",
+            "interpretation": "快篩創高仍退出、Mini LED延遲仍續抱、代工理由恢復後買回，呈現不同分支而非必然矛盾；動能偏好亦不等於忽略買貴風險。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「更新假說」：加入延遲與否定的區別，以及理由恢復後如何區別重返部位與懊悔追漲；不是新增通用停損策略。",
+            "supporting_refs": [
+              {
+                "episode": 147,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 149,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 152,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 152,
+                "claim_id": "E5"
               }
             ],
             "counter_refs": [
               {
-                "episode": 24,
+                "episode": 146,
+                "claim_id": "E5"
+              }
+            ],
+            "card_id": 36,
+            "category": "價格與市場訊號",
+            "source_scope": "2021／組4：2021-05-22至2021-07-03"
+          },
+          {
+            "title": "監管改變後的相對估值可比性",
+            "decision_question": "原先看似合理的相對估值，是否依賴尚未反映的新資本要求、信用損失與營運限制？",
+            "conditions": "借貸收入占比較高，估值依賴用戶與放貸成長，且監管可能改變資本或營運條件。",
+            "failure_conditions": "缺少實際倍數、可比性調整、法規效力及損失承擔資料，不能量化折價；推測國家救援不等於股東受保護。",
+            "interpretation": "螞蟻由與Square比較估值，轉為承認微貸集中與呆帳風險，再加入新規可能削弱原上市估值的情境。這是前提補充，不是已完成估值下修，也未證明監管動機。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「營運估值報酬分開」：新增監管如何改變相對估值分母與成長條件的檢查，並保留救援、企業存續與股東報酬不等價的限制。",
+            "supporting_refs": [
+              {
+                "episode": 83,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 84,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 85,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 37,
+            "category": "基本面與估值",
+            "source_scope": "2020／組6：2020-10-14至2020-11-28"
+          },
+          {
+            "title": "收購溢價須通過控制權與等待成本",
+            "decision_question": "哪些股東能阻止交易完成？當前溢價是否值得承擔失敗損失與不確定等待時間？",
+            "conditions": "股價已反映收購期待，且關鍵股東持股足以影響達標；公告後追價者與原持有人須分別評估。",
+            "failure_conditions": "股東意願、持股及收購條件尚未核實，不能由公告推定成交；缺少失敗價格與替代用途資料，也無法判定等待或退出優劣。",
+            "interpretation": "本次把方向判斷拆成交易可完成性與資金占用。主持人曾因等待而退出的自述，限制了看對收購方向即可賺到的推論。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增控制權否決門檻；等待成本與自身未來機會重疊，但股東結構對交易完成的限制是不同決策問題。",
+            "supporting_refs": [
+              {
+                "episode": 98,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 98,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 38,
+            "category": "持有／等待",
+            "source_scope": "2020／組7：2020-12-02至2020-12-30"
+          },
+          {
+            "title": "事件假說失效優先於線型續抱",
+            "decision_question": "短期題材的原始催化劑被新資訊削弱時，是否仍有足夠理由持有？",
+            "conditions": "交易明確依賴可觀察的事件假說，且可界定支持或失效訊號。",
+            "failure_conditions": "若催化劑、價格反應與持有目的未區分，或遇跳空、流動性不足而無法執行，則不足以證明此方法有效。",
+            "interpretation": "298以寒冬題材停損為自述案例；301與305補充事件交易應事前規劃，且不能隨盤勢改寫故事。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化「更新假說」：在短期事件交易中，原始催化劑失效可構成退出理由，不能以線型或後設敘事取代原持有理由。",
+            "supporting_refs": [
+              {
+                "episode": 298,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 301,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 305,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 39,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2022／組8：2022-11-19至2022-12-31"
+          },
+          {
+            "title": "平台營運與資產權屬須分開",
+            "decision_question": "交易平台的使用便利、公司上市透明度與投資人資產權屬及轉移安排，是否被混為同一種保障？",
+            "conditions": "使用券商或交易平台長期持有資產，或評估平台公司股票與其客戶保管服務時。",
+            "failure_conditions": "未確認實際權屬、託管、轉倉、費用及適用制度時，不能由平台可交易、公司上市或個人使用經驗推論資產安全。",
+            "interpretation": "平台能否營運、客戶是否擁有或可移轉資產、以及投資平台公司的判斷，屬不同層次問題。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增中介與保管制度的決策問題，不等同前期流動性存活、不可跟抄部位或來源獨立。",
+            "supporting_refs": [
+              {
+                "episode": 117,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 123,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 40,
+            "category": "產品與制度",
+            "source_scope": "2021／組2：2021-02-17至2021-04-03"
+          },
+          {
+            "title": "退出理由與等待成本須雙向檢查",
+            "decision_question": "退出是在回應原假說失效，還是只因價格暫時不動；願意承擔哪一種錯失？",
+            "conditions": "先辨識事件交易、動能交易或價值浮現的原始理由，再比較等待、換倉與退出規則的代價。",
+            "failure_conditions": "不能套牢後無因果地改稱價值投資，也不能把短期停滯直接當作基本面失敗。移動停利與追求資金效率都可能錯失續漲。",
+            "interpretation": "177集強調等待成本，181集以賣出好事多後才上漲的回顧補上另一側；175集則保留價值投資不宜用一至三個月定勝負的條件。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂自身未來機會框架：不能只計算繼續等待的成本，也須計入退出後失去曝險的成本；更新假說仍須有因果依據。",
+            "supporting_refs": [
+              {
+                "episode": 171,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 177,
                 "claim_id": "E3"
               },
               {
-                "episode": 267,
-                "claim_id": "E7"
+                "episode": 181,
+                "claim_id": "E6"
               }
-            ]
+            ],
+            "counter_refs": [
+              {
+                "episode": 175,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 181,
+                "claim_id": "E6"
+              }
+            ],
+            "card_id": 41,
+            "category": "賣出／減碼",
+            "source_scope": "2021／組6：2021-08-25至2021-10-06"
           },
           {
-            "title": "資料生成方式限制可推論範圍",
-            "decision_question": "分點、申報、訪談、轉述、AI整理或績效展示，是否辨認決策主體、樣本範圍、期間與來源獨立性？",
-            "conditions": "依公開持股、供應鏈消息、社群、爬蟲、管理層說法或AI整理推論持倉、營運及研究優勢。",
-            "failure_conditions": "帳戶歸屬、樣本遺漏、資料延遲、原始脈絡、利益關係或同源傳播不明時，不能確認因果、持倉或獨立驗證。",
-            "interpretation": "重複轉述不構成多次驗證；AI與研究工具可產生候選問題，但不能替代來源清理、原始資料與可比較紀錄。",
-            "baseline_relationship": "revision",
-            "difference_from_baseline": "修訂時間差與來源獨立：增加觀測單位、資料生成、同源傳播、AI輸出驗算與展示偏誤。",
+            "title": "持有耐心受成本與現金需求約束",
+            "decision_question": "長期假說未變時，投資人是否仍有能力承受回撤與等待？",
+            "conditions": "部位有既有獲利或低成本緩衝，且生活支出與短期資金需求不依賴該部位。",
+            "failure_conditions": "部位過度集中、成本接近高檔或中途需要用錢時，長期看對仍可能被迫賣出；低成本也不消除未來下跌。",
+            "interpretation": "本組把持有能力拆為心理、成本、部位大小與現金流，而非把不賣視為單純信念。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分前期「流動性存活」：新增成本基礎與既有獲利如何改變執行耐受度。",
+            "supporting_refs": [
+              {
+                "episode": 52,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 53,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 54,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 56,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 54,
+                "claim_id": "E5"
+              }
+            ],
+            "card_id": 42,
+            "category": "風險與部位",
+            "source_scope": "2020／組4：2020-07-08至2020-08-22"
+          },
+          {
+            "title": "動能訊號須與基本面及擁擠風險分開",
+            "decision_question": "突破、成交熱度或籌碼變化，是可重複訊號，還是只描述當下參與者與擁擠程度？",
+            "conditions": "適用於先以基本面和相對估值篩選、再使用突破或動能進場的情境。",
+            "failure_conditions": "盤整與突破倒回會造成追高砍低及摩擦成本；未有回測與交易紀錄，不能確認任何籌碼或動能訊號有效。",
+            "interpretation": "資料保留動能作為條件式工具，但否定由當沖、融資或分點直接推出方向，也承認策略可能因市況或擁擠失靈。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「價格與部位」：新增熱度與方向的識別界線，以及策略公開化、盤整市與摩擦成本的失效來源。",
+            "supporting_refs": [
+              {
+                "episode": 164,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 164,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 165,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 166,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 43,
+            "category": "價格與市場訊號",
+            "source_scope": "2021／組5：2021-07-07至2021-08-21"
+          },
+          {
+            "title": "營運預測與市場給價分開",
+            "decision_question": "看好營收與獲利成長後，市場願付倍數、買入折價與假說變化是否另有依據？",
+            "conditions": "公司具多項業務、成長預期或高估值，且可拆解產能、價格、毛利與現金流假設時。",
+            "failure_conditions": "營運資料、合理倍數或安全邊際僅為示例時，不能推導特定價格；基本面轉弱或未知消息出現時，原假說須重估。",
+            "interpretation": "多集一致區分預測企業表現與預測股價，並承認估值模型及專業判斷可能失準。",
+            "baseline_relationship": "overlap",
+            "difference_from_baseline": "與前期「營運估值報酬分開」重複；本次補強倍數差異、報告目標價不可替代假設檢驗。",
+            "supporting_refs": [
+              {
+                "episode": 123,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 126,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 128,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 44,
+            "category": "基本面與估值",
+            "source_scope": "2021／組2：2021-02-17至2021-04-03"
+          },
+          {
+            "title": "現金配置須同時對齊用款期限與再投入",
+            "decision_question": "保留現金是為確定支出，還是為等待低點？若屬後者，是否已有重新投入與完整成本比較？",
+            "conditions": "退休提領、固定期限支出與持續累積資產須分開；工作收入及替代資金會改變承受波動能力。",
+            "failure_conditions": "缺少用款日期、支出彈性及再入場規則，無法決定配置。債券不保證保本，長期股價回升也不能解決到期變現問題。",
+            "interpretation": "不需提款者低配債，與退休者降波動並不矛盾；現金阻力也不能否定生活用途。固定退休支出假設另可能隨需求改變。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分流動性存活：區分用途型現金與擇時型現金，並納入支出假設變動；其餘與前期實質重疊。",
+            "supporting_refs": [
+              {
+                "episode": 93,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 93,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 97,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 100,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 101,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 45,
+            "category": "持有／等待",
+            "source_scope": "2020／組7：2020-12-02至2020-12-30"
+          },
+          {
+            "title": "研究訊號需可否證並校準來源信用",
+            "decision_question": "一項消息、分點或公司說法能否跨期驗證，且其來源獨立性與發言誘因是否已辨識？",
+            "conditions": "有明確假說、後續數字或結果可檢驗，並可交叉比較公司、上下游與公開資料。",
+            "failure_conditions": "分點多人共用、朋友轉述、公司吹捧或成功故事都可能造成錯誤歸因；正反結果皆能解釋時，方法沒有可驗證性。",
+            "interpretation": "資料提供從新聞與訪談形成假說、再以訂單與財報淘汰錯誤的研究流程，但未證明其有效率。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「時間差與來源獨立」及「更新假說」：加入來源信用、可否證性與跨期間檢驗要求。",
+            "supporting_refs": [
+              {
+                "episode": 332,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 335,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 335,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 333,
+                "claim_id": "E8"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 46,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2023／組2：2023-02-18至2023-04-05"
+          },
+          {
+            "title": "標的方向與工具報酬機制分開",
+            "decision_question": "即使方向最終正確，溢價、每日重設、持有成本或到期日，會不會使工具報酬偏離原判斷？",
+            "conditions": "以槓桿ETF、期貨型商品或選擇權替代現股，或在ETF偏離淨值時投入，分別檢查產品結構、費用與預期持有路徑。",
+            "failure_conditions": "單向多頭績效不能外推震盪結果；有限損失仍可能是投入資金全損。缺契約、費用及等額曝險比較時，不能判定哪種工具較佳。",
+            "interpretation": "正二風險的多集重述不是獨立回測。溢價收斂、每日重設與選擇權到期是不同機制，不可混稱為同一種耗損，也不都意味工具無法存續。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "相較價格與部位、流動性存活，本卡新增工具結構如何將相同方向判斷轉成不同報酬的問題；房貸現股與每日重設產品不能視為等價替代。",
+            "supporting_refs": [
+              {
+                "episode": 130,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 133,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 135,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 138,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 141,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 47,
+            "category": "產品與制度",
+            "source_scope": "2021／組3：2021-04-07至2021-05-19"
+          },
+          {
+            "title": "把策略失效、市況逆風與執行偏離分開",
+            "decision_question": "近期盈虧來自方法本身、行情延續性，還是沒有照原規則執行；是否足以支持改變策略？",
+            "conditions": "適用於動能交易回暖、連續停損後換法，或檢討高檔加碼；需保留事前進出理由，並比較不同市況及投入時間的效益。",
+            "failure_conditions": "缺少一致期間、風險口徑與完整交易紀錄，無法判定能力提升。事後轉盈不能證明改法有效，分艙測試也尚無結果。",
+            "interpretation": "182集容許有退出規則的追高，184集指出逆風及假訊號，186集自述省略試單，190集強調紀律可供檢討，194集再警告順風獲利未必是進步。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「更新假說」：先辨識規則、執行與環境各自的責任，避免把虧損直接當換法理由，或把單波獲利當驗證。",
+            "supporting_refs": [
+              {
+                "episode": 182,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 184,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 184,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 186,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 190,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 194,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 48,
+            "category": "賣出／減碼",
+            "source_scope": "2021／組7：2021-10-09至2021-11-20"
+          },
+          {
+            "title": "治理救濟的時間與控制權風險",
+            "decision_question": "治理爭議出現法律救濟時，是否已足以降低控制權與營運風險？",
+            "conditions": "公司控制權或股東權益爭議已進入訴訟程序。",
+            "failure_conditions": "僅知已提訴，未能確認程序進度、實際控制權或營運影響時，不能把救濟視為風險解除。",
+            "interpretation": "本組指出法律程序本身可能產生時間差，使名義上的救濟與實際控制權變化脫鉤。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增治理風險中「程序啟動但控制權未變」的決策問題，非一般營運或估值判斷。",
+            "supporting_refs": [
+              {
+                "episode": 51,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 49,
+            "category": "風險與部位",
+            "source_scope": "2020／組4：2020-07-08至2020-08-22"
+          },
+          {
+            "title": "交叉核對前先檢查資料如何生成",
+            "decision_question": "觀測到的缺口或多方一致，反映真實營運，還是通路遺漏、樣本外推與同源傳播？",
+            "conditions": "使用爬蟲、公司回覆、供應鏈訪談或市場傳聞時，先辨識資料涵蓋範圍、價格更新、期間與各來源的資訊位置。",
+            "failure_conditions": "公司反駁有自身立場，上下游未必獨立；價格上漲不能證明傳聞真實或合法。缺少完整資料時，無法裁定造假或建立股價因果。",
+            "interpretation": "貝殼案例增加政策改變資料可見性的問題；不同引薦最後指向同一團隊，則提醒表面多來源可能只是重複傳播，不能累計成多次驗證。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「時間差與來源獨立」：除查消息先後與同源性，再問樣本為何消失、價格是否過期、局部期間能否外推；不將公司回覆升格為真相。",
             "supporting_refs": [
               {
                 "episode": 200,
                 "claim_id": "E5"
               },
               {
-                "episode": 423,
+                "episode": 200,
                 "claim_id": "E7"
               },
               {
-                "episode": 543,
+                "episode": 202,
                 "claim_id": "E5"
               },
               {
-                "episode": 691,
-                "claim_id": "E4"
+                "episode": 203,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 50,
+            "category": "價格與市場訊號",
+            "source_scope": "2021／組8：2021-11-24至2021-12-29"
+          },
+          {
+            "title": "短缺訂單不等於可持續需求",
+            "decision_question": "缺貨、漲價與滿載訂單反映真實終端需求，還是重複下單、擴產及庫存循環？",
+            "conditions": "產業受暫時供給限制、價格上升，且供應商有擴產或下游多處下單誘因時。",
+            "failure_conditions": "缺乏訂單取消、庫存、產能與終端銷售資料時，不能判定循環轉折；需求確實強勁時亦未必抽單。",
+            "interpretation": "本次把題材與營運的落差具體化為供給擴張及需求重複下單兩條反轉路徑。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分前期「需求到股東收益」：新增判斷訂單品質與循環反轉，而非只問需求是否成長。",
+            "supporting_refs": [
+              {
+                "episode": 123,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 125,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 127,
+                "claim_id": "E2"
               }
             ],
             "counter_refs": [
               {
-                "episode": 465,
+                "episode": 123,
                 "claim_id": "E2"
+              }
+            ],
+            "card_id": 51,
+            "category": "基本面與估值",
+            "source_scope": "2021／組2：2021-02-17至2021-04-03"
+          },
+          {
+            "title": "動能是研究入口，不是續抱與加碼的共同答案",
+            "decision_question": "基本面未變時，價格強弱應影響候選篩選、續抱，還是新增資金投入？",
+            "conditions": "主動選股同時檢查未來成長與相對強弱；估值下降後等待停止創低，屬願付較高價格以換取觀察時間的條件式做法。",
+            "failure_conditions": "抗跌可能只是尚未補跌，反彈仍可能破底；支撐及跳空都不能保證延續。未交代部位、退出規則，便無法重建可檢驗策略。",
+            "interpretation": "資料呈現成長搭配強勢、等待止跌、逐步試單的延續，也出現弱勢股由盈轉虧仍續抱、不加碼的例外；不能把兩者抹平成一致紀律。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂「價格與部位」：價格訊號對研究、持有與新增投入可能有不同作用；「營運估值報酬分開」仍重複，但不足以單獨解釋退出紀律。",
+            "supporting_refs": [
+              {
+                "episode": 196,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 198,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 202,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 203,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 203,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 198,
+                "claim_id": "E2"
+              }
+            ],
+            "card_id": 52,
+            "category": "持有／等待",
+            "source_scope": "2021／組8：2021-11-24至2021-12-29"
+          },
+          {
+            "title": "復甦訊號與股價預期須分開判讀",
+            "decision_question": "營運或產業出現打底訊號後，市場是否已提前反映復甦，且復甦速度足以支撐原有預期？",
+            "conditions": "同時檢視月季趨勢、庫存或稼動率、公司指引、供給調整及價格已反映的預期。",
+            "failure_conditions": "單一減產、稼動率回升或公司指引可能受備貨、壓價、競爭力惡化或非獨立消息影響。",
+            "interpretation": "本次反覆保留「低檔仍可再跌」及「營運改善不等於同幅度上漲」，並納入復甦延後的修訂。",
+            "baseline_relationship": "overlap",
+            "difference_from_baseline": "與既有「預期差」及「營運估值報酬分開」實質重複；新增復產壓價、競爭力問題與復甦延後的具體限制。",
+            "supporting_refs": [
+              {
+                "episode": 338,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 339,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 342,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 343,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 53,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2023／組3：2023-04-08至2023-05-20"
+          },
+          {
+            "title": "先查可行行為與歸屬，再解釋籌碼",
+            "decision_question": "觀察到的交易，制度上可能由誰執行，資料又能否辨認最終決策者？",
+            "conditions": "以連跌、行庫買超、券商分點或研究報告與交易方向不一致，推論放空、護盤或出貨時。",
+            "failure_conditions": "交易資格未核實，通路統計不等於帳戶身分；排除某種交易方式，也不能直接證明剩餘賣方的動機或否認不當協作。",
+            "interpretation": "高端與行庫案例要求先確認制度及帳戶歸屬；賣方報告與客戶交易可不同向，朋程分點推估亦不能直接升格為單一交易人的獲利證據。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增因果歸因前的制度可行性與資料辨識層級檢查；不同於只問消息快慢或來源是否獨立。",
+            "supporting_refs": [
+              {
+                "episode": 145,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 151,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 152,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 54,
+            "category": "產品與制度",
+            "source_scope": "2021／組4：2021-05-22至2021-07-03"
+          },
+          {
+            "title": "同一部位須有單一策略歸屬",
+            "decision_question": "同一持倉的加減碼、停損與持有期限，究竟由價值、動能或左右側哪套規則決定？",
+            "conditions": "同時使用多種交易邏輯，或因其他族群上漲而想換股時，先標示資金、進場理由與退出規則。",
+            "failure_conditions": "若未定義動能門檻、價值假說或策略資金邊界，事後無法判別虧損是選股、執行或策略混用所致。",
+            "interpretation": "本組將價值股池等待動能的做法，延伸為同一標的混用左右側策略時的退出治理問題。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "相對「更新假說」基準，具體處理同一持倉有多套策略衝突時的決策歸屬。",
+            "supporting_refs": [
+              {
+                "episode": 206,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 214,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 55,
+            "category": "賣出／減碼",
+            "source_scope": "2022／組1：2022-01-01至2022-02-09"
+          },
+          {
+            "title": "低手續費不等於低總交易成本",
+            "decision_question": "券商或ETF的低費用，是否真的降低持有與交易的總成本？",
+            "conditions": "比較相同持有期、交易頻率與資金規模，納入管理費、保管費、低消、點差及融資等成本。",
+            "failure_conditions": "未取得費率、點差、稅負或實際交易頻率時，不能以名目手續費或單年費用判定較便宜。",
+            "interpretation": "本次將費用問題由ETF年度內扣延伸至券商收入替代與交易摩擦，要求統一成本口徑。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增產品與通路總成本的決策問題，非單純現金、部位或估值框架。",
+            "supporting_refs": [
+              {
+                "episode": 65,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 65,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 66,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 56,
+            "category": "風險與部位",
+            "source_scope": "2020／組5：2020-08-26至2020-10-10"
+          },
+          {
+            "title": "價格變動不能補寫投資理由",
+            "decision_question": "部位調整是因原始前景假設改變，還是事後以漲跌替論點找理由？",
+            "conditions": "預先界定持有假設與觀察訊號；假設不成立時能修訂，並承認價格結果未必驗證判斷。",
+            "failure_conditions": "把下跌或上漲直接當作基本面證明；缺乏假設細節、時間與部位紀錄時，無法判定調整品質。",
+            "interpretation": "高通案例把前景疑慮、減碼自述與後續價格拆開，保留判斷正確與交易獲利並非同義。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂前期更新假說：除追蹤新資訊外，還要求避免由價格結果倒推或補寫原始理由。",
+            "supporting_refs": [
+              {
+                "episode": 230,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 231,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 232,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 222,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 57,
+            "category": "價格與市場訊號",
+            "source_scope": "2022／組2：2022-02-12至2022-04-02"
+          },
+          {
+            "title": "事件紅利期限與循環估值",
+            "decision_question": "短期供需失衡帶來的獲利，是否足以支持延長持有與產業集中？",
+            "conditions": "封城、缺貨或漲價推升產業獲利，且新增產能、需求退潮或去庫存可能改變紅利期限。",
+            "failure_conditions": "低本益比與漂亮財報不足以確認便宜或續抱價值；供需轉折預測也可能過早。沒有完整回測與成本，不能證明退出規則優於長抱。",
+            "interpretation": "遊戲組合延長持有後優勢減弱的自述，與缺貨擴產風險互補；航運轉折看錯則限制了依產業期限推算股價頂部的可行性。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "將「營運估值報酬分開」細化為事件優勢保存期限與循環獲利可持續性；退場仍保留固定目標價、趨勢持有及回吐控制的張力。",
+            "supporting_refs": [
+              {
+                "episode": 142,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 144,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 144,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 151,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 151,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 149,
+                "claim_id": "E3"
+              }
+            ],
+            "card_id": 58,
+            "category": "基本面與估值",
+            "source_scope": "2021／組4：2021-05-22至2021-07-03"
+          },
+          {
+            "title": "用行為與市況稽核策略身分",
+            "decision_question": "持有理由是長期營運、短期催化劑還是價格延續？行情與風控是否符合此理由？",
+            "conditions": "辨識進場論點與期限；動能交易依賴突破延續，長線部位須有基本面理解與可承受的部位限制。",
+            "failure_conditions": "低量、震盪與題材不足可能使突破反覆失敗；長期看好不保證回本，放寬停損也提高單次損失。材料未提供有效門檻或回測。",
+            "interpretation": "311集修正自身事件型定位，312集釐清不同期限可有相反方向，319集連結策略與資控方式。這是概念延伸，不證明全面改採長抱或具體持倉轉換。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "相對所給基準，新增自述策略與實際反應是否一致、以及行情是否容許策略運作的決策問題；資控部分仍與價格及部位原則重疊。",
+            "supporting_refs": [
+              {
+                "episode": 311,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 311,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 312,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 319,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 317,
+                "claim_id": "E4"
+              }
+            ],
+            "card_id": 59,
+            "category": "持有／等待",
+            "source_scope": "2023／組1：2023-01-04至2023-02-15"
+          },
+          {
+            "title": "消息領先不等於價格未反映",
+            "decision_question": "取得供應鏈或政策線索後，市場是否仍有未定價的基本面差額？",
+            "conditions": "須分別檢查消息可信度、股價先行幅度、訂單相對營收貢獻及後續獲利可見度。",
+            "failure_conditions": "若無價格、估值與訂單資料，或僅以股價上漲倒推消息真實，無法判定尚有空間。",
+            "interpretation": "本批將資訊時差進一步拆成認證、出貨、毛利與EPS的不同落點，限制「聽到消息即有優勢」的推論。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂前期「時間差與來源獨立」：即使消息較媒體早，仍可能已被價格反映，且需穿透收益轉換。",
+            "supporting_refs": [
+              {
+                "episode": 355,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 356,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 358,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 361,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 363,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 60,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2023／組4：2023-05-24至2023-07-08"
+          },
+          {
+            "title": "相似曝險不等於相同投資工具",
+            "decision_question": "工具能否提供想要的曝險，其信用、到期、溢價與交易成本是否改變結果？",
+            "conditions": "比較ETF、ETN、期貨或自行配置，須同時檢查底層持股、法律結構、資金覆蓋及使用便利。",
+            "failure_conditions": "名稱或追蹤方向相近不足以證明可替代；底層市場上漲仍可能被溢價消退抵銷。現金足額也未消除期貨轉倉、基差與管理缺口。",
+            "interpretation": "本批不只比較費率：ETN加入信用與到期問題，主題ETF則先問持股吻合度。付費代配及跨市場便利可能合理，不能一律以便宜優先。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增工具替代的結構性審查，超出基準的價格與部位問題；期貨現金覆蓋與流動性存活有重疊，但不是整張卡的核心。",
+            "supporting_refs": [
+              {
+                "episode": 145,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 146,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 146,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 144,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 61,
+            "category": "產品與制度",
+            "source_scope": "2021／組4：2021-05-22至2021-07-03"
+          },
+          {
+            "title": "治理判斷取決於退出權與持有期",
+            "decision_question": "管理者的治理疑慮，對可自由退出的交易與長期鎖定資本是否具有不同權重？",
+            "conditions": "需區分短期次級市場部位、長期持有或私募鎖定資金，並另行評估執行力與利益衝突。",
+            "failure_conditions": "治理事件、退出條款與營運結果未獲核實；短期可退出不代表治理風險不存在，執行力也不證明股東可獲利。",
+            "interpretation": "保留執行能力與治理可信度可並存的張力，避免將人格評價直接化為報酬結論。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增退出權如何改變治理容忍度的決策問題，不等同不可跟抄部位或一般假說更新。",
+            "supporting_refs": [
+              {
+                "episode": 273,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 278,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 62,
+            "category": "賣出／減碼",
+            "source_scope": "2022／組6：2022-08-20至2022-10-01"
+          },
+          {
+            "title": "指數表現不能代替市場廣度與主題集中檢查",
+            "decision_question": "市場或主題看似強勢時，是否其實集中於少數權值股或少數大型科技公司？",
+            "conditions": "同時檢查指數權重、個股與族群廣度，並按市值而非成本計算單股權重；自組主題組合亦須檢查成分是否過度集中。",
+            "failure_conditions": "缺乏完整部位、相關性與權重分母時，不能由持有檔數或指數上漲認定已分散；多檔科技股也可能同步下跌。",
+            "interpretation": "本次把單股集中警示延伸到權值股支撐指數，以及主題組合成分集中於大型科技公司的問題。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分前期「價格與部位」：焦點改為指數廣度與主題組合的成分集中，而非僅看單一持股比重。",
+            "supporting_refs": [
+              {
+                "episode": 68,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 74,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 75,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 78,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 63,
+            "category": "風險與部位",
+            "source_scope": "2020／組5：2020-08-26至2020-10-10"
+          },
+          {
+            "title": "利空公布後以價格反應檢驗假說",
+            "decision_question": "疲弱指引、砍單或景氣壞消息出現後，價格是否仍破底，而非消息本身是否足夠悲觀？",
+            "conditions": "可區分已公布訊息、傳聞與預期，並預先設定觀察價格反應及試單失效的條件。",
+            "failure_conditions": "資訊來源未核實、基本面持續惡化，或不破底只是短暫籌碼因素時，不能視為景氣或股價已落底。",
+            "interpretation": "本批反覆把「利空消化」定位為候選驗證，而非逆向買進規則；也保留去庫存末端不等於股價底的差異。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂「更新假說」：除更新營運預測外，新增以消息公布後價格反應驗證，但明確不把反應當成結論。",
+            "supporting_refs": [
+              {
+                "episode": 255,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 256,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 257,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 252,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 256,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 257,
+                "claim_id": "E3"
+              }
+            ],
+            "card_id": 64,
+            "category": "價格與市場訊號",
+            "source_scope": "2022／組4：2022-05-21至2022-07-02"
+          },
+          {
+            "title": "高獲利不等於可延續的股東報酬",
+            "decision_question": "眼前營收與毛利成長，來自可持續競爭力還是暫時報價、庫存與供需失衡？",
+            "conditions": "適用於缺貨、漲價、物流受阻或資本支出擴張的循環產業；需追蹤訂單、報價、成本與新增供給。",
+            "failure_conditions": "未有個別供需與利潤資料時，不能斷定毛利已見頂；高獲利也不必然立即反轉。",
+            "interpretation": "本次把營運、估值與股價反應分開：營收仍佳時，毛利、估值或資金偏好仍可先轉弱。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「營運估值報酬分開」：新增低價庫存耗盡、集體擴產與暫時障礙消退三種獲利退潮條件。",
+            "supporting_refs": [
+              {
+                "episode": 158,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 165,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 165,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 168,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 158,
+                "claim_id": "E1"
+              }
+            ],
+            "card_id": 65,
+            "category": "基本面與估值",
+            "source_scope": "2021／組5：2021-07-07至2021-08-21"
+          },
+          {
+            "title": "提前布局須與資金效率並列",
+            "decision_question": "需求改善尚未反映時，等待的潛在優勢是否足以補償久蹲、機會成本與可能誤判？",
+            "conditions": "題材具可預期的復甦或旺季，但資金發動時間、供需改善與公司獲利尚未同步。",
+            "failure_conditions": "沒有可追蹤的催化條件、持有期限或替代機會比較時，提前布局容易被事後合理化；追趨勢亦可能反覆停損。",
+            "interpretation": "主持人保留提前布局偏好，卻承認等待可能拖累，形成與動能取向間不可消除的張力。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂「自身未來機會／時間差」：不是只問何時發酵，也要比較等待成本與趨勢交易的摩擦。",
+            "supporting_refs": [
+              {
+                "episode": 415,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 420,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 422,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 66,
+            "category": "持有／等待",
+            "source_scope": "2024／組1：2024-01-03至2024-02-14"
+          },
+          {
+            "title": "產業假說應容許條件式延後或限縮",
+            "decision_question": "當需求復甦或技術採用未如原先預期，應如何更新假說而不把原預測當事實？",
+            "conditions": "須有新訂單、交期、庫存、資本支出組成或場域條件等可辨識訊號，並保留不同產品與地區的差異。",
+            "failure_conditions": "若調查樣本、口徑與來源獨立性不明，或把單一題材、庫存現象外推全產業，更新幅度無從判斷。",
+            "interpretation": "本批顯示更新不必等於翻轉立場：消費復甦可延後，液冷則可由全面悲觀看法改為特定場域機會。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂前期「更新假說」：強調更新可同時包含時程下修與適用場域限縮，而非只調高或調低方向。",
+            "supporting_refs": [
+              {
+                "episode": 355,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 358,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 362,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 363,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 67,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2023／組4：2023-05-24至2023-07-08"
+          },
+          {
+            "title": "ETF分散不能隔離共同政策風險",
+            "decision_question": "持有同一制度環境下的多檔股票或ETF後，是否仍可能被共同政策改變經營、上市或募資條件？",
+            "conditions": "適用於中概股、單一市場ETF或共同受特定監管環境影響的資產。",
+            "failure_conditions": "ETF可降低單一公司風險，卻不能據此推定可消除共同制度衝擊；政策後續與估值終點仍未知。",
+            "interpretation": "此處不是把ETF視為無效，而是要求將個股分散與共同制度曝險分開辨識。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增共同制度風險：不同於單一公司風險或來源獨立性，多檔持股仍可能共同暴露於政策改變。",
+            "supporting_refs": [
+              {
+                "episode": 155,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 160,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 161,
+                "claim_id": "E7"
+              }
+            ],
+            "card_id": 68,
+            "category": "產品與制度",
+            "source_scope": "2021／組5：2021-07-07至2021-08-21"
+          },
+          {
+            "title": "長期假說失效需有延遲退出防呆",
+            "decision_question": "若基本面惡化在確認前已反映於價格，如何限制單一假說的回吐？",
+            "conditions": "長期部位已設定可承受上限，且承認基本面確認與價格反應存在時間差。",
+            "failure_conditions": "未定義部位分母、上限、賣出比例或重估觸發條件時，逐步賣出仍不可操作；過早退出亦可能錯失上漲。",
+            "interpretation": "本次把部位上限由進場風險控制延伸到假說失效時的退出端，保留確認太慢與提早賣出的交換。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂前期「更新假說」與「價格與部位」：新增確認延遲下的漸進退出防呆。",
+            "supporting_refs": [
+              {
+                "episode": 287,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 290,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 297,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 69,
+            "category": "賣出／減碼",
+            "source_scope": "2022／組7：2022-10-05至2022-11-16"
+          },
+          {
+            "title": "分批意圖不等於實際風險預算",
+            "decision_question": "分批是否真的保留未來資金，實際成交、生活支出與借款期限會否使曝險超出原計畫？",
+            "conditions": "打算分期投入、交易回報不穩，或投資資金另有生活與還款用途。",
+            "failure_conditions": "短時間拆單未必分散時點風險；委託狀態不明仍重送可能累積意外部位。缺少成交、備用金與負債資料，不能認定能承受下跌。",
+            "interpretation": "保留現金的原則後來具體化為拉開投入時間；Pure Storage重送後仍持有的自述構成執行反例。長期看好指數也不能消除還款時被迫退出的風險。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂「分批風險預算」：不只看預定批次，還須區分委託意圖與實際成交；生活現金流及槓桿期限部分與「流動性存活」重複。",
+            "supporting_refs": [
+              {
+                "episode": 80,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 86,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 90,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 92,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 87,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 90,
+                "claim_id": "E5"
+              }
+            ],
+            "card_id": 70,
+            "category": "風險與部位",
+            "source_scope": "2020／組6：2020-10-14至2020-11-28"
+          },
+          {
+            "title": "避險是曝險設計，非方向看空替代品",
+            "decision_question": "空單、期貨或選擇權是否與欲保護的多單具足夠關聯、比例與可承受的持續成本？",
+            "conditions": "先界定保護的是個股意外或市場共同風險，能衡量多空Beta、工具成本與上漲時的拖累。",
+            "failure_conditions": "僅因看弱便任意放空、關聯性不足或比例失衡時，可能多空雙虧；常駐保護亦可能落後單純持有。",
+            "interpretation": "本批補入臺美市場避險落差及空方獲利再平衡構想，但都未構成避險有效性的績效驗證。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「價格與部位」：聚焦避險工具的關聯性、保費與再平衡，而非一般部位大小。",
+            "supporting_refs": [
+              {
+                "episode": 249,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 249,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 258,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 258,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 253,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 71,
+            "category": "價格與市場訊號",
+            "source_scope": "2022／組4：2022-05-21至2022-07-02"
+          },
+          {
+            "title": "沿供應鏈拆開數量、價格與相對成本",
+            "decision_question": "同一缺貨、漲價或庫存訊號，對所持公司的訂單、交付及毛利究竟如何傳導？",
+            "conditions": "供給中斷、代工漲價、庫存累積或缺料改善時，逐公司檢查供應商曝險、競爭者成本、轉嫁能力與實際零件搭載。",
+            "failure_conditions": "競爭者同步漲價僅縮小相對劣勢，不消除絕對成本增加；庫存提高可能減少上游拉貨。解除缺貨若無持續需求，也不能推出收益改善。",
+            "interpretation": "170至171集增加競爭者同步漲價條件；172至173集延伸庫存向上游傳遞；178集補上實際搭載檢查。這些是機制細化，不是已驗證成果。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化需求到股東收益：新增供應鏈位置與相對成本問題；營運改善仍須與估值、短線價格反應分開。",
+            "supporting_refs": [
+              {
+                "episode": 170,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 171,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 172,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 173,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 178,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 171,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 175,
+                "claim_id": "E1"
+              }
+            ],
+            "card_id": 72,
+            "category": "基本面與估值",
+            "source_scope": "2021／組6：2021-08-25至2021-10-06"
+          },
+          {
+            "title": "展示能力與工作流程商用分離",
+            "decision_question": "技術展示可用，是否已足以支撐特定工作流程、付費留存與供應鏈需求？",
+            "conditions": "新AI服務需融入既有流程，且客戶在意可控性、連續性、轉換成本或單客價值。",
+            "failure_conditions": "個人測試或案例轉述不足以代表普遍採用；局部功能可用也不等於完整工作流已商用。",
+            "interpretation": "採用檢驗由功能展示推進至留存、加價能力與工作流程限制，並容許長期方向正確但時程延後。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分前期「需求到股東收益」：新增商用工作流程成熟度與實現時間差。",
+            "supporting_refs": [
+              {
+                "episode": 510,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 513,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 515,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 73,
+            "category": "持有／等待",
+            "source_scope": "2024／組8：2024-11-23至2024-12-28"
+          },
+          {
+            "title": "財報須比較買方隱含門檻",
+            "decision_question": "財報優於公開預估時，是否仍低於已反映在價格中的買方期待？",
+            "conditions": "適用於高成長、題材集中且市場可能已有非公開一致預期的公司。",
+            "failure_conditions": "買方預期來源、時間點或樣本不明時，無法確認真正預期差；單次財報也不足以判定估值轉折。",
+            "interpretation": "應把營運改善、公開分析師預估、買方期待與個人估計分開比較；主持人自身估計也可能高於實際結果。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化既有「預期差」基準：同一財報可同時面對公開預估、買方期待及個人估計三種不同門檻，不能只以是否beat公開預估判讀。",
+            "supporting_refs": [
+              {
+                "episode": 395,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 396,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 403,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 74,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2023／組7：2023-10-07至2023-11-22"
+          },
+          {
+            "title": "同一投資方向不代表工具可以互換",
+            "decision_question": "換成期貨、ETF或單一公司後，實際曝險、容量、持有成本與操作義務是否仍符合原目的？",
+            "conditions": "適用於主題ETF與自組持股比較、足額期貨替代現貨，以及同指數產品選擇；需配合持有期限、交易頻率與部位相對市場深度。",
+            "failure_conditions": "工具曝險未必相同；費稅、轉倉與產品資料未核實，足額備款不能消除規則及流動性風險。分散亦不保證低波動或較高報酬。",
+            "interpretation": "184集區分基金配方與單押集中度，190集加入長期使用期貨的管理代價，193集比較費用與流動性，194集提供網通期貨容量不足而採現貨的自述。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增工具替代的決策問題：不只管理價格與部位，而是先確認替代後的曝險是否相符，再核算成本、容量及操作負擔。",
+            "supporting_refs": [
+              {
+                "episode": 184,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 190,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 193,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 194,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 75,
+            "category": "產品與制度",
+            "source_scope": "2021／組7：2021-10-09至2021-11-20"
+          },
+          {
+            "title": "持倉容量先於退出意願",
+            "decision_question": "部位在不利情境下，能否於可接受時間與價格範圍內退出？",
+            "conditions": "小型股持倉相對日常買盤過大，成交量間歇且出量窗口有限時。",
+            "failure_conditions": "僅有單一持股或朋友案例，未取得成交深度、賣壓與實際執行紀錄，無法形成固定退出規則。",
+            "interpretation": "將流動性從一般現金存活細化為持倉張數、買盤深度與賣飛壓力的執行問題。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分前期流動性存活：新增部位相對市場容量及出量窗口是否足以退出的決策問題。",
+            "supporting_refs": [
+              {
+                "episode": 439,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 439,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 76,
+            "category": "賣出／減碼",
+            "source_scope": "2024／組2：2024-02-17至2024-04-03"
+          },
+          {
+            "title": "指數更替機制與集中偏好的衝突",
+            "decision_question": "選擇指數是為了持有今天的龍頭，還是參與依規則更替的企業組合？實際成分是否符合目的？",
+            "conditions": "比較單一龍頭、大型股指數與全市場組合，或以國家成長敘事選擇ETF。",
+            "failure_conditions": "未核對成分、權重及編製規則，不能由名稱判斷曝險；指數仍可能集中，未來納入強者亦不保證較高報酬。",
+            "interpretation": "本次將指數價值由當下分散延伸到未來強者更替；但偏好大型股時，又出現集中組合必勝的過強說法。後期承認ETF未來勝負未知，不能用近期贏家倒推配置。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增組合成員如何隨時間更新的問題，不只是「價格與部位」；並要求區分國家經濟敘事與實際買到的成分。",
+            "supporting_refs": [
+              {
+                "episode": 84,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 88,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 91,
+                "claim_id": "E7"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 89,
+                "claim_id": "E4"
+              }
+            ],
+            "card_id": 77,
+            "category": "風險與部位",
+            "source_scope": "2020／組6：2020-10-14至2020-11-28"
+          },
+          {
+            "title": "利空反應不是營運落底確認",
+            "decision_question": "壞消息公布後不破前低，能否支持「價格已反映」的暫定判讀？",
+            "conditions": "需有新的、具體的業績或需求利空，並比較公告後與前低的價格反應；同時持續追蹤後續獲利修正。",
+            "failure_conditions": "不破低不保證上漲，後續新利空或獲利續降仍可再跌；未提供價格區間與期限時，證據不足。",
+            "interpretation": "本批將預期差具體化為「利空—股價」聯合觀察，並明確保留營運未落底與價格先行反映可並存。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂既有預期差：不以壞消息或悲觀本身推論機會，要求檢視市場反應，且不將不破底升格為買點。",
+            "supporting_refs": [
+              {
+                "episode": 262,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 268,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 269,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 263,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 265,
+                "claim_id": "E6"
+              }
+            ],
+            "card_id": 78,
+            "category": "價格與市場訊號",
+            "source_scope": "2022／組5：2022-07-06至2022-08-17"
+          },
+          {
+            "title": "題材增量須穿透替代需求與公司占比",
+            "decision_question": "熱門終端成長究竟增加多少供應商利潤，而購買上市公司又能取得多少相關業務曝險？",
+            "conditions": "適用於電動車替代燃油車、跨品牌供應鏈，以及內容團隊隸屬大型公司；須拆解用量、售價、毛利、替換風險及營收貢獻。",
+            "failure_conditions": "供貨關係、業務占比或價格不明時，不能形成收益結論；需求增量可能被既有需求減少、競爭擴產及母公司體量稀釋。",
+            "interpretation": "母公司轉型貢獻有限的問題，延伸至油電車增量比較、跨贏家接單與內容曝險占比。194集再以一般品庫存及擴產限制車用量增敘事，仍未給合理估值。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「需求到股東收益」：新增替代既有需求、供應商能否跨贏家接單，以及看好團隊是否等於取得足量曝險三項條件。",
+            "supporting_refs": [
+              {
+                "episode": 183,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 187,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 191,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 194,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 194,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 79,
+            "category": "基本面與估值",
+            "source_scope": "2021／組7：2021-10-09至2021-11-20"
+          },
+          {
+            "title": "AI可整理資訊但不取代判讀責任",
+            "decision_question": "哪些研究工作可交由AI整理，哪些訊號仍須研究者保留原始脈絡與自行驗算？",
+            "conditions": "已有明確研究規則、可分級資料來源，且長期追蹤公司或管理層發言基準。",
+            "failure_conditions": "規則未定義、輸入資料不完整或未核對輸出時，AI摘要與計算不能作為投資結論；語氣變化也不等於營運落實。",
+            "interpretation": "資料提出次要資料分流、重要法說親聽，以及以私人資料庫輔助研究的工作流，仍明確保留驗證缺口。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增研究程序問題，不等同既有來源獨立或不可跟抄部位；聚焦人機分工與原始訊號保留。",
+            "supporting_refs": [
+              {
+                "episode": 571,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 568,
+                "claim_id": "E7"
               },
               {
                 "episode": 574,
                 "claim_id": "E5"
               }
-            ]
+            ],
+            "counter_refs": [
+              {
+                "episode": 568,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 574,
+                "claim_id": "E5"
+              }
+            ],
+            "card_id": 80,
+            "category": "持有／等待",
+            "source_scope": "2025／組4：2025-06-11至2025-07-23"
           },
           {
-            "title": "績效口徑先於能力歸因",
-            "decision_question": "觀察到的成果是否涵蓋整體資本、閒置現金、未實現損益、入出金、成本、風險與可比較基準？",
-            "conditions": "評估個人交易、主動研究、基金、回測或是否存在可部署的研究優勢。",
-            "failure_conditions": "只有贏家、勝率、單次暴利、短期順風或不一致基準時，不能推論能力、策略優勢或研究可轉化為相對報酬。",
-            "interpretation": "持倉成果、整體資本報酬、風險來源與研究時間成本需分開；後續上漲或多次敘事重述均不構成績效驗證。",
-            "baseline_relationship": "new",
-            "difference_from_baseline": "新增績效證據與能力主張的可比性檢查，與不可跟抄部位不同。",
+            "title": "二手資訊與展示績效的證據折價",
+            "decision_question": "公開筆記、消息、截圖或單一體驗，能支持到何種程度的投資判斷？",
+            "conditions": "依賴摘要、供應鏈轉述、個人試用、績效截圖或事件消息進行研究。",
+            "failure_conditions": "來源無法追溯、樣本與成本不明或資訊可能已擴散時，不能當成獨立驗證，更不能重建績效或因果。",
+            "interpretation": "本批新增對資訊傳遞失真與績效展示偏誤的直接警示，支持將研究靈感和可用證據分層。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「時間差與來源獨立」：聚焦二手筆記、消息交易與截圖的失真，而非泛稱資訊來源多寡。",
             "supporting_refs": [
               {
-                "episode": 129,
-                "claim_id": "E5"
+                "episode": 423,
+                "claim_id": "E7"
               },
               {
-                "episode": 138,
-                "claim_id": "E1"
+                "episode": 424,
+                "claim_id": "E7"
               },
               {
-                "episode": 202,
+                "episode": 425,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 427,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 81,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2024／組1：2024-01-03至2024-02-14"
+          },
+          {
+            "title": "事件完成後重驗工具身分",
+            "decision_question": "原先持有理由是否在制度性保障消失後已不再成立？",
+            "conditions": "原始投資理由依賴SPAC贖回或停泊現金的制度性保障。",
+            "failure_conditions": "未核對贖回期限、契約條款、市價與完成狀態時，不能將保障視為價格保證。",
+            "interpretation": "公司前景判斷之外，還須檢查原先依賴的工具條件是否仍存續。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細化「更新假說」：觸發更新的不只是營運資訊，也包括制度性保護消失。",
+            "supporting_refs": [
+              {
+                "episode": 233,
+                "claim_id": "E2"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 82,
+            "category": "產品與制度",
+            "source_scope": "2022／組3：2022-04-06至2022-05-18"
+          },
+          {
+            "title": "實業與早期投資須分開處理監督、退出與非財務目的",
+            "decision_question": "投入非上市事業或興趣型項目時，是否已區分心理滿足與財務回報，並承受監督、退出及全損成本？",
+            "conditions": "資金交由他人經營、投資人查核能力有限，或投入目的包含支持經營者、興趣與心理滿足。",
+            "failure_conditions": "以信任替代查核、忽略租金與退出折價，或把可承受全損誤作可無限追加資金時，不能將投入視為一般資產配置。",
+            "interpretation": "材料一面指出小額實業投入容易形成監督真空，一面將文化與早期投資置於可承受全損、仍須保留回收界線的脈絡。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增非上市事業的治理與非財務目標問題；不同於一般「未來機會而非回本」，重點在投入前即須處理查核、退出與心理目的。",
+            "supporting_refs": [
+              {
+                "episode": 565,
                 "claim_id": "E2"
               },
               {
-                "episode": 244,
+                "episode": 569,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 571,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 571,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 569,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 571,
+                "claim_id": "E4"
+              }
+            ],
+            "card_id": 83,
+            "category": "賣出／減碼",
+            "source_scope": "2025／組4：2025-06-11至2025-07-23"
+          },
+          {
+            "title": "分批、再平衡與情緒攤平必須分流",
+            "decision_question": "此次加減碼源於預定資金計畫、集中風險、訊號改變，還是只想消除套牢感？",
+            "conditions": "長期看好仍成立但部位偏高，或投入尚未完成；動能操作則須另辨識突破失敗，不能混用持有理由。",
+            "failure_conditions": "缺乏重新評估及停止加碼門檻，分批容易變成凹單；五批僅是示例，長抱與突破操作也都缺乏完整績效證據。",
+            "interpretation": "98集允許保留漲跌加碼彈性，101集明確限制以降均價為動機的追加。長抱不排斥再平衡，動能不漲則砍也不能直接套入長期配置。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂分批風險預算：加上事前規劃與事後情緒加碼的界線；長抱與集中度管理部分仍屬重複。",
+            "supporting_refs": [
+              {
+                "episode": 94,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 97,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 98,
+                "claim_id": "E6"
+              },
+              {
+                "episode": 98,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 101,
+                "claim_id": "E5"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 84,
+            "category": "風險與部位",
+            "source_scope": "2020／組7：2020-12-02至2020-12-30"
+          },
+          {
+            "title": "市場機制改變時，基本面須受價格約束",
+            "decision_question": "過往在財報、估值或回測有效的進出邏輯，是否因交易參與者與價格機制改變而失效？",
+            "conditions": "基本面研究具獨立依據，並持續觀察價格、成交與策略跨市況表現。",
+            "failure_conditions": "持續放量創低、恐慌或市場結構改變時，僅憑歷史均值回歸或基本面攤平的證據不足。",
+            "interpretation": "本次將技術面定位為限制器，而非取代基本面；亦承認停利或停損會有假訊號與少賺成本。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂既有「更新假說」：除了公司資訊，價格行為與市場參與者變化也可能要求重估舊規則。",
+            "supporting_refs": [
+              {
+                "episode": 344,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 344,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 345,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 346,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 85,
+            "category": "價格與市場訊號",
+            "source_scope": "2023／組3：2023-04-08至2023-05-20"
+          },
+          {
+            "title": "低庫存須穿透需求用途與出貨瓶頸",
+            "decision_question": "低庫存反映補貨空間，還是缺料壓抑出貨；題材增長又能落到哪家公司的收益？",
+            "conditions": "供應鏈題材研究依序辨識終端用途、單位用量、客戶訂單成熟度、營收占比及料件可得性，尤其適用替代型需求與跨市場映射。",
+            "failure_conditions": "缺料可能使訂單無法出貨；挖礦吸收需求也可能帶來二手供給回流。營收占比不等於利潤占比，需求或療效良好也不保證銷售。",
+            "interpretation": "車用低庫存原先被視為相對保護，網通缺料延續卻揭示相反作用；新增用途錯分與單車元件增量，使需求敘事不再只是強弱二選一。",
+            "baseline_relationship": "specialization",
+            "difference_from_baseline": "細分「需求到股東收益」：新增庫存低的原因、需求用途與供給回流三個檢查點；產品、客戶及占比核對則是既有原則的具體化。",
+            "supporting_refs": [
+              {
+                "episode": 196,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 199,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 200,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 203,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 205,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 205,
+                "claim_id": "E4"
+              }
+            ],
+            "counter_refs": [
+              {
+                "episode": 205,
+                "claim_id": "E6"
+              }
+            ],
+            "card_id": 86,
+            "category": "基本面與估值",
+            "source_scope": "2021／組8：2021-11-24至2021-12-29"
+          },
+          {
+            "title": "預期買盤可提前耗盡催化",
+            "decision_question": "公開可預期的資金流，是否已被提前交易，以致事件落地時缺乏新增價格動能？",
+            "conditions": "ETF成分調整或集中申購具有可預期的大額買盤，且市場參與者能提前布局。",
+            "failure_conditions": "未有資金流、成交與持有人資料時，不能把價格未漲直接歸因套利賣壓，也不能推論長期報酬。",
+            "interpretation": "事件本身與事件前價格路徑須分開；擁擠可能改變短期催化，而非否定標的基本面。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增被動資金預期與擁擠交易的時序問題，不等同一般價格與部位管理。",
+            "supporting_refs": [
+              {
+                "episode": 435,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 438,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 440,
+                "claim_id": "E1"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 87,
+            "category": "新聞與資訊判讀",
+            "source_scope": "2024／組2：2024-02-17至2024-04-03"
+          },
+          {
+            "title": "方向判斷與投資載體須分開驗證",
+            "decision_question": "即使看對標的方向，所選ETF、期貨或選擇權的轉倉、期限、流動性與追繳機制是否仍可能使結果失真？",
+            "conditions": "投資前能檢查追蹤方法、正逆價差、到期日、履約價、交易可得性及壓力情境下的退出能力。",
+            "failure_conditions": "把商品價格當作標的現貨、忽略轉倉耗損或期限限制，或危機時無法交易與賣出時，方向正確仍未必取得報酬。",
+            "interpretation": "本批以USO、短天期買權與危機市場可交易性，將工具結構列為獨立於基本面與估值的風險層。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增決策問題：既有框架未獨立處理「看對方向但選錯載體」及退出權利風險。",
+            "supporting_refs": [
+              {
+                "episode": 254,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 256,
+                "claim_id": "E4"
+              },
+              {
+                "episode": 248,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 250,
+                "claim_id": "E6"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 88,
+            "category": "產品與制度",
+            "source_scope": "2022／組4：2022-05-21至2022-07-02"
+          },
+          {
+            "title": "基金容量與底層流動性的回饋風險",
+            "decision_question": "基金規模與申購需求是否已超過原策略容量，退出時又能否由底層成交量承接？",
+            "conditions": "主動基金快速擴張、集中持有低成交量股票，且新增申購可能帶動成分股需求時。",
+            "failure_conditions": "沒有持股交易、申贖流量及市場深度資料，就不能確認自我強化循環；大型股占比增加也可能只是原持股漲大。",
+            "interpretation": "94集的底層流動性疑慮，至101集增加申購回饋與容量限制。這是觀點延伸而非獨立驗證；爆量本身仍不足判定反轉。",
+            "baseline_relationship": "new",
+            "difference_from_baseline": "新增基金規模如何改變策略可執行性的問題；不等同個人持有現金或控制單股比例。",
+            "supporting_refs": [
+              {
+                "episode": 94,
+                "claim_id": "E1"
+              },
+              {
+                "episode": 101,
+                "claim_id": "E2"
+              },
+              {
+                "episode": 101,
+                "claim_id": "E3"
+              }
+            ],
+            "counter_refs": [],
+            "card_id": 89,
+            "category": "風險與部位",
+            "source_scope": "2020／組7：2020-12-02至2020-12-30"
+          },
+          {
+            "title": "公開訊息不能取代研究優勢",
+            "decision_question": "所依賴的資訊是否已延遲、同源或被市場參與者利用，且自己是否具備可持續的研究優勢？",
+            "conditions": "熱門交易、流通MEMO、節目內容或需要快速反應的題材，應辨認來源、時間差與自身能力圈。",
+            "failure_conditions": "把公開訊息視為獨有優勢，或以事後價格驗證消息品質；若優勢已被廣泛採用，原訊號可能失效。",
+            "interpretation": "資訊延遲、公開訊號反身性與時間投入可共同用來判斷，是否應聚焦既有相對優勢而非擴張策略。",
+            "baseline_relationship": "revision",
+            "difference_from_baseline": "修訂「時間差與來源獨立」：新增公開訊號反身性，以及策略即使可獲利仍未必值得投入時間成本。",
+            "supporting_refs": [
+              {
+                "episode": 366,
+                "claim_id": "E5"
+              },
+              {
+                "episode": 371,
+                "claim_id": "E7"
+              },
+              {
+                "episode": 374,
+                "claim_id": "E3"
+              },
+              {
+                "episode": 376,
                 "claim_id": "E7"
               }
             ],
             "counter_refs": [
               {
-                "episode": 199,
-                "claim_id": "E1"
+                "episode": 375,
+                "claim_id": "E5"
               }
-            ]
+            ],
+            "card_id": 90,
+            "category": "價格與市場訊號",
+            "source_scope": "2023／組5：2023-07-12至2023-08-19"
           }
         ],
         "open_questions": [
-          "本輪僅依提供的中繼歸納整合，未進行外部驗證；多數框架仍缺量化門檻或績效驗證。",
-          "多項供應鏈、訂單、政策、買方預期與價格說法可能同源轉述，仍需清理來源鏈及計量口徑。",
-          "完整交易紀錄、部位分母、成本、滑價、保證金、契約、申贖與跨市況樣本普遍不足，不能驗證實際績效。",
-          "長抱、估值逆勢、動能、停損、策略停機與重啟仍缺一致的觀察期、門檻及風險上限。",
-          "部分上游筆記可能混入贊助、業配、促銷、優惠碼、開戶展示或導流內容；這些材料必須排除，不得作為框架證據。",
-          "episode 668標題與metadata集數不一致，需核對對應關係。"
+          "哪些原則實際轉化為主持人本人可核實的交易，仍需原音、券商紀錄或其他獨立資料；不可把原則卡當成交易證明。",
+          "買賣條件多為條件式描述，尚未形成完整且可回測的規則；不得據此推定未來獲利。",
+          "跨集指涉中仍有未解項目，相關卡片以逐集已接受材料為限。"
         ]
       },
-      "review_verdict": "revise",
+      "review_verdict": "pass",
       "evidence_status": "provisional_note_level_synthesis; no independent external validation"
     }
   ],

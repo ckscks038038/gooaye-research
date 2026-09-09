@@ -67,14 +67,14 @@
       const final = syntheses.filter(s => s.stage === 'final').slice(-1);
       const shown = final.length ? final : syntheses.slice(-3);
       if (!final.length) target.append(element('p', `已完成 ${syntheses.length} 個歸納分組；目前展示最近3組線索，尚在合併候選卡。`, 'muted'));
-      else target.append(element('p', `本次階段整合：${final[0].document.patterns.length}張候選卡。包含新增、舊卡細分與修訂，不代表與前期10張完全不重複。`, 'status'));
+      else target.append(element('p', `本次知識庫：${final[0].document.patterns.length}張卡。依買進、賣出、持有、證據與風險分類；卡片仍是暫定研究框架，不代表交易績效已驗證。`, 'status'));
       for (const s of shown) {
         target.append(element('h3', s.document.title), element('p', s.scope, 'muted'), element('p', s.document.summary));
         for (const p of s.document.patterns) {
           const box = document.createElement('details'); const body = document.createElement('div'); body.className = 'card-body';
-          box.append(element('summary', p.title));
+          box.append(element('summary', `${p.card_id ? `#${p.card_id} · ` : ''}${p.title}`));
           const novelty = { new: '新決策問題候選', specialization: '舊框架的情境細分', revision: '舊框架修訂候選', overlap: '與前期框架重疊' };
-          body.append(element('p', novelty[p.baseline_relationship] || '與前期卡關係待判定', 'status'));
+          body.append(element('p', `${p.category ? `分類：${p.category} · ` : ''}${novelty[p.baseline_relationship] || '與前期卡關係待判定'}`, 'status'));
           for (const [key, prefix] of [['decision_question', '決策問題'], ['conditions', '適用條件'], ['failure_conditions', '失效／限制'], ['interpretation', '研究價值'], ['difference_from_baseline', '與前期卡差異']]) body.append(element('p', `${prefix}：${p[key]}`));
           for (const [key, prefix] of [['supporting_refs', '支持／案例'], ['counter_refs', '反例／限制案例']]) {
             const row = element('p', `${prefix}：`, 'refs');
