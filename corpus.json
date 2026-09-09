@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-09-09T05:49:42.404688+00:00",
+  "updated_at_utc": "2026-09-09T06:00:45.208555+00:00",
   "scope": "Pinned RSS-aligned corpus. Completed notes include explicitly labelled lead-assistant and two-subagent methods.",
   "counts": {
     "total": 693,
@@ -17,7 +17,7 @@
   "workflow": {
     "status": "running",
     "phase": "cross_group_full_pair_check",
-    "heartbeat_utc": "2026-09-09T05:49:09.590927+00:00",
+    "heartbeat_utc": "2026-09-09T05:58:43.716932+00:00",
     "workers": 4,
     "active_episodes": [],
     "scheduler": "chronological_groups",
@@ -109544,6 +109544,206 @@
               "start_line": 119,
               "end_line": 119,
               "source_sha256": "10ebedff10bf45142b83c483c68f32526110c156f3a5081b335df6bb5279b889"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "148c67c5e97508dc8a00",
+      "episode": 168,
+      "target_episode": 167,
+      "question": "哪些產業、期間與數據支持量未大增而產值大增？",
+      "status": "needs_attention",
+      "findings": []
+    },
+    {
+      "id": "1589c5ddbd79643c134c",
+      "episode": 359,
+      "target_episode": null,
+      "question": "2020年所指集數、標的、持有期間與風險條件為何？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "160c3f8135797eb6eff7",
+      "episode": 480,
+      "target_episode": null,
+      "question": "此前區分代理商受惠程度的條件及適用期限為何？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "162f099592bf5d7a78a2",
+      "episode": 63,
+      "target_episode": 67,
+      "question": "第63集減碼意向能否與第67集NVIDIA續抱及加碼計畫確認為同一標的的修訂？",
+      "status": "pair_checked",
+      "findings": [
+        {
+          "from_episode": 63,
+          "to_episode": 67,
+          "relation": "revision",
+          "finding": "兩側均明示NVIDIA。第63集因部位占比及單一股票曝險而擬減碼；第67集明示其原本也考慮減碼，並在評估新顯卡可能帶動換卡潮後，轉為長期持有、適當時加碼，屬同標的操作計畫修訂。",
+          "limitations": "第67集沒有交代第63集後是否已減碼，也未提供實際部位、成交價格或加減碼數量。兩集內容皆為主持人的看法或計畫，不能推定已執行。",
+          "evidence": [
+            {
+              "episode": 63,
+              "start_line": 31,
+              "end_line": 31,
+              "source_sha256": "36e40680a3ae35661808aa7eb5eb1c782fed0266890bd9665e6971dce078937c"
+            },
+            {
+              "episode": 67,
+              "start_line": 20,
+              "end_line": 20,
+              "source_sha256": "313c60b56725700eb1c34b93f17e46080b10ed441d2392bdfdb0a5776a11aa48"
+            },
+            {
+              "episode": 67,
+              "start_line": 22,
+              "end_line": 22,
+              "source_sha256": "313c60b56725700eb1c34b93f17e46080b10ed441d2392bdfdb0a5776a11aa48"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16423e11cf7f408fa770",
+      "episode": 591,
+      "target_episode": 590,
+      "question": "需590價格討論原文，以確認訊息來源、NAND產品範圍與供需歸因。",
+      "status": "needs_attention",
+      "findings": []
+    },
+    {
+      "id": "167c4a3cd2a46bc874b5",
+      "episode": 150,
+      "target_episode": null,
+      "question": "「秋後算帳」原集的估值重設依據與適用族群為何？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "16fe2229e807c5adea88",
+      "episode": 39,
+      "target_episode": 38,
+      "question": "所指台積電集的新聞事件及等待條件為何？",
+      "status": "pair_checked_still_uncertain",
+      "findings": []
+    },
+    {
+      "id": "171a56231333a58f00e2",
+      "episode": 620,
+      "target_episode": 599,
+      "question": "本集只交代生活事件後續，未重述EP599原始問題。",
+      "status": "pair_checked",
+      "findings": [
+        {
+          "from_episode": 599,
+          "to_episode": 620,
+          "relation": "continuation",
+          "finding": "EP599的提問者原先因太太癌症手術與無法生育感到絕望；EP620明示為「EP599 後」，並自述經就醫與多次溝通後，關係改善及考慮代孕。",
+          "limitations": "手術恢復、精神治療、婚姻改善及代孕規劃均僅為聽眾自述；未提供醫療紀錄、實際代孕進度或社群留言原文，不能核實。",
+          "evidence": [
+            {
+              "episode": 599,
+              "start_line": 429,
+              "end_line": 429,
+              "source_sha256": "b784dd0535978edd0504821038008090abbe4e44e00e3590c1db3a809db0d965"
+            },
+            {
+              "episode": 620,
+              "start_line": 333,
+              "end_line": 333,
+              "source_sha256": "853e0bf36682d07ec33fec41c90f67d0935b4ef8b4399abbfd6a63e9eefef92f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1740ae9d19f35ffcb6e2",
+      "episode": 157,
+      "target_episode": null,
+      "question": "先前反省在哪集，涉及哪些部位及風控失誤？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "174630a8d23f6c18b4fb",
+      "episode": 516,
+      "target_episode": 515,
+      "question": "前次對具名ASIC標的的論點與進出條件為何？名稱與代碼如何配對？",
+      "status": "pair_checked_still_uncertain",
+      "findings": []
+    },
+    {
+      "id": "174c4985022d9805db4a",
+      "episode": 271,
+      "target_episode": null,
+      "question": "訪問時點、反彈起算基準及續空條件為何？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "17763497a208d782d16a",
+      "episode": 360,
+      "target_episode": null,
+      "question": "一次投入者身分、資金用途、期間與後續持有情況為何？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "1786ca5afb3089b129d4",
+      "episode": 307,
+      "target_episode": null,
+      "question": "原第二季復甦預測依據哪些產品、指標與需求假設？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "17da86ce3b8709cafb0a",
+      "episode": 579,
+      "target_episode": null,
+      "question": "早期Tesla遠期需求的原始來源、數量及台積電承接假設為何？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "18031f3d305d8196dde7",
+      "episode": 273,
+      "target_episode": null,
+      "question": "半年前對成熟製程供過於求的依據、幅度及期間預期是什麼？",
+      "status": "needs_target_identification",
+      "findings": []
+    },
+    {
+      "id": "18033362476475b8e034",
+      "episode": 635,
+      "target_episode": 634,
+      "question": "634是否包含635所稱「孔框」的定義、抄底標的與適用盤勢，及兩集是否確為同一輪操作？",
+      "status": "pair_checked_still_uncertain",
+      "findings": [
+        {
+          "from_episode": 634,
+          "to_episode": 635,
+          "relation": "retrospective_claim",
+          "finding": "635明示將其「孔框」出現時的抄底指向上集；634確有恐慌盤中補部位、偏向買反彈的說法。",
+          "limitations": "634未出現「孔框」一詞、定義或判準，亦未列出抄底標的；因此只能確認635作出回顧主張，不能證實其所稱操作即為634這次補部位。",
+          "evidence": [
+            {
+              "episode": 634,
+              "start_line": 71,
+              "end_line": 71,
+              "source_sha256": "b1518b2a5e7573cc6a35aa3afc721d15127eef02b4ce73b7014affc13cee2270"
+            },
+            {
+              "episode": 635,
+              "start_line": 129,
+              "end_line": 129,
+              "source_sha256": "56d09383bee2008cc0fd21a02c15d29b6b04859b77cf9340437d817759bfe6bd"
             }
           ]
         }
