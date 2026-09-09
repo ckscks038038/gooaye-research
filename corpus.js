@@ -79,16 +79,20 @@
         target.append(element('h3', s.document.title), element('p', s.scope, 'muted'), element('p', s.document.summary));
         for (const p of s.document.patterns) {
           const box = document.createElement('details'); box.className = 'knowledge-card'; box.dataset.category = p.category || ''; box.dataset.search = `${p.title} ${p.category || ''} ${p.decision_question} ${p.conditions} ${p.interpretation}`.toLowerCase(); const body = document.createElement('div'); body.className = 'card-body';
-          box.append(element('summary', `${p.card_id ? `#${p.card_id} · ` : ''}${p.title}`));
+          const summary = document.createElement('summary');
+          if (p.card_id) summary.append(element('span', String(p.card_id).padStart(2,'0'), 'number'));
+          const summaryText = document.createElement('span'); summaryText.append(document.createTextNode(p.title));
+          if (p.category) summaryText.append(element('small', p.category));
+          summary.append(summaryText); box.append(summary);
           const novelty = { new: '新決策問題候選', specialization: '舊框架的情境細分', revision: '舊框架修訂候選', overlap: '與前期框架重疊' };
-          body.append(element('p', `${p.category ? `◉ ${p.category} · ` : ''}${novelty[p.baseline_relationship] || '與前期卡關係待判定'}`, 'status'));
-          body.append(element('p', `先記住：${p.interpretation}`, 'takeaway'));
+          body.append(element('p', `<b>什麼時候用：</b>${p.conditions}`));
           body.append(element('p', `你要問：${p.decision_question}`, 'question'));
-          body.append(element('p', `什麼時候用：${p.conditions}`));
-          body.append(element('p', `什麼時候不要直接套用：${p.failure_conditions}`, 'caution'));
-          body.append(element('details', '查看研究差異與完整限制'));
+          body.append(element('p', `<b>怎麼思考：</b>${p.interpretation}`));
+          body.append(element('p', `<b>反例與限制：</b>${p.failure_conditions}`, 'caution'));
+          body.append(element('p', `狀態：${p.category || '知識卡'} · ${novelty[p.baseline_relationship] || '暫定框架'}；不代表策略效果已驗證。`, 'status'));
+          body.append(element('details', '查看與前期卡的差異'));
           const detail = body.lastChild; const detailBody = document.createElement('div'); detailBody.className = 'card-body';
-          detailBody.append(element('p', `研究價值：${p.interpretation}`), element('p', `與前期卡差異：${p.difference_from_baseline}`)); detail.append(detailBody);
+          detailBody.append(element('p', p.difference_from_baseline)); detail.append(detailBody);
           for (const [key, prefix] of [['supporting_refs', '支持／案例'], ['counter_refs', '反例／限制案例']]) {
             const row = element('p', `${prefix}：`, 'refs');
             for (const r of p[key]) { const a = element('a', ` EP${r.episode}／${r.claim_id} `); a.href = `https://whatmkreallysaid.com/episode.html?file=EP${Number(r.episode)}`; row.append(a); }
